@@ -1,0 +1,452 @@
+# Bengaluru Events Directory — Full Event Listing
+# Tech Events, Hackathons, Conferences, Startup Events & Meetups in Bengaluru (Bangalore), India
+# April 15–26, 2026
+# Website: https://bengaluru-events.sagarjethi.com
+# Author: Sagar Jethi (@sagarbjethi)
+# Last Updated: 2026-04-13
+
+## Summary
+
+33+ tech events across 12 days in Bengaluru (Bangalore), India's tech capital.
+18 free events | 8 hackathons | $150,000+ in prizes
+Companies represented: OpenAI, Y Combinator, Amazon Web Services, Meta, Google, ElevenLabs, Hugging Face, Databricks, PyTorch Foundation
+Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
+
+## Keywords & Topics Covered
+
+AI hackathons India, Bengaluru tech events April 2026, Bangalore hackathons 2026, free tech events Bangalore, OpenAI Codex hackathon India, Y Combinator India 2026, YC Startup School Bengaluru, AWS Summit India 2026, Meta PyTorch hackathon, developer conferences India, AI conferences Bangalore, startup events India, Web3 events India, Rust programming conference India, voice AI hackathon, agentic AI events, LLM hackathons, coding competitions Bangalore, tech meetups Bengaluru, cybersecurity conference India, cloud computing events Bangalore, machine learning events India, best hackathons India 2026, prize money hackathons India, free coding events Bangalore, developer meetups Bengaluru, tech community Bangalore, innovation summit India, DeFi hackathon India, Google Developer Groups Bangalore, TCS 10K Bengaluru
+
+---
+
+## Quick Calendar
+
+- Apr 15 (Tue): Tech & Innovation Summit, IDEA x AIWeb3 2026
+- Apr 16 (Wed): OpenAI Codex Hackathon, Codex Community Hackathon, VibeCon India, W3Summit, Plumbex India
+- Apr 17 (Thu): JioHotstar ScaleUp 2.0, Rust India Conference, Calvin Harris Live, Love Letters Theatre
+- Apr 18 (Fri): YC Startup School India, ElevenLabs Buildathon, YC BLR Pre-Event Mixer, Golang Meetup, The Other Room, Founders & Freelancers Meetup
+- Apr 19 (Sat): YC Secret (AI)fter Party, After YC AI Community Mixer
+- Apr 21 (Mon): GIDS 2026, ISMG Cybersecurity Week, Aya AI Hackathon
+- Apr 22 (Tue): AWS Summit Bengaluru, ICRCET 2026
+- Apr 23 (Wed): TCS 10K Get Active Expo
+- Apr 24 (Thu): HackBricks 2026
+- Apr 25 (Fri): Meta PyTorch Hackathon, GDG Build For Bengaluru
+- Apr 26 (Sat): TCS World 10K Race, HackBLR by Geekroom
+
+---
+
+## Conferences & Summits
+
+### Tech & Innovation Summit 2026 (9th Edition)
+- Date: April 15–16, 2026
+- Venue: Sheraton Grand Bangalore, Brigade Gateway
+- Time: 10:00 AM – 9:30 PM
+- Cost: Paid (~$195)
+- Tags: AI, Web3, Startups, Blockchain, Gaming
+- Description: Flagship annual gathering featuring AI, gaming, blockchain/Web3, capital markets, and startup innovation. Multiple thematic stages.
+- Register: https://www.eventbrite.com/e/tech-innovation-summit-2026-tickets-1977764204977
+- Website: https://www.entrepreneurindia.com/techshow/
+
+### JioHotstar ScaleUp 2.0 — Scaling AI in Practice
+- Date: April 17, 2026
+- Venue: Bengaluru (venue on Luma)
+- Time: Full day
+- Cost: Free
+- Tags: AI, Scaling, Streaming, ML Infra
+- Description: Deep-dive into how JioHotstar (400M+ users) scales AI in production for media & personalization.
+- Register: https://luma.com/mu9mdlyh
+
+### Rust India Conference 2026
+- Date: April 17–18, 2026
+- Venue: NIMHANS Convention Centre
+- Time: 2 full days
+- Cost: Paid
+- Tags: Rust, Systems Programming
+- Description: India's premier Rust programming language conference. Talks, workshops, and networking.
+- Register: https://hasgeek.com/rustbangalore/rust-india-conference-2026/
+- Website: https://rustindia.org/
+
+### GIDS 2026 — Great International Developer Summit [FEATURED]
+- Date: April 21–24, 2026
+- Venue: J N Tata Auditorium, IISc Campus
+- Time: 4 full days
+- Cost: Paid
+- Tags: Software Dev, Architecture, AI/ML, DevOps, Cloud
+- Description: Asia-Pacific's largest polyglot software developer conference. 18th edition at IISc Campus.
+- Register: https://developersummit.com/
+
+### ISMG Cybersecurity Week
+- Date: April 21, 2026
+- Venue: The Ritz-Carlton, Bengaluru
+- Time: Full day
+- Cost: Invite only
+- Tags: Cybersecurity, CISO, AI Security
+- Description: Premier cybersecurity summit. CISOs, regulators, and technology visionaries. DPDP Act, ransomware, AI security.
+- Register: https://ismg-events.com/cybersecurity-week-2026
+
+### AWS Summit Bengaluru 2026 [FEATURED]
+- Date: April 22–23, 2026
+- Venue: KTPO Exhibition Center, Whitefield
+- Time: 2 full days
+- Cost: Free
+- Tags: Cloud, AWS, AI, Serverless
+- Description: AWS's flagship cloud event in India. Agentic AI, serverless, Amazon Bedrock, Kiro IDE.
+- Register: https://aws.amazon.com/events/summits/bengaluru/
+
+### ICRCET 2026
+- Date: April 22–23, 2026
+- Venue: Bangalore
+- Time: 2 days
+- Cost: Paid
+- Tags: Engineering, Research, Academic
+- Description: 15th Intl. Conference on Recent Challenges in Engineering & Technology.
+- Register: https://www.icrcet.org/
+
+---
+
+## Hackathons
+
+### OpenAI Codex Hackathon — Bengaluru
+- Date: April 16, 2026
+- Venue: Bengaluru (co-hosted with GrowthX)
+- Time: 9:00 AM – 8:00 PM
+- Cost: Free
+- Prize: $100,000
+- Tags: OpenAI, Codex, Agentic AI, $100K Prizes
+- Description: OpenAI's first official Codex Hackathon in India. 100+ builders competing for $100,000 in prizes.
+- Register: https://luma.com/x495vdw1
+
+### Codex Community Hackathon
+- Date: April 16, 2026
+- Venue: Bengaluru
+- Time: 9:30 AM – 6:00 PM
+- Cost: Free
+- Tags: OpenAI, Codex, Community
+- Description: Community-driven OpenAI Codex hackathon. Build ambitious AI projects using OpenAI coding tools.
+- Register: https://www.competehub.dev/en/competitions/luma905275c7e3ce2dda0e8fc122949a9867
+
+### ElevenLabs Buildathon
+- Date: April 18–19, 2026
+- Venue: Conscious Engines Office
+- Time: 2 days
+- Cost: Free
+- Tags: Voice AI, ElevenLabs, Conversational AI
+- Description: Build Conversational AI Agents using ElevenLabs' voice AI platform. Part of global hackathon across 30+ cities.
+- Register: https://luma.com/dxcah0t8
+
+### Aya AI Hackathon
+- Date: April 21–25, 2026
+- Venue: IIIT Bangalore
+- Time: Multi-day
+- Cost: Free
+- Prize: $20,000+
+- Tags: Crypto, DeFi, AI Agents, MCP
+- Description: Build MCP tools and AI services for DeFi operations. $20,000+ prizes. VCs for pitch sessions.
+- Register: https://luma.com/ocqqsf8y
+
+### HackBricks 2026
+- Date: April 24, 2026
+- Venue: Bengaluru (in-person)
+- Time: 24 hours
+- Cost: Free
+- Tags: Data Science, Databricks, ACM
+- Description: 24-hour in-person hackathon by ACM x Databricks x CodeBasics. Real-world data challenges.
+- Register: https://mitb.acm.org/hackbricks/
+
+### Meta PyTorch OpenEnv Hackathon — Finale [FEATURED]
+- Date: April 25–26, 2026
+- Venue: Scaler School of Technology
+- Time: 48-hour finale
+- Cost: Free
+- Prize: $30,000
+- Tags: Meta, PyTorch, RL
+- Description: India's first OpenEnv AI Hackathon. $30,000 prize pool + interview opportunities with Meta and Hugging Face.
+- Register: https://www.scaler.com/school-of-technology/meta-pytorch-hackathon
+
+### GDG Build For Bengaluru
+- Date: April 25, 2026
+- Venue: REVA University, Yelahanka
+- Time: 30-hour hackathon
+- Cost: Free
+- Tags: AI, Google, Social Impact
+- Description: GDG Bangalore 30-hour hackathon for AI-driven solutions in healthcare, education, sustainability.
+- Register: https://gdg.community.dev/gdg-bangalore/
+
+### HackBLR by Geekroom
+- Date: April 26, 2026
+- Venue: Bengaluru
+- Time: 8-hour finale
+- Cost: Free
+- Prize: ₹25,000+
+- Tags: AI Agents, Voice AI, LLM
+- Description: National-level AI hackathon focused on AI Agents, Voice AI, and LLM applications. 500-2,000 developers.
+- Register: https://luma.com/ia0ik7c6
+
+### Hack Days in Bengaluru
+- Date: TBA (April 2026)
+- Venue: Bengaluru (in-person)
+- Time: 12-hour sprint
+- Cost: Free
+- Tags: Hackathon, Prototyping
+- Description: 12-hour in-person hackathon with fast-paced build sprints, lightning workshops, and mentors.
+- Register: https://hack-days-in-bengaluru.devpost.com/
+
+---
+
+## Startup Events
+
+### VibeCon India 2026
+- Date: April 16–17, 2026
+- Venue: Bengaluru
+- Time: 2 days
+- Cost: Free to apply
+- Tags: YC, Vibe Coding, Startups, Investors
+- Description: Top 300 builder competition by Emergent (valued at $300M). Winners get direct Y Combinator interviews.
+- Register: https://vibecon.com/register
+- Website: https://vibecon.com/
+
+### Y Combinator Startup School India [FEATURED]
+- Date: April 18, 2026
+- Venue: Bengaluru
+- Time: Full day
+- Cost: Free (2,000 seats)
+- Tags: Y Combinator, Founders, Startups
+- Description: YC's first-ever Startup School in India! Speakers from Razorpay, Meesho, Groww, and Emergent.
+- Register: https://events.ycombinator.com/yc-sus-india
+
+### YC BLR Pre-Event Mixer
+- Date: April 18, 2026
+- Venue: Bengaluru (venue on Luma)
+- Time: 9:30 AM – 11:30 AM
+- Cost: Free
+- Tags: YC, Networking, Founders
+- Description: Pre-YC Startup School networking mixer. 337+ attendees. Meet founders and builders.
+- Register: https://luma.com/nz98ggeh
+
+### YC Secret (AI)fter Party
+- Date: April 19, 2026
+- Venue: Bengaluru
+- Time: Evening
+- Cost: Free
+- Tags: YC, After Party, AI
+- Description: The unofficial after-party following YC Startup School India. 2,336+ attendees going.
+- Register: https://luma.com/f09xvrf2
+
+### After YC: AI Community Mixer
+- Date: April 19, 2026
+- Venue: Lavelle Road, Bengaluru
+- Time: 3:00 PM – 7:00 PM
+- Cost: Free
+- Tags: AI, Builders, Curated
+- Description: Curated, intimate mixer for 50 serious AI builders. Deep conversations and genuine connections.
+- Register: https://luma.com/6smwquri
+
+---
+
+## Meetups
+
+### Golang Bangalore Meetup
+- Date: April 18, 2026
+- Venue: ZopDev, HSR Layout
+- Time: 10:00 AM IST
+- Cost: Free
+- Tags: Golang, Performance
+- Description: Monthly Go language meetup featuring talks on "Performance Debugging in Go Applications."
+- Register: https://www.meetup.com/golang-bangalore/
+
+### The Other Room
+- Date: April 18, 2026
+- Venue: Bengaluru
+- Time: Evening
+- Cost: Free
+- Tags: Builders, Networking
+- Description: Curated builder community meetup during YC Startup School week.
+- Register: https://luma.com/0xae5wnq
+
+### 11th Founders & Freelancers Meetup
+- Date: April 18, 2026
+- Venue: Koramangala, Bengaluru
+- Time: Evening
+- Cost: Free
+- Tags: Founders, Freelancers, Networking
+- Description: Networking for independent builders, freelancers, solopreneurs, and early-stage founders.
+- Register: https://luma.com/7tsxboct
+
+### AI Tinkerers Bengaluru
+- Date: TBA (April 2026)
+- Venue: Bengaluru (rotating venues)
+- Time: ~3 hours
+- Cost: Free
+- Tags: AI, Live Demos, Builders
+- Description: World's largest hands-on AI builder community. Monthly meetup featuring live code demos — no slides, no pitches.
+- Register: https://bengaluru.aitinkerers.org/
+
+---
+
+## Web3 & Crypto
+
+### W3Summit 2026
+- Date: April 16–17, 2026
+- Venue: BIEC, Tumkur Road
+- Time: 2 full days
+- Cost: ₹15,000 – ₹33,000
+- Tags: Web3, Crypto, NFT, Gaming, Investing
+- Description: India's biggest Web3, gaming, NFT, and digital-assets festival. 2,000+ attendees, 50+ speakers.
+- Register: https://www.w3summit.io/
+
+---
+
+## Music, Culture & Sports
+
+### Calvin Harris — Live in Bengaluru
+- Date: April 17, 2026
+- Venue: NICE Grounds, Bengaluru
+- Time: 4:00 PM onwards
+- Cost: ₹4,000 – ₹12,000
+- Tags: EDM, Concert, Live Music
+- Description: World-renowned Scottish DJ Calvin Harris performs live. Biggest electronic music event of the season.
+- Register: https://www.premiertickets.co/event/calvin-harris-india-tour-2026-bengaluru/
+
+### Love Letters — Theatre
+- Date: April 17, 2026
+- Venue: Prestige Centre for Performing Arts
+- Time: 7:30 PM
+- Cost: Paid
+- Tags: Theatre, Performing Arts
+- Description: "Ninna Preetiya, Naanu!" — A theatrical performance at one of Bengaluru's premier arts venues.
+- Register: https://www.pcpa.co.in/pages/events
+
+### Summersault Children's Festival
+- Date: April 11–26, 2026
+- Venue: Prestige Centre for Performing Arts
+- Time: Multiple shows
+- Cost: Paid
+- Tags: Children, Theatre, Arts
+- Description: Multi-week performing arts festival for children featuring theatre, workshops, and performances.
+- Register: https://www.pcpa.co.in/pages/events
+
+### TCS 10K Get Active Expo
+- Date: April 23–25, 2026
+- Venue: RSI Cricket Ground
+- Time: 3 days
+- Cost: Free
+- Tags: Running, Fitness, Expo
+- Description: TCS World 10K expo featuring bib collection, running gear, and fitness activities.
+- Register: https://tcsworld10k.procam.in/
+
+### TCS World 10K Race
+- Date: April 26, 2026
+- Venue: Bengaluru
+- Time: Morning
+- Cost: Registered
+- Tags: Running, 10K Race
+- Description: 18th edition of Asia's most prestigious road running event.
+- Register: https://tcsworld10k.procam.in/
+
+---
+
+## Expos
+
+### Plumbex India 2026
+- Date: April 16–18, 2026
+- Venue: Hall 4, BIEC, Tumkur Road
+- Time: 3 days
+- Cost: Free
+- Tags: Water, Sanitation, Infrastructure
+- Description: India's largest water, sanitation & plumbing exhibition. 1.4 lakh sq. ft. with 15,000+ visitors.
+- Register: https://indianplumbing.org/event-activities/plumbex-india-exhibition-2026/
+
+---
+
+## Event Discovery Platforms
+
+Find more events in Bengaluru on these platforms:
+- Luma: https://luma.com/bengaluru
+- Eventbrite: https://www.eventbrite.com/d/india--bangalore/tech-events/
+- AllEvents.in: https://allevents.in/bangalore/all
+- Meetup.com: https://www.meetup.com/find/in--bangalore/
+- HasGeek: https://hasgeek.com/
+- Dev.Events: https://dev.events/AS/IN/Bengaluru/tech
+- Townscript: https://www.townscript.com/in/bangalore
+- HackerEarth: https://www.hackerearth.com/hackathon/explore/city/bengaluru/
+- CompeteHub: https://www.competehub.dev/
+- Unstop: https://unstop.com/
+
+---
+
+## Frequently Asked Questions
+
+Q: What tech events are happening in Bengaluru in April 2026?
+A: Over 33 events are happening from April 15-26, 2026, including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS Developer Summit, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and many more. Full list at https://bengaluru-events.sagarjethi.com
+
+Q: Are there free tech events in Bengaluru in April 2026?
+A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit Bengaluru, VibeCon India, JioHotstar ScaleUp 2.0, ElevenLabs Buildathon, Meta PyTorch Hackathon, Golang Bangalore Meetup, GDG Build For Bengaluru, and multiple networking mixers and after-parties.
+
+Q: What hackathons are happening in Bengaluru in April 2026?
+A: 8 hackathons with $150,000+ in total prizes: OpenAI Codex Hackathon ($100K prizes, Apr 16), Meta PyTorch Hackathon ($30K prizes, Apr 25-26), Aya AI Hackathon ($20K+ prizes, Apr 21-25), ElevenLabs Buildathon (Apr 18-19), HackBricks by ACM x Databricks (Apr 24), GDG Build For Bengaluru (Apr 25), HackBLR by Geekroom (Apr 26), and Codex Community Hackathon (Apr 16). All hackathons are free to enter.
+
+Q: What is the biggest tech event in Bengaluru in April 2026?
+A: The biggest events by scale are AWS Summit Bengaluru (free, 2 days at KTPO Whitefield), GIDS Developer Summit (4 days at IISc Campus, Asia-Pacific's largest developer conference), and YC Startup School India (2,000 seats, YC's first-ever event in India).
+
+Q: Are there AI events in Bengaluru in April 2026?
+A: Yes, many AI-focused events: OpenAI Codex Hackathon (AI coding agents, $100K), JioHotstar ScaleUp 2.0 (scaling AI at 400M+ users), Aya AI Hackathon (AI agents + DeFi + MCP tools, $20K+), ElevenLabs Buildathon (conversational voice AI), HackBLR (AI agents + Voice AI + LLM), After YC AI Community Mixer, AI Tinkerers Bengaluru (live AI demos), and AWS Summit (Agentic AI + Amazon Bedrock).
+
+Q: Are there Web3 or crypto events in Bengaluru in April 2026?
+A: Yes. W3Summit 2026 is India's biggest Web3, gaming, NFT, and digital-assets festival (2,000+ attendees, 50+ speakers, Apr 16-17). Aya AI Hackathon covers DeFi + AI with $20K+ prizes. Tech & Innovation Summit includes a blockchain/Web3 track.
+
+Q: Where can I find developer conferences in India in April 2026?
+A: Bengaluru hosts GIDS 2026 (Asia-Pacific's largest polyglot dev conference, 4 days at IISc Campus), Rust India Conference (2 days at NIMHANS Convention Centre), AWS Summit Bengaluru (free, 2 days at KTPO Whitefield), and ISMG Cybersecurity Week (Ritz-Carlton).
+
+Q: What startup events are in Bengaluru in April 2026?
+A: Y Combinator Startup School India (first-ever in India, 2,000 seats, free), VibeCon India (top 300 builders, direct YC interview chance), YC BLR Pre-Event Mixer, YC Secret (AI)fter Party (2,336+ going), After YC AI Community Mixer, and 11th Founders & Freelancers Meetup.
+
+Q: Is Y Combinator coming to India in 2026?
+A: Yes. YC Startup School India is on April 18, 2026 in Bengaluru. It's YC's first-ever Startup School in India with 2,000 seats and speakers from Razorpay, Meesho, Groww, and Emergent. Registration: https://events.ycombinator.com/yc-sus-india
+
+Q: What is OpenAI Codex Hackathon Bengaluru?
+A: OpenAI's first official Codex Hackathon in India on April 16, 2026 in Bengaluru. Co-hosted with GrowthX. 100+ builders competing for $100,000 in prizes using OpenAI Codex. Free entry. Register: https://luma.com/x495vdw1
+
+Q: What is Meta PyTorch Hackathon in Bengaluru?
+A: India's first OpenEnv AI Hackathon organized by Meta, Hugging Face, and PyTorch Foundation on April 25-26, 2026 at Scaler School of Technology, Bengaluru. $30,000 prize pool + interview opportunities. Free entry. Register: https://www.scaler.com/school-of-technology/meta-pytorch-hackathon
+
+Q: What is AWS Summit Bengaluru 2026?
+A: AWS's flagship cloud event in India on April 22-23, 2026 at KTPO Exhibition Center, Whitefield. Covers Agentic AI, serverless, Amazon Bedrock, and Kiro IDE. Completely free. Register: https://aws.amazon.com/events/summits/bengaluru/
+
+Q: What is VibeCon India 2026?
+A: A top 300 builder competition organized by Emergent (valued at $300M) on April 16-17, 2026 in Bengaluru. Winners get direct Y Combinator interviews. Features backing from AWS, Razorpay, and Lightspeed. Free to apply. Register: https://vibecon.com/register
+
+Q: What is GIDS 2026?
+A: Great International Developer Summit — Asia-Pacific's largest polyglot software developer conference, now in its 18th edition. April 21-24, 2026 at J N Tata Auditorium, IISc Campus, Bengaluru. Covers Software Dev, Architecture, AI/ML, DevOps, and Cloud. Register: https://developersummit.com/
+
+Q: Are there Rust programming events in India in 2026?
+A: Yes. Rust India Conference 2026 is on April 17-18, 2026 at NIMHANS Convention Centre, Bengaluru. India's premier Rust programming language conference with talks, workshops, and networking. Register: https://hasgeek.com/rustbangalore/rust-india-conference-2026/
+
+Q: What is ElevenLabs Buildathon Bengaluru?
+A: A 2-day hackathon on April 18-19, 2026 to build Conversational AI Agents using ElevenLabs' voice AI platform. Part of a global hackathon across 30+ cities. Free entry. Register: https://luma.com/dxcah0t8
+
+Q: Is TCS 10K happening in Bengaluru in 2026?
+A: Yes. TCS World 10K Bengaluru race is on April 26, 2026. The Get Active Expo runs April 23-25 at RSI Cricket Ground with bib collection and fitness activities. 18th edition of Asia's most prestigious road running event. Register: https://tcsworld10k.procam.in/
+
+Q: What cybersecurity events are in Bengaluru in April 2026?
+A: ISMG Cybersecurity Week on April 21, 2026 at The Ritz-Carlton, Bengaluru. Premier cybersecurity summit featuring CISOs, regulators, and technology visionaries covering DPDP Act, ransomware, and AI security. Invite-only.
+
+Q: Should I visit Bengaluru in April 2026 for tech events?
+A: Absolutely. April 15-26, 2026 is an unprecedented concentration of tech events in Bengaluru with OpenAI, Y Combinator, AWS, Meta, Google, and ElevenLabs all hosting events. 18 events are free. $150K+ in hackathon prizes. This density of top-tier events in one city in 12 days is rare.
+
+## Individual Event Pages
+
+Every event has a dedicated detail page at https://bengaluru-events.sagarjethi.com/events/{event-slug}
+Example URLs:
+- https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon
+- https://bengaluru-events.sagarjethi.com/events/y-combinator-startup-school-india
+- https://bengaluru-events.sagarjethi.com/events/aws-summit-bengaluru-2026
+- https://bengaluru-events.sagarjethi.com/events/meta-pytorch-hackathon
+- https://bengaluru-events.sagarjethi.com/events/vibecon-india-2026
+- https://bengaluru-events.sagarjethi.com/events/gids-2026-developer-summit
+
+---
+
+Built by Sagar Jethi (@sagarbjethi)
+Website: https://bengaluru-events.sagarjethi.com
+LinkedIn: https://www.linkedin.com/in/sagarjethi
+Twitter/X: https://x.com/sagarbjethi
+GitHub: https://github.com/sagarjethi/bengaluru-events-apr-2026
