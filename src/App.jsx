@@ -21,7 +21,6 @@ function HomePage() {
     <div className="min-h-screen">
       <SEO />
       <Header />
-      <Navigation />
       <Stats />
       <CalendarView selectedDate={selectedDate} onDateSelect={setSelectedDate} />
       <EventsGrid selectedDate={selectedDate} />
@@ -35,6 +34,7 @@ function HomePage() {
 export default function App() {
   return (
     <>
+      <Navigation />
       <TweetSupportModal />
       <Routes>
         <Route path="/" element={<HomePage />} />
