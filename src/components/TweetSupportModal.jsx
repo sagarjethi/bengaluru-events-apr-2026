@@ -18,10 +18,7 @@ export default function TweetSupportModal() {
   const location = useLocation();
 
   useEffect(() => {
-    // Don't show if already dismissed this session
-    if (sessionStorage.getItem(STORAGE_KEY)) return;
-
-    // Only show when navigating away from homepage (to event detail, social, etc.)
+    // Only show on inner pages (detail, social, map), not homepage
     if (location.pathname === '/') return;
 
     // Small delay so page renders first
@@ -31,7 +28,6 @@ export default function TweetSupportModal() {
 
   const handleDismiss = () => {
     setShow(false);
-    sessionStorage.setItem(STORAGE_KEY, 'true');
   };
 
   const handleLike = () => {
