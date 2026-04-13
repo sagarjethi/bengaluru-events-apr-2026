@@ -147,12 +147,6 @@ export default function CalendarView({ onDateSelect, selectedDate }) {
                 </a>
               </div>
 
-              <button
-                onClick={handleDismiss}
-                className="w-full mt-2 text-xs text-slate-400 hover:text-slate-500 py-2 transition-colors"
-              >
-                Skip for now
-              </button>
             </div>
           </div>
         </div>

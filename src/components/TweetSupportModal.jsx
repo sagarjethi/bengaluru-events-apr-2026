@@ -89,13 +89,6 @@ export default function TweetSupportModal() {
             <ExternalLink className="w-3.5 h-3.5 opacity-60" />
           </button>
 
-          {/* Skip */}
-          <button
-            onClick={handleDismiss}
-            className="w-full mt-2 text-xs text-slate-400 hover:text-slate-500 py-2 transition-colors"
-          >
-            Maybe later
-          </button>
         </div>
       </div>
     </div>
