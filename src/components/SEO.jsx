@@ -29,6 +29,7 @@ function generateAllEventsJsonLd() {
             ...(event.lat && event.lng ? { geo: { '@type': 'GeoCoordinates', latitude: event.lat, longitude: event.lng } } : {}),
           },
       organizer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
+      performer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
       image: 'https://bengaluru-events.sagarjethi.com/og-image.png',
       ...(event.cost === 'Free' || event.cost?.toLowerCase().includes('free')
         ? {

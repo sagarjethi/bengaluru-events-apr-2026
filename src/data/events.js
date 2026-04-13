@@ -617,6 +617,22 @@ export const events = [
     lat: 12.9716,
     lng: 77.5946,
   },
+  {
+    id: 39,
+    name: "HEM Founder's Brunch — Hashed Emergent x Tether",
+    date: 'Apr 19',
+    startDate: '2026-04-19',
+    endDate: '2026-04-19',
+    venue: 'Bengaluru, Karnataka',
+    time: '12:00 PM – 3:00 PM',
+    cost: 'Free (Invite-only)',
+    category: 'startup',
+    tags: ['AI', 'Web3', 'Founders', 'Agentic Payments', 'Hashed Emergent'],
+    description: 'Exclusive brunch for 25-30 AI founders by Hashed Emergent & Tether. Focus on agentic payments, P2P agent communication, and tokenized data marketplaces.',
+    link: 'https://luma.com/rngja8px',
+    lat: 12.9716,
+    lng: 77.5946,
+  },
 ];
 
 export const socialBuzz = [

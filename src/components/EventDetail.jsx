@@ -142,6 +142,7 @@ export default function EventDetail() {
     ...(event.website ? { sameAs: event.website } : {}),
     image: 'https://bengaluru-events.sagarjethi.com/og-image.png',
     organizer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
+    performer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
   };
 
   const handleShare = async () => {
