@@ -397,4 +397,22 @@ export const lumaEvents = [
     attendees: '500+',
     link: 'https://luma.com/ia0ik7c6',
   },
+  {
+    name: 'Bengaluru Pitch Circuit',
+    date: 'Apr 19',
+    attendees: '100+',
+    link: 'https://luma.com/kt6hzh2n',
+  },
+  {
+    name: 'Lyzr Agentathon',
+    date: 'Apr 19',
+    attendees: '80+',
+    link: 'https://luma.com/zm0u860h',
+  },
+  {
+    name: 'Zero to Agent',
+    date: 'Apr 26',
+    attendees: '60+',
+    link: 'https://luma.com/aic-be-4-26',
+  },
 ];
