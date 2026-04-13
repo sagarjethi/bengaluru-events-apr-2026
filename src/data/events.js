@@ -727,18 +727,18 @@ export const socialBuzz = [
 ];
 
 export const calendarDays = [
-  { date: '2026-04-15', label: 'Apr 15', day: 'Tue' },
-  { date: '2026-04-16', label: 'Apr 16', day: 'Wed' },
-  { date: '2026-04-17', label: 'Apr 17', day: 'Thu' },
-  { date: '2026-04-18', label: 'Apr 18', day: 'Fri' },
-  { date: '2026-04-19', label: 'Apr 19', day: 'Sat' },
-  { date: '2026-04-20', label: 'Apr 20', day: 'Sun' },
-  { date: '2026-04-21', label: 'Apr 21', day: 'Mon' },
-  { date: '2026-04-22', label: 'Apr 22', day: 'Tue' },
-  { date: '2026-04-23', label: 'Apr 23', day: 'Wed' },
-  { date: '2026-04-24', label: 'Apr 24', day: 'Thu' },
-  { date: '2026-04-25', label: 'Apr 25', day: 'Fri' },
-  { date: '2026-04-26', label: 'Apr 26', day: 'Sat' },
+  { date: '2026-04-15', label: 'Apr 15', day: 'Wed' },
+  { date: '2026-04-16', label: 'Apr 16', day: 'Thu' },
+  { date: '2026-04-17', label: 'Apr 17', day: 'Fri' },
+  { date: '2026-04-18', label: 'Apr 18', day: 'Sat' },
+  { date: '2026-04-19', label: 'Apr 19', day: 'Sun' },
+  { date: '2026-04-20', label: 'Apr 20', day: 'Mon' },
+  { date: '2026-04-21', label: 'Apr 21', day: 'Tue' },
+  { date: '2026-04-22', label: 'Apr 22', day: 'Wed' },
+  { date: '2026-04-23', label: 'Apr 23', day: 'Thu' },
+  { date: '2026-04-24', label: 'Apr 24', day: 'Fri' },
+  { date: '2026-04-25', label: 'Apr 25', day: 'Sat' },
+  { date: '2026-04-26', label: 'Apr 26', day: 'Sun' },
 ];
 
 export const platforms = [
