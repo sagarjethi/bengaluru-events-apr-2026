@@ -417,6 +417,69 @@
 
 ---
 
+## Hackathon
+
+### ContextCon — YC x Crustdata Hackathon
+- **Date:** Apr 19
+- **Venue:** Bengaluru, Karnataka
+- **Time:** 10:00 AM – 4:00 PM
+- **Cost:** Free
+- **Tags:** YC, Crustdata, AI Agents, Sales Intelligence, $12K Prizes
+- **Description:** YC's first hackathon in India! 6-hour build sprint using Crustdata's APIs. $12,000 in prizes + guaranteed 1-on-1 office hours with YC Partner Jon Xu for winners.
+- **Register:** https://luma.com/6ftay6mq
+- **Website:** https://crustdata.com/contextcon
+- **Details:** https://bengaluru-events.sagarjethi.com/events/contextcon-yc-x-crustdata-hackathon
+- **Directions:** https://www.google.com/maps/dir/?api=1&destination=12.9716,77.5946
+
+### Lyzr Agentathon: 2 Lakh Vibe-Coding Challenge
+- **Date:** Apr 19–20
+- **Venue:** Bengaluru
+- **Time:** Full day
+- **Cost:** Free
+- **Tags:** AI Agents, Vibe Coding, No-Code, LLM
+- **Description:** Build AI agents using vibe coding techniques. ₹2 Lakh prize pool. Open to all skill levels.
+- **Register:** https://luma.com/zm0u860h
+- **Details:** https://bengaluru-events.sagarjethi.com/events/lyzr-agentathon-2-lakh-vibe-coding-challenge
+- **Directions:** https://www.google.com/maps/dir/?api=1&destination=12.9716,77.5946
+
+## Startup
+
+### Bengaluru Pitch Circuit 6
+- **Date:** Apr 15
+- **Venue:** Bengaluru
+- **Time:** Evening
+- **Cost:** Free
+- **Tags:** Pitch, Founders, Investors, Networking
+- **Description:** Monthly pitch event for early-stage founders. Present your startup to investors and fellow builders in Bengaluru.
+- **Register:** https://luma.com/kt6hzh2n
+- **Details:** https://bengaluru-events.sagarjethi.com/events/bengaluru-pitch-circuit-6
+- **Directions:** https://www.google.com/maps/dir/?api=1&destination=12.9716,77.5946
+
+### How to Build Your GTM Engine — Crustdata
+- **Date:** Apr 17
+- **Venue:** Virtual (Online)
+- **Time:** 6:00 PM IST
+- **Cost:** Free (Approval required)
+- **Tags:** GTM, Sales, API, Crustdata, Growth
+- **Description:** Live session showing how Crustdata scaled from $700K to $7M ARR in 15 months.
+- **Register:** https://luma.com/8hfcdwz9
+- **Details:** https://bengaluru-events.sagarjethi.com/events/how-to-build-your-gtm-engine-crustdata
+
+## Meetup
+
+### Zero to Agent: Bengaluru (w/ The AI Collective)
+- **Date:** Apr 26
+- **Venue:** Bengaluru, Karnataka
+- **Time:** 2:00 PM – 6:00 PM
+- **Cost:** Free
+- **Tags:** AI Agents, Vercel, Build Session, The AI Collective
+- **Description:** Global Build Week event by The AI Collective. Go from zero to building your first AI agent in a hands-on session powered by Vercel.
+- **Register:** https://luma.com/aic-be-4-26
+- **Details:** https://bengaluru-events.sagarjethi.com/events/zero-to-agent-bengaluru-w-the-ai-collective
+- **Directions:** https://www.google.com/maps/dir/?api=1&destination=12.9716,77.5946
+
+---
+
 More pages:
 - All events: https://bengaluru-events.sagarjethi.com
 - Event map: https://bengaluru-events.sagarjethi.com/map

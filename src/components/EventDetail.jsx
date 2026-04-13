@@ -82,6 +82,10 @@ export default function EventDetail() {
 
   if (!event) {
     return (
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Event Not Found — Bengaluru Events</title>
+      </Helmet>
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-slate-900 mb-4">Event Not Found</h1>
@@ -127,15 +131,15 @@ export default function EventDetail() {
     ...(event.cost === 'Free' || event.cost?.toLowerCase().includes('free')
       ? {
           isAccessibleForFree: true,
-          offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR', availability: 'https://schema.org/LimitedAvailability', url: event.link },
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: event.link },
         }
       : {
-          offers: { '@type': 'Offer', url: event.link, availability: 'https://schema.org/LimitedAvailability' },
+          offers: { '@type': 'Offer', url: event.link, availability: 'https://schema.org/InStock' },
         }),
     url: eventUrl,
     ...(event.website ? { sameAs: event.website } : {}),
-    keywords: event.tags.join(', '),
-    image: 'https://bengaluru-events.sagarjethi.com/og-image.svg',
+    image: 'https://bengaluru-events.sagarjethi.com/og-image.png',
+    organizer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
   };
 
   const handleShare = async () => {
@@ -157,16 +161,22 @@ export default function EventDetail() {
         <meta property="og:description" content={`${event.description} | ${event.date} at ${event.venue}`} />
         <meta property="og:url" content={eventUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://bengaluru-events.sagarjethi.com/og-image.svg" />
+        <meta property="og:image" content="https://bengaluru-events.sagarjethi.com/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${event.name} — Bengaluru Events April 2026`} />
+        <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${event.name} — Bengaluru Events`} />
         <meta name="twitter:description" content={event.description} />
+        <meta name="twitter:image" content="https://bengaluru-events.sagarjethi.com/og-image.png" />
+        <meta name="twitter:image:alt" content={`${event.name} — Bengaluru Events April 2026`} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       <div className="min-h-screen">
-        {/* Top Nav */}
-        <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+        {/* Sub Nav */}
+        <div className="bg-white border-b border-slate-200">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <Link
               to="/"
@@ -183,7 +193,7 @@ export default function EventDetail() {
               Share
             </button>
           </div>
-        </nav>
+        </div>
 
         {/* Hero Banner */}
         <div className={`bg-gradient-to-br ${gradient} relative overflow-hidden`}>

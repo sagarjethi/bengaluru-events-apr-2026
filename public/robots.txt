@@ -26,5 +26,23 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 # Bengaluru Events Directory — April 15-26, 2026
-# 38+ tech events, hackathons, conferences, and meetups
+# 38+ tech events, 12 hackathons, $165K+ prizes, 27 free events

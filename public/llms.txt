@@ -57,6 +57,7 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 - Codex Community Hackathon — Apr 16 — Free — Community OpenAI Codex
 - ContextCon — YC x Crustdata Hackathon — Apr 19 — $12,000 prizes — Free — YC's first hackathon in India
 - Lyzr Agentathon — Apr 19–20 — ₹2 Lakh prizes — Free — AI agents + vibe coding
+- Hack Days in Bengaluru — Apr 22 — Free — 12-hour in-person hackathon sprints
 
 ### Conferences
 - AWS Summit Bengaluru — Apr 22–23 — Free — Agentic AI, serverless, Amazon Bedrock

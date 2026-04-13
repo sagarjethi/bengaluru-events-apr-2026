@@ -50,7 +50,7 @@
   <text x="960" y="461" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#a16207">Web3</text>
 
   <!-- Footer -->
-  <text x="600" y="560" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#94a3b8">bengaluru-events.vercel.app</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#94a3b8">bengaluru-events.sagarjethi.com</text>
 
   <!-- Bottom accent bar -->
   <rect x="0" y="624" width="1200" height="6" fill="url(#accent)"/>
