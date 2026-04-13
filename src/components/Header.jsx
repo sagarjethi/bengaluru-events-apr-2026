@@ -30,13 +30,13 @@ export default function Header() {
           <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-xs">
             <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-full font-medium border border-emerald-100">
               <Zap className="w-3 h-3" />
-              18 Free Events
+              27 Free Events
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-violet-50 text-violet-700 rounded-full font-medium border border-violet-100">
-              8 Hackathons
+              12 Hackathons
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-amber-50 text-amber-700 rounded-full font-medium border border-amber-100">
-              $150K+ Prizes
+              $165K+ Prizes
             </span>
           </div>
 

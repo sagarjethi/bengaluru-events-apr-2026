@@ -4,7 +4,7 @@ export default function Stats() {
   const freeEvents = events.filter(e => e.cost === 'Free' || e.cost.toLowerCase().includes('free')).length;
   const hackathons = events.filter(e => e.category === 'hackathon').length;
   const conferences = events.filter(e => e.category === 'conference').length;
-  const totalPrize = '$150K+';
+  const totalPrize = '$165K+';
 
   const stats = [
     { value: events.length + '+', label: 'Events', color: 'from-primary-500 to-primary-600' },
