@@ -382,7 +382,7 @@ Q: Are there free tech events in Bengaluru in April 2026?
 A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit Bengaluru, VibeCon India, JioHotstar ScaleUp 2.0, ElevenLabs Buildathon, Meta PyTorch Hackathon, Golang Bangalore Meetup, GDG Build For Bengaluru, and multiple networking mixers and after-parties.
 
 Q: What hackathons are happening in Bengaluru in April 2026?
-A: 8 hackathons with $150,000+ in total prizes: OpenAI Codex Hackathon ($100K prizes, Apr 16), Meta PyTorch Hackathon ($30K prizes, Apr 25-26), Aya AI Hackathon ($20K+ prizes, Apr 21-25), ElevenLabs Buildathon (Apr 18-19), HackBricks by ACM x Databricks (Apr 24), GDG Build For Bengaluru (Apr 25), HackBLR by Geekroom (Apr 26), and Codex Community Hackathon (Apr 16). All hackathons are free to enter.
+A: 12 hackathons with $165,000+ in total prizes: OpenAI Codex Hackathon ($100K prizes, Apr 16), Meta PyTorch Hackathon ($30K prizes, Apr 25-26), Aya AI Hackathon ($20K+ prizes, Apr 21-25), ContextCon YC x Crustdata ($12K prizes, Apr 19), VibeCon India (Apr 16-17), ElevenLabs Buildathon (Apr 18-19), Lyzr Agentathon (₹2L prizes, Apr 19-20), HackBricks by ACM x Databricks (Apr 24), GDG Build For Bengaluru (Apr 25), HackBLR by Geekroom (Apr 26), Hack Days in Bengaluru (Apr 22), and Codex Community Hackathon (Apr 16). All hackathons are free to enter.
 
 Q: What is the biggest tech event in Bengaluru in April 2026?
 A: The biggest events by scale are AWS Summit Bengaluru (free, 2 days at KTPO Whitefield), GIDS Developer Summit (4 days at IISc Campus, Asia-Pacific's largest developer conference), and YC Startup School India (2,000 seats, YC's first-ever event in India).
@@ -430,7 +430,7 @@ Q: What cybersecurity events are in Bengaluru in April 2026?
 A: ISMG Cybersecurity Week on April 21, 2026 at The Ritz-Carlton, Bengaluru. Premier cybersecurity summit featuring CISOs, regulators, and technology visionaries covering DPDP Act, ransomware, and AI security. Invite-only.
 
 Q: Should I visit Bengaluru in April 2026 for tech events?
-A: Absolutely. April 15-26, 2026 is an unprecedented concentration of tech events in Bengaluru with OpenAI, Y Combinator, AWS, Meta, Google, and ElevenLabs all hosting events. 18 events are free. $150K+ in hackathon prizes. This density of top-tier events in one city in 12 days is rare.
+A: Absolutely. April 15-26, 2026 is an unprecedented concentration of tech events in Bengaluru with OpenAI, Y Combinator, AWS, Meta, Google, and ElevenLabs all hosting events. 27 events are free. $165K+ in hackathon prizes. This density of top-tier events in one city in 12 days is rare.
 
 ## Individual Event Pages
 
