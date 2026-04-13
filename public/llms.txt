@@ -1,6 +1,6 @@
 # Bengaluru Events Directory — April 15–26, 2026
 
-> The most complete guide to 33+ tech events, hackathons, conferences, startup events, and meetups happening in Bengaluru (Bangalore), India — April 2026.
+> The most complete guide to 38+ tech events, hackathons, conferences, startup events, and meetups happening in Bengaluru (Bangalore), India — April 2026.
 
 Website: https://bengaluru-events.sagarjethi.com
 Author: Sagar Jethi (https://x.com/sagarbjethi)
@@ -9,9 +9,9 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 
 ## Key Facts
 
-- 33+ events across 12 days (April 15–26, 2026)
+- 38+ events across 12 days (April 15–26, 2026)
 - 18 free events (no ticket cost)
-- 8 hackathons with $150,000+ in total prizes
+- 10 hackathons with $162,000+ in total prizes
 - Location: Bengaluru (also known as Bangalore), Karnataka, India
 - Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
 
@@ -54,6 +54,8 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 - GDG Build For Bengaluru — Apr 25 — Free — Google, 30-hour, social impact
 - HackBLR by Geekroom — Apr 26 — Free — AI Agents, Voice AI, LLM
 - Codex Community Hackathon — Apr 16 — Free — Community OpenAI Codex
+- ContextCon — YC x Crustdata Hackathon — Apr 19 — $12,000 prizes — Free — YC's first hackathon in India
+- Lyzr Agentathon — Apr 19–20 — ₹2 Lakh prizes — Free — AI agents + vibe coding
 
 ### Conferences
 - AWS Summit Bengaluru — Apr 22–23 — Free — Agentic AI, serverless, Amazon Bedrock
@@ -82,6 +84,8 @@ Every event has a dedicated page with full details, registration links, and rela
 - https://bengaluru-events.sagarjethi.com/events/aya-ai-hackathon
 - https://bengaluru-events.sagarjethi.com/events/rust-india-conference-2026
 - https://bengaluru-events.sagarjethi.com/events/hackbricks-2026
+- https://bengaluru-events.sagarjethi.com/events/contextcon-yc-x-crustdata-hackathon
+- https://bengaluru-events.sagarjethi.com/events/lyzr-agentathon-2-lakh-vibe-coding-challenge
 
 See all events: https://bengaluru-events.sagarjethi.com
 

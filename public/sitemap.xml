@@ -210,4 +210,34 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/bengaluru-pitch-circuit-6</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/lyzr-agentathon-2-lakh-vibe-coding-challenge</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/zero-to-agent-bengaluru-w-the-ai-collective</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/contextcon-yc-x-crustdata-hackathon</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/how-to-build-your-gtm-engine-crustdata</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
