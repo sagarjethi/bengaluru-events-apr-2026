@@ -243,14 +243,6 @@ export const instagramReels = [
 
 export const notablePeople = [
   {
-    name: 'Arsh Goyal',
-    role: 'Tech Content Creator',
-    attending: ['YC Startup School India', 'OpenAI Codex Hackathon', 'VibeCon India'],
-    x: 'https://x.com/arsh_goyal',
-    linkedin: 'https://www.linkedin.com/in/arshgoyal/',
-    avatar: 'AG',
-  },
-  {
     name: 'Sagar Jethi',
     role: 'Builder & Developer',
     attending: ['YC Startup School India', 'VibeCon India', 'AWS Summit Bengaluru'],

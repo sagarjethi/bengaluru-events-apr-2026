@@ -221,10 +221,13 @@ export default function SocialPage() {
                 <Users className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-slate-900">People Going</h2>
-                <p className="text-sm text-slate-500">Connect with notable attendees and builders</p>
+                <h2 className="text-xl font-bold text-slate-900">People Likely Attending</h2>
+                <p className="text-sm text-slate-500">Connect with builders who are probably going</p>
               </div>
             </div>
+            <p className="text-xs text-slate-400 mb-4 bg-slate-50 rounded-lg px-3 py-2 border border-slate-100">
+              Attendance listed here is based on social media posts and public RSVPs — not confirmed. Always verify directly with the person before planning to meet.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {notablePeople.map((person, i) => (
                 <div
@@ -240,7 +243,7 @@ export default function SocialPage() {
                       <p className="text-sm text-slate-500 mb-3">{person.role}</p>
 
                       <div className="mb-3">
-                        <p className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1.5">Attending</p>
+                        <p className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1.5">Likely Attending</p>
                         <div className="flex flex-wrap gap-1.5">
                           {person.attending.map((event) => (
                             <span key={event} className="px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded text-xs font-medium border border-emerald-100">
