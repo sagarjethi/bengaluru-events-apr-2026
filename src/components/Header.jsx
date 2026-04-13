@@ -8,7 +8,7 @@ export default function Header() {
         <div className="text-center">
           <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            33+ Events in 12 Days
+            38+ Events in 12 Days
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-tight">
             Bengaluru Events

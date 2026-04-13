@@ -50,11 +50,11 @@ export default function SocialPage() {
     <>
       <Helmet>
         <title>Social Buzz — Bengaluru Events April 2026 | Connect with Attendees</title>
-        <meta name="description" content="Follow the social buzz around 33+ tech events in Bengaluru. See what people are saying on X, LinkedIn, Instagram. Connect with attendees and join Luma events." />
+        <meta name="description" content="Follow the social buzz around 38+ tech events in Bengaluru. See what people are saying on X, LinkedIn, Instagram. Connect with attendees and join Luma events." />
         <meta name="keywords" content="Bengaluru events social, tech events twitter, hackathon community, connect with developers Bangalore, Luma events Bengaluru, tech networking India April 2026" />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content="Social Buzz — Bengaluru Events April 2026" />
-        <meta property="og:description" content="Follow the conversation. Connect with attendees. Join Luma events. 33+ tech events in Bengaluru." />
+        <meta property="og:description" content="Follow the conversation. Connect with attendees. Join Luma events. 38+ tech events in Bengaluru." />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />

@@ -32,7 +32,7 @@ export default function MapPage() {
     <>
       <Helmet>
         <title>Event Map — Bengaluru Events April 2026 | Find Venues & Directions</title>
-        <meta name="description" content="Interactive map of 33+ tech events in Bengaluru, April 2026. Find event venues, get directions, and see hackathons, conferences, and meetups near you." />
+        <meta name="description" content="Interactive map of 38+ tech events in Bengaluru, April 2026. Find event venues, get directions, and see hackathons, conferences, and meetups near you." />
         <meta name="keywords" content="Bengaluru events map, tech events locations Bangalore, hackathon venues Bengaluru, conference locations India, event map April 2026, Bangalore tech venues" />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content="Event Map — Bengaluru Events April 2026" />

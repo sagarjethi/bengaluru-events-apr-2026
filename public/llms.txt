@@ -93,7 +93,7 @@ See all events: https://bengaluru-events.sagarjethi.com
 ## Frequently Asked Questions
 
 Q: What tech events are happening in Bengaluru in April 2026?
-A: Over 33 events including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and more.
+A: Over 38 events including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and more.
 
 Q: Are there free tech events in Bengaluru in April 2026?
 A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, VibeCon, Meta PyTorch Hackathon, and more.

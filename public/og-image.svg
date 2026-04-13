@@ -15,7 +15,7 @@
 
   <!-- Badge -->
   <rect x="440" y="140" width="320" height="40" rx="20" fill="#e0ebff"/>
-  <text x="600" y="166" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#3443cb">36+ Events in 12 Days</text>
+  <text x="600" y="166" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#3443cb">38+ Events in 12 Days</text>
 
   <!-- Title -->
   <text x="600" y="250" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="#0f172a">Bengaluru Events</text>

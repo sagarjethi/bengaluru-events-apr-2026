@@ -125,7 +125,7 @@ export const linkedinPosts = [
     name: 'Sagar Jethi',
     title: 'Builder & Developer',
     avatar: 'SJ',
-    text: 'Bengaluru April 2026 is going to be insane. I built a directory to track 33+ events — OpenAI, YC, AWS, Meta all in one city. Check it out!',
+    text: 'Bengaluru April 2026 is going to be insane. I built a directory to track 38+ events — OpenAI, YC, AWS, Meta all in one city. Check it out!',
     link: 'https://www.linkedin.com/in/sagarjethi',
   },
   {

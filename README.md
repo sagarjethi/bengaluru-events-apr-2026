@@ -1,6 +1,6 @@
 # Bengaluru Events Directory — April 15–26, 2026
 
-Your complete guide to **33+ events** happening in Bengaluru (Bangalore), India's tech capital.
+Your complete guide to **38+ events** happening in Bengaluru (Bangalore), India's tech capital.
 
 **Live Site:** [https://bengaluru-events.sagarjethi.com](https://bengaluru-events.sagarjethi.com)
 

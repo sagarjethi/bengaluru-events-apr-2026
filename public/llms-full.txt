@@ -7,8 +7,8 @@
 
 ## Summary
 
-33+ tech events across 12 days in Bengaluru (Bangalore), India's tech capital.
-18 free events | 8 hackathons | $150,000+ in prizes
+38+ tech events across 12 days in Bengaluru (Bangalore), India's tech capital.
+20 free events | 12 hackathons | $165,000+ in prizes
 Companies represented: OpenAI, Y Combinator, Amazon Web Services, Meta, Google, ElevenLabs, Hugging Face, Databricks, PyTorch Foundation
 Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
 
@@ -376,7 +376,7 @@ Find more events in Bengaluru on these platforms:
 ## Frequently Asked Questions
 
 Q: What tech events are happening in Bengaluru in April 2026?
-A: Over 33 events are happening from April 15-26, 2026, including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS Developer Summit, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and many more. Full list at https://bengaluru-events.sagarjethi.com
+A: Over 38 events are happening from April 15-26, 2026, including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS Developer Summit, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and many more. Full list at https://bengaluru-events.sagarjethi.com
 
 Q: Are there free tech events in Bengaluru in April 2026?
 A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit Bengaluru, VibeCon India, JioHotstar ScaleUp 2.0, ElevenLabs Buildathon, Meta PyTorch Hackathon, Golang Bangalore Meetup, GDG Build For Bengaluru, and multiple networking mixers and after-parties.
