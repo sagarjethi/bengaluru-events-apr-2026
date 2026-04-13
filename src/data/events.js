@@ -70,7 +70,7 @@ export const events = [
     venue: 'Bengaluru',
     time: '2 days',
     cost: 'Free to apply',
-    category: 'startup',
+    category: 'hackathon',
     tags: ['YC', 'Vibe Coding', 'Startups', 'Investors'],
     description: "Top 300 builder competition by Emergent (valued at $300M). Winners get direct Y Combinator interviews.",
     link: 'https://vibecon.com/register',
