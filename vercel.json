@@ -22,16 +22,29 @@
       "source": "/llms.txt",
       "headers": [
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" },
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
       ]
     },
     {
       "source": "/llms-full.txt",
       "headers": [
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/events.md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/.well-known/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
         { "key": "Cache-Control", "value": "public, max-age=3600" },
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     },
     {
@@ -56,6 +69,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!assets|llms|sitemap|robots|favicon|og-image|icons).*)", "destination": "/index.html" }
+    { "source": "/((?!assets|llms|events\\.md|sitemap|robots|favicon|og-image|icons|\\.well-known).*)", "destination": "/index.html" }
   ]
 }

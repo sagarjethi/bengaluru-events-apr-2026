@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Bengaluru Events Directory",
+  "name_for_model": "bengaluru_events",
+  "description_for_human": "Complete guide to 33+ tech events, hackathons, conferences, and meetups in Bengaluru, April 15-26, 2026.",
+  "description_for_model": "Use this to find tech events, hackathons, conferences, startup events, and meetups happening in Bengaluru (Bangalore), India in April 2026. Includes event names, dates, venues, costs, registration links, and prize information. Covers events by OpenAI, Y Combinator, AWS, Meta, Google, ElevenLabs, and more.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://bengaluru-events.sagarjethi.com/llms-full.txt"
+  },
+  "logo_url": "https://bengaluru-events.sagarjethi.com/favicon.svg",
+  "contact_email": "sagar.jethi007@gmail.com",
+  "legal_info_url": "https://bengaluru-events.sagarjethi.com"
+}
