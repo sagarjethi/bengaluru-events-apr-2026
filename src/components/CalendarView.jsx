@@ -96,7 +96,7 @@ export default function CalendarView({ onDateSelect, selectedDate }) {
 
       {/* Support Popup */}
       {showSupport && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={handleDismiss}>
+        <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4" onClick={handleDismiss}>
           <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
           <div
             className="relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden animate-[fadeIn_0.3s_ease-out]"
