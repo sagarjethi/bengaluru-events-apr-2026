@@ -82,23 +82,25 @@ export default function EventDetail() {
 
   if (!event) {
     return (
-      <Helmet>
-        <meta name="robots" content="noindex, nofollow" />
-        <title>Event Not Found — Bengaluru Events</title>
-      </Helmet>
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">Event Not Found</h1>
-          <p className="text-slate-500 mb-6">The event you're looking for doesn't exist or has been removed.</p>
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Events
-          </Link>
+      <>
+        <Helmet>
+          <meta name="robots" content="noindex, nofollow" />
+          <title>Event Not Found — Bengaluru Events</title>
+        </Helmet>
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-slate-900 mb-4">Event Not Found</h1>
+            <p className="text-slate-500 mb-6">The event you're looking for doesn't exist or has been removed.</p>
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Events
+            </Link>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
