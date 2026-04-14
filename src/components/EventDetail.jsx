@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
@@ -13,7 +14,26 @@ import {
   Users,
   Sparkles,
   Navigation2,
+  MessageCircle,
+  Copy,
+  Check,
 } from 'lucide-react';
+
+function XIcon({ className = 'w-4 h-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" className={className}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ className = 'w-4 h-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" className={className}>
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.267 2.37 4.267 5.455v6.288zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.778 13.019H3.555V9h3.56v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
 import EventMap from './EventMap';
 import { events, CATEGORIES } from '../data/events';
 import { findEventBySlug, toSlug } from '../utils/slug';
@@ -83,6 +103,7 @@ function getRelatedEvents(event) {
 export default function EventDetail() {
   const { slug } = useParams();
   const event = findEventBySlug(events, slug);
+  const [copied, setCopied] = useState(false);
 
   if (!event) {
     return (
@@ -154,6 +175,23 @@ export default function EventDetail() {
       await navigator.share({ title: event.name, text: event.description, url: eventUrl });
     } else {
       await navigator.clipboard.writeText(eventUrl);
+    }
+  };
+
+  const shareDate = formatDate(event.startDate, event.endDate);
+  const twitterText = `🚀 I'm attending ${event.name} on ${shareDate} in Bengaluru. Check the full BLR April 2026 events directory → ${eventUrl}`;
+  const whatsappText = `Check this out — ${event.name} is happening on ${shareDate} in Bengaluru. Want to go together? ${eventUrl}`;
+  const twitterUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(twitterText)}`;
+  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappText)}`;
+  const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(eventUrl)}`;
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(eventUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(false);
     }
   };
 
@@ -280,6 +318,58 @@ export default function EventDetail() {
                     <span className="text-sm font-semibold text-amber-800">Prize Pool: {event.prize}</span>
                   </div>
                 )}
+              </div>
+
+              {/* Share */}
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
+                <div className="flex items-center gap-2 mb-1">
+                  <Share2 className="w-5 h-5 text-primary-500" />
+                  <h2 className="text-lg font-bold text-slate-900">Share this event</h2>
+                </div>
+                <p className="text-sm text-slate-500 mb-4">
+                  Tell your network — help more builders find this event.
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  <a
+                    href={twitterUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors"
+                    aria-label="Share on X (Twitter)"
+                  >
+                    <XIcon className="w-4 h-4" />
+                    <span>I'm attending</span>
+                  </a>
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-semibold transition-colors"
+                    aria-label="Invite a friend on WhatsApp"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>Invite a friend</span>
+                  </a>
+                  <a
+                    href={linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-[#0A66C2] hover:bg-[#084a91] text-white text-sm font-semibold transition-colors"
+                    aria-label="Share on LinkedIn"
+                  >
+                    <LinkedInIcon className="w-4 h-4" />
+                    <span>LinkedIn</span>
+                  </a>
+                  <button
+                    type="button"
+                    onClick={handleCopyLink}
+                    className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold transition-colors"
+                    aria-label="Copy event link"
+                  >
+                    {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                    <span>{copied ? 'Copied!' : 'Copy link'}</span>
+                  </button>
+                </div>
               </div>
 
               {/* Tags */}

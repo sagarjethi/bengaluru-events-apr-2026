@@ -650,6 +650,24 @@ export const events = [
     lat: 12.9716,
     lng: 77.5946,
   },
+  {
+    id: 43,
+    name: "India's First OpenCode Buildathon",
+    date: 'Apr 19',
+    startDate: '2026-04-19',
+    endDate: '2026-04-19',
+    venue: 'Bengaluru (revealed on registration)',
+    time: '10:00 AM – 6:00 PM (8 hours)',
+    cost: 'Free (application-based)',
+    category: 'hackathon',
+    tags: ['OpenCode', 'GrowthX', 'AI', 'Buildathon', '$100K Prizes'],
+    description: "India's first OpenCode Buildathon — 100 builders, $100K in cash & credits, 8 hours of building. In-person event by GrowthX × OpenCode. Not beginner-friendly — for people who've already shipped and want to push harder. Themes: AI automation, scaling with AI, future of AI. Hosted by Udayan Walvekar (GrowthX), Jay V & Shoubhit Dash (OpenCode). +1 guests allowed. Bring your laptop, charger, and best ideas.",
+    link: 'https://growthx.club/events/indias-first-opencode-buildathon-jtuus',
+    prize: '$100,000 (cash & credits)',
+    lat: 12.9716,
+    lng: 77.5946,
+    featured: true,
+  },
 ];
 
 export const socialBuzz = [

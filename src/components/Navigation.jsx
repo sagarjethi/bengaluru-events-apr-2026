@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Calendar, LayoutGrid, MessageCircle, Link2, MapPin, Menu, X, Home } from 'lucide-react';
+import { Calendar, LayoutGrid, MessageCircle, Link2, MapPin, Menu, X, Home, Code } from 'lucide-react';
 
 const anchorItems = [
   { id: 'calendar', label: 'Calendar', icon: Calendar },
@@ -8,6 +8,7 @@ const anchorItems = [
 ];
 
 const pageItems = [
+  { to: '/hackathons', label: 'Hackathons', icon: Code },
   { to: '/map', label: 'Map', icon: MapPin },
   { to: '/social', label: 'Social', icon: MessageCircle },
 ];
