@@ -7,6 +7,20 @@ export const xPosts = [
     link: 'https://x.com/abhishekpatiil/status/2043615904303636543',
   },
   {
+    name: 'Saxena Saheb',
+    handle: '@saxenasaheb',
+    avatar: 'SS',
+    text: 'WHY C? — A pitch event ONLY for founders rejected by YC. April 19 in Bangalore. Bring your rejection email, pitch the exact idea YC said no to. Real VCs in the audience. Part of Agentic Summer.',
+    link: 'https://x.com/saxenasaheb/status/2042463712263782624',
+  },
+  {
+    name: 'Ratnakar',
+    handle: '@0xratnakar',
+    avatar: 'RK',
+    text: 'If YC rejected you, this is your moment. WHY C? pitch event in Bangalore on April 19 — built for the top 1% who got rejected but will ship anyway. Roast format, genuine feedback.',
+    link: 'https://x.com/0xratnakar/status/2042284892118270282',
+  },
+  {
     name: 'Arsh Goyal',
     handle: '@arsh_goyal',
     avatar: 'AG',
