@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Trophy, Calendar, MapPin, Sparkles, Code, Rocket, ChevronRight, Search, ArrowUpDown } from 'lucide-react';
-import { events } from '../data/events';
+import { Trophy, Calendar, MapPin, Sparkles, Code, Rocket, ChevronRight, Search, ArrowUpDown, X as XClose } from 'lucide-react';
+import { events, calendarDays } from '../data/events';
 import EventCard from './EventCard';
 import { toSlug } from '../utils/slug';
 
@@ -46,8 +46,22 @@ function formatShortDate(iso) {
 export default function HackathonsPage() {
   const [search, setSearch] = useState('');
   const [sortBy, setSortBy] = useState('prize'); // 'prize' | 'date'
+  const [selectedDate, setSelectedDate] = useState(null);
 
   const hackathons = useMemo(() => events.filter((e) => e.category === 'hackathon'), []);
+
+  const hackathonDays = useMemo(() => {
+    return calendarDays.map((d) => {
+      const dayHackathons = hackathons.filter((h) => h.startDate <= d.date && h.endDate >= d.date);
+      return { ...d, count: dayHackathons.length };
+    });
+  }, [hackathons]);
+
+  const selectedDateLabel = useMemo(() => {
+    if (!selectedDate) return null;
+    const day = calendarDays.find((d) => d.date === selectedDate);
+    return day ? `${day.day}, ${day.label}` : selectedDate;
+  }, [selectedDate]);
 
   const totals = useMemo(() => {
     return hackathons.reduce(
@@ -82,6 +96,9 @@ export default function HackathonsPage() {
 
   const filteredSorted = useMemo(() => {
     let list = hackathons;
+    if (selectedDate) {
+      list = list.filter((h) => h.startDate <= selectedDate && h.endDate >= selectedDate);
+    }
     const q = search.trim().toLowerCase();
     if (q) {
       list = list.filter(
@@ -101,7 +118,7 @@ export default function HackathonsPage() {
       list = [...list].sort((a, b) => a.startDate.localeCompare(b.startDate));
     }
     return list;
-  }, [hackathons, search, sortBy]);
+  }, [hackathons, search, sortBy, selectedDate]);
 
   // JSON-LD
   const itemListLd = {
@@ -395,6 +412,66 @@ export default function HackathonsPage() {
           </div>
         </section>
 
+        {/* Hackathon Calendar */}
+        <section
+          id="hackathon-calendar"
+          aria-label="Hackathon calendar for April 15–26, 2026"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10"
+        >
+          <div className="text-center mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Event Calendar</h2>
+            <p className="mt-1 text-sm text-slate-500">Click a date to filter hackathons</p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 divide-x divide-y divide-slate-100">
+              {hackathonDays.map((d) => {
+                const isSelected = selectedDate === d.date;
+                const hasHackathons = d.count > 0;
+                return (
+                  <button
+                    key={d.date}
+                    type="button"
+                    onClick={() => setSelectedDate(isSelected ? null : d.date)}
+                    disabled={!hasHackathons}
+                    aria-label={`${d.day} ${d.label} — ${d.count} hackathon${d.count !== 1 ? 's' : ''}`}
+                    aria-pressed={isSelected}
+                    className={`p-3 sm:p-4 text-center transition-all group ${
+                      hasHackathons
+                        ? 'hover:bg-violet-50 cursor-pointer'
+                        : 'opacity-50 cursor-not-allowed'
+                    } ${isSelected ? 'bg-violet-100 ring-2 ring-inset ring-violet-400' : ''}`}
+                  >
+                    <div className="text-xs font-medium text-slate-400 uppercase">{d.day}</div>
+                    <div
+                      className={`text-xl sm:text-2xl font-bold mt-1 ${
+                        isSelected ? 'text-violet-700' : 'text-slate-800'
+                      }`}
+                    >
+                      {d.label.split(' ')[1]}
+                    </div>
+                    <div className="text-xs text-slate-400 mt-0.5">Apr</div>
+                    <div className="mt-2 flex flex-wrap justify-center gap-1 min-h-[10px]">
+                      {Array.from({ length: Math.min(d.count, 4) }).map((_, i) => (
+                        <span key={i} className="w-2 h-2 rounded-full bg-violet-500" />
+                      ))}
+                      {d.count > 4 && (
+                        <span className="text-[10px] text-slate-400 font-medium">+{d.count - 4}</span>
+                      )}
+                    </div>
+                    <div
+                      className={`text-xs mt-1 font-medium ${
+                        isSelected ? 'text-violet-600' : hasHackathons ? 'text-slate-500' : 'text-slate-400'
+                      }`}
+                    >
+                      {d.count} hackathon{d.count !== 1 ? 's' : ''}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* Filters + Grid */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
@@ -402,7 +479,19 @@ export default function HackathonsPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-slate-900">All Hackathons</h2>
               <p className="text-sm text-slate-500 mt-1">
                 Showing {filteredSorted.length} of {hackathons.length}
+                {selectedDate && selectedDateLabel ? ` on ${selectedDateLabel}` : ''}
               </p>
+              {selectedDate && (
+                <button
+                  type="button"
+                  onClick={() => setSelectedDate(null)}
+                  className="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-violet-100 text-violet-700 hover:bg-violet-200 transition-colors"
+                  aria-label="Clear date filter"
+                >
+                  {selectedDateLabel}
+                  <XClose className="w-3 h-3" />
+                </button>
+              )}
             </div>
             <div className="flex items-center gap-2">
               <div className="relative flex-1 sm:w-60">
