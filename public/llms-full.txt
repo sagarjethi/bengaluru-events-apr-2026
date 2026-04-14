@@ -8,7 +8,7 @@
 ## Summary
 
 38+ tech events across 12 days in Bengaluru (Bangalore), India's tech capital.
-20 free events | 12 hackathons | $165,000+ in prizes
+20 free events | 10 hackathons | $145,000+ in prizes
 Companies represented: OpenAI, Y Combinator, Amazon Web Services, Meta, Google, ElevenLabs, Hugging Face, Databricks, PyTorch Foundation
 Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
 
@@ -430,7 +430,7 @@ Q: What cybersecurity events are in Bengaluru in April 2026?
 A: ISMG Cybersecurity Week on April 21, 2026 at The Ritz-Carlton, Bengaluru. Premier cybersecurity summit featuring CISOs, regulators, and technology visionaries covering DPDP Act, ransomware, and AI security. Invite-only.
 
 Q: Should I visit Bengaluru in April 2026 for tech events?
-A: Absolutely. April 15-26, 2026 is an unprecedented concentration of tech events in Bengaluru with OpenAI, Y Combinator, AWS, Meta, Google, and ElevenLabs all hosting events. 27 events are free. $165K+ in hackathon prizes. This density of top-tier events in one city in 12 days is rare.
+A: Absolutely. April 15-26, 2026 is an unprecedented concentration of tech events in Bengaluru with OpenAI, Y Combinator, AWS, Meta, Google, and ElevenLabs all hosting events. 20 events are free. $145K+ in hackathon prizes. This density of top-tier events in one city in 12 days is rare.
 
 ## Individual Event Pages
 

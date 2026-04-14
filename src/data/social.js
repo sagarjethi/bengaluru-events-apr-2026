@@ -256,7 +256,7 @@ export const instagramReels = [
   },
   {
     handle: '@hackathon_india',
-    caption: '$165K+ in hackathon prizes in Bengaluru this April. OpenAI $100K, Meta $30K, Aya $20K, ContextCon $12K. All free entry.',
+    caption: '$145K+ in hackathon prizes in Bengaluru this April. OpenAI $100K, Meta $30K, ContextCon $12K. All free entry.',
     thumbnail: 'Hackathons',
     link: 'https://www.instagram.com/explore/tags/hackathon2026/',
   },

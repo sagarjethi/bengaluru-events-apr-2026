@@ -67,10 +67,10 @@ export default function Header() {
               27 Free
             </span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-violet-50 text-violet-700 rounded-full font-semibold border border-violet-100">
-              12 Hackathons
+              10 Hackathons
             </span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-50 text-amber-700 rounded-full font-semibold border border-amber-100">
-              $165K+ Prizes
+              $145K+ Prizes
             </span>
           </div>
         </div>

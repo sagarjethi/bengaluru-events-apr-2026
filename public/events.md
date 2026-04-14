@@ -1,6 +1,6 @@
 # Bengaluru Tech Events — April 15–26, 2026
 
-> 38+ events | 20 free | 12 hackathons | $165K+ prizes
+> 38 events | 20 free | 10 hackathons | $145K+ prizes
 > Website: https://bengaluru-events.sagarjethi.com
 > Built by Sagar Jethi — https://sagarjethi.com | https://x.com/sagarbjethi | https://linkedin.com/in/sagarjethi
 

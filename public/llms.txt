@@ -11,7 +11,7 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 
 - 38+ events across 12 days (April 15–26, 2026)
 - 27 free events (no ticket cost)
-- 12 hackathons with $165,000+ in total prizes
+- 10 hackathons with $145,000+ in total prizes
 - Location: Bengaluru (also known as Bangalore), Karnataka, India
 - Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
 
@@ -45,19 +45,17 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 
 ## Featured Events (Highlights)
 
-### Hackathons (12 total, $165K+ in prizes)
+### Hackathons (10 total, $145K+ in prizes)
 - OpenAI Codex Hackathon — Apr 16 — $100,000 prizes — Free — OpenAI's first India hackathon
 - Meta PyTorch OpenEnv Hackathon — Apr 25–26 — $30,000 prizes — Free — Meta + Hugging Face
-- Aya AI Hackathon — Apr 21–25 — $20,000+ prizes — Free — DeFi + AI Agents + MCP tools
+- ContextCon — YC x Crustdata Hackathon — Apr 19 — $12,000 prizes — Free — YC's first hackathon in India
+- Lyzr Agentathon — Apr 25 — ₹2 Lakh prizes — Free — AI agents + Lyzr Architect
+- HackBLR by Geekroom — Apr 26 — ₹25,000+ prizes — Free — AI Agents, Voice AI, LLM
 - ElevenLabs Buildathon — Apr 18–19 — Free — Voice AI / Conversational AI
 - HackBricks 2026 — Apr 24 — Free — ACM x Databricks, 24-hour
 - GDG Build For Bengaluru — Apr 25 — Free — Google, 30-hour, social impact
-- HackBLR by Geekroom — Apr 26 — Free — AI Agents, Voice AI, LLM
 - VibeCon India 2026 — Apr 16–17 — Free — Top 300 builder competition, direct YC interviews — https://vibecon.com
 - Codex Community Hackathon — Apr 16 — Free — Community OpenAI Codex
-- ContextCon — YC x Crustdata Hackathon — Apr 19 — $12,000 prizes — Free — YC's first hackathon in India
-- Lyzr Agentathon — Apr 19–20 — ₹2 Lakh prizes — Free — AI agents + vibe coding
-- Hack Days in Bengaluru — Apr 22 — Free — 12-hour in-person hackathon sprints
 
 ### Conferences
 - AWS Summit Bengaluru — Apr 22–23 — Free — Agentic AI, serverless, Amazon Bedrock
@@ -100,7 +98,7 @@ Q: Are there free tech events in Bengaluru in April 2026?
 A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, VibeCon, Meta PyTorch Hackathon, and more.
 
 Q: What hackathons are happening in Bengaluru in April 2026?
-A: 12 hackathons with $165K+ prizes: OpenAI Codex ($100K), Meta PyTorch ($30K), Aya AI ($20K+), ContextCon YC x Crustdata ($12K), VibeCon India, ElevenLabs Buildathon, Lyzr Agentathon (₹2L), HackBricks, GDG Build For Bengaluru, HackBLR, Hack Days in Bengaluru, and Codex Community Hackathon.
+A: 10 hackathons with $145K+ prizes: OpenAI Codex ($100K), Meta PyTorch ($30K), ContextCon YC x Crustdata ($12K), Lyzr Agentathon (₹2L), HackBLR (₹25K+), VibeCon India, ElevenLabs Buildathon, HackBricks, GDG Build For Bengaluru, and Codex Community Hackathon.
 
 Q: What is the biggest tech event in Bengaluru in April 2026?
 A: AWS Summit Bengaluru (free, 2 days), GIDS Developer Summit (4 days, Asia-Pacific's largest), and YC Startup School India (2,000 seats, YC's first India event).

@@ -139,12 +139,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/aya-ai-hackathon</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/aws-summit-bengaluru-2026</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -200,12 +194,6 @@
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/ai-tinkerers-bengaluru</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/hack-days-in-bengaluru</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
