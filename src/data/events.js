@@ -633,9 +633,33 @@ export const events = [
     lat: 12.9716,
     lng: 77.5946,
   },
+  {
+    id: 40,
+    name: 'OpenAI Codex Hackathon — Spectator Pass',
+    date: 'Apr 16',
+    startDate: '2026-04-16',
+    endDate: '2026-04-16',
+    venue: 'Bengaluru, Karnataka',
+    time: '11:30 AM – 2:00 PM',
+    cost: 'Free',
+    category: 'meetup',
+    tags: ['OpenAI', 'Codex', 'Demo Showcase', 'Networking', 'GrowthX'],
+    description: 'Spectator pass to the OpenAI Codex Hackathon — demo showcase + networking with 100+ AI professionals. Hosted by Gabriel Chua (OpenAI), Harshit M (OpenAI), Abhishek Patil (GrowthX), Yashraj Nayak (Databricks). Does NOT include builder access.',
+    link: 'https://growthx.club/events/69d7943c72aa94126207b5dc',
+    lat: 12.9716,
+    lng: 77.5946,
+  },
 ];
 
 export const socialBuzz = [
+  {
+    name: 'Abhishek Patil',
+    handle: '@abhishekpatiil',
+    avatar: 'AP',
+    text: 'The OpenAI Codex Hackathon is coming to Bengaluru on April 16! Spectator passes open — demo showcase + networking with 100+ AI professionals. Hosted with Gabriel Chua & Harshit from OpenAI.',
+    link: 'https://x.com/abhishekpatiil/status/2043615904303636543',
+    platform: 'twitter',
+  },
   {
     name: 'Arsh Goyal',
     handle: '@arsh_goyal',

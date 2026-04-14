@@ -1,5 +1,12 @@
 export const xPosts = [
   {
+    name: 'Abhishek Patil',
+    handle: '@abhishekpatiil',
+    avatar: 'AP',
+    text: 'The OpenAI Codex Hackathon is coming to Bengaluru on April 16! Spectator passes open — demo showcase + networking with 100+ AI professionals. Hosted with Gabriel Chua & Harshit from OpenAI.',
+    link: 'https://x.com/abhishekpatiil/status/2043615904303636543',
+  },
+  {
     name: 'Arsh Goyal',
     handle: '@arsh_goyal',
     avatar: 'AG',
