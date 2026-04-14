@@ -17,6 +17,10 @@ import {
 import EventMap from './EventMap';
 import { events, CATEGORIES } from '../data/events';
 import { findEventBySlug, toSlug } from '../utils/slug';
+import { buildGoogleCalendarUrl, downloadIcs } from '../utils/calendar';
+import Countdown from './Countdown';
+import EmailCapture from './EmailCapture';
+import { CalendarPlus } from 'lucide-react';
 
 function getCategoryGradient(category) {
   const gradients = {
@@ -259,11 +263,9 @@ export default function EventDetail() {
             <div className="lg:col-span-2 space-y-6">
               {/* Countdown Card */}
               <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-                <div className="flex items-center gap-3 mb-1">
-                  <div className={`w-2.5 h-2.5 rounded-full ${daysUntil === 'Event has passed' ? 'bg-slate-400' : daysUntil === 'Happening today!' ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`} />
-                  <span className={`text-sm font-semibold ${daysUntil === 'Happening today!' ? 'text-emerald-600' : 'text-slate-600'}`}>
-                    {daysUntil}
-                  </span>
+                <div className="flex flex-wrap items-center gap-3">
+                  <Countdown startDate={event.startDate} endDate={event.endDate} />
+                  <span className="text-sm text-slate-500">{daysUntil}</span>
                 </div>
               </div>
 
@@ -414,17 +416,52 @@ export default function EventDetail() {
                   )}
                 </div>
 
+                {/* Add to Calendar */}
+                <div className="mt-2 grid grid-cols-2 gap-2">
+                  <a
+                    href={buildGoogleCalendarUrl(event)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium px-3 py-2.5 rounded-xl transition-colors text-xs"
+                  >
+                    <CalendarPlus className="w-3.5 h-3.5" />
+                    Google Cal
+                  </a>
+                  <button
+                    onClick={() => downloadIcs(event)}
+                    className="flex items-center justify-center gap-1.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium px-3 py-2.5 rounded-xl transition-colors text-xs"
+                  >
+                    <CalendarPlus className="w-3.5 h-3.5" />
+                    Apple / .ics
+                  </button>
+                </div>
+
                 {event.lat && event.lng && (
                   <a
                     href={`https://www.google.com/maps/dir/?api=1&destination=${event.lat},${event.lng}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium px-6 py-3 rounded-xl transition-colors text-sm"
+                    className="mt-2 flex items-center justify-center gap-2 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium px-6 py-3 rounded-xl transition-colors text-sm"
                   >
                     <Navigation2 className="w-4 h-4" />
                     Get Directions
                   </a>
                 )}
+
+                {/* Notify me email capture */}
+                <div className="mt-5 pt-5 border-t border-slate-200">
+                  <p className="text-xs font-semibold text-slate-700 mb-2">
+                    Get reminded before this event
+                  </p>
+                  <EmailCapture
+                    variant="compact"
+                    placeholder="you@example.com"
+                    cta="Notify me"
+                    source={`event-detail:${toSlug(event.name)}`}
+                    tag={event.category}
+                    successMessage="We'll remind you!"
+                  />
+                </div>
 
                 {/* Share */}
                 <button

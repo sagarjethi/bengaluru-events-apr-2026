@@ -13,6 +13,7 @@ import EventDetail from './components/EventDetail';
 import SocialPage from './components/SocialPage';
 import TweetSupportModal from './components/TweetSupportModal';
 import MapPage from './components/MapPage';
+import HappeningNow from './components/HappeningNow';
 
 function HomePage() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -21,6 +22,7 @@ function HomePage() {
     <div className="min-h-screen">
       <SEO />
       <Header />
+      <HappeningNow />
       <Stats />
       <CalendarView selectedDate={selectedDate} onDateSelect={setSelectedDate} />
       <EventsGrid selectedDate={selectedDate} />

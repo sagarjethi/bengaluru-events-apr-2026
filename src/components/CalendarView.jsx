@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { calendarDays, events, CATEGORIES } from '../data/events';
 import { ExternalLink, Heart, X } from 'lucide-react';
+import EmailCapture from './EmailCapture';
 
 const TWEET_URL = 'https://x.com/sagarbjethi/status/2043607049679057396';
 const FOLLOW_URL = 'https://x.com/intent/follow?screen_name=sagarbjethi';
@@ -146,6 +147,22 @@ export default function CalendarView({ onDateSelect, selectedDate }) {
                   Follow @sagarbjethi
                 </a>
               </div>
+
+              {/* Divider */}
+              <div className="flex items-center gap-3 my-4">
+                <div className="flex-1 h-px bg-slate-200" />
+                <span className="text-xs text-slate-400 font-medium">or just get email updates</span>
+                <div className="flex-1 h-px bg-slate-200" />
+              </div>
+
+              {/* Email capture */}
+              <EmailCapture
+                variant="compact"
+                placeholder="you@example.com"
+                cta="Subscribe"
+                source="calendar-modal"
+                successMessage="Subscribed 🙏"
+              />
 
             </div>
           </div>

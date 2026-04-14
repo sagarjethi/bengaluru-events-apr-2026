@@ -1,4 +1,5 @@
 import { Calendar, MapPin, Sparkles, Zap } from 'lucide-react';
+import EmailCapture from './EmailCapture';
 
 export default function Header() {
   return (
@@ -58,6 +59,18 @@ export default function Header() {
             <a href="#events" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-6 py-2.5 rounded-lg font-medium transition-colors shadow-sm">
               Browse Events
             </a>
+          </div>
+
+          {/* Email capture */}
+          <div className="mt-8 pt-6 border-t border-slate-200/60">
+            <EmailCapture
+              variant="stacked"
+              label="Get daily event drops — free, no spam"
+              placeholder="you@example.com"
+              cta="Subscribe"
+              source="header"
+              successMessage="You're in! Check your inbox."
+            />
           </div>
         </div>
       </div>

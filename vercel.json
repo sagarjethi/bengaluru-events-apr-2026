@@ -69,6 +69,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!assets|llms|events\\.md|sitemap|robots|favicon|og-image|apple-touch-icon|icons|\\.well-known).*)", "destination": "/index.html" }
+    { "source": "/((?!api|assets|llms|events\\.md|sitemap|robots|favicon|og-image|apple-touch-icon|icons|\\.well-known).*)", "destination": "/index.html" }
   ]
 }

@@ -1,4 +1,5 @@
 import { Heart } from 'lucide-react';
+import EmailCapture from './EmailCapture';
 
 function XIcon({ className = 'w-4 h-4' }) {
   return (
@@ -17,6 +18,18 @@ export default function Footer() {
           <p className="text-sm text-slate-500 mb-5">
             April 15–26, 2026 &middot; Your guide to tech events in India's Silicon Valley
           </p>
+
+          {/* Email capture */}
+          <div className="mb-6 pb-6 border-b border-slate-200/60">
+            <EmailCapture
+              variant="stacked"
+              label="Never miss a Bengaluru tech event"
+              placeholder="you@example.com"
+              cta="Get Alerts"
+              source="footer"
+              successMessage="Subscribed! Watch your inbox."
+            />
+          </div>
 
           {/* Follow CTA */}
           <div className="mb-5">

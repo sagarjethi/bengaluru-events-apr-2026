@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { X, Heart, ExternalLink } from 'lucide-react';
+import EmailCapture from './EmailCapture';
 
 const TWEET_URL = 'https://x.com/sagarbjethi/status/2043607049679057396';
 const STORAGE_KEY = 'tweet-support-dismissed';
@@ -84,6 +85,25 @@ export default function TweetSupportModal() {
             Like the tweet on X
             <ExternalLink className="w-3.5 h-3.5 opacity-60" />
           </button>
+
+          {/* Divider */}
+          <div className="flex items-center gap-3 my-4">
+            <div className="flex-1 h-px bg-slate-200" />
+            <span className="text-xs text-slate-400 font-medium">or</span>
+            <div className="flex-1 h-px bg-slate-200" />
+          </div>
+
+          {/* Email alternative */}
+          <div>
+            <p className="text-xs text-slate-500 text-center mb-2">Prefer email? Get event drops in your inbox:</p>
+            <EmailCapture
+              variant="compact"
+              placeholder="you@example.com"
+              cta="Subscribe"
+              source="tweet-modal"
+              successMessage="Subscribed! Thanks 🙏"
+            />
+          </div>
 
         </div>
       </div>
