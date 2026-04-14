@@ -634,6 +634,22 @@ export const events = [
     lat: 12.9716,
     lng: 77.5946,
   },
+  {
+    id: 42,
+    name: 'Side Quest: Builders Brunch',
+    date: 'Apr 19',
+    startDate: '2026-04-19',
+    endDate: '2026-04-19',
+    venue: 'Bengaluru, Karnataka',
+    time: '11:00 AM – 3:00 PM',
+    cost: 'Free',
+    category: 'meetup',
+    tags: ['Builders', 'Engineers', 'Brunch', 'Networking'],
+    description: 'Laid-back brunch for builders, engineers, and anyone passionate about shipping cool stuff. No agenda, no talks — just good food, coffee, and meaningful conversations.',
+    link: 'https://luma.com/ojffizit',
+    lat: 12.9716,
+    lng: 77.5946,
+  },
 ];
 
 export const socialBuzz = [
