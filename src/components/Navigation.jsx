@@ -5,23 +5,22 @@ import { Calendar, LayoutGrid, MessageCircle, Link2, MapPin, Menu, X, Home } fro
 const anchorItems = [
   { id: 'calendar', label: 'Calendar', icon: Calendar },
   { id: 'events', label: 'Events', icon: LayoutGrid },
-  { id: 'platforms', label: 'Platforms', icon: Link2 },
 ];
 
 const pageItems = [
-  { to: '/social', label: 'Social Buzz', icon: MessageCircle },
   { to: '/map', label: 'Map', icon: MapPin },
+  { to: '/social', label: 'Social', icon: MessageCircle },
 ];
 
 export default function Navigation() {
-  const [isSticky, setIsSticky] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
   useEffect(() => {
-    const handleScroll = () => setIsSticky(window.scrollY > 200);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -29,7 +28,7 @@ export default function Navigation() {
   const getAnchorHref = (id) => isHomePage ? `#${id}` : `/#${id}`;
 
   return (
-    <nav className={`z-50 transition-all duration-300 ${isSticky ? 'fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200' : 'bg-white border-b border-slate-200'}`}>
+    <nav className={`sticky top-0 z-50 transition-all duration-200 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200' : 'bg-white/80 backdrop-blur-sm border-b border-slate-200/60'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           <Link to="/" className="font-bold text-slate-800 text-lg hover:text-primary-600 transition-colors">BLR Events</Link>
