@@ -16,6 +16,7 @@ import MapPage from './components/MapPage';
 import HappeningNow from './components/HappeningNow';
 import HackathonsPage from './components/HackathonsPage';
 import BuilderResourcesHub from './components/BuilderResourcesHub';
+import AcceleratorsPage from './components/AcceleratorsPage';
 
 function HomePage() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -45,6 +46,7 @@ export default function App() {
         <Route path="/events/:slug" element={<EventDetail />} />
         <Route path="/hackathons" element={<HackathonsPage />} />
         <Route path="/hackathons/resources" element={<BuilderResourcesHub />} />
+        <Route path="/accelerators" element={<AcceleratorsPage />} />
         <Route path="/social" element={<SocialPage />} />
         <Route path="/map" element={<MapPage />} />
       </Routes>

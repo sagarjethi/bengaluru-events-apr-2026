@@ -15,10 +15,11 @@ const ROOT = path.resolve(__dirname, '..');
 const RES = path.join(ROOT, 'src/data/resources');
 
 const required = {
-  tool:   ['id', 'name', 'vendor', 'url', 'docsUrl', 'category', 'themes', 'blurb', 'freeTier', 'verifiedOn'],
-  skill:  ['id', 'title', 'category', 'priority', 'themes', 'oneLiner', 'how', 'whyItWins', 'verifiedOn'],
-  guide:  ['id', 'title', 'author', 'url', 'format', 'themes', 'blurb', 'verifiedOn'],
-  winner: ['id', 'name', 'hackathon', 'url', 'themes', 'verifiedOn'],
+  tool:        ['id', 'name', 'vendor', 'url', 'docsUrl', 'category', 'themes', 'blurb', 'freeTier', 'verifiedOn'],
+  skill:       ['id', 'title', 'category', 'priority', 'themes', 'oneLiner', 'how', 'whyItWins', 'verifiedOn'],
+  guide:       ['id', 'title', 'author', 'url', 'format', 'themes', 'blurb', 'verifiedOn'],
+  winner:      ['id', 'name', 'hackathon', 'url', 'themes', 'verifiedOn'],
+  accelerator: ['id', 'name', 'url', 'tagline', 'verifiedOn'],
 };
 
 const allowed403 = JSON.parse(
@@ -26,11 +27,14 @@ const allowed403 = JSON.parse(
 );
 
 async function main() {
+  const ACC = path.join(ROOT, 'src/data');
+
   const mods = {
-    tools:   (await import(pathToFileURL(path.join(RES, 'tools.js')).href)).tools,
-    skills:  (await import(pathToFileURL(path.join(RES, 'skills.js')).href)).skills,
-    guides:  (await import(pathToFileURL(path.join(RES, 'guides.js')).href)).guides,
-    winners: (await import(pathToFileURL(path.join(RES, 'winners.js')).href)).winners,
+    tools:        (await import(pathToFileURL(path.join(RES, 'tools.js')).href)).tools,
+    skills:       (await import(pathToFileURL(path.join(RES, 'skills.js')).href)).skills,
+    guides:       (await import(pathToFileURL(path.join(RES, 'guides.js')).href)).guides,
+    winners:      (await import(pathToFileURL(path.join(RES, 'winners.js')).href)).winners,
+    accelerators: (await import(pathToFileURL(path.join(ACC, 'accelerators.js')).href)).accelerators,
   };
   const taxonomy = await import(pathToFileURL(path.join(RES, 'taxonomy.js')).href);
 
@@ -76,6 +80,10 @@ async function main() {
   }
   for (const g of mods.guides)  { checkRequired(g, 'guide',  'guide');  checkThemes(g, 'guide'); }
   for (const w of mods.winners) { checkRequired(w, 'winner', 'winner'); checkThemes(w, 'winner'); }
+  for (const a of mods.accelerators) {
+    checkRequired(a, 'accelerator', 'accelerator');
+    if (a.tagline && a.tagline.length > 200) warnings.push(`accelerator ${a.id}: tagline > 200 chars (${a.tagline.length})`);
+  }
 
   // Link checks
   const urls = new Map(); // url → list of "label"
@@ -90,6 +98,10 @@ async function main() {
     add(t.docsUrl, `tool:${t.id}.docsUrl`);
   }
   for (const g of mods.guides) add(g.url, `guide:${g.id}.url`);
+  for (const a of mods.accelerators) {
+    add(a.url, `accelerator:${a.id}.url`);
+    if (a.applyUrl) add(a.applyUrl, `accelerator:${a.id}.applyUrl`);
+  }
   for (const w of mods.winners) {
     add(w.url, `winner:${w.id}.url`);
     if (w.demoUrl) add(w.demoUrl, `winner:${w.id}.demoUrl`);
@@ -121,6 +133,14 @@ async function main() {
   );
   for (const r of results) {
     if (r.error) {
+      // Some real sites fail Node's strict TLS (self-signed chain, older CAs,
+      // or WAFs that block our UA entirely). If the host is pre-allowlisted,
+      // treat any fetch failure as a warning rather than an error.
+      const certErrorHosts = allowed403.certErrorHosts || [];
+      if (certErrorHosts.includes(r.host)) {
+        warnings.push(`link ${r.u}: ${r.error} — ${r.host} allowlisted (TLS/WAF quirk), manually verified`);
+        continue;
+      }
       errors.push(`link error: ${r.u} — ${r.error} (used by ${r.labels.join(', ')})`);
       continue;
     }
@@ -145,7 +165,7 @@ async function main() {
   for (const w of warnings) console.warn('WARN ', w);
   for (const e of errors)   console.error('ERROR', e);
   console.log(`\n${errors.length} error(s), ${warnings.length} warning(s)`);
-  const totalEntries = mods.tools.length + mods.skills.length + mods.guides.length + mods.winners.length;
+  const totalEntries = mods.tools.length + mods.skills.length + mods.guides.length + mods.winners.length + mods.accelerators.length;
   console.log(`checked ${urls.size} unique URL(s) across ${totalEntries} entries`);
   process.exit(errors.length ? 1 : 0);
 }
