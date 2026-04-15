@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
   Rocket, Search, ChevronRight, ArrowRight, ExternalLink as LinkIcon,
-  Building2, Mail, ShieldCheck, Bell,
+  Building2, ShieldCheck, Bell,
 } from 'lucide-react';
 import ExternalLink from './ExternalLink';
 import EmailCapture from './EmailCapture';
+import RevealEmailButton from './RevealEmailButton';
 import {
   accelerators,
   ACCELERATOR_SECTORS,
@@ -458,15 +459,7 @@ function AcceleratorCard({ accelerator: a }) {
             {a.applyUrl ? 'Apply' : 'Visit'}
             <LinkIcon className="w-3 h-3" />
           </ExternalLink>
-          {a.publicEmail && (
-            <ExternalLink
-              href={`mailto:${a.publicEmail}`}
-              className="inline-flex items-center gap-1 text-slate-500 hover:text-slate-700"
-              title={`Public contact: ${a.publicEmail}`}
-            >
-              <Mail className="w-3 h-3" /> Email
-            </ExternalLink>
-          )}
+          <RevealEmailButton accelerator={a} />
           {a.linkedin && (
             <ExternalLink
               href={a.linkedin}

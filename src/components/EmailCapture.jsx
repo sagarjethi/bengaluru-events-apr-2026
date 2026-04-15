@@ -22,6 +22,7 @@ export default function EmailCapture({
   successMessage = "You're in! Check your inbox.",
   tag,
   compact = false,
+  onSuccess,
 }) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle'); // idle | loading | success | error
@@ -59,7 +60,11 @@ export default function EmailCapture({
       }
 
       setStatus('success');
+      const submittedEmail = email;
       setEmail('');
+      if (typeof onSuccess === 'function') {
+        try { onSuccess(submittedEmail); } catch { /* ignore consumer errors */ }
+      }
     } catch (err) {
       setStatus('error');
       setErrorMsg(err.message || 'Something went wrong. Please try again.');
