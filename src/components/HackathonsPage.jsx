@@ -5,38 +5,15 @@ import { Trophy, Calendar, MapPin, Sparkles, Code, Rocket, ChevronRight, Search,
 import { events, calendarDays } from '../data/events';
 import EventCard from './EventCard';
 import { toSlug } from '../utils/slug';
+import {
+  INR_PER_USD,
+  parsePrizeUsd,
+  parsePrizeBuckets,
+  formatUsdCompact,
+  formatInrCompact,
+} from '../utils/stats';
 
-const INR_PER_USD = 85;
 const PAGE_URL = 'https://bengaluru-events.sagarjethi.com/hackathons';
-
-function parsePrizeUsd(prize) {
-  if (!prize) return 0;
-  const match = prize.match(/([$₹])([\d,]+)/);
-  if (!match) return 0;
-  const amount = parseInt(match[2].replace(/,/g, ''), 10);
-  return match[1] === '$' ? amount : Math.round(amount / INR_PER_USD);
-}
-
-function parsePrizeBuckets(prize) {
-  if (!prize) return { usd: 0, inr: 0 };
-  const match = prize.match(/([$₹])([\d,]+)/);
-  if (!match) return { usd: 0, inr: 0 };
-  const amount = parseInt(match[2].replace(/,/g, ''), 10);
-  return match[1] === '$' ? { usd: amount, inr: 0 } : { usd: 0, inr: amount };
-}
-
-function formatUsdCompact(n) {
-  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(1)}M`;
-  if (n >= 1000) return `$${Math.round(n / 1000)}K`;
-  return `$${n}`;
-}
-
-function formatInrCompact(n) {
-  if (n >= 10_000_000) return `₹${(n / 10_000_000).toFixed(2)} Cr`;
-  if (n >= 100_000) return `₹${(n / 100_000).toFixed(n % 100_000 === 0 ? 0 : 2)}L`;
-  if (n >= 1000) return `₹${Math.round(n / 1000)}K`;
-  return `₹${n}`;
-}
 
 function formatShortDate(iso) {
   const d = new Date(iso + 'T00:00:00');

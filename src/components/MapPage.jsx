@@ -5,6 +5,7 @@ import { ArrowLeft, MapPin, Filter } from 'lucide-react';
 import { events, CATEGORIES } from '../data/events';
 import { toSlug } from '../utils/slug';
 import EventMap from './EventMap';
+import { EVENT_COUNT } from '../utils/stats';
 
 const CATEGORY_COLORS = {
   conference: '#5a78f2',
@@ -32,7 +33,7 @@ export default function MapPage() {
     <>
       <Helmet>
         <title>Event Map — Bengaluru Events April 2026 | Find Venues & Directions</title>
-        <meta name="description" content="Interactive map of 38+ tech events in Bengaluru, April 2026. Find event venues, get directions, and see hackathons, conferences, and meetups near you." />
+        <meta name="description" content={`Interactive map of ${EVENT_COUNT}+ tech events in Bengaluru, April 2026. Find event venues, get directions, and see hackathons, conferences, and meetups near you.`} />
         <meta name="keywords" content="Bengaluru events map, tech events locations Bangalore, hackathon venues Bengaluru, conference locations India, event map April 2026, Bangalore tech venues" />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content="Event Map — Bengaluru Events April 2026" />

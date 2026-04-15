@@ -1,5 +1,6 @@
 import { Calendar, Sparkles, Zap, MapPin } from 'lucide-react';
 import EmailCapture from './EmailCapture';
+import { EVENT_COUNT, FREE_COUNT, HACKATHON_COUNT, TOTAL_PRIZE_LABEL } from '../utils/stats';
 
 export default function Header() {
   return (
@@ -10,7 +11,7 @@ export default function Header() {
           {/* Badge with dates merged */}
           <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            38+ events · Apr 15–26, 2026 · Bengaluru
+            {EVENT_COUNT}+ events · Apr 15–26, 2026 · Bengaluru
           </div>
 
           {/* Compact H1 — single line on desktop, tight on mobile */}
@@ -64,13 +65,13 @@ export default function Header() {
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-[11px] sm:text-xs">
             <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded-full font-semibold border border-emerald-100">
               <Zap className="w-3 h-3" />
-              27 Free
+              {FREE_COUNT} Free
             </span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-violet-50 text-violet-700 rounded-full font-semibold border border-violet-100">
-              10 Hackathons
+              {HACKATHON_COUNT} Hackathons
             </span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-50 text-amber-700 rounded-full font-semibold border border-amber-100">
-              $145K+ Prizes
+              {TOTAL_PRIZE_LABEL} Prizes
             </span>
           </div>
         </div>
