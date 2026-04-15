@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
   Rocket, Search, ChevronRight, ArrowRight, ExternalLink as LinkIcon,
-  Building2, Mail, ShieldCheck,
+  Building2, Mail, ShieldCheck, Bell,
 } from 'lucide-react';
 import ExternalLink from './ExternalLink';
+import EmailCapture from './EmailCapture';
 import {
   accelerators,
   ACCELERATOR_SECTORS,
@@ -30,6 +31,20 @@ export default function AcceleratorsPage() {
     for (const a of accelerators) for (const s of a.sectorFocus || []) if (counts[s] !== undefined) counts[s]++;
     return counts;
   }, []);
+
+  const stats = useMemo(() => {
+    const equityFree = accelerators.filter((a) => a.equity === 'non-dilutive').length;
+    const sectors = new Set();
+    for (const a of accelerators) for (const s of a.sectorFocus || []) sectors.add(s);
+    return {
+      total: accelerators.length,
+      equityFree,
+      sectors: sectors.size,
+      biggestCheque: '$3M', // Surge — verified
+    };
+  }, []);
+
+  const partnerNames = ['Sequoia', 'Accel', 'Google', 'Microsoft', 'Flipkart', 'Zerodha', 'IIM Bangalore', 'NetApp'];
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -105,23 +120,37 @@ export default function AcceleratorsPage() {
           </ol>
         </nav>
 
-        {/* Hero */}
-        <header className="bg-gradient-to-br from-indigo-600 via-primary-600 to-violet-700 relative overflow-hidden">
+        {/* Hero — matches /hackathons gradient + structure for cross-page consistency */}
+        <header className="bg-gradient-to-br from-violet-600 via-primary-600 to-primary-800 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10" aria-hidden="true">
             <div className="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl" />
             <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-white rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white/90 text-xs font-semibold mb-4 border border-white/10">
+            {/* Announcement pill — same pattern as hackathons */}
+            <a
+              href="#subscribe"
+              className="group inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-300/15 hover:bg-amber-300/25 backdrop-blur-sm text-amber-200 text-xs font-semibold mb-3 border border-amber-300/30 transition-colors"
+            >
+              <Bell className="w-3.5 h-3.5" />
+              Get notified the moment any application opens
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+
+            {/* Location pill */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white/90 text-xs font-semibold mb-4 ml-0 sm:ml-2 border border-white/10">
               <Rocket className="w-3.5 h-3.5" />
               Bangalore · 2026
             </div>
+
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight max-w-4xl">
               Don't bet on one door. <span className="text-amber-300">Apply to all {accelerators.length}.</span>
             </h1>
             <p className="mt-4 text-lg md:text-xl text-white/80 max-w-2xl">
               Every major accelerator with a Bangalore presence — sector focus, stage, equity terms, and direct apply links. Verified.
             </p>
+
+            {/* Primary + secondary CTAs */}
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
                 href="#all-accelerators"
@@ -130,12 +159,46 @@ export default function AcceleratorsPage() {
                 Browse all accelerators
                 <ArrowRight className="w-4 h-4" />
               </a>
-              <Link
-                to="/hackathons"
+              <a
+                href="#subscribe"
                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-sm border border-white/20 transition-colors"
               >
-                ← Back to hackathons
-              </Link>
+                <Bell className="w-4 h-4" />
+                Notify me of openings
+              </a>
+            </div>
+
+            {/* Stats grid — same compact pattern as /hackathons */}
+            <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 max-w-3xl">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 border border-white/10">
+                <dt className="text-[10px] font-medium text-white/70 uppercase tracking-wide">Accelerators</dt>
+                <dd className="text-xl md:text-2xl font-bold text-white mt-0.5">{stats.total}</dd>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 border border-white/10">
+                <dt className="text-[10px] font-medium text-white/70 uppercase tracking-wide">Equity-free</dt>
+                <dd className="text-xl md:text-2xl font-bold text-emerald-300 mt-0.5">{stats.equityFree}</dd>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 border border-white/10">
+                <dt className="text-[10px] font-medium text-white/70 uppercase tracking-wide">Sectors covered</dt>
+                <dd className="text-xl md:text-2xl font-bold text-white mt-0.5">{stats.sectors}</dd>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2.5 border border-white/10">
+                <dt className="text-[10px] font-medium text-white/70 uppercase tracking-wide">Biggest cheque</dt>
+                <dd className="text-xl md:text-2xl font-bold text-amber-300 mt-0.5">{stats.biggestCheque}</dd>
+              </div>
+            </dl>
+
+            {/* Trust row — backed-by partners */}
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 text-sm">
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">Featured</span>
+              {partnerNames.map((name) => (
+                <span
+                  key={name}
+                  className="inline-flex items-center px-2 py-0.5 rounded-md bg-white/10 backdrop-blur-sm text-white/80 text-xs font-medium border border-white/10"
+                >
+                  {name}
+                </span>
+              ))}
             </div>
           </div>
         </header>
@@ -246,6 +309,67 @@ export default function AcceleratorsPage() {
               ))}
             </div>
           )}
+        </section>
+
+        {/* Subscribe — get notified when applications open */}
+        <section
+          id="subscribe"
+          aria-labelledby="subscribe-heading"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 scroll-mt-20"
+        >
+          <div className="relative bg-gradient-to-br from-violet-600 via-primary-600 to-primary-800 rounded-2xl overflow-hidden">
+            <div className="absolute inset-0 opacity-10" aria-hidden="true">
+              <div className="absolute -top-16 -right-16 w-72 h-72 bg-white rounded-full blur-3xl" />
+              <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white rounded-full blur-3xl" />
+            </div>
+            <div className="relative grid md:grid-cols-5 gap-6 md:gap-8 p-6 md:p-10 items-center">
+              {/* Copy */}
+              <div className="md:col-span-3">
+                <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-amber-300/20 text-amber-200 text-xs font-bold mb-3 border border-amber-300/30">
+                  <Bell className="w-3 h-3" /> Application alerts
+                </div>
+                <h2 id="subscribe-heading" className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                  Be first when applications open.
+                </h2>
+                <p className="mt-2 text-sm md:text-base text-white/80 leading-relaxed">
+                  Cohorts close fast. Drop your email and we'll send a single-line alert the moment any of these {accelerators.length} accelerators announces a new cohort, deadline, or pop-up program.
+                </p>
+                <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-white/75">
+                  <li className="flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-amber-300" aria-hidden="true" />
+                    One email per opening. No newsletter spam.
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-amber-300" aria-hidden="true" />
+                    Includes deadline, eligibility, apply link.
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-amber-300" aria-hidden="true" />
+                    Unsubscribe in one click.
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-amber-300" aria-hidden="true" />
+                    Free forever. Built for founders.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Form */}
+              <div className="md:col-span-2 bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+                <EmailCapture
+                  variant="stacked"
+                  placeholder="founder@yourstartup.com"
+                  cta="Notify me when applications open"
+                  source="accelerators-page"
+                  tag="accelerator-applications"
+                  successMessage="You're on the list. We'll email you the moment any cohort opens."
+                />
+                <p className="mt-3 text-[11px] text-white/60 leading-relaxed">
+                  We send only when something actually changes — usually 1–2 emails a month around cohort cycles.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Footer CTA */}
