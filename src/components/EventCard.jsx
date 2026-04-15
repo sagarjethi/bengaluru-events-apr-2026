@@ -87,7 +87,7 @@ export default function EventCard({ event }) {
           <a
             href={event.link}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow ugc"
             itemProp="url"
             aria-label={`Register for ${event.name}`}
             className="inline-flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-600 text-sm font-medium px-3 py-2 rounded-lg transition-colors"

@@ -7,36 +7,68 @@
 // If env vars are not set, it logs the email and returns success
 // (prevents UX from breaking during initial setup).
 
-export default async function handler(req, res) {
-  // CORS + method guards
-  if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+// Origins allowed to call this endpoint. Same-origin (empty Origin header)
+// is always allowed — locks cross-site abuse while keeping the site working.
+const ALLOWED_ORIGINS = new Set([
+  'https://bengaluru-events.sagarjethi.com',
+  'https://www.bengaluru-events.sagarjethi.com',
+  'http://localhost:5173',
+  'http://localhost:3000',
+]);
+
+function originAllowed(origin) {
+  if (!origin) return true; // same-origin (no Origin header) / server-to-server
+  if (ALLOWED_ORIGINS.has(origin)) return true;
+  // Allow Vercel preview deployments for this project
+  if (/^https:\/\/[a-z0-9-]+\.vercel\.app$/.test(origin)) return true;
+  return false;
+}
+
+function setCors(res, origin) {
+  if (origin && originAllowed(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    return res.status(200).end();
+  }
+}
+
+export default async function handler(req, res) {
+  const origin = req.headers.origin;
+
+  // CORS preflight — only respond positively to allowed origins
+  if (req.method === 'OPTIONS') {
+    setCors(res, origin);
+    return res.status(originAllowed(origin) ? 204 : 403).end();
   }
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { email, source = 'unknown', tag } = req.body || {};
+  if (!originAllowed(origin)) {
+    return res.status(403).json({ error: 'Origin not allowed' });
+  }
 
-  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  setCors(res, origin);
+
+  const body = req.body || {};
+  const email = typeof body.email === 'string' ? body.email : '';
+  const source = typeof body.source === 'string' ? body.source.slice(0, 64) : 'unknown';
+  const tag = typeof body.tag === 'string' ? body.tag.slice(0, 64) : undefined;
+
+  if (!email || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return res.status(400).json({ error: 'Invalid email' });
   }
 
   const apiKey = process.env.BEEHIIV_API_KEY;
   const pubId = process.env.BEEHIIV_PUBLICATION_ID;
 
-  // Graceful fallback if Beehiiv not configured yet
+  // Graceful fallback if Beehiiv not configured yet. Don't leak the "dev"
+  // flag in the response — clients only need to know it succeeded.
   if (!apiKey || !pubId) {
-    console.log('[subscribe] Beehiiv not configured. Email captured:', { email, source, tag });
-    return res.status(200).json({
-      ok: true,
-      message: 'Subscribed (dev mode)',
-      dev: true,
-    });
+    console.log('[subscribe] Beehiiv not configured; captured source=%s', source);
+    return res.status(200).json({ ok: true });
   }
 
   try {
@@ -63,7 +95,7 @@ export default async function handler(req, res) {
     const data = await beehiivRes.json();
 
     if (!beehiivRes.ok) {
-      console.error('[subscribe] Beehiiv error:', data);
+      console.error('[subscribe] Beehiiv error status=%s', beehiivRes.status);
       return res.status(502).json({
         error: data.errors?.[0]?.message || 'Failed to subscribe',
       });
@@ -71,7 +103,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ ok: true });
   } catch (err) {
-    console.error('[subscribe] Unexpected error:', err);
+    console.error('[subscribe] Unexpected error:', err.message);
     return res.status(500).json({ error: 'Internal error' });
   }
 }

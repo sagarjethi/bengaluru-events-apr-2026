@@ -40,6 +40,7 @@ import { findEventBySlug, toSlug } from '../utils/slug';
 import { buildGoogleCalendarUrl, downloadIcs } from '../utils/calendar';
 import Countdown from './Countdown';
 import EmailCapture from './EmailCapture';
+import EventBuilderGuide from './EventBuilderGuide';
 import { CalendarPlus } from 'lucide-react';
 
 function getCategoryGradient(category) {
@@ -487,7 +488,7 @@ export default function EventDetail() {
                   <a
                     href={event.link}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow ugc"
                     className="flex items-center justify-center gap-2 w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
                   >
                     Register Now
@@ -497,7 +498,7 @@ export default function EventDetail() {
                     <a
                       href={event.website}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow ugc"
                       className="flex items-center justify-center gap-2 w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium px-6 py-3 rounded-xl transition-colors text-sm"
                     >
                       <Globe className="w-4 h-4" />
@@ -565,6 +566,9 @@ export default function EventDetail() {
             </div>
           </div>
         </div>
+
+        {/* Builder Guide (only on events with themes) */}
+        <EventBuilderGuide event={event} />
 
         {/* Footer */}
         <div className="max-w-5xl mx-auto px-4 py-12 mt-6">

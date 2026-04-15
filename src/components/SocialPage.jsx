@@ -113,7 +113,7 @@ export default function SocialPage() {
                   key={i}
                   href={post.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="group block bg-white rounded-xl border border-slate-200 hover:border-slate-400 hover:shadow-md p-5 transition-all"
                 >
                   <div className="flex items-center gap-3 mb-3">
@@ -154,7 +154,7 @@ export default function SocialPage() {
                   key={i}
                   href={post.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="group block bg-white rounded-xl border border-slate-200 hover:border-[#0A66C2]/30 hover:shadow-md p-5 transition-all"
                 >
                   <div className="flex items-center gap-3 mb-3">
@@ -193,7 +193,7 @@ export default function SocialPage() {
                   key={i}
                   href={reel.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="group block bg-white rounded-xl border border-slate-200 hover:border-rose-300 hover:shadow-md overflow-hidden transition-all"
                 >
                   <div className="aspect-[9/16] bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#8134AF] relative flex items-center justify-center">
@@ -256,17 +256,17 @@ export default function SocialPage() {
 
                       <div className="flex items-center gap-2">
                         {person.x && (
-                          <a href={person.x} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium rounded-lg transition-colors">
+                          <a href={person.x} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium rounded-lg transition-colors">
                             <XIcon className="w-3 h-3" /> X
                           </a>
                         )}
                         {person.linkedin && (
-                          <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-[#0A66C2] hover:bg-[#004182] text-white text-xs font-medium rounded-lg transition-colors">
+                          <a href={person.linkedin} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-[#0A66C2] hover:bg-[#004182] text-white text-xs font-medium rounded-lg transition-colors">
                             <LinkedInIcon className="w-3 h-3" /> LinkedIn
                           </a>
                         )}
                         {person.website && (
-                          <a href={person.website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-primary-600 hover:bg-primary-700 text-white text-xs font-medium rounded-lg transition-colors">
+                          <a href={person.website} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-primary-600 hover:bg-primary-700 text-white text-xs font-medium rounded-lg transition-colors">
                             <Globe className="w-3 h-3" /> Website
                           </a>
                         )}
@@ -295,7 +295,7 @@ export default function SocialPage() {
                   key={i}
                   href={deal.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="group block bg-white rounded-xl border border-slate-200 hover:border-amber-300 hover:shadow-md p-5 transition-all"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
@@ -342,7 +342,7 @@ export default function SocialPage() {
                   key={i}
                   href={event.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="group flex items-center gap-4 bg-white rounded-xl border border-slate-200 hover:border-violet-300 hover:shadow-md p-4 transition-all"
                 >
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-violet-700 flex items-center justify-center shrink-0">
@@ -371,7 +371,7 @@ export default function SocialPage() {
               <a
                 href="https://x.com/sagarbjethi"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
               >
                 <XIcon className="w-4 h-4" />
@@ -380,7 +380,7 @@ export default function SocialPage() {
               <a
                 href="https://www.linkedin.com/in/sagarjethi"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="inline-flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
               >
                 <LinkedInIcon className="w-4 h-4" />

@@ -55,7 +55,7 @@ export default function SocialBuzz() {
             key={i}
             href={post.link}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="group block bg-white rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-md p-5 transition-all"
           >
             <div className="flex items-center gap-3 mb-3">
@@ -111,7 +111,7 @@ export default function SocialBuzz() {
               key={i}
               href={deal.link}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="group block bg-white rounded-xl border border-slate-200 hover:border-emerald-300 hover:shadow-md p-5 transition-all"
             >
               <div className="flex items-start justify-between gap-3 mb-3">

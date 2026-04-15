@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run verify:resources && vite build",
+    "build:fast": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify:resources": "node scripts/verify-resources.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

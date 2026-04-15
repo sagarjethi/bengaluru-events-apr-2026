@@ -15,6 +15,7 @@ import TweetSupportModal from './components/TweetSupportModal';
 import MapPage from './components/MapPage';
 import HappeningNow from './components/HappeningNow';
 import HackathonsPage from './components/HackathonsPage';
+import BuilderResourcesHub from './components/BuilderResourcesHub';
 
 function HomePage() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/events/:slug" element={<EventDetail />} />
         <Route path="/hackathons" element={<HackathonsPage />} />
+        <Route path="/hackathons/resources" element={<BuilderResourcesHub />} />
         <Route path="/social" element={<SocialPage />} />
         <Route path="/map" element={<MapPage />} />
       </Routes>

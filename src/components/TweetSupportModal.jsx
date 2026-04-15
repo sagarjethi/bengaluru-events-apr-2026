@@ -4,7 +4,12 @@ import { X, Heart, ExternalLink } from 'lucide-react';
 import EmailCapture from './EmailCapture';
 
 const TWEET_URL = 'https://x.com/sagarbjethi/status/2043607049679057396';
-const STORAGE_KEY = 'tweet-support-dismissed';
+const STORAGE_KEY = 'tweet-support-dismissed-at';
+// Compliant interstitial timing: don't show before user has spent meaningful
+// time on the page, and never re-show within 7 days of a dismissal.
+const SHOW_AFTER_MS = 45_000;          // 45s on page before the prompt appears
+const COOLDOWN_DAYS = 7;
+const COOLDOWN_MS = COOLDOWN_DAYS * 24 * 60 * 60 * 1000;
 
 function XIcon({ className = 'w-5 h-5' }) {
   return (
@@ -14,24 +19,41 @@ function XIcon({ className = 'w-5 h-5' }) {
   );
 }
 
+function recentlyDismissed() {
+  if (typeof window === 'undefined') return true;
+  try {
+    const at = Number(window.localStorage.getItem(STORAGE_KEY) || 0);
+    return at > 0 && Date.now() - at < COOLDOWN_MS;
+  } catch {
+    return true; // fail closed — don't show if storage is unavailable
+  }
+}
+
 export default function TweetSupportModal() {
   const [show, setShow] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    // Only show on inner pages (detail, social, map), not homepage
+    // Never on the homepage (the user just landed); never on inner pages
+    // until they've actually spent time reading.
     if (location.pathname === '/') return;
+    if (recentlyDismissed()) return;
 
-    // Small delay so page renders first
-    const timer = setTimeout(() => setShow(true), 800);
+    const timer = setTimeout(() => setShow(true), SHOW_AFTER_MS);
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
   const handleDismiss = () => {
     setShow(false);
+    try {
+      window.localStorage.setItem(STORAGE_KEY, String(Date.now()));
+    } catch {
+      // Best-effort persistence; safe to ignore failures.
+    }
   };
 
   const handleLike = () => {
+    // noopener/noreferrer on programmatic open; nofollow doesn't apply outside <a>.
     window.open(TWEET_URL, '_blank', 'noopener,noreferrer');
     handleDismiss();
   };
