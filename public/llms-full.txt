@@ -445,8 +445,42 @@ Example URLs:
 
 ---
 
+# COMPANION DIRECTORIES
+
+Beyond the events calendar, this site also publishes:
+
+## /hackathons/resources — Builder Resources Hub
+Free-tier tools, ship-fast skills (incl. security best practices), curated
+guides, and past hackathon-winning projects — verified link-by-link.
+URL: https://bengaluru-events.sagarjethi.com/hackathons/resources
+
+## /accelerators — Bangalore Accelerators (13 verified programs)
+Curated directory with sector focus, stage, equity terms, ticket sizes,
+public contact emails (gated behind subscribe), and direct apply links.
+Each accelerator has a dedicated page at /accelerators/<slug>.
+
+URL: https://bengaluru-events.sagarjethi.com/accelerators
+
+Detail pages:
+- https://bengaluru-events.sagarjethi.com/accelerators/axilor-ventures
+- https://bengaluru-events.sagarjethi.com/accelerators/nsrcel-iimb
+- https://bengaluru-events.sagarjethi.com/accelerators/peakxv-surge
+- https://bengaluru-events.sagarjethi.com/accelerators/accel-atoms
+- https://bengaluru-events.sagarjethi.com/accelerators/turbostart
+- https://bengaluru-events.sagarjethi.com/accelerators/anthill-ventures
+- https://bengaluru-events.sagarjethi.com/accelerators/rainmatter
+- https://bengaluru-events.sagarjethi.com/accelerators/netapp-excellerator
+- https://bengaluru-events.sagarjethi.com/accelerators/flipkart-leap
+- https://bengaluru-events.sagarjethi.com/accelerators/google-for-startups-india
+- https://bengaluru-events.sagarjethi.com/accelerators/microsoft-for-startups
+- https://bengaluru-events.sagarjethi.com/accelerators/ccamp-bangalore
+- https://bengaluru-events.sagarjethi.com/accelerators/ginserv
+
+---
+
 Built by Sagar Jethi (@sagarbjethi)
 Website: https://bengaluru-events.sagarjethi.com
 LinkedIn: https://www.linkedin.com/in/sagarjethi
 Twitter/X: https://x.com/sagarbjethi
 GitHub: https://github.com/sagarjethi/bengaluru-events-apr-2026
+Talk to Sagar (1:1): https://topmate.io/sagarjethi

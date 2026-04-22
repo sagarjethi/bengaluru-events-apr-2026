@@ -109,30 +109,32 @@ export default function EmailCapture({
     );
   }
 
-  // Stacked variant (label on top, form below, centered)
+  // Stacked variant — input on top, button below (always vertical at narrow
+  // widths to avoid cramping; row-form for compact spaces should use 'compact').
   if (variant === 'stacked') {
     return (
-      <div className="w-full max-w-md mx-auto text-center">
+      <div className="w-full">
         {label && (
           <div className="mb-2 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700">
             <Mail className="w-4 h-4 text-primary-500" />
             {label}
           </div>
         )}
-        <form onSubmit={handleSubmit} className="flex gap-2">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-2" noValidate>
           <input
             type="email"
-            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={placeholder}
             disabled={status === 'loading'}
-            className="flex-1 min-w-0 px-3 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-slate-50"
+            aria-invalid={status === 'error'}
+            aria-label="Email address"
+            className="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-slate-50"
           />
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="inline-flex items-center gap-1.5 bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm whitespace-nowrap"
+            className="w-full inline-flex items-center justify-center gap-1.5 bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-semibold px-4 py-2.5 rounded-lg transition-colors text-sm"
           >
             {status === 'loading' ? <Loader2 className="w-4 h-4 animate-spin" /> : (
               <>
@@ -145,7 +147,6 @@ export default function EmailCapture({
         {status === 'error' && (
           <p className="mt-2 text-xs text-rose-600">{errorMsg}</p>
         )}
-        <p className="mt-2 text-xs text-slate-400">No spam. Unsubscribe anytime.</p>
       </div>
     );
   }

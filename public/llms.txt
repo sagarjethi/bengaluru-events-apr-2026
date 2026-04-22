@@ -7,6 +7,12 @@ Author: Sagar Jethi (https://x.com/sagarbjethi)
 Source: https://github.com/sagarjethi/bengaluru-events-apr-2026
 Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 
+## Companion sections
+
+- Hackathons hub: https://bengaluru-events.sagarjethi.com/hackathons
+- Builder Resources (free tools, skills, guides, past winners): https://bengaluru-events.sagarjethi.com/hackathons/resources
+- Bangalore startup accelerators (13 verified programs): https://bengaluru-events.sagarjethi.com/accelerators
+
 ## Key Facts
 
 - 38+ events across 12 days (April 15–26, 2026)
@@ -88,6 +94,26 @@ Every event has a dedicated page with full details, registration links, and rela
 - https://bengaluru-events.sagarjethi.com/events/lyzr-agentathon-2-lakh-vibe-coding-challenge
 
 See all events: https://bengaluru-events.sagarjethi.com
+
+## Bangalore Accelerators (13 verified, separate directory)
+
+A curated, link-verified directory of accelerators with a Bangalore presence. Includes program name, sector focus, stage, equity terms, ticket size, program length, and direct apply links. Per-accelerator detail pages at /accelerators/<slug>.
+
+- Axilor Ventures — seed fund, B2B / health / climate / supply chain — https://bengaluru-events.sagarjethi.com/accelerators/axilor-ventures
+- NSRCEL (IIM Bangalore) — equity-free incubation + accelerator — https://bengaluru-events.sagarjethi.com/accelerators/nsrcel-iimb
+- Surge by Peak XV — up to $3M, 16-week seed program — https://bengaluru-events.sagarjethi.com/accelerators/peakxv-surge
+- Accel Atoms — pre-seed scaling for India / India-origin founders — https://bengaluru-events.sagarjethi.com/accelerators/accel-atoms
+- Turbostart — up to $1M, bi-annual cohort, sector-agnostic — https://bengaluru-events.sagarjethi.com/accelerators/turbostart
+- Anthill Ventures — Speed Scaling for health / climate / urban — https://bengaluru-events.sagarjethi.com/accelerators/anthill-ventures
+- Rainmatter (Zerodha) — patient capital for fintech / climate / health — https://bengaluru-events.sagarjethi.com/accelerators/rainmatter
+- NetApp Excellerator — equity-free deep-tech B2B accelerator — https://bengaluru-events.sagarjethi.com/accelerators/netapp-excellerator
+- Flipkart Leap — $200k–$500k, 16 weeks, Indian e-commerce — https://bengaluru-events.sagarjethi.com/accelerators/flipkart-leap
+- Google for Startups Accelerator: India — equity-free 3-month AI cohort — https://bengaluru-events.sagarjethi.com/accelerators/google-for-startups-india
+- Microsoft for Startups (Founders Hub) — equity-free, up to $150k credits — https://bengaluru-events.sagarjethi.com/accelerators/microsoft-for-startups
+- C-CAMP (DBT, Govt. of India) — biotech, up to ₹50L grant — https://bengaluru-events.sagarjethi.com/accelerators/ccamp-bangalore
+- GINSERV — 6-month deep-tech acceleration program — https://bengaluru-events.sagarjethi.com/accelerators/ginserv
+
+Browse all: https://bengaluru-events.sagarjethi.com/accelerators
 
 ## Frequently Asked Questions
 

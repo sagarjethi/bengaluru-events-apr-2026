@@ -9,7 +9,9 @@
     "instagram.com",
     "medium.com",
     "www.medium.com",
-    "platform.openai.com"
+    "platform.openai.com",
+    "forms.gle",
+    "docs.google.com"
   ],
   "certErrorHosts": [
     "startup.netapp.in",

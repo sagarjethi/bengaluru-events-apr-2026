@@ -201,6 +201,20 @@ export default function AcceleratorsPage() {
                 </span>
               ))}
             </div>
+
+            {/* Subtle "talk to me" link — discoverable but not pushy */}
+            <p className="mt-5 text-xs text-white/60">
+              Stuck choosing one?{' '}
+              <a
+                href="https://topmate.io/sagarjethi"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="underline decoration-white/30 hover:decoration-white/80 hover:text-white transition-colors"
+              >
+                Book a 15-min 1:1 with Sagar
+              </a>{' '}
+              — pick the right one for your stage.
+            </p>
           </div>
         </header>
 
@@ -323,9 +337,9 @@ export default function AcceleratorsPage() {
               <div className="absolute -top-16 -right-16 w-72 h-72 bg-white rounded-full blur-3xl" />
               <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white rounded-full blur-3xl" />
             </div>
-            <div className="relative grid md:grid-cols-5 gap-6 md:gap-8 p-6 md:p-10 items-center">
+            <div className="relative grid lg:grid-cols-2 gap-6 lg:gap-10 p-6 md:p-10 items-center">
               {/* Copy */}
-              <div className="md:col-span-3">
+              <div>
                 <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-amber-300/20 text-amber-200 text-xs font-bold mb-3 border border-amber-300/30">
                   <Bell className="w-3 h-3" /> Application alerts
                 </div>
@@ -355,18 +369,18 @@ export default function AcceleratorsPage() {
                 </ul>
               </div>
 
-              {/* Form */}
-              <div className="md:col-span-2 bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+              {/* Form — full-width below copy until lg, side-by-side at lg+ */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
                 <EmailCapture
                   variant="stacked"
                   placeholder="founder@yourstartup.com"
-                  cta="Notify me when applications open"
+                  cta="Notify me"
                   source="accelerators-page"
                   tag="accelerator-applications"
                   successMessage="You're on the list. We'll email you the moment any cohort opens."
                 />
                 <p className="mt-3 text-[11px] text-white/60 leading-relaxed">
-                  We send only when something actually changes — usually 1–2 emails a month around cohort cycles.
+                  Usually 1–2 emails a month, only when something actually changes.
                 </p>
               </div>
             </div>
@@ -389,7 +403,14 @@ function AcceleratorCard({ accelerator: a }) {
     <article className="bg-white rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-sm transition-all p-5 flex flex-col gap-3">
       <header className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <h3 className="font-bold text-slate-900 leading-tight">{a.name}</h3>
+          <h3 className="font-bold text-slate-900 leading-tight">
+            <Link
+              to={`/accelerators/${a.id}`}
+              className="hover:text-primary-600 transition-colors"
+            >
+              {a.name}
+            </Link>
+          </h3>
           <p className="text-xs text-slate-500 mt-0.5">
             {a.programName && a.programName !== a.name ? `${a.programName} · ` : ''}
             {a.vendor || 'Independent'}
@@ -452,9 +473,16 @@ function AcceleratorCard({ accelerator: a }) {
 
       <footer className="flex items-center justify-between pt-2 mt-auto border-t border-slate-100 text-xs">
         <div className="flex items-center gap-3">
+          <Link
+            to={`/accelerators/${a.id}`}
+            className="inline-flex items-center gap-1 text-primary-600 hover:text-primary-700 font-semibold"
+          >
+            Details
+            <ChevronRight className="w-3 h-3" />
+          </Link>
           <ExternalLink
             href={a.applyUrl || a.url}
-            className="inline-flex items-center gap-1 text-primary-600 hover:text-primary-700 font-semibold"
+            className="inline-flex items-center gap-1 text-slate-600 hover:text-primary-700"
           >
             {a.applyUrl ? 'Apply' : 'Visit'}
             <LinkIcon className="w-3 h-3" />
