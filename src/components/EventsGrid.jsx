@@ -28,7 +28,12 @@ export default function EventsGrid({ selectedDate }) {
       );
     }
 
-    return filtered;
+    // Featured events surface first within the filtered set
+    return filtered.sort((a, b) => {
+      if (a.featured && !b.featured) return -1;
+      if (!a.featured && b.featured) return 1;
+      return a.startDate.localeCompare(b.startDate);
+    });
   }, [selectedDate, activeCategory, search]);
 
   const clearFilters = () => {

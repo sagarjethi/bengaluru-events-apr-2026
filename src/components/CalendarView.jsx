@@ -20,7 +20,13 @@ export default function CalendarView({ onDateSelect, selectedDate }) {
   const [pendingDate, setPendingDate] = useState(null);
 
   const getEventsForDate = (date) => {
-    return events.filter(e => e.startDate <= date && e.endDate >= date);
+    return events
+      .filter(e => e.startDate <= date && e.endDate >= date)
+      .sort((a, b) => {
+        if (a.featured && !b.featured) return -1;
+        if (!a.featured && b.featured) return 1;
+        return 0;
+      });
   };
 
   const handleDateClick = (date, isSelected) => {
