@@ -3,8 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import {
   CalendarRange, Code, Rocket, Menu, X, ChevronDown,
   MapPin, MessageCircle, GraduationCap, Wrench, Tag, Bot,
-  Trophy, Coins, CalendarClock, BookOpen,
+  Trophy, Coins, CalendarClock, BookOpen, ArrowUpRight,
 } from 'lucide-react';
+
+const TOPMATE = 'https://topmate.io/sagarjethi';
 
 // Top-level: kept to 3 high-traffic destinations.
 const PRIMARY = [
@@ -194,6 +196,18 @@ export default function Navigation() {
                 </div>
               )}
             </div>
+
+            {/* Single primary action — Book 1:1 with curator */}
+            <a
+              href={TOPMATE}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-source="navbar"
+              className="ml-2 inline-flex items-center gap-1.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-1.5 transition-all hover:shadow-md hover:-translate-y-px"
+            >
+              Book 1:1
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
           </div>
 
           {/* Mobile burger */}
@@ -211,6 +225,16 @@ export default function Navigation() {
         {/* Mobile menu — full list, accordion-style for Discover groups */}
         {mobileOpen && (
           <div className="md:hidden pb-3 pt-1 space-y-0.5 border-t border-slate-100">
+            <a
+              href={TOPMATE}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-source="navbar-mobile"
+              className="flex items-center justify-center gap-1.5 mx-1 my-2 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2"
+            >
+              Book 1:1
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
             {PRIMARY.map(({ to, label, icon: Icon }) => {
               const active = isPrimaryActive(to);
               return (

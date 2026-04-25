@@ -7,7 +7,6 @@ import {
 } from 'lucide-react';
 import ExternalLink from './ExternalLink';
 import EmailCapture from './EmailCapture';
-import CuratorCTA from './CuratorCTA';
 import RevealEmailButton from './RevealEmailButton';
 import {
   accelerators,
@@ -387,11 +386,6 @@ export default function AcceleratorsPage() {
             </div>
           </div>
         </section>
-
-        {/* Founder consult CTA — accelerators page is highest-intent */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <CuratorCTA variant="founders" source="accelerators" />
-        </div>
 
         {/* Footer CTA */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 text-center">

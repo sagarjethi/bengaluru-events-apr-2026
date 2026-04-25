@@ -1,5 +1,4 @@
 import { Heart } from 'lucide-react';
-import CuratorCTA from './CuratorCTA';
 
 function XIcon({ className = 'w-4 h-4' }) {
   return (
@@ -16,9 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200 mt-12">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col items-center gap-4 text-center">
-          <CuratorCTA compact source="footer" />
-
+        <div className="flex flex-col items-center gap-3 text-center">
           <p className="text-xs text-slate-400">
             Built by{' '}
             <a href="https://sagarjethi.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 font-medium">

@@ -22,7 +22,6 @@ import { toSlug } from '../utils/slug';
 import EventCard from './EventCard';
 import EmailCapture from './EmailCapture';
 import MonthCalendar from './MonthCalendar';
-import CuratorCTA from './CuratorCTA';
 import Footer from './Footer';
 
 const SITE = 'https://bengaluru-events.sagarjethi.com';
@@ -273,9 +272,6 @@ export function MonthsIndexPage() {
             <CategoryLink to="/hackathons/resources" title="Builder resources" desc="Tools, skills, past winners" tone="slate" />
           </div>
         </section>
-
-        {/* Curator consult CTA */}
-        <CuratorCTA variant="default" source="month-index" />
 
         {/* FAQ — visible + JSON-LD-backed for AI/Google ranking */}
         <section className="mt-16 border-t border-slate-200 pt-10" aria-labelledby="faq-heading">
@@ -598,9 +594,6 @@ export default function MonthEventsPage({ month: propMonth }) {
             </>
           )}
         </section>
-
-        {/* Curator consultancy CTA — appears after the user has scrolled the events */}
-        <CuratorCTA variant="builders" source={`month-detail:${month}`} />
 
         {/* Prev / Next month navigation */}
         {(prev || next) && (
