@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { xPosts, linkedinPosts, instagramReels, notablePeople, lumaEvents, couponsAndDeals } from '../data/social';
 import { EVENT_COUNT } from '../utils/stats';
+import TweetCard from './TweetCard';
 
 function XIcon({ className = 'w-4 h-4' }) {
   return (
@@ -102,37 +103,18 @@ export default function SocialPage() {
               <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center">
                 <XIcon className="w-5 h-5 text-white" />
               </div>
-              <div>
+              <div className="flex-1">
                 <h2 className="text-xl font-bold text-slate-900">Trending on X</h2>
-                <p className="text-sm text-slate-500">What people are saying about Bengaluru tech week</p>
+                <p className="text-sm text-slate-500">Fresh posts from builders, founders &amp; partners — verified on x.com</p>
               </div>
+              <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-2.5 py-1">
+                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
+                Updated this week
+              </span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {xPosts.map((post, i) => (
-                <a
-                  key={i}
-                  href={post.link}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className="group block bg-white rounded-xl border border-slate-200 hover:border-slate-400 hover:shadow-md p-5 transition-all"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white text-sm font-bold shrink-0">
-                      {post.avatar}
-                    </div>
-                    <div className="min-w-0">
-                      <div className="font-semibold text-slate-900 text-sm truncate">{post.name}</div>
-                      <div className="text-xs text-slate-400 flex items-center gap-1">
-                        <XIcon className="w-3 h-3" />
-                        {post.handle}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed line-clamp-4">{post.text}</p>
-                  <div className="mt-3 flex items-center gap-1 text-xs text-slate-500 group-hover:text-slate-900 font-medium">
-                    View post <ExternalLink className="w-3 h-3" />
-                  </div>
-                </a>
+                <TweetCard key={i} post={post} />
               ))}
             </div>
           </section>
