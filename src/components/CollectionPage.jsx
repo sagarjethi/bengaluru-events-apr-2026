@@ -13,6 +13,7 @@ import { events, CATEGORIES } from '../data/events';
 import { toSlug } from '../utils/slug';
 import EventCard from './EventCard';
 import EmailCapture from './EmailCapture';
+import CuratorCTA from './CuratorCTA';
 import Footer from './Footer';
 
 const SITE = 'https://bengaluru-events.sagarjethi.com';
@@ -333,6 +334,12 @@ export default function CollectionPage({ slug: propSlug }) {
             ))}
           </div>
         )}
+
+        {/* Curator consult CTA — pick variant by collection theme */}
+        <CuratorCTA
+          variant={slug?.includes('hackathon') || slug?.includes('ai-events') ? 'builders' : 'default'}
+          source={`collection:${slug}`}
+        />
 
         {/* FAQs */}
         {cfg.faqs?.length > 0 && (

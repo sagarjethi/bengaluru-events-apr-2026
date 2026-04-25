@@ -1,5 +1,6 @@
 import { Heart } from 'lucide-react';
 import EmailCapture from './EmailCapture';
+import CuratorCTA from './CuratorCTA';
 
 function XIcon({ className = 'w-4 h-4' }) {
   return (
@@ -31,6 +32,11 @@ export default function Footer() {
             />
           </div>
 
+          {/* Consult CTA — slim pill */}
+          <div className="mb-5 flex justify-center">
+            <CuratorCTA compact source="footer" />
+          </div>
+
           {/* Follow CTA */}
           <div className="mb-5">
             <p className="text-sm text-slate-500 mb-3">Found this useful? A follow means a lot!</p>
@@ -49,6 +55,10 @@ export default function Footer() {
             Built by{' '}
             <a href="https://sagarjethi.com" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:text-primary-600">
               @sagarjethi
+            </a>
+            {' '}&middot;{' '}
+            <a href="https://topmate.io/sagarjethi" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:text-primary-600">
+              Hire / Consult
             </a>
             {' '}&middot;{' '}
             <a href="https://www.linkedin.com/in/sagarjethi" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:text-primary-600">

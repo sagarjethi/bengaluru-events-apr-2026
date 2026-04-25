@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Stats from './components/Stats';
-import CalendarView from './components/CalendarView';
+import UpcomingDaysStrip from './components/UpcomingDaysStrip';
 import EventsGrid from './components/EventsGrid';
 import SocialBuzz from './components/SocialBuzz';
 import Platforms from './components/Platforms';
@@ -31,7 +31,7 @@ function HomePage() {
       <Header />
       <HappeningNow />
       <Stats />
-      <CalendarView selectedDate={selectedDate} onDateSelect={setSelectedDate} />
+      <UpcomingDaysStrip selectedDate={selectedDate} onDateSelect={setSelectedDate} />
       <EventsGrid selectedDate={selectedDate} />
       <SocialBuzz />
       <Platforms />

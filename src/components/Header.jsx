@@ -11,28 +11,33 @@ export default function Header() {
           {/* Badge with dates merged */}
           <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            {EVENT_COUNT}+ events · Apr 15–26, 2026 · Bengaluru
+            {EVENT_COUNT}+ events · Apr–May 2026 · Bengaluru
           </div>
 
-          {/* Compact H1 — single line on desktop, tight on mobile */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
-            Bengaluru Tech Events{' '}
+          {/* Hero H1 — keyword-rich, brand-led, hierarchy-tight */}
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.05]">
+            Every tech event in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-accent-500">
-              April 2026
+              Bengaluru
+            </span>
+            <span className="block text-slate-700 text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 tracking-tight">
+              Hackathons, conferences &amp; meetups · Spring 2026
             </span>
           </h1>
 
-          {/* Description — tightened, credit inline */}
-          <p className="mt-3 text-sm sm:text-base text-slate-600 max-w-xl mx-auto">
-            Your complete guide to tech conferences, hackathons, and startup events — curated by{' '}
-            <a
-              href="https://sagarjethi.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-600 hover:text-primary-700 font-semibold"
-            >
+          {/* Description — value-led, link to month index */}
+          <p className="mt-4 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            One link-verified directory of every public tech event in Bengaluru.
+            {' '}
+            <a href="/events" className="text-primary-600 hover:text-primary-700 font-semibold">Browse by month</a>
+            {' · '}
+            <a href="/free-tech-events-bangalore" className="text-primary-600 hover:text-primary-700 font-semibold">free events</a>
+            {' · '}
+            <a href="/ai-events-bangalore-2026" className="text-primary-600 hover:text-primary-700 font-semibold">AI events</a>
+            . Curated by{' '}
+            <a href="https://topmate.io/sagarjethi" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 font-semibold">
               @sagarjethi
-            </a>
+            </a>.
           </p>
 
           {/* Primary action: email + browse button in one row */}

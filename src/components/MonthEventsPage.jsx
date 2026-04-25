@@ -22,6 +22,7 @@ import { toSlug } from '../utils/slug';
 import EventCard from './EventCard';
 import EmailCapture from './EmailCapture';
 import MonthCalendar from './MonthCalendar';
+import CuratorCTA from './CuratorCTA';
 import Footer from './Footer';
 
 const SITE = 'https://bengaluru-events.sagarjethi.com';
@@ -163,6 +164,7 @@ export function MonthsIndexPage() {
         </div>
 
         {/* Month cards with highlights */}
+        <h2 className="sr-only">Pick a month</h2>
         <div className="mt-10 grid sm:grid-cols-2 gap-5">
           {MONTH_ORDER.map((slug) => {
             const m = MONTHS[slug];
@@ -221,6 +223,9 @@ export function MonthsIndexPage() {
             );
           })}
         </div>
+
+        {/* Curator consult CTA */}
+        <CuratorCTA variant="default" source="month-index" />
       </div>
       <Footer />
     </div>
@@ -527,6 +532,9 @@ export default function MonthEventsPage({ month: propMonth }) {
             </>
           )}
         </section>
+
+        {/* Curator consultancy CTA — appears after the user has scrolled the events */}
+        <CuratorCTA variant="builders" source={`month-detail:${month}`} />
 
         {/* Prev / Next month navigation */}
         {(prev || next) && (

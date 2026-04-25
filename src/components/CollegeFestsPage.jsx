@@ -8,6 +8,7 @@ import {
   ArrowLeft, Mail, Sparkles, GraduationCap, MapPin, ExternalLink, ChevronRight, Bell,
 } from 'lucide-react';
 import EmailCapture from './EmailCapture';
+import CuratorCTA from './CuratorCTA';
 import Footer from './Footer';
 
 const SITE = 'https://bengaluru-events.sagarjethi.com';
@@ -256,6 +257,9 @@ export default function CollegeFestsPage() {
             <CrossLink to="/conferences-bangalore-2026">Tech conferences</CrossLink>
           </div>
         </section>
+
+        {/* Curator consult CTA — students/founders looking at fests are also early-stage builders */}
+        <CuratorCTA variant="founders" source="college-fests" />
 
         {/* FAQs */}
         <section className="mt-12 border-t border-slate-200 pt-10" aria-labelledby="faq-heading">
