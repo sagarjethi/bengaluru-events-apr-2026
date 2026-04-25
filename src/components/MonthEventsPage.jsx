@@ -97,20 +97,49 @@ export function MonthsIndexPage() {
   const totalHackathons = events.filter((e) => e.category === 'hackathon').length;
   const totalConferences = events.filter((e) => e.category === 'conference').length;
 
+  // SEO: FAQPage JSON-LD answers high-volume queries directly.
+  const faqs = [
+    { q: 'How many tech events are happening in Bengaluru in 2026?', a: `${total}+ public tech events tracked across April–May 2026 — ${totalHackathons} hackathons, ${totalConferences} conferences, and dozens of meetups across AI, Web3, devops, and startup programming.` },
+    { q: 'What is the biggest tech event in Bengaluru in April 2026?', a: 'GIDS 2026 (Asia-Pacific\'s largest polyglot developer conference, 4 days at IISc), AWS Summit Bengaluru (free, 2 days, KTPO Whitefield), and Y Combinator Startup School India (Apr 18, 2,000 seats) are the biggest.' },
+    { q: 'Are tech events in Bengaluru free?', a: `Yes — ${totalFree}+ events on this directory are free to attend, including OpenAI Codex Hackathon, AWS Summit, YC Startup School India, ElevenLabs Buildathon, GDG Build For Bengaluru and most agentic-AI meetups in May.` },
+    { q: 'Where can I find AI events in Bengaluru?', a: 'Use /ai-events-bangalore-2026 for the full AI-focused list, /hackathons-bangalore-2026 for AI hackathons, or click any month above and filter by tag.' },
+    { q: 'How is this directory different from Luma or Eventbrite?', a: 'It aggregates events across Luma, Eventbrite, Meetup, HasGeek, GDG, and AllEvents into one link-verified, deduplicated directory. Each event has been cross-checked against its primary source.' },
+  ];
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Bengaluru Tech Events by Month — 2026',
+    numberOfItems: 2,
+    itemListElement: MONTH_ORDER.map((slug, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE}/events/${slug}`,
+      name: MONTHS[slug].label,
+    })),
+  };
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Bengaluru Tech Events by Month | April 2026 + May 2026</title>
+        <title>{`Bengaluru Tech Events 2026 — ${total}+ Hackathons, Conferences & Meetups by Month`}</title>
         <meta
           name="description"
-          content="Browse Bengaluru tech events by month. April 2026 features YC Startup School, GIDS, AWS Summit, Rust India, OpenAI Codex Hackathon. May 2026 covers agentic AI, platform engineering, React, and Kafka meetups."
+          content={`Every public tech event in Bengaluru, organized by month. ${total}+ events · ${totalHackathons} hackathons · ${totalConferences} conferences · ${totalFree}+ free. April + May 2026.`}
         />
+        <meta name="keywords" content="bengaluru tech events 2026, bangalore tech events by month, tech events april 2026, tech events may 2026, hackathons bangalore 2026, conferences bangalore" />
         <link rel="canonical" href={`${SITE}/events`} />
-        <meta property="og:title" content="Bengaluru Tech Events — Month-by-Month Index" />
-        <meta property="og:description" content="April 2026 + May 2026 tech events in Bengaluru — conferences, hackathons, AI/ML meetups." />
+        <meta property="og:title" content={`Bengaluru Tech Events 2026 — ${total}+ events by month`} />
+        <meta property="og:description" content="April + May 2026 tech events in Bengaluru — conferences, hackathons, AI/ML meetups, all link-verified." />
         <meta property="og:url" content={`${SITE}/events`} />
         <meta property="og:image" content={`${SITE}/og-image.png`} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{JSON.stringify(itemListJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
@@ -119,11 +148,11 @@ export function MonthsIndexPage() {
         </Link>
 
         {/* Hero */}
-        <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.05]">
           Bengaluru Tech Events <span className="text-primary-600">by Month</span>
         </h1>
-        <p className="mt-3 text-lg text-slate-600 max-w-3xl">
-          Pick a month to see every conference, hackathon, and meetup happening in Bengaluru.
+        <p className="mt-4 text-lg text-slate-600 max-w-3xl leading-relaxed">
+          {total}+ link-verified tech events in Bengaluru — hackathons, developer conferences, AI/ML workshops, Web3 fests, and college events. Organized by month so you can plan ahead.
         </p>
 
         {/* Hero stats */}
@@ -224,8 +253,45 @@ export function MonthsIndexPage() {
           })}
         </div>
 
+        {/* Browse by category — internal link cluster, helps SEO + discovery */}
+        <section className="mt-12" aria-labelledby="categories-heading">
+          <h2 id="categories-heading" className="text-2xl font-semibold text-slate-900 mb-1">
+            Browse by category
+          </h2>
+          <p className="text-sm text-slate-500 mb-5">
+            Curated landing pages for the most-searched event types in Bengaluru.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <CategoryLink to="/free-tech-events-bangalore" title="Free tech events" desc="No ticket cost — hackathons, AWS, YC" tone="emerald" />
+            <CategoryLink to="/ai-events-bangalore-2026" title="AI events 2026" desc="GenAI, LLMs, agentic AI, MCP" tone="violet" />
+            <CategoryLink to="/hackathons-bangalore-2026" title="Hackathons" desc="$145K+ in prizes" tone="rose" />
+            <CategoryLink to="/conferences-bangalore-2026" title="Tech conferences" desc="GIDS, AWS Summit, Rust India" tone="primary" />
+            <CategoryLink to="/web3-events-bangalore-2026" title="Web3 & crypto" desc="W3Summit, blockchain meetups" tone="amber" />
+            <CategoryLink to="/tech-events-this-weekend-bangalore" title="This weekend" desc="Friday → Sunday — refreshes daily" tone="slate" />
+            <CategoryLink to="/college-fests-bangalore-2026" title="College fests" desc="Pravega, Aakar, Joshua's, Ethos" tone="rose" />
+            <CategoryLink to="/accelerators" title="Bangalore accelerators" desc="13 verified startup programs" tone="primary" />
+            <CategoryLink to="/hackathons/resources" title="Builder resources" desc="Tools, skills, past winners" tone="slate" />
+          </div>
+        </section>
+
         {/* Curator consult CTA */}
         <CuratorCTA variant="default" source="month-index" />
+
+        {/* FAQ — visible + JSON-LD-backed for AI/Google ranking */}
+        <section className="mt-16 border-t border-slate-200 pt-10" aria-labelledby="faq-heading">
+          <h2 id="faq-heading" className="text-2xl font-bold text-slate-900 mb-6">Frequently asked</h2>
+          <div className="space-y-3">
+            {faqs.map((f, i) => (
+              <details key={i} className="group rounded-xl border border-slate-200 bg-white px-5 py-4 hover:border-slate-300">
+                <summary className="flex items-center justify-between cursor-pointer font-semibold text-slate-900 list-none">
+                  <span>{f.q}</span>
+                  <ChevronRight className="w-4 h-4 text-slate-400 group-open:rotate-90 transition-transform" />
+                </summary>
+                <p className="mt-2 text-sm text-slate-600 leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
       </div>
       <Footer />
     </div>
@@ -606,6 +672,39 @@ function Pill({ children, tone = 'slate' }) {
     <span className={`inline-flex items-center gap-1.5 rounded-full ring-1 px-2.5 py-0.5 text-xs font-semibold ${map[tone] || map.slate}`}>
       {children}
     </span>
+  );
+}
+
+const TONE_BORDER = {
+  primary: 'hover:border-primary-300 hover:bg-primary-50/30',
+  emerald: 'hover:border-emerald-300 hover:bg-emerald-50/30',
+  violet: 'hover:border-violet-300 hover:bg-violet-50/30',
+  rose: 'hover:border-rose-300 hover:bg-rose-50/30',
+  amber: 'hover:border-amber-300 hover:bg-amber-50/30',
+  slate: 'hover:border-slate-300 hover:bg-slate-50/30',
+};
+const TONE_DOT = {
+  primary: 'bg-primary-500',
+  emerald: 'bg-emerald-500',
+  violet: 'bg-violet-500',
+  rose: 'bg-rose-500',
+  amber: 'bg-amber-500',
+  slate: 'bg-slate-500',
+};
+
+function CategoryLink({ to, title, desc, tone = 'slate' }) {
+  return (
+    <Link
+      to={to}
+      className={`group flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-4 transition ${TONE_BORDER[tone] || TONE_BORDER.slate}`}
+    >
+      <span className={`mt-1.5 w-2 h-2 rounded-full shrink-0 ${TONE_DOT[tone] || TONE_DOT.slate}`} />
+      <div className="min-w-0 flex-1">
+        <div className="font-semibold text-slate-900 group-hover:text-primary-700">{title}</div>
+        <div className="text-xs text-slate-500 mt-0.5 truncate">{desc}</div>
+      </div>
+      <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-slate-600 transition shrink-0" />
+    </Link>
   );
 }
 

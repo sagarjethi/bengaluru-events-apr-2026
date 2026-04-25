@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Stats from './components/Stats';
-import UpcomingDaysStrip from './components/UpcomingDaysStrip';
+import HomeCalendar from './components/HomeCalendar';
 import EventsGrid from './components/EventsGrid';
 import SocialBuzz from './components/SocialBuzz';
 import Platforms from './components/Platforms';
@@ -16,7 +16,6 @@ import CollegeFestsPage from './components/CollegeFestsPage';
 import SocialPage from './components/SocialPage';
 import TweetSupportModal from './components/TweetSupportModal';
 import MapPage from './components/MapPage';
-import HappeningNow from './components/HappeningNow';
 import HackathonsPage from './components/HackathonsPage';
 import BuilderResourcesHub from './components/BuilderResourcesHub';
 import AcceleratorsPage from './components/AcceleratorsPage';
@@ -29,9 +28,8 @@ function HomePage() {
     <div className="min-h-screen">
       <SEO />
       <Header />
-      <HappeningNow />
       <Stats />
-      <UpcomingDaysStrip selectedDate={selectedDate} onDateSelect={setSelectedDate} />
+      <HomeCalendar selectedDate={selectedDate} onDateSelect={setSelectedDate} />
       <EventsGrid selectedDate={selectedDate} />
       <SocialBuzz />
       <Platforms />
