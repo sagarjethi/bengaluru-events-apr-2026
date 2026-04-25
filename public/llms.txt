@@ -16,6 +16,18 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 - Builder Resources (free tools, skills, guides, past winners): https://bengaluru-events.sagarjethi.com/hackathons/resources
 - Bangalore startup accelerators (13 verified programs): https://bengaluru-events.sagarjethi.com/accelerators
 
+## Curated collections (high-intent landing pages)
+
+These pages answer common search queries directly. Each links to verified registration pages.
+
+- Free tech events in Bengaluru: https://bengaluru-events.sagarjethi.com/free-tech-events-bangalore
+- AI events in Bengaluru 2026: https://bengaluru-events.sagarjethi.com/ai-events-bangalore-2026
+- Hackathons in Bengaluru 2026: https://bengaluru-events.sagarjethi.com/hackathons-bangalore-2026
+- Tech conferences in Bengaluru 2026: https://bengaluru-events.sagarjethi.com/conferences-bangalore-2026
+- Web3 & crypto events in Bengaluru: https://bengaluru-events.sagarjethi.com/web3-events-bangalore-2026
+- Tech events this weekend in Bengaluru: https://bengaluru-events.sagarjethi.com/tech-events-this-weekend-bangalore
+- College festivals in Bengaluru 2026 (IISc Pravega, RVCE Aakar, Christ Ethos, St. Joseph's Joshua's, BMSCE Inventus, PES Quasar): https://bengaluru-events.sagarjethi.com/college-fests-bangalore-2026
+
 ## Key Facts
 
 - 80+ events across April 15 – May 30, 2026 (~6 weeks)

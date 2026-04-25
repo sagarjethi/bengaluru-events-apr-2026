@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Calendar, LayoutGrid, MessageCircle, Link2, MapPin, Menu, X, Home, Code, Rocket, CalendarRange } from 'lucide-react';
+import { Calendar, LayoutGrid, MessageCircle, Link2, MapPin, Menu, X, Home, Code, Rocket, CalendarRange, GraduationCap } from 'lucide-react';
 
 const anchorItems = [
   { id: 'calendar', label: 'Calendar', icon: Calendar },
@@ -10,6 +10,7 @@ const anchorItems = [
 const pageItems = [
   { to: '/events', label: 'By Month', icon: CalendarRange },
   { to: '/hackathons', label: 'Hackathons', icon: Code },
+  { to: '/college-fests-bangalore-2026', label: 'College Fests', icon: GraduationCap },
   { to: '/accelerators', label: 'Accelerators', icon: Rocket },
   { to: '/map', label: 'Map', icon: MapPin },
   { to: '/social', label: 'Social', icon: MessageCircle },

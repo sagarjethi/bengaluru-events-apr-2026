@@ -40,6 +40,15 @@ add('/accelerators', { changefreq: 'weekly', priority: 0.9 });
 add('/social', { changefreq: 'weekly', priority: 0.8 });
 add('/map', { changefreq: 'weekly', priority: 0.8 });
 
+// SEO landing pages — keyword-rich URLs that target high-intent searches
+add('/free-tech-events-bangalore', { changefreq: 'daily', priority: 0.9 });
+add('/ai-events-bangalore-2026', { changefreq: 'daily', priority: 0.9 });
+add('/conferences-bangalore-2026', { changefreq: 'weekly', priority: 0.85 });
+add('/hackathons-bangalore-2026', { changefreq: 'daily', priority: 0.9 });
+add('/web3-events-bangalore-2026', { changefreq: 'weekly', priority: 0.8 });
+add('/tech-events-this-weekend-bangalore', { changefreq: 'daily', priority: 0.85 });
+add('/college-fests-bangalore-2026', { changefreq: 'weekly', priority: 0.85 });
+
 // Per-event
 const seen = new Set();
 eventNames.forEach((n, i) => {

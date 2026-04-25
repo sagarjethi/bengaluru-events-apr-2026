@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import SEO from './components/SEO';
 import EventDetail from './components/EventDetail';
 import MonthEventsPage, { MonthsIndexPage } from './components/MonthEventsPage';
+import CollectionPage from './components/CollectionPage';
+import CollegeFestsPage from './components/CollegeFestsPage';
 import SocialPage from './components/SocialPage';
 import TweetSupportModal from './components/TweetSupportModal';
 import MapPage from './components/MapPage';
@@ -49,6 +51,15 @@ export default function App() {
         <Route path="/events/april-2026" element={<MonthEventsPage month="april-2026" />} />
         <Route path="/events/may-2026" element={<MonthEventsPage month="may-2026" />} />
         <Route path="/events/:slug" element={<EventDetail />} />
+
+        {/* SEO landing pages — generic CollectionPage with config-driven filters */}
+        <Route path="/free-tech-events-bangalore" element={<CollectionPage slug="free-tech-events-bangalore" />} />
+        <Route path="/ai-events-bangalore-2026" element={<CollectionPage slug="ai-events-bangalore-2026" />} />
+        <Route path="/conferences-bangalore-2026" element={<CollectionPage slug="conferences-bangalore-2026" />} />
+        <Route path="/hackathons-bangalore-2026" element={<CollectionPage slug="hackathons-bangalore-2026" />} />
+        <Route path="/web3-events-bangalore-2026" element={<CollectionPage slug="web3-events-bangalore-2026" />} />
+        <Route path="/tech-events-this-weekend-bangalore" element={<CollectionPage slug="tech-events-this-weekend-bangalore" />} />
+        <Route path="/college-fests-bangalore-2026" element={<CollegeFestsPage />} />
         <Route path="/hackathons" element={<HackathonsPage />} />
         <Route path="/hackathons/resources" element={<BuilderResourcesHub />} />
         <Route path="/accelerators" element={<AcceleratorsPage />} />

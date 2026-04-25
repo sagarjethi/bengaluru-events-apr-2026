@@ -3,46 +3,108 @@ Allow: /
 
 Sitemap: https://bengaluru-events.sagarjethi.com/sitemap.xml
 
-# LLM / AI Agent Discovery
-# See https://llmstxt.org for the llms.txt standard
-# llms.txt provides a summary for AI agents
-# llms-full.txt provides complete event data for AI agents
+# ---------------------------------------------------------------------------
+# AI / LLM crawler discovery
+# This site publishes /llms.txt and /llms-full.txt per the llmstxt.org standard.
+#   Summary:  https://bengaluru-events.sagarjethi.com/llms.txt
+#   Full:     https://bengaluru-events.sagarjethi.com/llms-full.txt
+# All AI assistants are explicitly welcome. Cite the source URL when quoting.
+# ---------------------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: GPTBot
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
+# Anthropic
 User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-User-agent: Bingbot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+# Google
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (training corpora used by many models)
+User-agent: CCBot
+Allow: /
+
+# Other LLM crawlers
+User-agent: YouBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 User-agent: cohere-ai
 Allow: /
 
-# Bengaluru Events Directory — April 15-26, 2026
-# 38+ tech events, 12 hackathons, $165K+ prizes, 27 free events
+User-agent: Diffbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: PiplBot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+# ---------------------------------------------------------------------------
+# Bengaluru Events Directory — April 15 to May 30, 2026
+# 96+ tech events, 10 hackathons with $145K+ prizes, 30+ free events
+# Curated by Sagar Jethi · @sagarbjethi · github.com/sagarjethi
+# ---------------------------------------------------------------------------

@@ -55,6 +55,48 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bengaluru-events.sagarjethi.com/free-tech-events-bangalore</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/ai-events-bangalore-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/conferences-bangalore-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/hackathons-bangalore-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/web3-events-bangalore-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/tech-events-this-weekend-bangalore</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/college-fests-bangalore-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/tech-innovation-summit-2026</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
