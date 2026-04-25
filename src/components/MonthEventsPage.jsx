@@ -1,10 +1,12 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Calendar, MapPin, ArrowLeft } from 'lucide-react';
+import { Calendar, MapPin, ArrowLeft, Mail, Sparkles } from 'lucide-react';
 import { events, CATEGORIES } from '../data/events';
 import { toSlug } from '../utils/slug';
 import EventCard from './EventCard';
+import EmailCapture from './EmailCapture';
+import MonthCalendar from './MonthCalendar';
 import Footer from './Footer';
 
 const SITE = 'https://bengaluru-events.sagarjethi.com';
@@ -39,6 +41,7 @@ function eventsForMonth(monthNum, year) {
 }
 
 export function MonthsIndexPage() {
+  const totalEvents = events.length;
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
@@ -66,7 +69,36 @@ export function MonthsIndexPage() {
           Pick a month to see every conference, hackathon, and meetup happening in Bengaluru.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-6 mt-12">
+        {/* Subscribe block — top of page, above month cards */}
+        <div className="mt-10 rounded-2xl bg-gradient-to-br from-primary-50 via-white to-violet-50 border border-primary-100 p-6 sm:p-8 shadow-sm">
+          <div className="flex items-start gap-4">
+            <div className="hidden sm:flex w-12 h-12 rounded-xl bg-primary-600 text-white items-center justify-center shadow-sm shrink-0">
+              <Mail className="w-6 h-6" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary-700">
+                <Sparkles className="w-3.5 h-3.5" /> Stay in the loop
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                Get the weekly Bengaluru tech digest
+              </h2>
+              <p className="text-sm text-slate-600 mt-1.5 max-w-xl">
+                One short email per week. New hackathons, conferences, and meetups across {totalEvents}+ tracked events. No spam, unsubscribe anytime.
+              </p>
+              <div className="mt-4">
+                <EmailCapture
+                  variant="inline"
+                  placeholder="you@example.com"
+                  cta="Subscribe"
+                  source="month-index"
+                  successMessage="Subscribed 🙏  Watch your inbox."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-6 mt-10">
           {Object.entries(MONTHS).map(([slug, m]) => {
             const list = eventsForMonth(m.monthNum, m.year);
             return (
@@ -104,16 +136,22 @@ export default function MonthEventsPage({ month: propMonth }) {
   const params = useParams();
   const month = propMonth || params.month;
   const meta = MONTHS[month];
+  const [selectedDate, setSelectedDate] = useState(null);
 
   const monthEvents = useMemo(() => meta ? eventsForMonth(meta.monthNum, meta.year) : [], [meta]);
 
+  const visibleEvents = useMemo(() => {
+    if (!selectedDate) return monthEvents;
+    return monthEvents.filter((e) => e.startDate <= selectedDate && e.endDate >= selectedDate);
+  }, [monthEvents, selectedDate]);
+
   const byCategory = useMemo(() => {
     const groups = {};
-    for (const e of monthEvents) {
+    for (const e of visibleEvents) {
       (groups[e.category] = groups[e.category] || []).push(e);
     }
     return groups;
-  }, [monthEvents]);
+  }, [visibleEvents]);
 
   if (!meta) return <Navigate to="/events" replace />;
 
@@ -187,6 +225,68 @@ export default function MonthEventsPage({ month: propMonth }) {
             ))}
         </div>
 
+        {/* Subscribe block — above the calendar so users see it before scrolling */}
+        <div className="mt-10 rounded-2xl bg-gradient-to-br from-primary-50 via-white to-violet-50 border border-primary-100 p-5 sm:p-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex items-start gap-3 flex-1">
+              <div className="hidden sm:flex w-10 h-10 rounded-xl bg-primary-600 text-white items-center justify-center shrink-0">
+                <Mail className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-primary-700">
+                  <Sparkles className="w-3 h-3" /> Don't miss {meta.short}
+                </div>
+                <p className="text-sm text-slate-700 mt-0.5">
+                  Weekly digest of every {meta.short} event in Bengaluru — straight to your inbox.
+                </p>
+              </div>
+            </div>
+            <div className="sm:max-w-md sm:w-[420px]">
+              <EmailCapture
+                variant="inline"
+                placeholder="you@example.com"
+                cta="Subscribe"
+                source={`month:${month}`}
+                successMessage="Subscribed 🙏"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Calendar — month grid for date filtering */}
+        <div className="mt-8">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-xl font-semibold text-slate-900">
+              Pick a date {selectedDate && (
+                <span className="ml-2 inline-flex items-center gap-1 text-sm font-medium text-primary-700 bg-primary-50 px-2.5 py-1 rounded-full">
+                  Showing {selectedDate}
+                  <button onClick={() => setSelectedDate(null)} className="ml-1 hover:text-primary-900" aria-label="Clear date filter">×</button>
+                </span>
+              )}
+            </h2>
+            {selectedDate && (
+              <button onClick={() => setSelectedDate(null)} className="text-sm text-slate-500 hover:text-slate-900">Clear filter</button>
+            )}
+          </div>
+          <MonthCalendar
+            year={meta.year}
+            monthNum={meta.monthNum}
+            monthLabel={meta.label}
+            selectedDate={selectedDate}
+            onDateSelect={setSelectedDate}
+          />
+          <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-500">
+            {Object.entries(CATEGORIES)
+              .filter(([key]) => byCategory[key] || monthEvents.some((e) => e.category === key))
+              .map(([key, cat]) => (
+                <span key={key} className="inline-flex items-center gap-1.5">
+                  <span className={`w-2.5 h-2.5 rounded-full ${cat.dot}`} />
+                  {cat.label}
+                </span>
+              ))}
+          </div>
+        </div>
+
         {/* Category jump-list */}
         {Object.keys(byCategory).length > 1 && (
           <div className="mt-8 flex flex-wrap gap-2">
@@ -217,10 +317,12 @@ export default function MonthEventsPage({ month: propMonth }) {
           </section>
         ))}
 
-        {monthEvents.length === 0 && (
+        {visibleEvents.length === 0 && (
           <div className="mt-16 text-center text-slate-500">
             <MapPin className="w-10 h-10 mx-auto text-slate-300 mb-3" />
-            No events listed for {meta.label} yet.
+            {selectedDate
+              ? `No events on ${selectedDate}. Pick another date or clear the filter.`
+              : `No events listed for ${meta.label} yet.`}
           </div>
         )}
       </div>

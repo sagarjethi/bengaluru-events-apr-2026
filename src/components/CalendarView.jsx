@@ -1,7 +1,19 @@
 import { useState } from 'react';
-import { calendarDays, events, CATEGORIES } from '../data/events';
+import { events, CATEGORIES } from '../data/events';
 import { ExternalLink, Heart, X } from 'lucide-react';
 import EmailCapture from './EmailCapture';
+import MonthCalendar from './MonthCalendar';
+
+const MONTHS = [
+  { key: 'apr', year: 2026, monthNum: 4, label: 'April', long: 'April 2026' },
+  { key: 'may', year: 2026, monthNum: 5, label: 'May', long: 'May 2026' },
+];
+
+function defaultMonthKey() {
+  const d = new Date();
+  if (d.getFullYear() === 2026 && d.getMonth() + 1 === 5) return 'may';
+  return 'apr';
+}
 
 const TWEET_URL = 'https://x.com/sagarbjethi/status/2043607049679057396';
 const FOLLOW_URL = 'https://x.com/intent/follow?screen_name=sagarbjethi';
@@ -18,18 +30,14 @@ function XIcon({ className = 'w-4 h-4' }) {
 export default function CalendarView({ onDateSelect, selectedDate }) {
   const [showSupport, setShowSupport] = useState(false);
   const [pendingDate, setPendingDate] = useState(null);
+  const [activeMonth, setActiveMonth] = useState(() => {
+    // Auto-switch to the month of the currently-selected date
+    if (selectedDate?.startsWith('2026-05')) return 'may';
+    return defaultMonthKey();
+  });
 
-  const getEventsForDate = (date) => {
-    return events
-      .filter(e => e.startDate <= date && e.endDate >= date)
-      .sort((a, b) => {
-        if (a.featured && !b.featured) return -1;
-        if (!a.featured && b.featured) return 1;
-        return 0;
-      });
-  };
-
-  const handleDateClick = (date, isSelected) => {
+  const handleDateClick = (date) => {
+    const isSelected = selectedDate === date;
     const nextDate = isSelected ? null : date;
 
     // Show support popup once per session on first calendar click
@@ -43,6 +51,17 @@ export default function CalendarView({ onDateSelect, selectedDate }) {
     onDateSelect(nextDate);
   };
 
+  const counts = MONTHS.reduce((acc, m) => {
+    acc[m.key] = events.filter((e) => {
+      const sd = e.startDate || '';
+      const [y, mo] = sd.split('-').map(Number);
+      return y === m.year && mo === m.monthNum;
+    }).length;
+    return acc;
+  }, {});
+
+  const current = MONTHS.find((m) => m.key === activeMonth) || MONTHS[0];
+
   const handleDismiss = () => {
     setShowSupport(false);
     if (pendingDate !== null) {
@@ -52,47 +71,58 @@ export default function CalendarView({ onDateSelect, selectedDate }) {
   };
 
   return (
-    <section id="calendar" aria-label="Event calendar for April 15-26, 2026" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-8">
+    <section id="calendar" aria-label="Event calendar — April and May 2026" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="text-center mb-6">
         <h2 className="text-3xl font-bold text-slate-900">Event Calendar</h2>
-        <p className="mt-2 text-slate-500">Click a date to filter events</p>
+        <p className="mt-2 text-slate-500">Click a date to filter — switch months below.</p>
       </div>
-      <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 divide-x divide-y divide-slate-100">
-          {calendarDays.map((d) => {
-            const dayEvents = getEventsForDate(d.date);
-            const isSelected = selectedDate === d.date;
-            const isToday = d.date === '2026-04-13';
+
+      {/* Month tabs */}
+      <div className="flex justify-center mb-6">
+        <div role="tablist" aria-label="Pick month" className="inline-flex p-1 rounded-full bg-slate-100 border border-slate-200">
+          {MONTHS.map((m) => {
+            const active = m.key === activeMonth;
             return (
               <button
-                key={d.date}
-                onClick={() => handleDateClick(d.date, isSelected)}
-                aria-label={`${d.day} ${d.label} — ${dayEvents.length} event${dayEvents.length !== 1 ? 's' : ''}`}
-                aria-pressed={isSelected}
-                className={`p-3 sm:p-4 text-center transition-all hover:bg-primary-50 cursor-pointer group ${isSelected ? 'bg-primary-100 ring-2 ring-inset ring-primary-400' : ''} ${isToday ? 'bg-amber-50' : ''}`}
+                key={m.key}
+                role="tab"
+                aria-selected={active}
+                onClick={() => {
+                  setActiveMonth(m.key);
+                  // Clear cross-month selection so the EventsGrid below isn't stale.
+                  if (selectedDate && !selectedDate.startsWith(`${m.year}-${String(m.monthNum).padStart(2, '0')}`)) {
+                    onDateSelect(null);
+                  }
+                }}
+                className={[
+                  'inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-full text-sm font-semibold transition-all',
+                  active
+                    ? 'bg-white text-primary-700 shadow-sm ring-1 ring-slate-200'
+                    : 'text-slate-500 hover:text-slate-800',
+                ].join(' ')}
               >
-                <div className="text-xs font-medium text-slate-400 uppercase">{d.day}</div>
-                <div className={`text-xl sm:text-2xl font-bold mt-1 ${isSelected ? 'text-primary-700' : 'text-slate-800'}`}>
-                  {d.label.split(' ')[1]}
-                </div>
-                <div className="text-xs text-slate-400 mt-0.5">Apr</div>
-                <div className="mt-2 flex flex-wrap justify-center gap-1">
-                  {dayEvents.slice(0, 4).map((ev, i) => (
-                    <span key={i} className={`w-2 h-2 rounded-full ${CATEGORIES[ev.category]?.dot || 'bg-slate-400'}`} />
-                  ))}
-                  {dayEvents.length > 4 && (
-                    <span className="text-[10px] text-slate-400 font-medium">+{dayEvents.length - 4}</span>
-                  )}
-                </div>
-                <div className={`text-xs mt-1 font-medium ${isSelected ? 'text-primary-600' : 'text-slate-500'}`}>
-                  {dayEvents.length} event{dayEvents.length !== 1 ? 's' : ''}
-                </div>
+                {m.long}
+                <span className={[
+                  'inline-flex items-center justify-center min-w-[1.5rem] h-5 px-1.5 rounded-full text-[11px] font-bold',
+                  active ? 'bg-primary-100 text-primary-700' : 'bg-white text-slate-500',
+                ].join(' ')}>
+                  {counts[m.key]}
+                </span>
               </button>
             );
           })}
         </div>
       </div>
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500">
+
+      <MonthCalendar
+        year={current.year}
+        monthNum={current.monthNum}
+        monthLabel={current.long}
+        selectedDate={selectedDate}
+        onDateSelect={handleDateClick}
+      />
+
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
         {Object.entries(CATEGORIES).map(([key, cat]) => (
           <span key={key} className="inline-flex items-center gap-1.5">
             <span className={`w-2.5 h-2.5 rounded-full ${cat.dot}`} />
