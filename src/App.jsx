@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import Stats from './components/Stats';
 import HomeCalendar from './components/HomeCalendar';
 import EventsGrid from './components/EventsGrid';
+import CuratorCTA from './components/CuratorCTA';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
 import TweetSupportModal from './components/TweetSupportModal';
@@ -47,7 +48,10 @@ function HomePage() {
       <Header />
       <Stats />
       <HomeCalendar selectedDate={selectedDate} onDateSelect={setSelectedDate} />
-      <EventsGrid selectedDate={selectedDate} />
+      <EventsGrid selectedDate={selectedDate} onClearDate={() => setSelectedDate(null)} />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <CuratorCTA variant="default" source="home" />
+      </div>
       <Suspense fallback={null}>
         <SocialBuzz />
         <Platforms />

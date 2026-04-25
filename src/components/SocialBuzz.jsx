@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ExternalLink, MessageCircle, ArrowRight, Tag } from 'lucide-react';
+import { ExternalLink, MessageCircle, ArrowRight } from 'lucide-react';
 import { socialBuzz } from '../data/events';
-import { couponsAndDeals } from '../data/social';
 import { addUtm } from '../utils/utm';
 
 function TwitterIcon({ className = 'w-4 h-4' }) {
@@ -25,16 +24,6 @@ function PlatformIcon({ platform }) {
     return <LinkedInIcon />;
   }
   return <TwitterIcon />;
-}
-
-function tagColor(tag) {
-  switch (tag) {
-    case 'FREE': return 'bg-emerald-100 text-emerald-700 border-emerald-200';
-    case 'COUPON': return 'bg-amber-100 text-amber-700 border-amber-200';
-    case 'DISCOUNT': return 'bg-violet-100 text-violet-700 border-violet-200';
-    case 'EARLY BIRD': return 'bg-sky-100 text-sky-700 border-sky-200';
-    default: return 'bg-slate-100 text-slate-600 border-slate-200';
-  }
 }
 
 export default function SocialBuzz() {
@@ -93,48 +82,6 @@ export default function SocialBuzz() {
           View All Social Buzz & Connect with Attendees
           <ArrowRight className="w-4 h-4" />
         </Link>
-      </div>
-
-      {/* Coupons & Deals Section */}
-      <div className="mt-16">
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-            <Tag className="w-4 h-4" />
-            Deals & Free Tickets
-          </div>
-          <h2 className="text-3xl font-bold text-slate-900">Coupons & Free Events</h2>
-          <p className="mt-2 text-slate-500">Save money or attend for free — many top events don't cost a thing</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {couponsAndDeals.map((deal, i) => (
-            <a
-              key={i}
-              href={addUtm(deal.link, 'deals', deal.brand || deal.name)}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="group block bg-white rounded-xl border border-slate-200 hover:border-emerald-300 hover:shadow-md p-5 transition-all"
-            >
-              <div className="flex items-start justify-between gap-3 mb-3">
-                <h3 className="font-semibold text-slate-900 text-sm leading-tight">{deal.event}</h3>
-                <span className={`shrink-0 px-2 py-0.5 rounded-full text-xs font-bold border ${tagColor(deal.tag)}`}>
-                  {deal.tag}
-                </span>
-              </div>
-              <p className="text-sm font-medium text-emerald-600 mb-1">{deal.deal}</p>
-              <p className="text-sm text-slate-500 leading-relaxed line-clamp-2">{deal.description}</p>
-              {deal.code && (
-                <div className="mt-3 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-lg px-3 py-1.5">
-                  <span className="text-xs text-amber-600 font-medium">Code:</span>
-                  <span className="text-sm font-bold text-amber-800 font-mono tracking-wider">{deal.code}</span>
-                </div>
-              )}
-              <div className="mt-3 flex items-center gap-1 text-xs text-emerald-500 group-hover:text-emerald-600 font-medium">
-                {deal.tag === 'FREE' ? 'Register Free' : 'Get Deal'} <ExternalLink className="w-3 h-3" />
-              </div>
-            </a>
-          ))}
-        </div>
       </div>
     </section>
   );
