@@ -25,3 +25,12 @@ dist-ssr
 .vercel
 CLAUDE.md
 .env*.local
+
+# Scraper / pipeline intermediates and outputs
+scripts/scraped-events.json
+scripts/processed-events.json
+scripts/events-block.js
+scripts/link-check.json
+scripts/llms-snippet.txt
+scripts/scrape.log
+scripts/link-check.log

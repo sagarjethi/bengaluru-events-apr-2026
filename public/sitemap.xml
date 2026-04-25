@@ -2,368 +2,596 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/april-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/may-2026</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/hackathons</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/hackathons/resources</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/accelerators</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/axilor-ventures</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/nsrcel-iimb</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/peakxv-surge</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/accel-atoms</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/turbostart</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/anthill-ventures</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/rainmatter</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/netapp-excellerator</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/flipkart-leap</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/google-for-startups-india</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/microsoft-for-startups</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/ccamp-bangalore</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/accelerators/ginserv</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/ai-native-development-building-with-ai-cloud-blockchain</loc>
-    <lastmod>2026-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/altimate-hackday</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/map</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/social</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/map</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/tech-innovation-summit-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/codex-community-hackathon</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/vibecon-india-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/w3summit-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <loc>https://bengaluru-events.sagarjethi.com/events/w3summit-2026-ai-web3-global</loc>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/plumbex-india-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/jiohotstar-scaleup-2-0</loc>
-    <lastmod>2026-04-13</lastmod>
+    <loc>https://bengaluru-events.sagarjethi.com/events/jiohotstar-scaleup-2-0-scaling-ai-in-practice</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/rust-india-conference-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/calvin-harris-live-in-bengaluru</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/love-letters-theatre</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/y-combinator-startup-school-india</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/elevenlabs-buildathon</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/yc-blr-pre-event-mixer</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/golang-bangalore-meetup</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/the-other-room</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/11th-founders-freelancers-meetup</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/yc-secret-ai-fter-party</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/after-yc-ai-community-mixer</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/gids-2026-developer-summit</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/ismg-cybersecurity-week</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/aws-summit-bengaluru-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/icrcet-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/tcs-10k-get-active-expo</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/hackbricks-2026</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/meta-pytorch-hackathon</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/gdg-build-for-bengaluru</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/tcs-world-10k-race</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/hackblr-by-geekroom</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/summersault-childrens-festival</loc>
-    <lastmod>2026-04-13</lastmod>
+    <loc>https://bengaluru-events.sagarjethi.com/events/summersault-children</loc>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/ai-tinkerers-bengaluru</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/bengaluru-pitch-circuit-6</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/lyzr-agentathon-2-lakh-vibe-coding-challenge</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/zero-to-agent-bengaluru-w-the-ai-collective</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/contextcon-yc-x-crustdata-hackathon</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/how-to-build-your-gtm-engine-crustdata</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/hem-founders-brunch-hashed-emergent-x-tether</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://bengaluru-events.sagarjethi.com/events/hem-founder</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon-spectator-pass</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/why-c-only-for-top-1-yc-rejected</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon-spectator-pass</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/side-quest-builders-brunch</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/indias-first-opencode-buildathon</loc>
-    <lastmod>2026-04-14</lastmod>
+    <loc>https://bengaluru-events.sagarjethi.com/events/altimate-hackday</loc>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/ai-native-development-building-with-ai-cloud-blockchain</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/india</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/ai-of-the-week-what</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/citizen-developers-in-the-enterprise-what-platform-teams-should-know</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/founders-networking-connect-help-each-other</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/f-ckup-night-startup-failure-stories-open-mic</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/elastic-agentic-talks-building-with-ai-agents</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/feedback-jam-get-honest-takes-on-your-build</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/build-autonomous-ai-agents-2-hour-masterclass</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/building-ai-agents-with-kiro-mcp-and-amazon-bedrock-agentcore</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/the-state-of-distributed-ledger-technology-report-2026</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/github-agentic-workflows-automation-that-actually-reads-the-room</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/platform-engineering-meetup-bengaluru-edition-may-2026</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/scrum-meet-up-next-gen-scrum-ai-for-agile-leaders-in-person</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/react-meetup-103</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/building-a-distributed-transactional-database</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/platform-engineering-meet-up-may-9</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/applied-ai-ethics-monthlymixer-where-innovation-meets-responsibility</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/agent-orchestration-directing-your-ai-dream-team</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/data-devops-powering-modern-applications-build-fast-deploy-safer</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/agentic-ai-for-developers</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/in-person-apache-kafka-meetup-bangalore-may-2026</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/google-map-software-architecture</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/agentic-ai-unplugged-bengaluru-edition</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/crafting-multi-agent-systems-that-think-and-act</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/integrating-apis-and-services-with-agentcore-gateway</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/enterprise-ai-in-production</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/from-vibe-to-validation-ai-productivity-for-qa-engineers</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/vibe-delivery-ai-productivity-for-pms-scrum-masters</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/role-of-a-architect-in-coming-age-of-ai</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/tech4food-ai-in-food-efficiency-insights-beyond</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/axilor-ventures</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/nsrcel</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/surge</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/accel-atoms</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/turbostart</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/anthill-ventures</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/rainmatter</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/netapp-excellerator</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/flipkart-leap</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/google-for-startups-accelerator-india</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/microsoft-for-startups</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/c-camp</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/accelerators/ginserv</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

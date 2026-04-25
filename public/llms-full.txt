@@ -1,14 +1,19 @@
 # Bengaluru Events Directory — Full Event Listing
 # Tech Events, Hackathons, Conferences, Startup Events & Meetups in Bengaluru (Bangalore), India
-# April 15–26, 2026
+# April 15 – May 30, 2026
 # Website: https://bengaluru-events.sagarjethi.com
 # Author: Sagar Jethi (@sagarbjethi)
-# Last Updated: 2026-04-13
+# Last Updated: 2026-04-25
 
 ## Summary
 
-38+ tech events across 12 days in Bengaluru (Bangalore), India's tech capital.
-20 free events | 10 hackathons | $145,000+ in prizes
+80+ tech events across April 15 – May 30, 2026 in Bengaluru (Bangalore), India's tech capital.
+April 2026: 45 events incl. YC Startup School, GIDS, AWS Summit, Rust India, OpenAI Codex Hackathon
+May 2026: 35+ events incl. agentic AI workshops, platform engineering, Apache Kafka, React, GitHub Copilot Dev Days, HasGeek Mini Confs
+30+ free events | 10 hackathons | $145,000+ in prizes
+Month-by-month: https://bengaluru-events.sagarjethi.com/events
+April 2026: https://bengaluru-events.sagarjethi.com/events/april-2026
+May 2026: https://bengaluru-events.sagarjethi.com/events/may-2026
 Companies represented: OpenAI, Y Combinator, Amazon Web Services, Meta, Google, ElevenLabs, Hugging Face, Databricks, PyTorch Foundation
 Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
 
@@ -442,6 +447,441 @@ Example URLs:
 - https://bengaluru-events.sagarjethi.com/events/meta-pytorch-hackathon
 - https://bengaluru-events.sagarjethi.com/events/vibecon-india-2026
 - https://bengaluru-events.sagarjethi.com/events/gids-2026-developer-summit
+
+---
+
+
+---
+
+## APRIL 27 – 30, 2026 (extension)
+
+### AI of the Week: What's actually worth using?
+- **Date:** Apr 27
+- **Venue:** Bengaluru
+- **Time:** 8:30 PM – 9:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** **A space for builders to talk about how we're actually using AI in creating products: tools, prompts, workflows, and hacks.** * Real workflows, prompts,
+- **Source:** meetup
+- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/314162349/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/ai-of-the-week-whats-actually-worth-using
+
+### Citizen developers in the enterprise: What platform teams should know
+- **Date:** Apr 27
+- **Venue:** Bengaluru
+- **Time:** 10:30 PM – 11:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Security
+- **Description:** Business analysts and domain experts are building applications with AI and they expect the same infrastructure, security, and governance that professional
+- **Source:** meetup
+- **Register:** https://www.meetup.com/platform-engineers-bangalore/events/314180906/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/citizen-developers-in-the-enterprise-what-platform-teams-should-know
+
+### Founders Networking: Connect & Help Each Other
+- **Date:** Apr 28
+- **Venue:** Bengaluru
+- **Time:** 8:30 PM – 9:30 PM
+- **Cost:** See event page
+- **Category:** startup
+- **Tags:** Startup
+- **Description:** **Founders helping founders – not a slogan, a weekly session.** Stuck on the same problem for weeks, need some help or advice? **Join a live builders' netw
+- **Source:** meetup
+- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/314181425/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/founders-networking-connect-help-each-other
+
+### GCU AWS Cloud Club  – Inaugural Event
+- **Date:** Apr 28
+- **Venue:** Garden City University OMR
+- **Time:** 10:00 AM – 11:30 AM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** Cloud
+- **Description:** Welcome to the **official launch of the AWS Cloud Club at Garden City University!** 🎉 We’re excited to bring together students who are passionate about **
+- **Source:** meetup
+- **Register:** https://www.meetup.com/aws-cloud-club-at-gardencity-univ/events/314453313/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
+
+### F*ckUp Night: Startup Failure Stories (Open Mic)
+- **Date:** Apr 29
+- **Venue:** Bengaluru
+- **Time:** 9:30 PM – 10:30 PM
+- **Cost:** See event page
+- **Category:** startup
+- **Tags:** Startup
+- **Description:** **Open mic for honest startup failures.** Founders revisit their biggest mistakes — and what they'd do differently if they started from scratch. ​✅ **[Regi
+- **Source:** meetup
+- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/313918993/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/f-ckup-night-startup-failure-stories-open-mic
+
+### Elastic Agentic Talks: Building with AI Agents
+- **Date:** Apr 29
+- **Venue:** Bengaluru
+- **Time:** 8:00 PM – 9:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Agents
+- **Description:** **NOTE:** Access to this meetup is restricted. Please ensure [you register on Luma.](https://luma.com/cleexkag?utm_campaign=meetup&utm_medium=announcement&
+- **Source:** meetup
+- **Register:** https://www.meetup.com/elastic-apj-virtual-user-group/events/314334279/?recId=f7d62e62-bf10-4a79-bc68-d4b1d55eb74c&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/elastic-agentic-talks-building-with-ai-agents
+
+### Feedback Jam: Get Honest Takes On Your Build
+- **Date:** Apr 30
+- **Venue:** Bengaluru
+- **Time:** 8:30 PM – 9:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** **Bring your idea, MVP, landing page, or anything you want to put to the challenge:** 5 min demo → 10 min of honest feedback from other builders. * Presen
+- **Source:** meetup
+- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/314215672/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/feedback-jam-get-honest-takes-on-your-build
+
+
+---
+
+## MAY 2026 — FULL LISTING (28 events)
+
+Month index: https://bengaluru-events.sagarjethi.com/events/may-2026
+
+### Build Autonomous AI Agents: 2-Hour Masterclass
+- **Date:** May 1
+- **Venue:** Bengaluru
+- **Time:** 3:30 PM – 5:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** **Unlock the Future of AI — Build Autonomous AI Agents in a Hands-On Masterclass** Step into the next frontier of artificial intelligence with our 2-hour
+- **Source:** meetup
+- **Register:** https://www.meetup.com/giofai-bengaluru-chapter/events/314033252/?recId=f7d62e62-bf10-4a79-bc68-d4b1d55eb74c&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/build-autonomous-ai-agents-2-hour-masterclass
+
+### Data & AI Forum #2 | Women in Tech Special
+- **Date:** May 2
+- **Venue:** 43 Workspace and Events
+- **Time:** 11:00 AM – 3:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Data
+- **Description:** Join us for the second edition of the Data and AI Forum. This time, we are hosting a Women in Tech Special focused entirely on the practical side of data e
+- **Source:** meetup
+- **Register:** https://www.meetup.com/data-ai-forum/events/314376671/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special
+
+### (External RSVP) GitHub Copilot Dev Days
+- **Date:** May 2
+- **Venue:** Microsoft Prestige Ferns Galaxy
+- **Time:** 10:00 AM – 1:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Security
+- **Description:** \*\* Important RSVP [here](https://www.aicamp.ai/event/eventdetails/W2026050222) (Due to room capacity and venue security, it's required to pre-register at
+- **Source:** meetup
+- **Register:** https://www.meetup.com/bangalore-ai-tech-talks/events/314252929/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days
+
+### Intent-Driven Dev - May 2026
+- **Date:** May 2
+- **Venue:** Church Street
+- **Time:** 11:00 AM – 1:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** **RSVP** - [https://forms.gle/DJaEqnbu18uUhrPX8](https://forms.gle/DJaEqnbu18uUhrPX8) **Venue** \- BHIVE Platinum\, 48\, Church St\, Haridevpur\, Shanthala
+- **Source:** meetup
+- **Register:** https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026
+
+### Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore
+- **Date:** May 2
+- **Venue:** Bengaluru
+- **Time:** 11:00 AM – 1:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Design
+- **Description:** Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore This session focuses on how to design and build intelligent AI agents using Kiro, MCP (Mode
+- **Source:** meetup
+- **Register:** https://www.meetup.com/aws-cloud-club-at-ssm-inst-of-eng-tech/events/314367997/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/building-ai-agents-with-kiro-mcp-and-amazon-bedrock-agentcore
+
+### The State of Distributed Ledger Technology Report 2026
+- **Date:** May 6
+- **Venue:** Bengaluru
+- **Time:** 7:30 PM – 8:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** Join a discussion with Szymon Poczwardowski, the lead author of the State of DLT Report 2026 ([https://espeo.eu/content/the-state-of-dlt-report-2026/](http
+- **Source:** meetup
+- **Register:** https://www.meetup.com/lfdt-bengaluru/events/314390059/?recId=aa252b46-f66f-4dc7-9121-8e7666b66b43&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/the-state-of-distributed-ledger-technology-report-2026
+
+### GitHub Agentic Workflows: Automation That Actually Reads the Room
+- **Date:** May 7
+- **Venue:** Bengaluru
+- **Time:** 9:30 PM – 10:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Agents
+- **Description:** GitHub Agentic Workflows let your repo improve itself. With a simple markdown file and one command, GitHub Actions launches an AI agent to triage issues, f
+- **Source:** meetup
+- **Register:** https://www.meetup.com/microsoft-reactor-bengaluru/events/314043681/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/github-agentic-workflows-automation-that-actually-reads-the-room
+
+### Platform Engineering Meetup Bengaluru Edition - May 2026
+- **Date:** May 9
+- **Venue:** Urban Vault
+- **Time:** 10:30 AM – 2:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** The Platform Engineering Meetup group is back and excited to announced its fifth meetup and the 2nd one for 2026! ⭐️ We’re here to explore how internal pla
+- **Source:** meetup
+- **Register:** https://www.meetup.com/platform-resilience-engineering-meetup-group/events/314415491/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/platform-engineering-meetup-bengaluru-edition-may-2026
+
+### Scrum Meet-up: Next-Gen Scrum: AI for Agile leaders: In Person
+- **Date:** May 9
+- **Venue:** DevOn Software
+- **Time:** 10:00 AM – 3:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** We are thrilled to announce the 40th edition of the Scrum Bangalore Meetup In Person Event! Join likeminded Agile practitioners, product leaders, technolog
+- **Source:** meetup
+- **Register:** https://www.meetup.com/scrumblr/events/313956450/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/scrum-meet-up-next-gen-scrum-ai-for-agile-leaders-in-person
+
+### React Meetup #103
+- **Date:** May 9
+- **Venue:** MiQ Digital
+- **Time:** 2:00 PM – 6:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Agents, Frontend, Design
+- **Description:** **Agenda** \* **From UI to AI Agents: Building Agentic React Apps using MCP** by [Haritha Maduraiveeran](https://www.linkedin.com/in/haritha-maduraiveeran)
+- **Source:** meetup
+- **Register:** https://www.meetup.com/reactjs-bangalore/events/314309244/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/react-meetup-103
+
+### Building a distributed transactional database
+- **Date:** May 9
+- **Venue:** Bengaluru
+- **Time:** 9:45 AM – 5:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** Data, Design
+- **Description:** Design MVCC databases with real-world consistency guarantees
+- **Source:** hasgeek
+- **Register:** https://hasgeek.com/rootconf/building-distributed-transactional-database-online/
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/building-a-distributed-transactional-database
+
+### Platform Engineering meet-up - May 9
+- **Date:** May 9
+- **Venue:** Bengaluru
+- **Time:** 3:00 PM – 5:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** Real systems. Real engineers. Real lessons.
+- **Source:** hasgeek
+- **Register:** https://hasgeek.com/rootconf/platform-engineering-meet-up-may-9/
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/platform-engineering-meet-up-may-9
+
+### Opensource Stories :A Networking Day for Contributors
+- **Date:** May 10
+- **Venue:** Bangalore
+- **Time:** 10:00 AM – 12:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** ## **Opensource Stories: A Networking Evening for Contributors** https://luma.com/xt0fuk1c (RSVP are only accepted via luma not in meetup.com) Open source
+- **Source:** meetup
+- **Register:** https://www.meetup.com/soulcloudehq/events/314421120/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors
+
+### Applied AI Ethics MonthlyMixer - Where Innovation Meets Responsibility
+- **Date:** May 13
+- **Venue:** Bengaluru
+- **Time:** 5:00 PM – 7:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** Join a global, open-format gathering for those building and questioning AI — from real-world use cases to critical conversations around ethics, bias, and t
+- **Source:** meetup
+- **Register:** https://www.meetup.com/puducherry-tech/events/314435928/?recId=925f7258-6dd7-4a27-ad0e-660883132620&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/applied-ai-ethics-monthlymixer-where-innovation-meets-responsibility
+
+### Agent Orchestration: Directing Your AI Dream Team
+- **Date:** May 14
+- **Venue:** Bengaluru
+- **Time:** 9:30 PM – 10:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Agents
+- **Description:** What is Agent Orchestration? Assigning one primary agent the job of a project manager (orchestrator) whose sole purpose is delegating tasks to specialized
+- **Source:** meetup
+- **Register:** https://www.meetup.com/microsoft-reactor-bengaluru/events/314044036/?recId=989fdabf-8fc1-437c-876b-0ee66f589978&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/agent-orchestration-directing-your-ai-dream-team
+
+### Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.
+- **Date:** May 16
+- **Venue:** Harness.io R&D labs
+- **Time:** 10:00 AM – 2:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** Cloud, Data
+- **Description:** 🚀 Join us for an exciting in-person community meetup where **MongoDB User Group Bangalore** and **Harness** come together to explore how **Data + DevOps p
+- **Source:** meetup
+- **Register:** https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/data-devops-powering-modern-applications-build-fast-deploy-safer
+
+### Agentic AI for developers
+- **Date:** May 16
+- **Venue:** Embassy Tech Village
+- **Time:** 10:00 AM – 12:30 PM
+- **Cost:** See event page
+- **Category:** cybersecurity
+- **Tags:** AI, Agents
+- **Description:** This is a FREE community event is in collaboration with IBM India. Talk 1: OWASP Top 10 for LLM Applications - Live Breaking and Fixing by Jeevan D C (bas
+- **Source:** meetup
+- **Register:** https://www.meetup.com/javascriptmeetup/events/314313996/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/agentic-ai-for-developers
+
+### IN PERSON! Apache Kafka® Meetup Bangalore- May 2026
+- **Date:** May 16
+- **Venue:** New Relic
+- **Time:** 11:00 AM – 2:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** Data
+- **Description:** Hello everyone! Join us for an IN PERSON Apache Kafka® meetup on May 16 from 11:00AM, hosted by New Relic in Bangalore! **📍 Venue:** New Relic One India
+- **Source:** meetup
+- **Register:** https://www.meetup.com/bangalore-kafka-data-streams/events/314292701/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/in-person-apache-kafka-meetup-bangalore-may-2026
+
+### Google Map Software Architecture
+- **Date:** May 16
+- **Venue:** Bengaluru
+- **Time:** 4:00 PM – 6:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** —
+- **Description:** Learn How Google Map Scales to Millions of users across the globe, how is Google Map reliable. How does Google Map able to tell you the distance and time b
+- **Source:** meetup
+- **Register:** https://www.meetup.com/software-architecture-and-system-design-or-core-design/events/314346143/?recId=925f7258-6dd7-4a27-ad0e-660883132620&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/google-map-software-architecture
+
+### Agentic AI Unplugged: Bengaluru Edition
+- **Date:** May 16
+- **Venue:** Samarthanam Auditorium- Managed by Theatrenama
+- **Time:** 9:30 AM – 3:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Agents
+- **Description:** **Note: Meetup RSVPs are closed. Please register [here](https://luma.com/AgenticAI-BLR2026). Entry by invitation only.** **Agentic AI Unplugged: Bengaluru
+- **Source:** meetup
+- **Register:** https://www.meetup.com/clickhouse-bangalore-user-group/events/314381010/?recId=989fdabf-8fc1-437c-876b-0ee66f589978&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/agentic-ai-unplugged-bengaluru-edition
+
+### Crafting multi-Agent systems that think and act
+- **Date:** May 16
+- **Venue:** Nutanix Technologies India Pvt Ltd
+- **Time:** 10:00 AM – 4:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** Agents
+- **Description:** Hands-on workshop
+- **Source:** hasgeek
+- **Register:** https://hasgeek.com/fifthelephant/crafting-multi-agent-systems-pune-edition/
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/crafting-multi-agent-systems-that-think-and-act
+
+### Integrating APIs and Services with AgentCore Gateway
+- **Date:** May 18
+- **Venue:** Bangalore
+- **Time:** 9:00 PM – 10:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** Cloud
+- **Description:** **Description:** Explore how the AgentCore Gateway securely connects your agents to AWS services, APIs, and third-party tools. You’ll learn to convert APIs
+- **Source:** meetup
+- **Register:** https://www.meetup.com/dataopslabs/events/310516159/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/integrating-apis-and-services-with-agentcore-gateway
+
+### Enterprise AI in Production
+- **Date:** May 22
+- **Venue:** Bengaluru
+- **Time:** 12:00 PM – 6:00 PM
+- **Cost:** See event page
+- **Category:** conference
+- **Tags:** AI
+- **Description:** The Fifth Elephant Mini Conf
+- **Source:** hasgeek
+- **Register:** https://hasgeek.com/fifthelephant/enterprise-ai-in-production-cfp/
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/enterprise-ai-in-production
+
+### From Chat to Agents: Five AI Engineering Paradigms
+- **Date:** May 23
+- **Venue:** Equal Experts India Pvt Ltd
+- **Time:** 10:30 AM – 12:30 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** # Description Software development with AI is no longer just prompting. It spans everything from quick chat prompts to autonomous agents and AI-infused fe
+- **Source:** meetup
+- **Register:** https://www.meetup.com/experttalks-bengaluru/events/314210418/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms
+
+### From Vibe to Validation: AI Productivity for QA Engineers
+- **Date:** May 23
+- **Venue:** Manyata Embassay  Business Park
+- **Time:** 11:00 AM – 1:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** Quality isn’t just about catching defects—it’s about accelerating excellence. In this event, discover how AI can become your trusted co-pilot in the QA jou
+- **Source:** meetup
+- **Register:** https://www.meetup.com/lead-with-tech-meetup-group/events/314411017/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/from-vibe-to-validation-ai-productivity-for-qa-engineers
+
+### Vibe Delivery: AI Productivity for PMs & Scrum Masters
+- **Date:** May 23
+- **Venue:** Whitefield
+- **Time:** 4:00 PM – 6:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** Step into the future of leadership and delivery. This event will show you how AI can become your trusted co-pilot—helping you make smarter decisions, strea
+- **Source:** meetup
+- **Register:** https://www.meetup.com/lead-with-tech-meetup-group/events/314411069/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/vibe-delivery-ai-productivity-for-pms-scrum-masters
+
+### Role of a Architect in coming Age of AI
+- **Date:** May 24
+- **Venue:** Jayanagar
+- **Time:** 11:00 AM – 1:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI
+- **Description:** Artificial Intelligence is reshaping industries at lightning speed, and nowhere is the impact felt more profoundly than in IT. This raises bold questions:
+- **Source:** meetup
+- **Register:** https://www.meetup.com/lead-with-tech-meetup-group/events/314411097/?recId=aa252b46-f66f-4dc7-9121-8e7666b66b43&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/role-of-a-architect-in-coming-age-of-ai
+
+### Tech4Food: AI in Food — Efficiency, Insights & Beyond
+- **Date:** May 30
+- **Venue:** Food Safety Works
+- **Time:** 9:30 AM – 1:00 PM
+- **Cost:** See event page
+- **Category:** meetup
+- **Tags:** AI, Data
+- **Description:** Data, decisions, and the future of food
+- **Source:** hasgeek
+- **Register:** https://hasgeek.com/tech4food/ai-in-food-efficiency-insights-beyond/
+- **Detail page:** https://bengaluru-events.sagarjethi.com/events/tech4food-ai-in-food-efficiency-insights-beyond
+
 
 ---
 

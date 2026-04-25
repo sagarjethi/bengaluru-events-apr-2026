@@ -10,6 +10,7 @@ import Platforms from './components/Platforms';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
 import EventDetail from './components/EventDetail';
+import MonthEventsPage, { MonthsIndexPage } from './components/MonthEventsPage';
 import SocialPage from './components/SocialPage';
 import TweetSupportModal from './components/TweetSupportModal';
 import MapPage from './components/MapPage';
@@ -44,6 +45,9 @@ export default function App() {
       <TweetSupportModal />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/events" element={<MonthsIndexPage />} />
+        <Route path="/events/april-2026" element={<MonthEventsPage month="april-2026" />} />
+        <Route path="/events/may-2026" element={<MonthEventsPage month="may-2026" />} />
         <Route path="/events/:slug" element={<EventDetail />} />
         <Route path="/hackathons" element={<HackathonsPage />} />
         <Route path="/hackathons/resources" element={<BuilderResourcesHub />} />

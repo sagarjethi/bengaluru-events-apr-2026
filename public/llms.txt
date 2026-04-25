@@ -1,6 +1,6 @@
-# Bengaluru Events Directory — April 15–26, 2026
+# Bengaluru Events Directory — April 15 – May 30, 2026
 
-> The most complete guide to 38+ tech events, hackathons, conferences, startup events, and meetups happening in Bengaluru (Bangalore), India — April 2026.
+> The most complete guide to 80+ tech events, hackathons, conferences, startup events, and meetups happening in Bengaluru (Bangalore), India — April and May 2026.
 
 Website: https://bengaluru-events.sagarjethi.com
 Author: Sagar Jethi (https://x.com/sagarbjethi)
@@ -9,14 +9,19 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 
 ## Companion sections
 
+- Events by month index: https://bengaluru-events.sagarjethi.com/events
+- April 2026 events: https://bengaluru-events.sagarjethi.com/events/april-2026
+- May 2026 events: https://bengaluru-events.sagarjethi.com/events/may-2026
 - Hackathons hub: https://bengaluru-events.sagarjethi.com/hackathons
 - Builder Resources (free tools, skills, guides, past winners): https://bengaluru-events.sagarjethi.com/hackathons/resources
 - Bangalore startup accelerators (13 verified programs): https://bengaluru-events.sagarjethi.com/accelerators
 
 ## Key Facts
 
-- 38+ events across 12 days (April 15–26, 2026)
-- 27 free events (no ticket cost)
+- 80+ events across April 15 – May 30, 2026 (~6 weeks)
+- April 2026: 45 events including YC Startup School, GIDS, AWS Summit, Rust India, OpenAI Codex Hackathon
+- May 2026: 35+ events including agentic AI workshops, platform engineering, React #103, Apache Kafka Bangalore, GitHub Copilot Dev Days, HasGeek "Enterprise AI in Production" Mini Conf
+- 30+ free events (no ticket cost)
 - 10 hackathons with $145,000+ in total prizes
 - Location: Bengaluru (also known as Bangalore), Karnataka, India
 - Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
@@ -24,6 +29,13 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 ## Top Search Queries This Site Answers
 
 - "tech events in Bengaluru April 2026"
+- "tech events in Bengaluru May 2026"
+- "Bangalore meetups May 2026"
+- "agentic AI events Bangalore"
+- "platform engineering meetup Bangalore"
+- "Apache Kafka meetup Bangalore"
+- "React meetup Bangalore May 2026"
+- "GitHub Copilot Dev Days Bangalore"
 - "hackathons in Bangalore 2026"
 - "free tech events Bangalore"
 - "OpenAI hackathon India"
@@ -74,6 +86,39 @@ Full event data: https://bengaluru-events.sagarjethi.com/llms-full.txt
 - VibeCon India 2026 — Apr 16–17 — Free — Top 300 builders, direct YC interviews
 - YC Secret (AI)fter Party — Apr 19 — Free — 2,336+ attendees
 
+### April 27 – 30, 2026 (extension after main April week)
+- Apr 27 — AI of the Week: What's actually worth using? (Solopreneurs Lab)
+- Apr 27 — Citizen developers in the enterprise: What platform teams should know
+- Apr 28 — Founders Networking: Connect & Help Each Other
+- Apr 28 — GCU AWS Cloud Club — Inaugural Event (Garden City University OMR)
+- Apr 29 — F*ckUp Night: Startup Failure Stories (Open Mic)
+- Apr 29 — Elastic Agentic Talks: Building with AI Agents
+- Apr 30 — Feedback Jam: Get Honest Takes On Your Build
+
+### May 2026 — Highlights
+- May 2 — GitHub Copilot Dev Days (Microsoft Prestige Ferns Galaxy)
+- May 2 — Data & AI Forum #2 | Women in Tech Special (43 Workspace and Events)
+- May 2 — Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore
+- May 7 — GitHub Agentic Workflows: Automation That Actually Reads the Room
+- May 9 — Platform Engineering Meetup Bengaluru Edition (Urban Vault)
+- May 9 — React Meetup #103 (MiQ Digital)
+- May 9 — Building a distributed transactional database (HasGeek Bengaluru Systems Meetup)
+- May 9 — Scrum Meet-up: Next-Gen Scrum, AI for Agile leaders (DevOn Software)
+- May 13 — Applied AI Ethics Monthly Mixer
+- May 14 — Agent Orchestration: Directing Your AI Dream Team
+- May 16 — Apache Kafka® Meetup Bangalore (New Relic)
+- May 16 — Agentic AI for developers (Embassy Tech Village, Bellandur)
+- May 16 — Agentic AI Unplugged: Bengaluru Edition (Samarthanam Auditorium)
+- May 16 — Crafting Multi-Agent Systems That Think and Act (Nutanix HasGeek Fifth Elephant)
+- May 16 — Data + DevOps Powering Modern Applications (Harness.io R&D labs)
+- May 18 — Integrating APIs and Services with AgentCore Gateway
+- May 22 — Enterprise AI in Production (HasGeek Fifth Elephant Mini Conf)
+- May 23 — From Chat to Agents: Five AI Engineering Paradigms (Equal Experts)
+- May 23 — From Vibe to Validation: AI Productivity for QA Engineers (Manyata Embassy)
+- May 23 — Vibe Delivery: AI Productivity for PMs & Scrum Masters (Whitefield)
+- May 24 — Role of an Architect in the Coming Age of AI (Jayanagar)
+- May 30 — Tech4Food: AI in Food (HasGeek)
+
 ### Free Events (18 total)
 OpenAI Codex Hackathon, YC Startup School India, AWS Summit Bengaluru, VibeCon India, JioHotstar ScaleUp 2.0, ElevenLabs Buildathon, Meta PyTorch Hackathon, Golang Bangalore Meetup, GDG Build For Bengaluru, HackBricks 2026, HackBLR, Aya AI Hackathon, YC BLR Pre-Event Mixer, YC Secret (AI)fter Party, After YC AI Community Mixer, The Other Room, 11th Founders & Freelancers Meetup, AI Tinkerers Bengaluru
 
@@ -118,7 +163,10 @@ Browse all: https://bengaluru-events.sagarjethi.com/accelerators
 ## Frequently Asked Questions
 
 Q: What tech events are happening in Bengaluru in April 2026?
-A: Over 38 events including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and more.
+A: Over 45 events including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and more. Full list: https://bengaluru-events.sagarjethi.com/events/april-2026
+
+Q: What tech events are happening in Bengaluru in May 2026?
+A: 35+ events including GitHub Copilot Dev Days (May 2), Apache Kafka Meetup Bangalore (May 16), HasGeek "Enterprise AI in Production" Mini Conf (May 22), React Meetup #103 (May 9), Platform Engineering Meetup (May 9), and many agentic-AI workshops covering AgentCore, Bedrock, MCP, and multi-agent orchestration. Full list: https://bengaluru-events.sagarjethi.com/events/may-2026
 
 Q: Are there free tech events in Bengaluru in April 2026?
 A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, VibeCon, Meta PyTorch Hackathon, and more.
