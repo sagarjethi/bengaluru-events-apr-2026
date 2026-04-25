@@ -1,9 +1,16 @@
 import { useState, useMemo } from 'react';
-import { Search, Filter, X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import { events, CATEGORIES } from '../data/events';
 import EventCard from './EventCard';
 
-export default function EventsGrid({ selectedDate }) {
+function humanDate(iso) {
+  if (!iso) return '';
+  const [y, m, d] = iso.split('-').map(Number);
+  const date = new Date(Date.UTC(y, m - 1, d));
+  return date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
+}
+
+export default function EventsGrid({ selectedDate, onClearDate }) {
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState(null);
 
@@ -11,90 +18,159 @@ export default function EventsGrid({ selectedDate }) {
     let filtered = events;
 
     if (selectedDate) {
-      filtered = filtered.filter(e => e.startDate <= selectedDate && e.endDate >= selectedDate);
+      filtered = filtered.filter((e) => e.startDate <= selectedDate && e.endDate >= selectedDate);
     }
-
     if (activeCategory) {
-      filtered = filtered.filter(e => e.category === activeCategory);
+      filtered = filtered.filter((e) => e.category === activeCategory);
     }
-
     if (search.trim()) {
       const q = search.toLowerCase();
-      filtered = filtered.filter(e =>
-        e.name.toLowerCase().includes(q) ||
-        e.description.toLowerCase().includes(q) ||
-        e.tags.some(t => t.toLowerCase().includes(q)) ||
-        e.venue.toLowerCase().includes(q)
+      filtered = filtered.filter(
+        (e) =>
+          e.name.toLowerCase().includes(q) ||
+          e.description.toLowerCase().includes(q) ||
+          e.tags.some((t) => t.toLowerCase().includes(q)) ||
+          e.venue.toLowerCase().includes(q)
       );
     }
 
-    // Featured events surface first within the filtered set
-    return filtered.sort((a, b) => {
+    return [...filtered].sort((a, b) => {
       if (a.featured && !b.featured) return -1;
       if (!a.featured && b.featured) return 1;
       return a.startDate.localeCompare(b.startDate);
     });
   }, [selectedDate, activeCategory, search]);
 
-  const clearFilters = () => {
+  const clearAll = () => {
     setSearch('');
     setActiveCategory(null);
+    if (onClearDate) onClearDate();
   };
 
-  const hasFilters = search || activeCategory || selectedDate;
+  const hasActiveFilters = !!search || !!activeCategory || !!selectedDate;
+
+  // Categories that actually have events — hide empty pills
+  const visibleCategories = useMemo(() => {
+    const present = new Set(events.map((e) => e.category));
+    return Object.entries(CATEGORIES).filter(([key]) => present.has(key));
+  }, []);
 
   return (
     <section id="events" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-slate-900">All Events</h2>
-        <p className="mt-2 text-slate-500">{filteredEvents.length} events found</p>
-      </div>
+      {/* Heading + count */}
+      <div className="flex items-end justify-between flex-wrap gap-3 mb-6">
+        <div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">All events</h2>
+          <p className="mt-1 text-sm text-slate-500">
+            <span className="font-semibold text-slate-700 tabular-nums">{filteredEvents.length}</span>
+            {hasActiveFilters ? <> matching · </> : <> total · </>}
+            <span className="text-slate-400">refreshed weekly</span>
+          </p>
+        </div>
 
-      <div className="mb-6 space-y-4">
-        <div className="relative max-w-lg mx-auto">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+        {/* Search — right-aligned on desktop, full-width on mobile */}
+        <div className="relative w-full sm:w-72">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
           <input
             type="text"
-            placeholder="Search events, topics, venues..."
+            placeholder="Search events, topics, venues…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 shadow-sm"
+            aria-label="Search events"
+            className="w-full pl-9 pr-9 py-2 bg-white border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-300"
           />
           {search && (
-            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
-              <X className="w-4 h-4" />
+            <button
+              type="button"
+              onClick={() => setSearch('')}
+              aria-label="Clear search"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 p-0.5 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+            >
+              <X className="w-3.5 h-3.5" />
             </button>
           )}
         </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          <Filter className="w-4 h-4 text-slate-400" />
-          <button
-            onClick={() => setActiveCategory(null)}
-            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${!activeCategory ? 'bg-primary-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
-          >
-            All
-          </button>
-          {Object.entries(CATEGORIES).map(([key, cat]) => (
-            <button
-              key={key}
-              onClick={() => setActiveCategory(activeCategory === key ? null : key)}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${activeCategory === key ? 'bg-primary-600 text-white' : `${cat.color} hover:opacity-80`}`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        {hasFilters && (
-          <div className="text-center">
-            <button onClick={clearFilters} className="text-sm text-primary-600 hover:text-primary-700 font-medium">
-              Clear all filters
-            </button>
-          </div>
-        )}
       </div>
 
+      {/* Active filter chips */}
+      {hasActiveFilters && (
+        <div className="mb-4 flex flex-wrap items-center gap-2">
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Active filters</span>
+          {selectedDate && (
+            <Chip onClear={onClearDate} tone="primary">
+              {humanDate(selectedDate)}
+            </Chip>
+          )}
+          {activeCategory && (
+            <Chip onClear={() => setActiveCategory(null)} tone="default">
+              <span className={`w-1.5 h-1.5 rounded-full ${CATEGORIES[activeCategory]?.dot || 'bg-slate-400'}`} />
+              {CATEGORIES[activeCategory]?.label || activeCategory}
+            </Chip>
+          )}
+          {search && (
+            <Chip onClear={() => setSearch('')} tone="default">
+              "{search}"
+            </Chip>
+          )}
+          <button
+            type="button"
+            onClick={clearAll}
+            className="ml-1 text-xs font-semibold text-slate-500 hover:text-slate-900"
+          >
+            Clear all
+          </button>
+        </div>
+      )}
+
+      {/* Category pills — single horizontal row, scroll on small screens */}
+      <div
+        role="tablist"
+        aria-label="Filter by category"
+        className="mb-8 flex items-center gap-1.5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden -mx-4 px-4 sm:mx-0 sm:px-0 pb-1"
+      >
+        <button
+          role="tab"
+          aria-selected={!activeCategory}
+          onClick={() => setActiveCategory(null)}
+          className={[
+            'shrink-0 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition border',
+            !activeCategory
+              ? 'bg-slate-900 text-white border-slate-900'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50',
+          ].join(' ')}
+        >
+          All
+          <span className={`inline-flex items-center justify-center min-w-[1.25rem] h-4 px-1 rounded-full text-[10px] font-bold tabular-nums ${!activeCategory ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'}`}>
+            {events.length}
+          </span>
+        </button>
+        {visibleCategories.map(([key, cat]) => {
+          const count = events.filter((e) => e.category === key).length;
+          const on = activeCategory === key;
+          return (
+            <button
+              key={key}
+              role="tab"
+              aria-selected={on}
+              onClick={() => setActiveCategory(on ? null : key)}
+              className={[
+                'shrink-0 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition border',
+                on
+                  ? 'bg-slate-900 text-white border-slate-900'
+                  : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50',
+              ].join(' ')}
+            >
+              <span className={`w-1.5 h-1.5 rounded-full ${cat.dot}`} />
+              {cat.label}
+              <span className={`inline-flex items-center justify-center min-w-[1.25rem] h-4 px-1 rounded-full text-[10px] font-bold tabular-nums ${on ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'}`}>
+                {count}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Results */}
       {filteredEvents.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {filteredEvents.map((event) => (
@@ -102,13 +178,38 @@ export default function EventsGrid({ selectedDate }) {
           ))}
         </div>
       ) : (
-        <div className="text-center py-16">
-          <p className="text-slate-400 text-lg">No events found matching your filters.</p>
-          <button onClick={clearFilters} className="mt-3 text-primary-600 hover:text-primary-700 font-medium">
-            Clear filters
+        <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/40 p-10 text-center">
+          <p className="text-slate-700 font-medium">No events match these filters.</p>
+          <p className="text-sm text-slate-500 mt-1">Try clearing one of the chips above.</p>
+          <button onClick={clearAll} className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2">
+            <X className="w-3.5 h-3.5" /> Clear all filters
           </button>
         </div>
       )}
     </section>
+  );
+}
+
+// ----------------------------------------------------------------------------
+
+function Chip({ children, onClear, tone = 'default' }) {
+  const styles =
+    tone === 'primary'
+      ? 'bg-primary-50 text-primary-700 ring-primary-100 hover:bg-primary-100'
+      : 'bg-white text-slate-700 ring-slate-200 hover:bg-slate-50';
+  return (
+    <span className={`inline-flex items-center gap-1.5 rounded-full ring-1 px-3 py-1 text-sm font-medium ${styles}`}>
+      {children}
+      {onClear && (
+        <button
+          type="button"
+          onClick={onClear}
+          aria-label="Remove filter"
+          className="-mr-1 ml-0.5 p-0.5 rounded-full hover:bg-black/5"
+        >
+          <X className="w-3 h-3" />
+        </button>
+      )}
+    </span>
   );
 }

@@ -97,7 +97,7 @@ export default function SocialPage() {
 
         <div className="max-w-6xl mx-auto px-4 py-10 space-y-14">
 
-          {/* === X / Twitter Section === */}
+          {/* === X / Twitter Section — grouped by topic === */}
           <section>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center">
@@ -105,18 +105,14 @@ export default function SocialPage() {
               </div>
               <div className="flex-1">
                 <h2 className="text-xl font-bold text-slate-900">Trending on X</h2>
-                <p className="text-sm text-slate-500">Fresh posts from builders, founders &amp; partners — verified on x.com</p>
+                <p className="text-sm text-slate-500">Posts grouped by event — verified on x.com</p>
               </div>
               <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-2.5 py-1">
                 <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
                 Updated this week
               </span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {xPosts.map((post, i) => (
-                <TweetCard key={i} post={post} />
-              ))}
-            </div>
+            <TopicGroupedTweets posts={xPosts} />
           </section>
 
           {/* === LinkedIn Section === */}
@@ -379,6 +375,85 @@ export default function SocialPage() {
           </div>
         </div>
       </div>
+    </>
+  );
+}
+
+// ----------------------------------------------------------------------------
+// Topic grouping for X posts. Auto-derives topic from post text via keyword
+// matching so we don't have to hand-tag every entry in data/social.js.
+// Topics are listed in display order; first match wins.
+
+const TOPICS = [
+  { id: 'lyzr',    label: 'Lyzr Agentathon',    rx: /lyzr|agentathon/i,                                accent: 'violet' },
+  { id: 'openai',  label: 'OpenAI Codex',       rx: /openai|codex/i,                                   accent: 'emerald' },
+  { id: 'yc',      label: 'YC Startup School',  rx: /\b(yc|y\s?combinator|startup\s?school)\b/i,       accent: 'amber' },
+  { id: 'aws',     label: 'AWS Summit',         rx: /aws\s?summit|reinvent|@aws|amazon web services/i, accent: 'amber' },
+  { id: 'meta',    label: 'Meta PyTorch',       rx: /pytorch|openenv|@meta\b/i,                        accent: 'violet' },
+  { id: 'rust',    label: 'Rust India',         rx: /rust\s?india|@rustlangin|rustindia|rustconf/i,    accent: 'rose' },
+  { id: 'gids',    label: 'GIDS Developer Summit', rx: /\bgids\b|developersummit|developer summit/i,   accent: 'primary' },
+  { id: 'vibecon', label: 'VibeCon',            rx: /vibe\s?con|vibecode|vibe coding/i,                accent: 'violet' },
+  { id: 'eleven',  label: 'ElevenLabs Buildathon', rx: /elevenlabs|buildathon/i,                       accent: 'emerald' },
+  { id: 'hackblr', label: 'HackBLR',            rx: /hackblr|geekroom/i,                               accent: 'rose' },
+  { id: 'web3',    label: 'Web3 / Crypto',      rx: /\b(web3|w3summit|chainlink|blockchain|defi|crypto)\b/i, accent: 'amber' },
+  { id: 'other',   label: 'More from the week', rx: /.*/,                                              accent: 'slate' },
+];
+
+const TOPIC_ACCENT = {
+  primary: 'bg-primary-50 text-primary-700 ring-primary-100',
+  emerald: 'bg-emerald-50 text-emerald-700 ring-emerald-100',
+  violet:  'bg-violet-50 text-violet-700 ring-violet-100',
+  amber:   'bg-amber-50 text-amber-700 ring-amber-100',
+  rose:    'bg-rose-50 text-rose-700 ring-rose-100',
+  slate:   'bg-slate-50 text-slate-700 ring-slate-200',
+};
+
+function topicFor(post) {
+  const blob = `${post.text || ''} ${post.handle || ''} ${post.name || ''}`;
+  return TOPICS.find((t) => t.rx.test(blob))?.id || 'other';
+}
+
+function TopicGroupedTweets({ posts }) {
+  // Group, preserving original order within each topic
+  const groups = TOPICS.map((t) => ({
+    ...t,
+    posts: posts.filter((p) => topicFor(p) === t.id),
+  })).filter((g) => g.posts.length > 0);
+
+  return (
+    <>
+      {/* Sticky in-page jump nav so users can pick a topic */}
+      <div className="mb-5 -mx-4 sm:mx-0 px-4 sm:px-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-1.5 pb-1">
+          {groups.map((g) => (
+            <a
+              key={g.id}
+              href={`#topic-${g.id}`}
+              className={`shrink-0 inline-flex items-center gap-1.5 rounded-full ring-1 px-3 py-1 text-xs font-semibold ${TOPIC_ACCENT[g.accent] || TOPIC_ACCENT.slate}`}
+            >
+              {g.label}
+              <span className="inline-flex items-center justify-center min-w-[1.25rem] h-4 px-1 rounded-full bg-white/70 text-[10px] font-bold tabular-nums">
+                {g.posts.length}
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {groups.map((g) => (
+        <div key={g.id} id={`topic-${g.id}`} className="mb-10 scroll-mt-24">
+          <div className="flex items-center gap-2 mb-4">
+            <h3 className="text-base font-bold text-slate-900">{g.label}</h3>
+            <span className="text-xs text-slate-400">·</span>
+            <span className="text-xs text-slate-500 tabular-nums">{g.posts.length} post{g.posts.length !== 1 ? 's' : ''}</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {g.posts.map((post, i) => (
+              <TweetCard key={`${g.id}-${i}`} post={post} />
+            ))}
+          </div>
+        </div>
+      ))}
     </>
   );
 }
