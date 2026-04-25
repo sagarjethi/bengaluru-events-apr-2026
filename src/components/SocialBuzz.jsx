@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, MessageCircle, ArrowRight, Tag } from 'lucide-react';
 import { socialBuzz } from '../data/events';
 import { couponsAndDeals } from '../data/social';
+import { addUtm } from '../utils/utm';
 
 function TwitterIcon({ className = 'w-4 h-4' }) {
   return (
@@ -53,7 +54,7 @@ export default function SocialBuzz() {
         {socialBuzz.map((post, i) => (
           <a
             key={i}
-            href={post.link}
+            href={addUtm(post.link, 'social-buzz', post.platform || post.handle)}
             target="_blank"
             rel="noopener noreferrer nofollow"
             className="group block bg-white rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-md p-5 transition-all"
@@ -109,7 +110,7 @@ export default function SocialBuzz() {
           {couponsAndDeals.map((deal, i) => (
             <a
               key={i}
-              href={deal.link}
+              href={addUtm(deal.link, 'deals', deal.brand || deal.name)}
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="group block bg-white rounded-xl border border-slate-200 hover:border-emerald-300 hover:shadow-md p-5 transition-all"

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MapPin, Clock, Tag, ExternalLink, Trophy } from 'lucide-react';
 import { CATEGORIES } from '../data/events';
 import { toSlug } from '../utils/slug';
+import { addUtm } from '../utils/utm';
 
 export default function EventCard({ event }) {
   const cat = CATEGORIES[event.category];
@@ -85,7 +86,7 @@ export default function EventCard({ event }) {
             View Details
           </Link>
           <a
-            href={event.link}
+            href={addUtm(event.link, 'event-card', toSlug(event.name))}
             target="_blank"
             rel="noopener noreferrer nofollow ugc"
             itemProp="url"

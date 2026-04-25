@@ -1,5 +1,6 @@
 import { ExternalLink, Globe } from 'lucide-react';
 import { platforms } from '../data/events';
+import { addUtm } from '../utils/utm';
 
 export default function Platforms() {
   return (
@@ -16,7 +17,7 @@ export default function Platforms() {
         {platforms.map((p) => (
           <a
             key={p.name}
-            href={p.url}
+            href={addUtm(p.url, 'platforms-bar', p.name.toLowerCase())}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-primary-300 hover:shadow-md rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:text-primary-600 transition-all"

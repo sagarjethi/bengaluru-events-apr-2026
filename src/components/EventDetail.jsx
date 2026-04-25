@@ -37,6 +37,7 @@ function LinkedInIcon({ className = 'w-4 h-4' }) {
 import EventMap from './EventMap';
 import { events, CATEGORIES } from '../data/events';
 import { findEventBySlug, toSlug } from '../utils/slug';
+import { addUtm } from '../utils/utm';
 import { buildGoogleCalendarUrl, downloadIcs } from '../utils/calendar';
 import Countdown from './Countdown';
 import EmailCapture from './EmailCapture';
@@ -486,7 +487,7 @@ export default function EventDetail() {
                 {/* CTA Buttons */}
                 <div className="space-y-2">
                   <a
-                    href={event.link}
+                    href={addUtm(event.link, 'event-detail-register', toSlug(event.name))}
                     target="_blank"
                     rel="noopener noreferrer nofollow ugc"
                     className="flex items-center justify-center gap-2 w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
@@ -496,7 +497,7 @@ export default function EventDetail() {
                   </a>
                   {event.website && (
                     <a
-                      href={event.website}
+                      href={addUtm(event.website, 'event-detail-website', toSlug(event.name))}
                       target="_blank"
                       rel="noopener noreferrer nofollow ugc"
                       className="flex items-center justify-center gap-2 w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium px-6 py-3 rounded-xl transition-colors text-sm"
