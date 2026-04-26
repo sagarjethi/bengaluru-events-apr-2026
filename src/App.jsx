@@ -10,6 +10,7 @@ import EventsGrid from './components/EventsGrid';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
 import TweetSupportModal from './components/TweetSupportModal';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // Below-the-fold on home: lazy so the homepage TTI is faster.
 const SocialBuzz = lazy(() => import('./components/SocialBuzz'));
@@ -59,7 +60,7 @@ function HomePage() {
 
 export default function App() {
   return (
-    <>
+    <ErrorBoundary>
       <Navigation />
       <TweetSupportModal />
       <Suspense fallback={<RouteFallback />}>
@@ -86,6 +87,6 @@ export default function App() {
           <Route path="/map" element={<MapPage />} />
         </Routes>
       </Suspense>
-    </>
+    </ErrorBoundary>
   );
 }
