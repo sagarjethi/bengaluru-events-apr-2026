@@ -1,8 +1,18 @@
 import { useState, useMemo } from 'react';
-import { Search, X } from 'lucide-react';
-import { events, CATEGORIES } from '../data/events';
+import { Search, X, Calendar, CalendarClock, Clock, History } from 'lucide-react';
+import { events, CATEGORIES } from '../data';
 import EventCard from './EventCard';
 
+function pad(n) { return n < 10 ? `0${n}` : `${n}`; }
+function todayIso() {
+  const d = new Date();
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+function plusDaysIso(iso, days) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const t = new Date(Date.UTC(y, m - 1, d + days));
+  return `${t.getUTCFullYear()}-${pad(t.getUTCMonth() + 1)}-${pad(t.getUTCDate())}`;
+}
 function humanDate(iso) {
   if (!iso) return '';
   const [y, m, d] = iso.split('-').map(Number);
@@ -10,12 +20,29 @@ function humanDate(iso) {
   return date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
 }
 
+const TIME_FILTERS = [
+  { id: 'all',       label: 'All',         icon: Calendar },
+  { id: 'upcoming',  label: 'Upcoming',    icon: CalendarClock },
+  { id: 'this-week', label: 'This week',   icon: Clock },
+  { id: 'past',      label: 'Past',        icon: History },
+];
+
 export default function EventsGrid({ selectedDate, onClearDate }) {
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState(null);
+  const [timeFilter, setTimeFilter] = useState('upcoming');
 
   const filteredEvents = useMemo(() => {
     let filtered = events;
+    const today = todayIso();
+    const weekEnd = plusDaysIso(today, 7);
+    if (timeFilter === 'upcoming') {
+      filtered = filtered.filter((e) => e.endDate >= today);
+    } else if (timeFilter === 'past') {
+      filtered = filtered.filter((e) => e.endDate < today);
+    } else if (timeFilter === 'this-week') {
+      filtered = filtered.filter((e) => e.startDate <= weekEnd && e.endDate >= today);
+    }
 
     if (selectedDate) {
       filtered = filtered.filter((e) => e.startDate <= selectedDate && e.endDate >= selectedDate);
@@ -39,15 +66,16 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
       if (!a.featured && b.featured) return 1;
       return a.startDate.localeCompare(b.startDate);
     });
-  }, [selectedDate, activeCategory, search]);
+  }, [selectedDate, activeCategory, search, timeFilter]);
 
   const clearAll = () => {
     setSearch('');
     setActiveCategory(null);
+    setTimeFilter('all');
     if (onClearDate) onClearDate();
   };
 
-  const hasActiveFilters = !!search || !!activeCategory || !!selectedDate;
+  const hasActiveFilters = !!search || !!activeCategory || !!selectedDate || timeFilter !== 'all';
 
   // Categories that actually have events — hide empty pills
   const visibleCategories = useMemo(() => {
@@ -121,6 +149,42 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
           </button>
         </div>
       )}
+
+      {/* Time-filter chips — Upcoming default for the live site */}
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">When</span>
+        {TIME_FILTERS.map((f) => {
+          const Icon = f.icon;
+          const on = timeFilter === f.id;
+          const today = todayIso();
+          const weekEnd = plusDaysIso(today, 7);
+          const count = f.id === 'all'
+            ? events.length
+            : f.id === 'upcoming'
+              ? events.filter((e) => e.endDate >= today).length
+              : f.id === 'past'
+                ? events.filter((e) => e.endDate < today).length
+                : events.filter((e) => e.startDate <= weekEnd && e.endDate >= today).length;
+          return (
+            <button
+              key={f.id}
+              type="button"
+              onClick={() => setTimeFilter(f.id)}
+              aria-pressed={on}
+              className={[
+                'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition border',
+                on ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50',
+              ].join(' ')}
+            >
+              <Icon className="w-3.5 h-3.5" />
+              {f.label}
+              <span className={`inline-flex items-center justify-center min-w-[1.25rem] h-4 px-1 rounded-full text-[10px] font-bold tabular-nums ${on ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'}`}>
+                {count}
+              </span>
+            </button>
+          );
+        })}
+      </div>
 
       {/* Category pills — single horizontal row, scroll on small screens */}
       <div
