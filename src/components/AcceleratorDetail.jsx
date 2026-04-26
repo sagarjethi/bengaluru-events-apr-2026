@@ -161,6 +161,8 @@ export default function AcceleratorDetail() {
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <ExternalLink
                 href={a.applyUrl || a.url}
+                campaign={a.applyUrl ? 'accelerator-detail-apply' : 'accelerator-detail-visit'}
+                content={a.id}
                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-white text-primary-700 hover:bg-amber-50 hover:text-primary-800 font-semibold text-sm transition-colors shadow-lg shadow-primary-900/20"
               >
                 {a.applyUrl ? 'Apply now' : 'Visit website'}
@@ -216,14 +218,14 @@ export default function AcceleratorDetail() {
               <ul className="space-y-2.5 text-sm">
                 <li className="flex items-center gap-3">
                   <Building2 className="w-4 h-4 text-slate-400 shrink-0" aria-hidden="true" />
-                  <ExternalLink href={a.url} className="text-primary-600 hover:text-primary-700 font-medium break-all">
+                  <ExternalLink href={a.url} campaign="accelerator-detail-website" content={a.id} className="text-primary-600 hover:text-primary-700 font-medium break-all">
                     {a.url}
                   </ExternalLink>
                 </li>
                 {a.applyUrl && (
                   <li className="flex items-center gap-3">
                     <LinkIcon className="w-4 h-4 text-slate-400 shrink-0" aria-hidden="true" />
-                    <ExternalLink href={a.applyUrl} className="text-primary-600 hover:text-primary-700 font-medium break-all">
+                    <ExternalLink href={a.applyUrl} campaign="accelerator-detail-apply" content={a.id} className="text-primary-600 hover:text-primary-700 font-medium break-all">
                       Apply: {a.applyUrl}
                     </ExternalLink>
                   </li>
@@ -231,7 +233,7 @@ export default function AcceleratorDetail() {
                 {a.twitter && (
                   <li className="flex items-center gap-3">
                     <XIcon className="w-4 h-4 text-slate-500 shrink-0" />
-                    <ExternalLink href={a.twitter} className="text-slate-700 hover:text-primary-700 font-medium">
+                    <ExternalLink href={a.twitter} campaign="accelerator-detail-twitter" content={a.id} className="text-slate-700 hover:text-primary-700 font-medium">
                       {a.twitter.replace(/^https?:\/\/(x\.com|twitter\.com)\//, '@')}
                     </ExternalLink>
                   </li>
@@ -239,7 +241,7 @@ export default function AcceleratorDetail() {
                 {a.linkedin && (
                   <li className="flex items-center gap-3">
                     <LinkedInIcon className="w-4 h-4 text-[#0A66C2] shrink-0" />
-                    <ExternalLink href={a.linkedin} className="text-slate-700 hover:text-primary-700 font-medium break-all">
+                    <ExternalLink href={a.linkedin} campaign="accelerator-detail-linkedin" content={a.id} className="text-slate-700 hover:text-primary-700 font-medium break-all">
                       LinkedIn
                     </ExternalLink>
                   </li>

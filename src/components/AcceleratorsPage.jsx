@@ -482,6 +482,8 @@ function AcceleratorCard({ accelerator: a }) {
           </Link>
           <ExternalLink
             href={a.applyUrl || a.url}
+            campaign={a.applyUrl ? 'accelerator-card-apply' : 'accelerator-card-visit'}
+            content={a.id}
             className="inline-flex items-center gap-1 text-slate-600 hover:text-primary-700"
           >
             {a.applyUrl ? 'Apply' : 'Visit'}
@@ -491,6 +493,8 @@ function AcceleratorCard({ accelerator: a }) {
           {a.linkedin && (
             <ExternalLink
               href={a.linkedin}
+              campaign="accelerator-card-linkedin"
+              content={a.id}
               className="inline-flex items-center gap-1 text-slate-500 hover:text-slate-700"
               aria-label="LinkedIn"
             >
