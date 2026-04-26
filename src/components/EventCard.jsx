@@ -1,8 +1,39 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Tag, ExternalLink, Trophy } from 'lucide-react';
-import { CATEGORIES } from '../data/events';
+import { CATEGORIES } from '../data';
 import { toSlug } from '../utils/slug';
 import { addUtm } from '../utils/utm';
+
+function pad(n) { return n < 10 ? `0${n}` : `${n}`; }
+function todayIso() {
+  const d = new Date();
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+function daysBetween(aIso, bIso) {
+  const [y1, m1, d1] = aIso.split('-').map(Number);
+  const [y2, m2, d2] = bIso.split('-').map(Number);
+  const a = new Date(Date.UTC(y1, m1 - 1, d1)).getTime();
+  const b = new Date(Date.UTC(y2, m2 - 1, d2)).getTime();
+  return Math.round((b - a) / 86400000);
+}
+
+// Returns { label, tone } for a relevance badge — or null if not relevant.
+// Past, today, tomorrow, this-week. Anything further out is implicit (event date already shown).
+function relevanceBadge(startDate, endDate) {
+  if (!startDate || !endDate) return null;
+  const today = todayIso();
+  if (endDate < today) return { label: 'Past', tone: 'past' };
+  if (startDate <= today && endDate >= today) return { label: 'Live · Today', tone: 'live' };
+  const delta = daysBetween(today, startDate);
+  if (delta === 1) return { label: 'Tomorrow', tone: 'soon' };
+  if (delta <= 7) return { label: `In ${delta} days`, tone: 'soon' };
+  return null;
+}
+const RELEVANCE_TONES = {
+  live: 'bg-rose-50 text-rose-700 ring-rose-100',
+  soon: 'bg-amber-50 text-amber-700 ring-amber-100',
+  past: 'bg-slate-100 text-slate-500 ring-slate-200',
+};
 
 // Cards in a grid must align bottoms. Strategy:
 //   article  → flex flex-col h-full (stretches with grid row)
@@ -20,6 +51,8 @@ export default function EventCard({ event }) {
   const tags = event.tags || [];
   const visibleTags = tags.slice(0, MAX_VISIBLE_TAGS);
   const overflowTags = tags.length - visibleTags.length;
+  const relevance = relevanceBadge(event.startDate, event.endDate);
+  const isPast = relevance?.tone === 'past';
 
   return (
     <article
@@ -29,6 +62,7 @@ export default function EventCard({ event }) {
         'group relative flex flex-col h-full bg-white rounded-xl border overflow-hidden',
         'border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all duration-200',
         event.featured ? 'ring-1 ring-primary-200' : '',
+        isPast ? 'opacity-70 hover:opacity-100' : '',
       ].join(' ')}
     >
       {event.featured && (
@@ -40,6 +74,15 @@ export default function EventCard({ event }) {
       <div className="flex flex-col flex-1 p-5">
         {/* Badges row — always present, fixed height */}
         <div className="flex flex-wrap items-center gap-1.5 mb-2 min-h-[22px]">
+          {/* Relevance pill comes first when present — most-scannable signal */}
+          {relevance && (
+            <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold ring-1 ${RELEVANCE_TONES[relevance.tone]}`}>
+              {relevance.tone === 'live' && (
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
+              )}
+              {relevance.label}
+            </span>
+          )}
           <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium ${cat?.color || 'bg-slate-100 text-slate-600'}`}>
             <span className={`w-1.5 h-1.5 rounded-full ${cat?.dot || 'bg-slate-400'}`} />
             {cat?.label || event.category}

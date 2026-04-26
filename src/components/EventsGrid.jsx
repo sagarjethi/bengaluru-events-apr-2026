@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Search, X, Calendar, CalendarClock, Clock, History } from 'lucide-react';
+import { Search, X, Calendar, CalendarClock, Clock, History, ChevronDown } from 'lucide-react';
 import { events, CATEGORIES } from '../data';
 import EventCard from './EventCard';
 
@@ -32,18 +32,11 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
   const [activeCategory, setActiveCategory] = useState(null);
   const [timeFilter, setTimeFilter] = useState('upcoming');
 
-  const filteredEvents = useMemo(() => {
+  // Apply category, search, selectedDate filters first.
+  // Time-bucketing into upcoming/past happens AFTER so the layout can show
+  // them as separate sections in 'all' mode.
+  const baseFiltered = useMemo(() => {
     let filtered = events;
-    const today = todayIso();
-    const weekEnd = plusDaysIso(today, 7);
-    if (timeFilter === 'upcoming') {
-      filtered = filtered.filter((e) => e.endDate >= today);
-    } else if (timeFilter === 'past') {
-      filtered = filtered.filter((e) => e.endDate < today);
-    } else if (timeFilter === 'this-week') {
-      filtered = filtered.filter((e) => e.startDate <= weekEnd && e.endDate >= today);
-    }
-
     if (selectedDate) {
       filtered = filtered.filter((e) => e.startDate <= selectedDate && e.endDate >= selectedDate);
     }
@@ -60,13 +53,39 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
           e.venue.toLowerCase().includes(q)
       );
     }
+    return filtered;
+  }, [selectedDate, activeCategory, search]);
 
-    return [...filtered].sort((a, b) => {
+  const today = todayIso();
+  const weekEnd = plusDaysIso(today, 7);
+
+  // Split into upcoming + past. Featured-first only inside the upcoming bucket
+  // (a past hackathon shouldn't push to the top just because it's featured).
+  const { upcomingList, pastList } = useMemo(() => {
+    const upcoming = [];
+    const past = [];
+    for (const e of baseFiltered) {
+      if (e.endDate >= today) upcoming.push(e);
+      else past.push(e);
+    }
+    upcoming.sort((a, b) => {
       if (a.featured && !b.featured) return -1;
       if (!a.featured && b.featured) return 1;
       return a.startDate.localeCompare(b.startDate);
     });
-  }, [selectedDate, activeCategory, search, timeFilter]);
+    past.sort((a, b) => b.startDate.localeCompare(a.startDate));
+    return { upcomingList: upcoming, pastList: past };
+  }, [baseFiltered, today]);
+
+  // What the active time-filter actually wants to show
+  const filteredEvents = useMemo(() => {
+    if (timeFilter === 'upcoming') return upcomingList;
+    if (timeFilter === 'past') return pastList;
+    if (timeFilter === 'this-week') {
+      return upcomingList.filter((e) => e.startDate <= weekEnd && e.endDate >= today);
+    }
+    return [...upcomingList, ...pastList]; // 'all' — but rendered as two sections below
+  }, [timeFilter, upcomingList, pastList, today, weekEnd]);
 
   const clearAll = () => {
     setSearch('');
@@ -234,25 +253,115 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
         })}
       </div>
 
-      {/* Results */}
-      {filteredEvents.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredEvents.map((event) => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
-      ) : (
-        <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/40 p-10 text-center">
-          <p className="text-slate-700 font-medium">No events match these filters.</p>
-          <p className="text-sm text-slate-500 mt-1">Try clearing one of the chips above.</p>
-          <button onClick={clearAll} className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2">
-            <X className="w-3.5 h-3.5" /> Clear all filters
-          </button>
-        </div>
-      )}
+      {/* Results — rendered as Upcoming + collapsible Past in 'all' mode */}
+      <ResultsView
+        timeFilter={timeFilter}
+        upcoming={upcomingList}
+        past={pastList}
+        all={filteredEvents}
+        onClearAll={clearAll}
+        today={today}
+      />
     </section>
   );
 }
+
+// ----------------------------------------------------------------------------
+
+function ResultsView({ timeFilter, upcoming, past, all, onClearAll, today }) {
+  const [showPast, setShowPast] = useState(false);
+
+  const empty = all.length === 0;
+  if (empty) {
+    return (
+      <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/40 p-10 text-center">
+        <p className="text-slate-700 font-medium">No events match these filters.</p>
+        <p className="text-sm text-slate-500 mt-1">Try clearing one of the chips above.</p>
+        <button onClick={onClearAll} className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2">
+          <X className="w-3.5 h-3.5" /> Clear all filters
+        </button>
+      </div>
+    );
+  }
+
+  // Single-bucket modes: just render the list flat
+  if (timeFilter === 'upcoming' || timeFilter === 'this-week' || timeFilter === 'past') {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {(timeFilter === 'past' ? past : upcoming.filter((e) => timeFilter === 'upcoming' || (e.startDate <= plusDaysIso(today, 7) && e.endDate >= today))).map((event) => (
+          <EventCard key={event.id} event={event} />
+        ))}
+      </div>
+    );
+  }
+
+  // 'all' mode — Upcoming first, Past collapsed below
+  return (
+    <>
+      {upcoming.length > 0 ? (
+        <>
+          <SectionHeading
+            label="Upcoming"
+            count={upcoming.length}
+            tone="primary"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {upcoming.map((event) => <EventCard key={event.id} event={event} />)}
+          </div>
+        </>
+      ) : (
+        <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/40 p-8 text-center">
+          <p className="text-slate-700 font-medium">No upcoming events match.</p>
+          <p className="text-sm text-slate-500 mt-1">Past events listed below.</p>
+        </div>
+      )}
+
+      {past.length > 0 && (
+        <div className="mt-12 border-t border-slate-200 pt-8">
+          <button
+            type="button"
+            onClick={() => setShowPast((v) => !v)}
+            aria-expanded={showPast}
+            className="w-full flex items-center justify-between gap-3 group hover:opacity-90 transition"
+          >
+            <div className="flex items-center gap-3">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 text-slate-500">
+                <History className="w-4 h-4" />
+              </span>
+              <div className="text-left">
+                <div className="text-base font-semibold text-slate-900">Past events</div>
+                <div className="text-xs text-slate-500 mt-0.5">
+                  <span className="tabular-nums">{past.length}</span> {past.length === 1 ? 'event' : 'events'} · most recent first
+                </div>
+              </div>
+            </div>
+            <ChevronDown
+              className={`w-5 h-5 text-slate-400 transition-transform ${showPast ? 'rotate-180' : ''}`}
+            />
+          </button>
+
+          {showPast && (
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {past.map((event) => <EventCard key={event.id} event={event} />)}
+            </div>
+          )}
+        </div>
+      )}
+    </>
+  );
+}
+
+function SectionHeading({ label, count, tone = 'primary' }) {
+  const dot = tone === 'primary' ? 'bg-emerald-500' : 'bg-slate-400';
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <span className={`inline-block w-2 h-2 rounded-full ${dot}`} />
+      <h3 className="text-base font-semibold text-slate-900">{label}</h3>
+      <span className="text-xs text-slate-500 tabular-nums">{count} {count === 1 ? 'event' : 'events'}</span>
+    </div>
+  );
+}
+
 
 // ----------------------------------------------------------------------------
 
