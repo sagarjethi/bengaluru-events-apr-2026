@@ -28,9 +28,11 @@ function softFail(msg) {
   process.exit(0);
 }
 
-// Skip on Vercel — their build sandbox can't reliably launch Chromium.
-if (process.env.VERCEL || process.env.VERCEL_ENV) {
-  console.log('[prerender] VERCEL env detected — skipping prerender (SPA fallback will ship).');
+// Skip in Vercel's cloud build sandbox (Chromium not available there).
+// Local `vercel build` also sets VERCEL=1, so gate on CI=1 which is only
+// set in the cloud sandbox — that way local prebuilt deploys still prerender.
+if (process.env.CI && (process.env.VERCEL || process.env.VERCEL_ENV)) {
+  console.log('[prerender] Vercel cloud build detected — skipping prerender (SPA fallback will ship).');
   process.exit(0);
 }
 // Also skip if explicitly disabled
