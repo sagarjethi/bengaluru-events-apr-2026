@@ -24,7 +24,7 @@ export default function Footer() {
             <span className="mx-1.5 text-slate-300">·</span>
             <Link to="/editorial" className="text-slate-700 hover:text-primary-600 font-medium">Editorial standards</Link>
             <span className="mx-1.5 text-slate-300">·</span>
-            <a href="mailto:hi@sagarjethi.com?subject=Bengaluru%20Events%20Directory" className="text-slate-700 hover:text-primary-600 font-medium">
+            <a href="mailto:hello@codeminto.com?subject=Bengaluru%20Events%20Directory" className="text-slate-700 hover:text-primary-600 font-medium">
               Contact
             </a>
             <span className="mx-1.5 text-slate-300">·</span>

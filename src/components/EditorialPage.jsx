@@ -82,7 +82,7 @@ export default function EditorialPage() {
           </p>
           <p>
             If a date, venue, price, or description here doesn't match the official event page, the official page wins —
-            email <a href="mailto:hi@sagarjethi.com?subject=Correction%20request" className="text-primary-600 hover:underline font-medium">hi@sagarjethi.com</a>
+            email <a href="mailto:hello@codeminto.com?subject=Correction%20request" className="text-primary-600 hover:underline font-medium">hello@codeminto.com</a>
             {' '}with the URL and the correct value, and the change is made and re-deployed.
           </p>
           <p>
@@ -95,7 +95,7 @@ export default function EditorialPage() {
         <Section title="Takedown / removal">
           <p>
             Event organizers can request removal of their listing at any time, no questions asked. Email{' '}
-            <a href="mailto:hi@sagarjethi.com?subject=Takedown%20request" className="text-primary-600 hover:underline font-medium">hi@sagarjethi.com</a>{' '}
+            <a href="mailto:hello@codeminto.com?subject=Takedown%20request" className="text-primary-600 hover:underline font-medium">hello@codeminto.com</a>{' '}
             or DM <a href="https://x.com/sagarbjethi" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">@sagarbjethi</a>{' '}
             with the event URL — typical turnaround is under 24 hours.
           </p>
@@ -122,7 +122,7 @@ export default function EditorialPage() {
 
         <div className="mt-10 pt-6 border-t border-slate-200 text-xs text-slate-500 inline-flex items-center gap-2">
           <Mail className="w-3.5 h-3.5" />
-          Questions? <a href="mailto:hi@sagarjethi.com" className="text-primary-600 hover:underline">hi@sagarjethi.com</a>
+          Questions? <a href="mailto:hello@codeminto.com" className="text-primary-600 hover:underline">hello@codeminto.com</a>
         </div>
       </div>
     </div>

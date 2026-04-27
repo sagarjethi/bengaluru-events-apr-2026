@@ -184,8 +184,8 @@ export default function AboutPage() {
         <Section title="Contact, corrections, takedowns">
           <p>
             Found a wrong date, dead link, or want your event added? Email{' '}
-            <a href="mailto:hi@sagarjethi.com?subject=Bengaluru%20Events%20Directory"
-               className="text-primary-600 hover:underline font-medium">hi@sagarjethi.com</a>{' '}
+            <a href="mailto:hello@codeminto.com?subject=Bengaluru%20Events%20Directory"
+               className="text-primary-600 hover:underline font-medium">hello@codeminto.com</a>{' '}
             or DM <a href="https://x.com/sagarbjethi" target="_blank" rel="noopener noreferrer"
                     className="text-primary-600 hover:underline font-medium">@sagarbjethi on X</a>.
           </p>
@@ -198,7 +198,7 @@ export default function AboutPage() {
             Bengaluru, Karnataka, India
             <span className="mx-1">·</span>
             <Mail className="w-3.5 h-3.5" />
-            hi@sagarjethi.com
+            hello@codeminto.com
           </div>
         </Section>
 
