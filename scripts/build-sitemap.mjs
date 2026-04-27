@@ -9,13 +9,19 @@ function toSlug(s) {
   return s.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
-// Pull names from events.js
-const eventsText = fs.readFileSync('src/data/events.js', 'utf8');
-const eventsStart = eventsText.indexOf('export const events = [');
-const eventsEnd = eventsText.indexOf('\n];', eventsStart);
-const eventsSlice = eventsText.slice(eventsStart, eventsEnd);
-const eventNames = [...eventsSlice.matchAll(/name:\s*['"]([^'"]+)['"]/g)].map((m) => m[1]);
-const eventStartDates = [...eventsSlice.matchAll(/startDate:\s*['"]([^'"]+)['"]/g)].map((m) => m[1]);
+// Pull names from per-month event files (post-refactor location)
+const eventNames = [];
+const eventStartDates = [];
+for (const f of ['src/data/events/april-2026.js', 'src/data/events/may-2026.js', 'src/data/events/other.js']) {
+  if (!fs.existsSync(f)) continue;
+  const txt = fs.readFileSync(f, 'utf8');
+  const re = /\{[^{}]*?\bname:\s*['"]([^'"]+)['"][^{}]*?\bstartDate:\s*['"]([^'"]+)['"][^{}]*?\}/gs;
+  let m;
+  while ((m = re.exec(txt))) {
+    eventNames.push(m[1]);
+    eventStartDates.push(m[2]);
+  }
+}
 
 // Pull accelerator slugs (file may not have an explicit slug field — derive from name)
 let acceleratorNames = [];

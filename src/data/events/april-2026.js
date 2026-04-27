@@ -1,7 +1,7 @@
 // Auto-extracted from events.js (Step 2 of data reorg).
 // April 2026 events. Add new April events to the bottom of this array.
 export const aprilEvents = [
-{
+  {
     id: 1,
     name: 'Tech & Innovation Summit 2026',
     date: 'Apr 15',
@@ -18,7 +18,7 @@ export const aprilEvents = [
     lat: 13.0107,
     lng: 77.5548,
   },
-{
+  {
     id: 3,
     name: 'OpenAI Codex Hackathon',
     date: 'Apr 16',
@@ -37,7 +37,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 4,
     name: 'Codex Community Hackathon',
     date: 'Apr 16',
@@ -55,7 +55,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 5,
     name: 'VibeCon India 2026',
     date: 'Apr 16–17',
@@ -74,7 +74,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 6,
     name: 'W3Summit 2026 — AI & Web3 Global',
     date: 'Apr 16–17',
@@ -91,7 +91,7 @@ export const aprilEvents = [
     lat: 13.0107,
     lng: 77.5548,
   },
-{
+  {
     id: 7,
     name: 'Plumbex India 2026',
     date: 'Apr 16–18',
@@ -107,7 +107,7 @@ export const aprilEvents = [
     lat: 13.0669,
     lng: 77.5024,
   },
-{
+  {
     id: 8,
     name: 'JioHotstar ScaleUp 2.0 — Scaling AI in Practice',
     date: 'Apr 17',
@@ -123,7 +123,7 @@ export const aprilEvents = [
     lat: 12.9349,
     lng: 77.6785,
   },
-{
+  {
     id: 9,
     name: 'Rust India Conference 2026',
     date: 'Apr 17–18',
@@ -140,7 +140,7 @@ export const aprilEvents = [
     lat: 12.9417,
     lng: 77.5963,
   },
-{
+  {
     id: 10,
     name: 'Calvin Harris — Live in Bengaluru',
     date: 'Apr 17',
@@ -156,7 +156,7 @@ export const aprilEvents = [
     lat: 12.8508,
     lng: 77.5423,
   },
-{
+  {
     id: 11,
     name: 'Love Letters — Theatre',
     date: 'Apr 17',
@@ -172,7 +172,7 @@ export const aprilEvents = [
     lat: 12.9653,
     lng: 77.6093,
   },
-{
+  {
     id: 12,
     name: 'Y Combinator Startup School India',
     date: 'Apr 18',
@@ -189,7 +189,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 13,
     name: 'ElevenLabs Buildathon',
     date: 'Apr 18–19',
@@ -207,7 +207,7 @@ export const aprilEvents = [
     lat: 12.9352,
     lng: 77.6200,
   },
-{
+  {
     id: 14,
     name: 'YC BLR Pre-Event Mixer',
     date: 'Apr 18',
@@ -223,7 +223,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 15,
     name: 'Golang Bangalore Meetup',
     date: 'Apr 18',
@@ -239,7 +239,7 @@ export const aprilEvents = [
     lat: 12.9141,
     lng: 77.6446,
   },
-{
+  {
     id: 16,
     name: 'The Other Room',
     date: 'Apr 18',
@@ -255,7 +255,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 17,
     name: '11th Founders & Freelancers Meetup',
     date: 'Apr 18',
@@ -271,7 +271,7 @@ export const aprilEvents = [
     lat: 12.9352,
     lng: 77.6245,
   },
-{
+  {
     id: 18,
     name: 'YC Secret (AI)fter Party',
     date: 'Apr 18',
@@ -287,7 +287,7 @@ export const aprilEvents = [
     lat: 12.9625,
     lng: 77.5775,
   },
-{
+  {
     id: 19,
     name: 'After YC: AI Community Mixer',
     date: 'Apr 19',
@@ -303,7 +303,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 20,
     name: 'GIDS 2026 — Developer Summit',
     date: 'Apr 21–24',
@@ -320,7 +320,7 @@ export const aprilEvents = [
     lat: 13.0219,
     lng: 77.5671,
   },
-{
+  {
     id: 21,
     name: 'ISMG Cybersecurity Week',
     date: 'Apr 21',
@@ -336,7 +336,7 @@ export const aprilEvents = [
     lat: 12.9635,
     lng: 77.5964,
   },
-{
+  {
     id: 23,
     name: 'AWS Summit Bengaluru 2026',
     date: 'Apr 22–23',
@@ -353,7 +353,7 @@ export const aprilEvents = [
     lat: 12.9698,
     lng: 77.7500,
   },
-{
+  {
     id: 24,
     name: 'ICRCET 2026',
     date: 'Apr 22–23',
@@ -369,7 +369,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 25,
     name: 'TCS 10K Get Active Expo',
     date: 'Apr 23–25',
@@ -385,7 +385,7 @@ export const aprilEvents = [
     lat: 12.9779,
     lng: 77.5992,
   },
-{
+  {
     id: 26,
     name: 'HackBricks 2026',
     date: 'Apr 24',
@@ -403,7 +403,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 27,
     name: 'Meta PyTorch Hackathon',
     date: 'Apr 25–26',
@@ -423,7 +423,7 @@ export const aprilEvents = [
     lat: 12.9352,
     lng: 77.6245,
   },
-{
+  {
     id: 28,
     name: 'GDG Build For Bengaluru',
     date: 'Apr 25',
@@ -441,7 +441,7 @@ export const aprilEvents = [
     lat: 13.1165,
     lng: 77.5679,
   },
-{
+  {
     id: 29,
     name: 'TCS World 10K Race',
     date: 'Apr 26',
@@ -457,7 +457,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 30,
     name: 'HackBLR by Geekroom',
     date: 'Apr 26',
@@ -476,7 +476,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 31,
     name: 'Summersault Children\'s Festival',
     date: 'Apr 11–26',
@@ -492,7 +492,7 @@ export const aprilEvents = [
     lat: 12.9653,
     lng: 77.6093,
   },
-{
+  {
     id: 32,
     name: 'AI Tinkerers Bengaluru',
     date: 'TBA (April)',
@@ -508,7 +508,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 34,
     name: 'Bengaluru Pitch Circuit 6',
     date: 'Apr 24',
@@ -524,7 +524,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 35,
     name: 'Lyzr Agentathon: 2 Lakh Vibe-Coding Challenge',
     date: 'Apr 25',
@@ -543,7 +543,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 36,
     name: 'Zero to Agent: Bengaluru (w/ The AI Collective)',
     date: 'Apr 26',
@@ -559,7 +559,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 37,
     name: 'ContextCon — YC x Crustdata Hackathon',
     date: 'Apr 19',
@@ -579,7 +579,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 38,
     name: 'How to Build Your GTM Engine — Crustdata',
     date: 'Apr 17',
@@ -595,7 +595,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 39,
     name: "HEM Founder's Brunch — Hashed Emergent x Tether",
     date: 'Apr 19',
@@ -611,7 +611,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 41,
     name: 'WHY C? — Only for Top 1% YC Rejected',
     date: 'Apr 19',
@@ -628,7 +628,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 40,
     name: 'OpenAI Codex Hackathon — Spectator Pass',
     date: 'Apr 16',
@@ -644,7 +644,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 42,
     name: 'Side Quest: Builders Brunch',
     date: 'Apr 19',
@@ -660,7 +660,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 44,
     name: 'Altimate Hackday',
     date: 'Apr 18',
@@ -678,7 +678,7 @@ export const aprilEvents = [
     lat: 12.9716,
     lng: 77.5946,
   },
-{
+  {
     id: 45,
     name: 'AI-Native Development: Building with AI, Cloud & Blockchain',
     date: 'Apr 23',
@@ -695,7 +695,7 @@ export const aprilEvents = [
     lat: 12.9698,
     lng: 77.7146,
   },
-{
+  {
     id: 43,
     name: "India's First OpenCode Buildathon",
     date: 'Apr 19',
@@ -715,58 +715,7 @@ export const aprilEvents = [
     lng: 77.5946,
     featured: true,
   },
-{
-    id: 51,
-    name: "AI of the Week: What's actually worth using?",
-    date: "Apr 27",
-    startDate: "2026-04-27",
-    endDate: "2026-04-27",
-    venue: "Bengaluru",
-    time: "8:30 PM – 9:30 PM",
-    cost: "See event page",
-    category: "meetup",
-    tags: ["AI"],
-    description: "**A space for builders to talk about how we're actually using AI in creating products: tools, prompts, workflows, and hacks.** * Real workflows, prompts,",
-    link: "https://www.meetup.com/solopreneurs-lab-bangalore/events/314162349/",
-    lat: 12.9716,
-    lng: 77.5946,
-    source: "meetup",
-  },
-{
-    id: 59,
-    name: "Citizen developers in the enterprise: What platform teams should know",
-    date: "Apr 27",
-    startDate: "2026-04-27",
-    endDate: "2026-04-27",
-    venue: "Bengaluru",
-    time: "10:30 PM – 11:30 PM",
-    cost: "See event page",
-    category: "meetup",
-    tags: ["AI","Security"],
-    description: "Business analysts and domain experts are building applications with AI and they expect the same infrastructure, security, and governance that professional",
-    link: "https://www.meetup.com/platform-engineers-bangalore/events/314180906/",
-    lat: 12.9716,
-    lng: 77.5946,
-    source: "meetup",
-  },
-{
-    id: 69,
-    name: "Founders Networking: Connect & Help Each Other",
-    date: "Apr 28",
-    startDate: "2026-04-28",
-    endDate: "2026-04-28",
-    venue: "Bengaluru",
-    time: "8:30 PM – 9:30 PM",
-    cost: "See event page",
-    category: "startup",
-    tags: ["Startup"],
-    description: "**Founders helping founders – not a slogan, a weekly session.** Stuck on the same problem for weeks, need some help or advice? **Join a live builders' netw",
-    link: "https://www.meetup.com/solopreneurs-lab-bangalore/events/314181425/",
-    lat: 12.9716,
-    lng: 77.5946,
-    source: "meetup",
-  },
-{
+  {
     id: 71,
     name: "GCU AWS Cloud Club  – Inaugural Event",
     date: "Apr 28",
@@ -783,7 +732,7 @@ export const aprilEvents = [
     lng: 77.7042,
     source: "meetup",
   },
-{
+  {
     id: 68,
     name: "F*ckUp Night: Startup Failure Stories (Open Mic)",
     date: "Apr 29",
@@ -800,7 +749,7 @@ export const aprilEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 72,
     name: "Elastic Agentic Talks: Building with AI Agents",
     date: "Apr 29",
@@ -817,24 +766,7 @@ export const aprilEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
-    id: 70,
-    name: "Feedback Jam: Get Honest Takes On Your Build",
-    date: "Apr 30",
-    startDate: "2026-04-30",
-    endDate: "2026-04-30",
-    venue: "Bengaluru",
-    time: "8:30 PM – 9:30 PM",
-    cost: "See event page",
-    category: "meetup",
-    tags: [],
-    description: "**Bring your idea, MVP, landing page, or anything you want to put to the challenge:** 5 min demo → 10 min of honest feedback from other builders. * Presen",
-    link: "https://www.meetup.com/solopreneurs-lab-bangalore/events/314215672/",
-    lat: 12.9716,
-    lng: 77.5946,
-    source: "meetup",
-  },
-{
+  {
     id: 82,
     name: "Reddit-a-thon: 3-hour sprint to kickstart your Reddit growth",
     date: "Apr 25",
@@ -851,7 +783,7 @@ export const aprilEvents = [
     lng: 77.5946,
     source: "luma",
   },
-{
+  {
     id: 83,
     name: "Warm Weekends with Kuchen — April 25 & 26",
     date: "Apr 25–26",
@@ -868,7 +800,7 @@ export const aprilEvents = [
     lng: 77.6408,
     source: "luma",
   },
-{
+  {
     id: 84,
     name: "FRW 2026: Print . Play. Piece it together",
     date: "Apr 25",
@@ -885,7 +817,7 @@ export const aprilEvents = [
     lng: 77.5800,
     source: "luma",
   },
-{
+  {
     id: 85,
     name: "Zero to Agent: Bengaluru (w/ Headstart Karnataka x Docket)",
     date: "Apr 25",
@@ -902,7 +834,7 @@ export const aprilEvents = [
     lng: 77.5946,
     source: "luma",
   },
-{
+  {
     id: 86,
     name: "The Vent Sesh — Cranberry.Fit Round 3",
     date: "Apr 25",
@@ -919,7 +851,7 @@ export const aprilEvents = [
     lng: 77.6245,
     source: "luma",
   },
-{
+  {
     id: 87,
     name: "Songwriter Sessions Ft. MIKU & Dindūn",
     date: "Apr 25",
@@ -936,7 +868,7 @@ export const aprilEvents = [
     lng: 77.6408,
     source: "luma",
   },
-{
+  {
     id: 88,
     name: "Run with Builders by Quivly AI",
     date: "Apr 26",
@@ -953,7 +885,7 @@ export const aprilEvents = [
     lng: 77.5928,
     source: "luma",
   },
-{
+  {
     id: 91,
     name: "AI x Coffee and Conversations",
     date: "Apr 26",
@@ -970,7 +902,7 @@ export const aprilEvents = [
     lng: 77.5946,
     source: "luma",
   },
-{
+  {
     id: 92,
     name: "Serendipity Sundays #3",
     date: "Apr 26",
@@ -987,7 +919,7 @@ export const aprilEvents = [
     lng: 77.5928,
     source: "luma",
   },
-{
+  {
     id: 93,
     name: "Hands On: Build Your Second Brain with Claude Code & Cowork",
     date: "Apr 26",
@@ -1002,91 +934,6 @@ export const aprilEvents = [
     link: "https://luma.com/1fsniw4a",
     lat: 12.9698,
     lng: 77.7500,
-    source: "luma",
-  },
-{
-    id: 94,
-    name: "Bengaluru Startups Meetup by CEDAT",
-    date: "Apr 28",
-    startDate: "2026-04-28",
-    endDate: "2026-04-28",
-    venue: "Global Incubation Services, HAL 3rd Stage Extn, Kodihalli",
-    time: "6:00 PM – 8:00 PM",
-    cost: "Free",
-    category: "startup",
-    tags: ["Startups", "Founders", "CEDAT", "Networking"],
-    description: "Monthly Bengaluru Startups Meetup by CEDAT — founder talks, demos and open networking at GIS, Kodihalli.",
-    link: "https://luma.com/bqkqrpff",
-    lat: 12.9569,
-    lng: 77.6502,
-    source: "luma",
-  },
-{
-    id: 95,
-    name: "Operator Circle: Scale Ecom on WhatsApp",
-    date: "Apr 29",
-    startDate: "2026-04-29",
-    endDate: "2026-04-29",
-    venue: "Meta Bengaluru Office, Embassy Golf Links, Domlur",
-    time: "10:00 AM – 2:00 PM",
-    cost: "Invite-only",
-    category: "startup",
-    tags: ["Ecommerce", "WhatsApp", "Meta", "Operators"],
-    description: "Private, invite-only session for ecommerce operators on turning WhatsApp into a real revenue channel.",
-    link: "https://luma.com/operator-circle",
-    lat: 12.9586,
-    lng: 77.6385,
-    source: "luma",
-  },
-{
-    id: 96,
-    name: "Panel Discussion on Building for Space From India",
-    date: "Apr 29",
-    startDate: "2026-04-29",
-    endDate: "2026-04-29",
-    venue: "Bengaluru",
-    time: "10:30 AM – 11:30 AM",
-    cost: "Free",
-    category: "conference",
-    tags: ["Space", "Deeptech", "Panel"],
-    description: "Panel on the changing global and Indian space economy — democratisation of space and how to build a space business.",
-    link: "https://luma.com/siaufzsa",
-    lat: 12.9716,
-    lng: 77.5946,
-    source: "luma",
-  },
-{
-    id: 97,
-    name: "HSRFC Afterparty — Vol. 3: Build It Anyway",
-    date: "Apr 30",
-    startDate: "2026-04-30",
-    endDate: "2026-04-30",
-    venue: "HSR Layout, Bengaluru (HSR Founders Club)",
-    time: "6:30 PM – 11:30 PM",
-    cost: "HSRFC Membership",
-    category: "startup",
-    tags: ["Founders", "HSR Founders Club", "Afterparty", "Networking"],
-    description: "Quarter-end afterparty for HSR Founders Club — music, founders and 'Build It Anyway' energy. Membership required.",
-    link: "https://luma.com/y5mcsn3i",
-    lat: 12.9116,
-    lng: 77.6364,
-    source: "luma",
-  },
-{
-    id: 98,
-    name: "The Inference Table — CTO Dinner by Google AI",
-    date: "Apr 30",
-    startDate: "2026-04-30",
-    endDate: "2026-04-30",
-    venue: "Go Native HSR, Sector 4, HSR Layout",
-    time: "6:30 PM – 10:00 PM",
-    cost: "Invite-only",
-    category: "startup",
-    tags: ["CTO", "Google AI", "BoldCap", "AI in Production"],
-    description: "Private CTO dinner hosted by BoldCap and Google AI for senior AI leaders building AI in production.",
-    link: "https://luma.com/xrkksvhz",
-    lat: 12.9116,
-    lng: 77.6364,
     source: "luma",
   },
 ];

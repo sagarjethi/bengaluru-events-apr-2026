@@ -1,7 +1,7 @@
 // Auto-extracted from events.js (Step 2 of data reorg).
 // May 2026 events.
 export const mayEvents = [
-{
+  {
     id: 73,
     name: "Build Autonomous AI Agents: 2-Hour Masterclass",
     date: "May 1",
@@ -18,7 +18,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 54,
     name: "Data & AI Forum #2 | Women in Tech Special",
     date: "May 2",
@@ -35,7 +35,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 55,
     name: "(External RSVP) GitHub Copilot Dev Days",
     date: "May 2",
@@ -52,7 +52,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 56,
     name: "Intent-Driven Dev - May 2026",
     date: "May 2",
@@ -69,7 +69,7 @@ export const mayEvents = [
     lng: 77.6063,
     source: "meetup",
   },
-{
+  {
     id: 65,
     name: "Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore",
     date: "May 2",
@@ -86,7 +86,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 64,
     name: "The State of Distributed Ledger Technology Report 2026",
     date: "May 6",
@@ -103,7 +103,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 60,
     name: "GitHub Agentic Workflows: Automation That Actually Reads the Room",
     date: "May 7",
@@ -120,7 +120,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 47,
     name: "Platform Engineering Meetup Bengaluru Edition - May 2026",
     date: "May 9",
@@ -137,7 +137,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 52,
     name: "Scrum Meet-up: Next-Gen Scrum: AI for Agile leaders: In Person",
     date: "May 9",
@@ -154,7 +154,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 58,
     name: "React Meetup #103",
     date: "May 9",
@@ -171,7 +171,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 76,
     name: "Building a distributed transactional database",
     date: "May 9",
@@ -188,7 +188,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "hasgeek",
   },
-{
+  {
     id: 77,
     name: "Platform Engineering meet-up - May 9",
     date: "May 9",
@@ -205,7 +205,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "hasgeek",
   },
-{
+  {
     id: 57,
     name: "Opensource Stories :A Networking Day for Contributors",
     date: "May 10",
@@ -222,7 +222,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 62,
     name: "Applied AI Ethics MonthlyMixer - Where Innovation Meets Responsibility",
     date: "May 13",
@@ -239,7 +239,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 75,
     name: "Agent Orchestration: Directing Your AI Dream Team",
     date: "May 14",
@@ -256,7 +256,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 46,
     name: "Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.",
     date: "May 16",
@@ -273,7 +273,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 48,
     name: "Agentic AI for developers",
     date: "May 16",
@@ -290,7 +290,7 @@ export const mayEvents = [
     lng: 77.6907,
     source: "meetup",
   },
-{
+  {
     id: 50,
     name: "IN PERSON! Apache Kafka® Meetup Bangalore- May 2026",
     date: "May 16",
@@ -307,7 +307,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 61,
     name: "Google Map Software Architecture",
     date: "May 16",
@@ -324,7 +324,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 74,
     name: "Agentic AI Unplugged: Bengaluru Edition",
     date: "May 16",
@@ -341,7 +341,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 78,
     name: "Crafting multi-Agent systems that think and act",
     date: "May 16",
@@ -358,7 +358,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "hasgeek",
   },
-{
+  {
     id: 49,
     name: "Integrating APIs and Services with AgentCore Gateway",
     date: "May 18",
@@ -375,7 +375,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 79,
     name: "Enterprise AI in Production",
     date: "May 22",
@@ -392,7 +392,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "hasgeek",
   },
-{
+  {
     id: 53,
     name: "From Chat to Agents: Five AI Engineering Paradigms",
     date: "May 23",
@@ -409,7 +409,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "meetup",
   },
-{
+  {
     id: 66,
     name: "From Vibe to Validation: AI Productivity for QA Engineers",
     date: "May 23",
@@ -426,7 +426,7 @@ export const mayEvents = [
     lng: 77.6206,
     source: "meetup",
   },
-{
+  {
     id: 67,
     name: "Vibe Delivery: AI Productivity for PMs & Scrum Masters",
     date: "May 23",
@@ -443,7 +443,7 @@ export const mayEvents = [
     lng: 77.75,
     source: "meetup",
   },
-{
+  {
     id: 63,
     name: "Role of a Architect in coming Age of AI",
     date: "May 24",
@@ -460,7 +460,7 @@ export const mayEvents = [
     lng: 77.5938,
     source: "meetup",
   },
-{
+  {
     id: 80,
     name: "Tech4Food: AI in Food — Efficiency, Insights & Beyond",
     date: "May 30",
@@ -477,7 +477,7 @@ export const mayEvents = [
     lng: 77.5946,
     source: "hasgeek",
   },
-{
+  {
     id: 99,
     name: "Build with AI: Vibe Coding with Google Antigravity",
     date: "May 2",
@@ -490,57 +490,6 @@ export const mayEvents = [
     tags: ["AI Collective", "Antigravity", "Vibe Coding", "Workshop"],
     description: "Ship your first AI app with Google Antigravity — no boilerplate, no setup hell, no prior coding experience required.",
     link: "https://luma.com/aic-be-5-2",
-    lat: 12.9716,
-    lng: 77.5946,
-    source: "luma",
-  },
-{
-    id: 100,
-    name: "Gemma 4 Sovereign AI Mixer",
-    date: "May 8",
-    startDate: "2026-05-08",
-    endDate: "2026-05-08",
-    venue: "Google Ananta, Mahadevapura, Bengaluru",
-    time: "9:30 AM – 1:30 PM",
-    cost: "Free",
-    category: "meetup",
-    tags: ["Gemma", "Sovereign AI", "Google", "Open Models"],
-    description: "Exclusive mixer at Google Ananta on the future of Sovereign AI and the latest in the Gemma model family.",
-    link: "https://luma.com/1mz2tagq",
-    lat: 12.9911,
-    lng: 77.6937,
-    source: "luma",
-  },
-{
-    id: 101,
-    name: "Okta x FoF, Bangalore: The UX of Trust & Security",
-    date: "May 8",
-    startDate: "2026-05-08",
-    endDate: "2026-05-08",
-    venue: "Okta R&D, Bellandur, Bengaluru",
-    time: "3:00 PM – 8:00 PM",
-    cost: "Free RSVP",
-    category: "meetup",
-    tags: ["Design", "UX", "Security", "Friends of Figma"],
-    description: "Friends of Figma Bangalore at Okta R&D — an evening on designing UX for trust and security.",
-    link: "https://luma.com/p6bsfnqi",
-    lat: 12.9349,
-    lng: 77.6785,
-    source: "luma",
-  },
-{
-    id: 102,
-    name: "-1 to Razorpay with Harshil Mathur | South Park Commons (BLR)",
-    date: "May 14",
-    startDate: "2026-05-14",
-    endDate: "2026-05-14",
-    venue: "South Park Commons India, Bengaluru",
-    time: "5:00 PM – 7:00 PM",
-    cost: "Apply to attend",
-    category: "startup",
-    tags: ["Founders", "Razorpay", "South Park Commons", "Fireside"],
-    description: "South Park Commons India hosts Razorpay CEO & co-founder Harshil Mathur for the '-1 to Now' founder series.",
-    link: "https://luma.com/pzluukqg",
     lat: 12.9716,
     lng: 77.5946,
     source: "luma",
