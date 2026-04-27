@@ -30,19 +30,22 @@ console.log(`Today: ${TODAY} · Deep-checking ${upcoming.length} upcoming events
 
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
-// Strings that suggest the event page is dead/cancelled even with 200 status
+// Strings that suggest the event page is dead/cancelled even with 200 status.
+// All patterns must use word boundaries / context anchors so they don't
+// match base64 IDs, hashes, or class names that happen to contain
+// substrings like "404d" or "cancelled" in build-time data.
 const DEAD_PATTERNS = [
-  /event (?:was )?cancell?ed/i,
-  /event has been cancell?ed/i,
-  /no longer (?:available|active|on sale)/i,
-  /this event has ended/i,
-  /past event/i,
-  /sorry,? (?:this )?(?:page|event) (?:doesn'?t exist|not found|isn'?t available)/i,
-  /404[^0-9]/i,
-  /page not found/i,
-  /event not found/i,
-  /this draft has expired/i,
-  /unavailable in your region/i,
+  /\bevent (?:was|has been) cancell?ed\b/i,
+  /\bno longer (?:available|active|on sale)\b/i,
+  /\bthis event has ended\b/i,
+  /\bsorry,? (?:this )?(?:page|event) (?:doesn'?t exist|not found|isn'?t available)\b/i,
+  /\b404\b\s*(?:not found|page|error|—|-)/i,
+  /<h1[^>]*>\s*404\s*<\/h1>/i,
+  /<title[^>]*>\s*(?:404|page not found|not found)\s*[-—|]/i,
+  /\bpage not found\b/i,
+  /\bevent not found\b/i,
+  /\bthis draft has expired\b/i,
+  /\bunavailable in your region\b/i,
 ];
 
 // Strings that mark a Meetup / Luma page as online-only (not in-person Bengaluru)

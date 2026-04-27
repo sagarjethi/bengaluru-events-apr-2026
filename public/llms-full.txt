@@ -7,9 +7,9 @@
 
 ## Summary
 
-80 tracked tech events. 28 upcoming as of 2026-04-27.
-12 hackathons · 8 conferences · 35 meetups · 13 startup events.
-44+ free to attend. Combined hackathon prize pool ≈ $242K+.
+83 tracked tech events. 31 upcoming as of 2026-04-27.
+12 hackathons · 8 conferences · 35 meetups · 16 startup events.
+47+ free to attend. Combined hackathon prize pool ≈ $242K+.
 
 Companies running events: OpenAI, Y Combinator, Amazon Web Services, Meta, Google,
 ElevenLabs, Hugging Face, Databricks, PyTorch Foundation, GitHub, Microsoft,
@@ -898,6 +898,48 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: Ship your first AI app with Google Antigravity — no boilerplate, no setup hell, no prior coding experience required.
 - Register: https://luma.com/aic-be-5-2
 - Detail page: https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity
+
+### Fundraising for Startups: Panel Conversation with Founders & Investors
+- ID: 103
+- Date: May 2
+- Start: 2026-05-02
+- Venue: Draper Startup House Koramangala, 384 1st A Main Rd, 7th Block, Koramangala
+- Time: 6:00 PM – 8:00 PM
+- Cost: Free
+- Category: startup
+- Tags: Fundraising, Investors, VC, Founders, Term Sheets
+- Status: Upcoming
+- Description: Panel conversation with early-stage founders and active investors. Investor criteria beyond pitch decks, navigating rejections and term sheets, evolving funding landscape across sectors. Hosted by eChai Ventures at Draper Startup House Koramangala.
+- Register: https://echai.ventures/events/fundraising-for-startups-panel-conversation-with-founders-investors-bengaluru-edition-may-02-2026
+- Detail page: https://bengaluru-events.sagarjethi.com/events/fundraising-for-startups-panel-conversation-with-founders-investors
+
+### eChai Women Founders Initiative — May Edition
+- ID: 104
+- Date: May 2
+- Start: 2026-05-02
+- Venue: UrbanVault 477, 24th Main Rd, 1st Sector, HSR Layout
+- Time: 6:00 PM – 8:00 PM
+- Cost: Free
+- Category: startup
+- Tags: Women Founders, Networking, Entrepreneurship, WIT
+- Status: Upcoming
+- Description: Conversation with leaders of women-led businesses — real stories, hard-earned lessons, and key insights on building and growing successful ventures. Hosted by eChai Ventures at UrbanVault HSR Layout.
+- Register: https://echai.ventures/events/echai-women-founders-initiative-in-bengaluru-may-edition-may-02-2026
+- Detail page: https://bengaluru-events.sagarjethi.com/events/echai-women-founders-initiative-may-edition
+
+### eChai
+- ID: 105
+- Date: May 3
+- Start: 2026-05-03
+- Venue: Draper Startup House Koramangala, 384 1st A Main Rd, 7th Block, Koramangala
+- Time: 11:00 AM – 1:00 PM
+- Cost: Free
+- Category: startup
+- Tags: Startup, Networking, Open House, Founders
+- Status: Upcoming
+- Description: Informal Sunday-morning meetup. Connect with fab startups and like-minded entrepreneurs, discover opportunities, share ideas, build relationships. Hosted by eChai Ventures at Draper Startup House Koramangala.
+- Register: https://echai.ventures/events/echai-s-startup-open-house-in-bengaluru-may-03-2026
+- Detail page: https://bengaluru-events.sagarjethi.com/events/echai
 
 ### Gemma 4 Sovereign AI Mixer
 - ID: 100

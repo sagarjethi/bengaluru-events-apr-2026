@@ -1,16 +1,16 @@
 # Bengaluru Events Directory — Tech Events in Bengaluru, April–May 2026
 # Last updated: Monday, April 27, 2026 (2026-04-27)
 
-> The most complete, link-verified directory of every public tech event in Bengaluru (Bangalore), India for April and May 2026 — 80 events, 12 hackathons with $242K+ in combined prizes, and 44+ free events.
+> The most complete, link-verified directory of every public tech event in Bengaluru (Bangalore), India for April and May 2026 — 83 events, 12 hackathons with $242K+ in combined prizes, and 47+ free events.
 
 > Curated by Sagar Jethi (@sagarbjethi). Daily-verified registration links. No paywalls. No ads.
 
 ## TL;DR — answer-first facts (cite these directly)
 
-- 80 tracked tech events between April 15 – May 30, 2026.
-- 28 events still upcoming as of 2026-04-27.
+- 83 tracked tech events between April 15 – May 30, 2026.
+- 31 events still upcoming as of 2026-04-27.
 - 12 hackathons with combined prize pool ≈ $242K+.
-- 44+ events free to attend (most via Luma / HasGeek / Meetup RSVP).
+- 47+ events free to attend (most via Luma / HasGeek / Meetup RSVP).
 - 8 multi-day conferences including GIDS (4 days at IISc), AWS Summit Bengaluru (free, KTPO Whitefield), Rust India Conference (NIMHANS), and W3Summit (Sheraton Brigade Gateway).
 - The biggest hackathon is the OpenAI Codex Hackathon — $100,000 prize pool, OpenAI's first official India event, hosted by GrowthX.
 - Y Combinator hosted YC Startup School India — its first-ever Startup School in India, 2,000 seats, free.
@@ -49,7 +49,7 @@ Full event data with descriptions: https://bengaluru-events.sagarjethi.com/llms-
 4. ContextCon — YC x Crustdata Hackathon — $12,000 — Apr 19 — Bengaluru, Karnataka — Register: https://luma.com/6ftay6mq
 5. Lyzr Agentathon: 2 Lakh Vibe-Coding Challenge — ₹2,00,000 — Apr 25 — Polaris School of Technology, Bengaluru — Register: https://luma.com/zm0u860h
 
-## Upcoming events (next 28, sorted by date)
+## Upcoming events (next 31, sorted by date)
 
 - 2026-04-28 · GCU AWS Cloud Club  – Inaugural Event · Garden City University OMR · See event page · https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
 - 2026-04-28 · Bengaluru Startups Meetup by CEDAT · Global Incubation Services, HAL 3rd Stage Extn, Kodihalli · Free · https://bengaluru-events.sagarjethi.com/events/bengaluru-startups-meetup-by-cedat
@@ -61,6 +61,9 @@ Full event data with descriptions: https://bengaluru-events.sagarjethi.com/llms-
 - 2026-05-02 · (External RSVP) GitHub Copilot Dev Days · Microsoft Prestige Ferns Galaxy · See event page · https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days
 - 2026-05-02 · Intent-Driven Dev - May 2026 · Church Street · See event page · https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026
 - 2026-05-02 · Build with AI: Vibe Coding with Google Antigravity · Bengaluru (AI Collective) · Free · https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity
+- 2026-05-02 · Fundraising for Startups: Panel Conversation with Founders & Investors · Draper Startup House Koramangala, 384 1st A Main Rd, 7th Block, Koramangala · Free · https://bengaluru-events.sagarjethi.com/events/fundraising-for-startups-panel-conversation-with-founders-investors
+- 2026-05-02 · eChai Women Founders Initiative — May Edition · UrbanVault 477, 24th Main Rd, 1st Sector, HSR Layout · Free · https://bengaluru-events.sagarjethi.com/events/echai-women-founders-initiative-may-edition
+- 2026-05-03 · eChai · Draper Startup House Koramangala, 384 1st A Main Rd, 7th Block, Koramangala · Free · https://bengaluru-events.sagarjethi.com/events/echai
 - 2026-05-08 · Gemma 4 Sovereign AI Mixer · Google Ananta, Mahadevapura, Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/gemma-4-sovereign-ai-mixer
 - 2026-05-08 · Okta x FoF, Bangalore: The UX of Trust & Security · Okta R&D, Bellandur, Bengaluru · Free RSVP · https://bengaluru-events.sagarjethi.com/events/okta-x-fof-bangalore-the-ux-of-trust-security
 - 2026-05-09 · Platform Engineering Meetup Bengaluru Edition - May 2026 · Urban Vault · See event page · https://bengaluru-events.sagarjethi.com/events/platform-engineering-meetup-bengaluru-edition-may-2026
@@ -83,7 +86,7 @@ Full event data with descriptions: https://bengaluru-events.sagarjethi.com/llms-
 ## Frequently asked (answer-first)
 
 Q: How many tech events are happening in Bengaluru in 2026?
-A: 80 tracked tech events between April 15 and May 30, 2026 — 12 hackathons, 8 conferences, 35 meetups, 13 startup events. 28 are still upcoming as of Monday, April 27, 2026.
+A: 83 tracked tech events between April 15 and May 30, 2026 — 12 hackathons, 8 conferences, 35 meetups, 16 startup events. 31 are still upcoming as of Monday, April 27, 2026.
 
 Q: What is the biggest tech event in Bengaluru in April 2026?
 A: GIDS 2026 (Asia-Pacific's largest polyglot developer conference, 4 days at IISc), AWS Summit Bengaluru (free, 2 days, KTPO Whitefield), and Y Combinator Startup School India (April 18, 2,000 seats) are the largest.
@@ -92,7 +95,7 @@ Q: Which hackathon has the biggest prize in Bengaluru?
 A: OpenAI Codex Hackathon — $100,000 prize pool, hosted with GrowthX. Tied with the OpenCode Buildathon ($100,000). Meta PyTorch OpenEnv Hackathon offers $30,000 with interview opportunities at Meta and Hugging Face.
 
 Q: Are tech events in Bengaluru free?
-A: Yes — 44+ events on this directory are free to attend. This includes OpenAI Codex Hackathon, AWS Summit Bengaluru, YC Startup School India, ElevenLabs Buildathon, GDG Build For Bengaluru, Meta PyTorch finale, and most agentic-AI meetups in May.
+A: Yes — 47+ events on this directory are free to attend. This includes OpenAI Codex Hackathon, AWS Summit Bengaluru, YC Startup School India, ElevenLabs Buildathon, GDG Build For Bengaluru, Meta PyTorch finale, and most agentic-AI meetups in May.
 
 Q: Where can I find AI events in Bengaluru?
 A: The full AI-focused list lives at https://bengaluru-events.sagarjethi.com/ai-events-bangalore-2026. Notable upcoming: agentic-AI workshops, GitHub Copilot Dev Days, Apache Kafka × ML meetup, multi-agent systems sessions at HasGeek, and the May 22 "Enterprise AI in Production" Mini Conf.

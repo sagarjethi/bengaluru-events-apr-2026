@@ -18,20 +18,20 @@
     "ok": true
   },
   {
-    "id": 96,
-    "name": "Panel Discussion on Building for Space From India",
-    "startDate": "2026-04-29",
-    "endDate": "2026-04-29",
-    "link": "https://luma.com/siaufzsa",
-    "status": 200,
-    "ok": true
-  },
-  {
     "id": 95,
     "name": "Operator Circle: Scale Ecom on WhatsApp",
     "startDate": "2026-04-29",
     "endDate": "2026-04-29",
     "link": "https://luma.com/operator-circle",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 96,
+    "name": "Panel Discussion on Building for Space From India",
+    "startDate": "2026-04-29",
+    "endDate": "2026-04-29",
+    "link": "https://luma.com/siaufzsa",
     "status": 200,
     "ok": true
   },
@@ -86,6 +86,33 @@
     "startDate": "2026-05-02",
     "endDate": "2026-05-02",
     "link": "https://luma.com/aic-be-5-2",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 103,
+    "name": "Fundraising for Startups: Panel Conversation with Founders & Investors",
+    "startDate": "2026-05-02",
+    "endDate": "2026-05-02",
+    "link": "https://echai.ventures/events/fundraising-for-startups-panel-conversation-with-founders-investors-bengaluru-edition-may-02-2026",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 104,
+    "name": "eChai Women Founders Initiative — May Edition",
+    "startDate": "2026-05-02",
+    "endDate": "2026-05-02",
+    "link": "https://echai.ventures/events/echai-women-founders-initiative-in-bengaluru-may-edition-may-02-2026",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 105,
+    "name": "eChai",
+    "startDate": "2026-05-03",
+    "endDate": "2026-05-03",
+    "link": "https://echai.ventures/events/echai-s-startup-open-house-in-bengaluru-may-03-2026",
     "status": 200,
     "ok": true
   },
@@ -171,6 +198,15 @@
     "ok": true
   },
   {
+    "id": 46,
+    "name": "Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.",
+    "startDate": "2026-05-16",
+    "endDate": "2026-05-16",
+    "link": "https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/",
+    "status": 200,
+    "ok": true
+  },
+  {
     "id": 48,
     "name": "Agentic AI for developers",
     "startDate": "2026-05-16",
@@ -203,15 +239,6 @@
     "startDate": "2026-05-16",
     "endDate": "2026-05-16",
     "link": "https://hasgeek.com/fifthelephant/crafting-multi-agent-systems-pune-edition/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 46,
-    "name": "Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.",
-    "startDate": "2026-05-16",
-    "endDate": "2026-05-16",
-    "link": "https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/",
     "status": 200,
     "ok": true
   },
