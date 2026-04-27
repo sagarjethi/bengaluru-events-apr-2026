@@ -9,7 +9,6 @@ import HomeCalendar from './components/HomeCalendar';
 import EventsGrid from './components/EventsGrid';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
-import TweetSupportModal from './components/TweetSupportModal';
 import ErrorBoundary from './components/ErrorBoundary';
 
 // Below-the-fold on home: lazy so the homepage TTI is faster.
@@ -62,7 +61,6 @@ export default function App() {
   return (
     <ErrorBoundary>
       <Navigation />
-      <TweetSupportModal />
       <Suspense fallback={<RouteFallback />}>
         <Routes>
           <Route path="/" element={<HomePage />} />

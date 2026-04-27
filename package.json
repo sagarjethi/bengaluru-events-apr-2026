@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run verify:resources && vite build",
+    "build": "npm run verify:resources && vite build && node scripts/prerender.mjs",
     "build:fast": "vite build",
+    "build:prerender": "vite build && node scripts/prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "verify:resources": "node scripts/verify-resources.mjs"
