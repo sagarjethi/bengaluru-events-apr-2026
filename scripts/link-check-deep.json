@@ -9,29 +9,11 @@
     "ok": true
   },
   {
-    "id": 68,
-    "name": "F*ckUp Night: Startup Failure Stories (Open Mic)",
-    "startDate": "2026-04-29",
-    "endDate": "2026-04-29",
-    "link": "https://www.meetup.com/solopreneurs-lab-bangalore/events/313918993/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 72,
-    "name": "Elastic Agentic Talks: Building with AI Agents",
-    "startDate": "2026-04-29",
-    "endDate": "2026-04-29",
-    "link": "https://www.meetup.com/elastic-apj-virtual-user-group/events/314334279/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 73,
-    "name": "Build Autonomous AI Agents: 2-Hour Masterclass",
-    "startDate": "2026-05-01",
-    "endDate": "2026-05-01",
-    "link": "https://www.meetup.com/giofai-bengaluru-chapter/events/314033252/",
+    "id": 56,
+    "name": "Intent-Driven Dev - May 2026",
+    "startDate": "2026-05-02",
+    "endDate": "2026-05-02",
+    "link": "https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/",
     "status": 200,
     "ok": true
   },
@@ -54,47 +36,11 @@
     "ok": true
   },
   {
-    "id": 56,
-    "name": "Intent-Driven Dev - May 2026",
-    "startDate": "2026-05-02",
-    "endDate": "2026-05-02",
-    "link": "https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 65,
-    "name": "Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore",
-    "startDate": "2026-05-02",
-    "endDate": "2026-05-02",
-    "link": "https://www.meetup.com/aws-cloud-club-at-ssm-inst-of-eng-tech/events/314367997/",
-    "status": 200,
-    "ok": true
-  },
-  {
     "id": 99,
     "name": "Build with AI: Vibe Coding with Google Antigravity",
     "startDate": "2026-05-02",
     "endDate": "2026-05-02",
     "link": "https://luma.com/aic-be-5-2",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 64,
-    "name": "The State of Distributed Ledger Technology Report 2026",
-    "startDate": "2026-05-06",
-    "endDate": "2026-05-06",
-    "link": "https://www.meetup.com/lfdt-bengaluru/events/314390059/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 60,
-    "name": "GitHub Agentic Workflows: Automation That Actually Reads the Room",
-    "startDate": "2026-05-07",
-    "endDate": "2026-05-07",
-    "link": "https://www.meetup.com/microsoft-reactor-bengaluru/events/314043681/",
     "status": 200,
     "ok": true
   },
@@ -126,15 +72,6 @@
     "ok": true
   },
   {
-    "id": 76,
-    "name": "Building a distributed transactional database",
-    "startDate": "2026-05-09",
-    "endDate": "2026-05-09",
-    "link": "https://hasgeek.com/rootconf/building-distributed-transactional-database-online/",
-    "status": 200,
-    "ok": true
-  },
-  {
     "id": 77,
     "name": "Platform Engineering meet-up - May 9",
     "startDate": "2026-05-09",
@@ -144,29 +81,20 @@
     "ok": true
   },
   {
+    "id": 76,
+    "name": "Building a distributed transactional database",
+    "startDate": "2026-05-09",
+    "endDate": "2026-05-09",
+    "link": "https://hasgeek.com/rootconf/building-distributed-transactional-database-online/",
+    "status": 200,
+    "ok": true
+  },
+  {
     "id": 57,
     "name": "Opensource Stories :A Networking Day for Contributors",
     "startDate": "2026-05-10",
     "endDate": "2026-05-10",
     "link": "https://www.meetup.com/soulcloudehq/events/314421120/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 62,
-    "name": "Applied AI Ethics MonthlyMixer - Where Innovation Meets Responsibility",
-    "startDate": "2026-05-13",
-    "endDate": "2026-05-13",
-    "link": "https://www.meetup.com/puducherry-tech/events/314435928/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 75,
-    "name": "Agent Orchestration: Directing Your AI Dream Team",
-    "startDate": "2026-05-14",
-    "endDate": "2026-05-14",
-    "link": "https://www.meetup.com/microsoft-reactor-bengaluru/events/314044036/",
     "status": 200,
     "ok": true
   },
@@ -194,15 +122,6 @@
     "startDate": "2026-05-16",
     "endDate": "2026-05-16",
     "link": "https://www.meetup.com/bangalore-kafka-data-streams/events/314292701/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 61,
-    "name": "Google Map Software Architecture",
-    "startDate": "2026-05-16",
-    "endDate": "2026-05-16",
-    "link": "https://www.meetup.com/software-architecture-and-system-design-or-core-design/events/314346143/",
     "status": 200,
     "ok": true
   },
@@ -248,33 +167,6 @@
     "startDate": "2026-05-23",
     "endDate": "2026-05-23",
     "link": "https://www.meetup.com/experttalks-bengaluru/events/314210418/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 66,
-    "name": "From Vibe to Validation: AI Productivity for QA Engineers",
-    "startDate": "2026-05-23",
-    "endDate": "2026-05-23",
-    "link": "https://www.meetup.com/lead-with-tech-meetup-group/events/314411017/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 67,
-    "name": "Vibe Delivery: AI Productivity for PMs & Scrum Masters",
-    "startDate": "2026-05-23",
-    "endDate": "2026-05-23",
-    "link": "https://www.meetup.com/lead-with-tech-meetup-group/events/314411069/",
-    "status": 200,
-    "ok": true
-  },
-  {
-    "id": 63,
-    "name": "Role of a Architect in coming Age of AI",
-    "startDate": "2026-05-24",
-    "endDate": "2026-05-24",
-    "link": "https://www.meetup.com/lead-with-tech-meetup-group/events/314411097/",
     "status": 200,
     "ok": true
   },

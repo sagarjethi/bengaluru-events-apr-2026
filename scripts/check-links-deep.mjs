@@ -36,13 +36,24 @@ const DEAD_PATTERNS = [
   /event has been cancell?ed/i,
   /no longer (?:available|active|on sale)/i,
   /this event has ended/i,
-  /past event/i,                            // sometimes literal text
+  /past event/i,
   /sorry,? (?:this )?(?:page|event) (?:doesn'?t exist|not found|isn'?t available)/i,
   /404[^0-9]/i,
   /page not found/i,
   /event not found/i,
   /this draft has expired/i,
   /unavailable in your region/i,
+];
+
+// Strings that mark a Meetup / Luma page as online-only (not in-person Bengaluru)
+const ONLINE_PATTERNS = [
+  /\bonline event\b/i,
+  /\bvirtual event\b/i,
+  /\battend online\b/i,
+  />online<\/[a-z]+>/i,
+  /"is_online_event"\s*:\s*true/i,    // Eventbrite JSON
+  /"isOnline"\s*:\s*true/i,            // Luma JSON
+  /\bzoom\.us\b/i,                     // Zoom-only meetups
 ];
 
 async function deepCheck(url) {
@@ -64,7 +75,11 @@ async function deepCheck(url) {
     const sample = html.slice(0, 250000);
     for (const rx of DEAD_PATTERNS) {
       const m = sample.match(rx);
-      if (m) return { status: r.status, ok: false, deadHint: m[0].slice(0, 80) };
+      if (m) return { status: r.status, ok: false, deadHint: m[0].slice(0, 80), reason: 'cancelled' };
+    }
+    for (const rx of ONLINE_PATTERNS) {
+      const m = sample.match(rx);
+      if (m) return { status: r.status, ok: false, deadHint: m[0].slice(0, 80), reason: 'online' };
     }
     return { status: r.status, ok: true };
   } catch (e) {
@@ -80,7 +95,7 @@ async function worker() {
     const e = upcoming[i++];
     const r = await deepCheck(e.link);
     results.push({ ...e, ...r });
-    const sym = r.ok ? '✅' : '⚠️ ';
+    const sym = r.ok ? '✅' : (r.reason === 'online' ? '🌐' : '⚠️ ');
     const note = r.error || r.deadHint || (r.ok ? '' : `${r.status}`);
     console.log(`${sym} [${r.status || 'ERR'}] ${e.name.slice(0, 55).padEnd(55)} ${note}`);
   }
@@ -98,10 +113,23 @@ console.log(`Reachable & content-OK : ${results.filter((r) => r.ok).length}`);
 console.log(`Flagged                : ${flagged.length}`);
 
 if (flagged.length) {
-  console.log('\n=== FLAGGED FOR MANUAL VERIFY ===');
-  for (const f of flagged) {
-    console.log(`\n[${f.id}] ${f.name}  (${f.startDate})`);
-    console.log(`  ${f.link}`);
-    console.log(`  status=${f.status || 'ERR'}${f.deadHint ? ' · hint="' + f.deadHint + '"' : ''}${f.error ? ' · err=' + f.error : ''}`);
+  const cancelled = flagged.filter((f) => f.reason === 'cancelled');
+  const online    = flagged.filter((f) => f.reason === 'online');
+  const errors    = flagged.filter((f) => !f.reason);
+  if (cancelled.length) {
+    console.log('\n=== CANCELLED EVENTS ===');
+    for (const f of cancelled) console.log(`[${f.id}] ${f.name}  (${f.startDate})\n  ${f.link}\n  hint="${f.deadHint}"\n`);
+  }
+  if (online.length) {
+    console.log('\n=== ONLINE-ONLY EVENTS (not in-person Bengaluru) ===');
+    for (const f of online) console.log(`[${f.id}] ${f.name}  (${f.startDate})\n  ${f.link}\n  hint="${f.deadHint}"\n`);
+  }
+  if (errors.length) {
+    console.log('\n=== HTTP ERRORS / OTHER ===');
+    for (const f of errors) console.log(`[${f.id}] ${f.name}  (${f.startDate})\n  ${f.link}\n  status=${f.status || 'ERR'}${f.error ? ' err=' + f.error : ''}\n`);
+  }
+  // IDs lists for easy automated removal
+  if (cancelled.length || online.length || errors.length) {
+    console.log('\nDEAD_IDS = ' + JSON.stringify([...cancelled, ...online, ...errors].map((f) => f.id)));
   }
 }

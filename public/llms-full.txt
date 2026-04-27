@@ -1,926 +1,1054 @@
 # Bengaluru Events Directory — Full Event Listing
-# Tech Events, Hackathons, Conferences, Startup Events & Meetups in Bengaluru (Bangalore), India
-# April 15 – May 30, 2026
+# Tech events, hackathons, conferences, startup events & meetups
+# in Bengaluru (Bangalore), India · April–May 2026
 # Website: https://bengaluru-events.sagarjethi.com
 # Author: Sagar Jethi (@sagarbjethi)
-# Last Updated: 2026-04-25
+# Last updated: Monday, April 27, 2026 (2026-04-27)
 
 ## Summary
 
-80+ tech events across April 15 – May 30, 2026 in Bengaluru (Bangalore), India's tech capital.
-April 2026: 45 events incl. YC Startup School, GIDS, AWS Summit, Rust India, OpenAI Codex Hackathon
-May 2026: 35+ events incl. agentic AI workshops, platform engineering, Apache Kafka, React, GitHub Copilot Dev Days, HasGeek Mini Confs
-30+ free events | 10 hackathons | $145,000+ in prizes
-Month-by-month: https://bengaluru-events.sagarjethi.com/events
-April 2026: https://bengaluru-events.sagarjethi.com/events/april-2026
-May 2026: https://bengaluru-events.sagarjethi.com/events/may-2026
-Companies represented: OpenAI, Y Combinator, Amazon Web Services, Meta, Google, ElevenLabs, Hugging Face, Databricks, PyTorch Foundation
-Categories: Conference, Hackathon, Startup, Web3/Crypto, Meetup, Music & Culture, Sports, Expo, Cybersecurity
+72 tracked tech events. 20 upcoming as of 2026-04-27.
+12 hackathons · 7 conferences · 33 meetups · 8 startup events.
+40+ free to attend. Combined hackathon prize pool ≈ $242K+.
 
-## Keywords & Topics Covered
-
-AI hackathons India, Bengaluru tech events April 2026, Bangalore hackathons 2026, free tech events Bangalore, OpenAI Codex hackathon India, Y Combinator India 2026, YC Startup School Bengaluru, AWS Summit India 2026, Meta PyTorch hackathon, developer conferences India, AI conferences Bangalore, startup events India, Web3 events India, Rust programming conference India, voice AI hackathon, agentic AI events, LLM hackathons, coding competitions Bangalore, tech meetups Bengaluru, cybersecurity conference India, cloud computing events Bangalore, machine learning events India, best hackathons India 2026, prize money hackathons India, free coding events Bangalore, developer meetups Bengaluru, tech community Bangalore, innovation summit India, DeFi hackathon India, Google Developer Groups Bangalore, TCS 10K Bengaluru
+Companies running events: OpenAI, Y Combinator, Amazon Web Services, Meta, Google,
+ElevenLabs, Hugging Face, Databricks, PyTorch Foundation, GitHub, Microsoft,
+Apache Kafka, Razorpay, Lightspeed, Lyzr.
 
 ---
 
-## Quick Calendar
+## EVENTS BY DATE
 
-- Apr 15 (Tue): Tech & Innovation Summit, IDEA x AIWeb3 2026
-- Apr 16 (Wed): OpenAI Codex Hackathon, Codex Community Hackathon, VibeCon India, W3Summit, Plumbex India
-- Apr 17 (Thu): JioHotstar ScaleUp 2.0, Rust India Conference, Calvin Harris Live, Love Letters Theatre
-- Apr 18 (Fri): YC Startup School India, ElevenLabs Buildathon, YC BLR Pre-Event Mixer, Golang Meetup, The Other Room, Founders & Freelancers Meetup
-- Apr 19 (Sat): YC Secret (AI)fter Party, After YC AI Community Mixer
-- Apr 21 (Mon): GIDS 2026, ISMG Cybersecurity Week, Aya AI Hackathon
-- Apr 22 (Tue): AWS Summit Bengaluru, ICRCET 2026
-- Apr 23 (Wed): TCS 10K Get Active Expo
-- Apr 24 (Thu): HackBricks 2026
-- Apr 25 (Fri): Meta PyTorch Hackathon, GDG Build For Bengaluru
-- Apr 26 (Sat): TCS World 10K Race, HackBLR by Geekroom
-
----
-
-## Conferences & Summits
-
-### Tech & Innovation Summit 2026 (9th Edition)
-- Date: April 15–16, 2026
-- Venue: Sheraton Grand Bangalore, Brigade Gateway
-- Time: 10:00 AM – 9:30 PM
-- Cost: Paid (~$195)
-- Tags: AI, Web3, Startups, Blockchain, Gaming
-- Description: Flagship annual gathering featuring AI, gaming, blockchain/Web3, capital markets, and startup innovation. Multiple thematic stages.
-- Register: https://www.eventbrite.com/e/tech-innovation-summit-2026-tickets-1977764204977
-- Website: https://www.entrepreneurindia.com/techshow/
-
-### JioHotstar ScaleUp 2.0 — Scaling AI in Practice
-- Date: April 17, 2026
-- Venue: Bengaluru (venue on Luma)
-- Time: Full day
-- Cost: Free
-- Tags: AI, Scaling, Streaming, ML Infra
-- Description: Deep-dive into how JioHotstar (400M+ users) scales AI in production for media & personalization.
-- Register: https://luma.com/mu9mdlyh
-
-### Rust India Conference 2026
-- Date: April 17–18, 2026
-- Venue: NIMHANS Convention Centre
-- Time: 2 full days
-- Cost: Paid
-- Tags: Rust, Systems Programming
-- Description: India's premier Rust programming language conference. Talks, workshops, and networking.
-- Register: https://hasgeek.com/rustbangalore/rust-india-conference-2026/
-- Website: https://rustindia.org/
-
-### GIDS 2026 — Great International Developer Summit [FEATURED]
-- Date: April 21–24, 2026
-- Venue: J N Tata Auditorium, IISc Campus
-- Time: 4 full days
-- Cost: Paid
-- Tags: Software Dev, Architecture, AI/ML, DevOps, Cloud
-- Description: Asia-Pacific's largest polyglot software developer conference. 18th edition at IISc Campus.
-- Register: https://developersummit.com/
-
-### ISMG Cybersecurity Week
-- Date: April 21, 2026
-- Venue: The Ritz-Carlton, Bengaluru
-- Time: Full day
-- Cost: Invite only
-- Tags: Cybersecurity, CISO, AI Security
-- Description: Premier cybersecurity summit. CISOs, regulators, and technology visionaries. DPDP Act, ransomware, AI security.
-- Register: https://ismg-events.com/cybersecurity-week-2026
-
-### AWS Summit Bengaluru 2026 [FEATURED]
-- Date: April 22–23, 2026
-- Venue: KTPO Exhibition Center, Whitefield
-- Time: 2 full days
-- Cost: Free
-- Tags: Cloud, AWS, AI, Serverless
-- Description: AWS's flagship cloud event in India. Agentic AI, serverless, Amazon Bedrock, Kiro IDE.
-- Register: https://aws.amazon.com/events/summits/bengaluru/
-
-### ICRCET 2026
-- Date: April 22–23, 2026
-- Venue: Bangalore
-- Time: 2 days
-- Cost: Paid
-- Tags: Engineering, Research, Academic
-- Description: 15th Intl. Conference on Recent Challenges in Engineering & Technology.
-- Register: https://www.icrcet.org/
-
----
-
-## Hackathons
-
-### OpenAI Codex Hackathon — Bengaluru
-- Date: April 16, 2026
-- Venue: Bengaluru (co-hosted with GrowthX)
-- Time: 9:00 AM – 8:00 PM
-- Cost: Free
-- Prize: $100,000
-- Tags: OpenAI, Codex, Agentic AI, $100K Prizes
-- Description: OpenAI's first official Codex Hackathon in India. 100+ builders competing for $100,000 in prizes.
-- Register: https://luma.com/x495vdw1
-
-### Codex Community Hackathon
-- Date: April 16, 2026
-- Venue: Bengaluru
-- Time: 9:30 AM – 6:00 PM
-- Cost: Free
-- Tags: OpenAI, Codex, Community
-- Description: Community-driven OpenAI Codex hackathon. Build ambitious AI projects using OpenAI coding tools.
-- Register: https://www.competehub.dev/en/competitions/luma905275c7e3ce2dda0e8fc122949a9867
-
-### ElevenLabs Buildathon
-- Date: April 18–19, 2026
-- Venue: Conscious Engines Office
-- Time: 2 days
-- Cost: Free
-- Tags: Voice AI, ElevenLabs, Conversational AI
-- Description: Build Conversational AI Agents using ElevenLabs' voice AI platform. Part of global hackathon across 30+ cities.
-- Register: https://luma.com/dxcah0t8
-
-### Aya AI Hackathon
-- Date: April 21–25, 2026
-- Venue: IIIT Bangalore
-- Time: Multi-day
-- Cost: Free
-- Prize: $20,000+
-- Tags: Crypto, DeFi, AI Agents, MCP
-- Description: Build MCP tools and AI services for DeFi operations. $20,000+ prizes. VCs for pitch sessions.
-- Register: https://luma.com/ocqqsf8y
-
-### HackBricks 2026
-- Date: April 24, 2026
-- Venue: Bengaluru (in-person)
-- Time: 24 hours
-- Cost: Free
-- Tags: Data Science, Databricks, ACM
-- Description: 24-hour in-person hackathon by ACM x Databricks x CodeBasics. Real-world data challenges.
-- Register: https://mitb.acm.org/hackbricks/
-
-### Meta PyTorch OpenEnv Hackathon — Finale [FEATURED]
-- Date: April 25–26, 2026
-- Venue: Scaler School of Technology
-- Time: 48-hour finale
-- Cost: Free
-- Prize: $30,000
-- Tags: Meta, PyTorch, RL
-- Description: India's first OpenEnv AI Hackathon. $30,000 prize pool + interview opportunities with Meta and Hugging Face.
-- Register: https://www.scaler.com/school-of-technology/meta-pytorch-hackathon
-
-### GDG Build For Bengaluru
-- Date: April 25, 2026
-- Venue: REVA University, Yelahanka
-- Time: 30-hour hackathon
-- Cost: Free
-- Tags: AI, Google, Social Impact
-- Description: GDG Bangalore 30-hour hackathon for AI-driven solutions in healthcare, education, sustainability.
-- Register: https://gdg.community.dev/gdg-bangalore/
-
-### HackBLR by Geekroom
-- Date: April 26, 2026
-- Venue: Bengaluru
-- Time: 8-hour finale
-- Cost: Free
-- Prize: ₹25,000+
-- Tags: AI Agents, Voice AI, LLM
-- Description: National-level AI hackathon focused on AI Agents, Voice AI, and LLM applications. 500-2,000 developers.
-- Register: https://luma.com/ia0ik7c6
-
-### Hack Days in Bengaluru
-- Date: TBA (April 2026)
-- Venue: Bengaluru (in-person)
-- Time: 12-hour sprint
-- Cost: Free
-- Tags: Hackathon, Prototyping
-- Description: 12-hour in-person hackathon with fast-paced build sprints, lightning workshops, and mentors.
-- Register: https://hack-days-in-bengaluru.devpost.com/
-
----
-
-## Startup Events
-
-### VibeCon India 2026
-- Date: April 16–17, 2026
-- Venue: Bengaluru
-- Time: 2 days
-- Cost: Free to apply
-- Tags: YC, Vibe Coding, Startups, Investors
-- Description: Top 300 builder competition by Emergent (valued at $300M). Winners get direct Y Combinator interviews.
-- Register: https://vibecon.com/register
-- Website: https://vibecon.com/
-
-### Y Combinator Startup School India [FEATURED]
-- Date: April 18, 2026
-- Venue: Bengaluru
-- Time: Full day
-- Cost: Free (2,000 seats)
-- Tags: Y Combinator, Founders, Startups
-- Description: YC's first-ever Startup School in India! Speakers from Razorpay, Meesho, Groww, and Emergent.
-- Register: https://events.ycombinator.com/yc-sus-india
-
-### YC BLR Pre-Event Mixer
-- Date: April 18, 2026
-- Venue: Bengaluru (venue on Luma)
-- Time: 9:30 AM – 11:30 AM
-- Cost: Free
-- Tags: YC, Networking, Founders
-- Description: Pre-YC Startup School networking mixer. 337+ attendees. Meet founders and builders.
-- Register: https://luma.com/nz98ggeh
-
-### YC Secret (AI)fter Party
-- Date: April 19, 2026
-- Venue: Bengaluru
-- Time: Evening
-- Cost: Free
-- Tags: YC, After Party, AI
-- Description: The unofficial after-party following YC Startup School India. 2,336+ attendees going.
-- Register: https://luma.com/f09xvrf2
-
-### After YC: AI Community Mixer
-- Date: April 19, 2026
-- Venue: Lavelle Road, Bengaluru
-- Time: 3:00 PM – 7:00 PM
-- Cost: Free
-- Tags: AI, Builders, Curated
-- Description: Curated, intimate mixer for 50 serious AI builders. Deep conversations and genuine connections.
-- Register: https://luma.com/6smwquri
-
----
-
-## Meetups
-
-### Golang Bangalore Meetup
-- Date: April 18, 2026
-- Venue: ZopDev, HSR Layout
-- Time: 10:00 AM IST
-- Cost: Free
-- Tags: Golang, Performance
-- Description: Monthly Go language meetup featuring talks on "Performance Debugging in Go Applications."
-- Register: https://www.meetup.com/golang-bangalore/
-
-### The Other Room
-- Date: April 18, 2026
-- Venue: Bengaluru
-- Time: Evening
-- Cost: Free
-- Tags: Builders, Networking
-- Description: Curated builder community meetup during YC Startup School week.
-- Register: https://luma.com/0xae5wnq
-
-### 11th Founders & Freelancers Meetup
-- Date: April 18, 2026
-- Venue: Koramangala, Bengaluru
-- Time: Evening
-- Cost: Free
-- Tags: Founders, Freelancers, Networking
-- Description: Networking for independent builders, freelancers, solopreneurs, and early-stage founders.
-- Register: https://luma.com/7tsxboct
-
-### AI Tinkerers Bengaluru
-- Date: TBA (April 2026)
-- Venue: Bengaluru (rotating venues)
-- Time: ~3 hours
-- Cost: Free
-- Tags: AI, Live Demos, Builders
-- Description: World's largest hands-on AI builder community. Monthly meetup featuring live code demos — no slides, no pitches.
-- Register: https://bengaluru.aitinkerers.org/
-
----
-
-## Web3 & Crypto
-
-### W3Summit 2026
-- Date: April 16–17, 2026
-- Venue: BIEC, Tumkur Road
-- Time: 2 full days
-- Cost: ₹15,000 – ₹33,000
-- Tags: Web3, Crypto, NFT, Gaming, Investing
-- Description: India's biggest Web3, gaming, NFT, and digital-assets festival. 2,000+ attendees, 50+ speakers.
-- Register: https://www.w3summit.io/
-
----
-
-## Music, Culture & Sports
-
-### Calvin Harris — Live in Bengaluru
-- Date: April 17, 2026
-- Venue: NICE Grounds, Bengaluru
-- Time: 4:00 PM onwards
-- Cost: ₹4,000 – ₹12,000
-- Tags: EDM, Concert, Live Music
-- Description: World-renowned Scottish DJ Calvin Harris performs live. Biggest electronic music event of the season.
-- Register: https://www.premiertickets.co/event/calvin-harris-india-tour-2026-bengaluru/
-
-### Love Letters — Theatre
-- Date: April 17, 2026
-- Venue: Prestige Centre for Performing Arts
-- Time: 7:30 PM
-- Cost: Paid
-- Tags: Theatre, Performing Arts
-- Description: "Ninna Preetiya, Naanu!" — A theatrical performance at one of Bengaluru's premier arts venues.
-- Register: https://www.pcpa.co.in/pages/events
-
-### Summersault Children's Festival
-- Date: April 11–26, 2026
+### Summersault Children\
+- ID: 31
+- Date: Apr 11–26
+- Start: 2026-04-11  End: 2026-04-26
 - Venue: Prestige Centre for Performing Arts
 - Time: Multiple shows
 - Cost: Paid
+- Category: music
 - Tags: Children, Theatre, Arts
+- Status: Past
 - Description: Multi-week performing arts festival for children featuring theatre, workshops, and performances.
 - Register: https://www.pcpa.co.in/pages/events
+- Detail page: https://bengaluru-events.sagarjethi.com/events/summersault-children
 
-### TCS 10K Get Active Expo
-- Date: April 23–25, 2026
-- Venue: RSI Cricket Ground
-- Time: 3 days
+### Tech & Innovation Summit 2026
+- ID: 1
+- Date: Apr 15
+- Start: 2026-04-15
+- Venue: Sheraton Grand Bangalore, Brigade Gateway
+- Time: 10:00 AM – 9:30 PM
+- Cost: Paid (~$195)
+- Category: conference
+- Tags: AI, Web3, Startups, Blockchain, Gaming
+- Status: Past
+- Description: Flagship annual gathering featuring AI, gaming, blockchain/Web3, capital markets, and startup innovation. Multiple thematic stages.
+- Register: https://www.eventbrite.com/e/tech-innovation-summit-2026-tickets-1977764204977
+- Website: https://www.entrepreneurindia.com/techshow/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/tech-innovation-summit-2026
+
+### OpenAI Codex Hackathon
+- ID: 3
+- Date: Apr 16
+- Start: 2026-04-16
+- Venue: Bengaluru (co-hosted with GrowthX)
+- Time: 9:00 AM – 8:00 PM
 - Cost: Free
-- Tags: Running, Fitness, Expo
-- Description: TCS World 10K expo featuring bib collection, running gear, and fitness activities.
-- Register: https://tcsworld10k.procam.in/
+- Category: hackathon
+- Tags: OpenAI, Codex, Agentic AI, $100K Prizes
+- Prize: $100,000
+- Status: Past
+- Description: OpenAI
+- Register: https://luma.com/x495vdw1
+- Detail page: https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon
 
-### TCS World 10K Race
-- Date: April 26, 2026
+### Codex Community Hackathon
+- ID: 4
+- Date: Apr 16
+- Start: 2026-04-16
 - Venue: Bengaluru
-- Time: Morning
-- Cost: Registered
-- Tags: Running, 10K Race
-- Description: 18th edition of Asia's most prestigious road running event.
-- Register: https://tcsworld10k.procam.in/
+- Time: 9:30 AM – 6:00 PM
+- Cost: Free
+- Category: hackathon
+- Tags: OpenAI, Codex, Community
+- Status: Past
+- Description: Community-driven OpenAI Codex hackathon. Build ambitious AI projects using OpenAI coding tools.
+- Register: https://www.competehub.dev/en/competitions/luma905275c7e3ce2dda0e8fc122949a9867
+- Detail page: https://bengaluru-events.sagarjethi.com/events/codex-community-hackathon
 
----
+### VibeCon India 2026
+- ID: 5
+- Date: Apr 16–17
+- Start: 2026-04-16  End: 2026-04-17
+- Venue: Bengaluru
+- Time: 2 days
+- Cost: Free to apply
+- Category: hackathon
+- Tags: YC, Vibe Coding, Startups, Investors
+- Status: Past
+- Description: Top 300 builder competition by Emergent (valued at $300M). Winners get direct Y Combinator interviews.
+- Register: https://vibecon.com/register
+- Website: https://vibecon.com/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/vibecon-india-2026
 
-## Expos
+### W3Summit 2026 — AI & Web3 Global
+- ID: 6
+- Date: Apr 16–17
+- Start: 2026-04-16  End: 2026-04-17
+- Venue: Sheraton Grand Bangalore, Brigade Gateway
+- Time: 2 full days
+- Cost: ₹15,000 – ₹33,000
+- Category: web3
+- Tags: Web3, Crypto, NFT, Gaming, AI
+- Status: Past
+- Description: India
+- Register: https://www.w3summit.io/
+- Website: https://www.entrepreneurindia.com/techshow/aiw3global/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/w3summit-2026-ai-web3-global
 
 ### Plumbex India 2026
-- Date: April 16–18, 2026
+- ID: 7
+- Date: Apr 16–18
+- Start: 2026-04-16  End: 2026-04-18
 - Venue: Hall 4, BIEC, Tumkur Road
 - Time: 3 days
 - Cost: Free
+- Category: expo
 - Tags: Water, Sanitation, Infrastructure
-- Description: India's largest water, sanitation & plumbing exhibition. 1.4 lakh sq. ft. with 15,000+ visitors.
+- Status: Past
+- Description: India
 - Register: https://indianplumbing.org/event-activities/plumbex-india-exhibition-2026/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/plumbex-india-2026
 
----
+### OpenAI Codex Hackathon — Spectator Pass
+- ID: 40
+- Date: Apr 16
+- Start: 2026-04-16
+- Venue: Bengaluru, Karnataka
+- Time: 11:30 AM – 2:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: OpenAI, Codex, Demo Showcase, Networking, GrowthX
+- Status: Past
+- Description: Spectator pass to the OpenAI Codex Hackathon — demo showcase + networking with 100+ AI professionals. Hosted by Gabriel Chua (OpenAI), Harshit M (OpenAI), Abhishek Patil (GrowthX), Yashraj Nayak (Databricks). Does NOT include builder access.
+- Register: https://growthx.club/events/69d7943c72aa94126207b5dc
+- Detail page: https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon-spectator-pass
 
-## Event Discovery Platforms
+### JioHotstar ScaleUp 2.0 — Scaling AI in Practice
+- ID: 8
+- Date: Apr 17
+- Start: 2026-04-17
+- Venue: Bellandur Amanikere, Bengaluru
+- Time: 5:30 PM – 8:30 PM
+- Cost: Free
+- Category: conference
+- Tags: AI, Scaling, Streaming, ML Infra
+- Status: Past
+- Description: Deep-dive into how JioHotstar (400M+ users) scales AI in production for media & personalization.
+- Register: https://luma.com/mu9mdlyh
+- Detail page: https://bengaluru-events.sagarjethi.com/events/jiohotstar-scaleup-2-0-scaling-ai-in-practice
 
-Find more events in Bengaluru on these platforms:
-- Luma: https://luma.com/bengaluru
-- Eventbrite: https://www.eventbrite.com/d/india--bangalore/tech-events/
-- AllEvents.in: https://allevents.in/bangalore/all
-- Meetup.com: https://www.meetup.com/find/in--bangalore/
-- HasGeek: https://hasgeek.com/
-- Dev.Events: https://dev.events/AS/IN/Bengaluru/tech
-- Townscript: https://www.townscript.com/in/bangalore
-- HackerEarth: https://www.hackerearth.com/hackathon/explore/city/bengaluru/
-- CompeteHub: https://www.competehub.dev/
-- Unstop: https://unstop.com/
+### Rust India Conference 2026
+- ID: 9
+- Date: Apr 17–18
+- Start: 2026-04-17  End: 2026-04-18
+- Venue: NIMHANS Convention Centre
+- Time: 2 full days
+- Cost: Paid
+- Category: conference
+- Tags: Rust, Systems Programming
+- Status: Past
+- Description: India
+- Register: https://hasgeek.com/rustbangalore/rust-india-conference-2026/
+- Website: https://rustindia.org/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/rust-india-conference-2026
 
----
+### Calvin Harris — Live in Bengaluru
+- ID: 10
+- Date: Apr 17
+- Start: 2026-04-17
+- Venue: NICE Grounds, Bengaluru
+- Time: 4:00 PM onwards
+- Cost: ₹4,000 – ₹12,000
+- Category: music
+- Tags: EDM, Concert, Live Music
+- Status: Past
+- Description: World-renowned Scottish DJ Calvin Harris performs live. Biggest electronic music event of the season.
+- Register: https://www.premiertickets.co/event/calvin-harris-india-tour-2026-bengaluru/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/calvin-harris-live-in-bengaluru
 
-## Frequently Asked Questions
+### Love Letters — Theatre
+- ID: 11
+- Date: Apr 17
+- Start: 2026-04-17
+- Venue: Prestige Centre for Performing Arts
+- Time: 7:30 PM
+- Cost: Paid
+- Category: music
+- Tags: Theatre, Performing Arts
+- Status: Past
+- Description: 
+- Register: https://www.pcpa.co.in/pages/events
+- Detail page: https://bengaluru-events.sagarjethi.com/events/love-letters-theatre
 
-Q: What tech events are happening in Bengaluru in April 2026?
-A: Over 38 events are happening from April 15-26, 2026, including OpenAI Codex Hackathon, YC Startup School India, AWS Summit, GIDS Developer Summit, Meta PyTorch Hackathon, VibeCon, Rust India Conference, ElevenLabs Buildathon, and many more. Full list at https://bengaluru-events.sagarjethi.com
+### How to Build Your GTM Engine — Crustdata
+- ID: 38
+- Date: Apr 17
+- Start: 2026-04-17
+- Venue: Virtual (Online)
+- Time: 6:00 PM IST
+- Cost: Free (Approval required)
+- Category: startup
+- Tags: GTM, Sales, API, Crustdata, Growth
+- Status: Past
+- Description: Live session showing how Crustdata scaled from $700K to $7M ARR in 15 months. Learn to build lead lists, score ICPs, and automate outreach using Crustdata API.
+- Register: https://luma.com/8hfcdwz9
+- Detail page: https://bengaluru-events.sagarjethi.com/events/how-to-build-your-gtm-engine-crustdata
 
-Q: Are there free tech events in Bengaluru in April 2026?
-A: Yes, 18 events are completely free including OpenAI Codex Hackathon, YC Startup School India, AWS Summit Bengaluru, VibeCon India, JioHotstar ScaleUp 2.0, ElevenLabs Buildathon, Meta PyTorch Hackathon, Golang Bangalore Meetup, GDG Build For Bengaluru, and multiple networking mixers and after-parties.
+### Y Combinator Startup School India
+- ID: 12
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: Bengaluru
+- Time: Full day
+- Cost: Free (2,000 seats)
+- Category: startup
+- Tags: Y Combinator, Founders, Startups
+- Status: Past
+- Description: YC
+- Register: https://events.ycombinator.com/yc-sus-india
+- Detail page: https://bengaluru-events.sagarjethi.com/events/y-combinator-startup-school-india
 
-Q: What hackathons are happening in Bengaluru in April 2026?
-A: 12 hackathons with $165,000+ in total prizes: OpenAI Codex Hackathon ($100K prizes, Apr 16), Meta PyTorch Hackathon ($30K prizes, Apr 25-26), Aya AI Hackathon ($20K+ prizes, Apr 21-25), ContextCon YC x Crustdata ($12K prizes, Apr 19), VibeCon India (Apr 16-17), ElevenLabs Buildathon (Apr 18-19), Lyzr Agentathon (₹2L prizes, Apr 19-20), HackBricks by ACM x Databricks (Apr 24), GDG Build For Bengaluru (Apr 25), HackBLR by Geekroom (Apr 26), Hack Days in Bengaluru (Apr 22), and Codex Community Hackathon (Apr 16). All hackathons are free to enter.
+### ElevenLabs Buildathon
+- ID: 13
+- Date: Apr 18–19
+- Start: 2026-04-18  End: 2026-04-19
+- Venue: Conscious Engines Office
+- Time: 2 days
+- Cost: Free
+- Category: hackathon
+- Tags: Voice AI, ElevenLabs, Conversational AI
+- Status: Past
+- Description: Build Conversational AI Agents using ElevenLabs
+- Register: https://luma.com/dxcah0t8
+- Detail page: https://bengaluru-events.sagarjethi.com/events/elevenlabs-buildathon
 
-Q: What is the biggest tech event in Bengaluru in April 2026?
-A: The biggest events by scale are AWS Summit Bengaluru (free, 2 days at KTPO Whitefield), GIDS Developer Summit (4 days at IISc Campus, Asia-Pacific's largest developer conference), and YC Startup School India (2,000 seats, YC's first-ever event in India).
+### YC BLR Pre-Event Mixer
+- ID: 14
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: Bengaluru (venue on Luma)
+- Time: 9:30 AM – 11:30 AM
+- Cost: Free
+- Category: startup
+- Tags: YC, Networking, Founders
+- Status: Past
+- Description: Pre-YC Startup School networking mixer. 337+ attendees. Meet founders and builders.
+- Register: https://luma.com/nz98ggeh
+- Detail page: https://bengaluru-events.sagarjethi.com/events/yc-blr-pre-event-mixer
 
-Q: Are there AI events in Bengaluru in April 2026?
-A: Yes, many AI-focused events: OpenAI Codex Hackathon (AI coding agents, $100K), JioHotstar ScaleUp 2.0 (scaling AI at 400M+ users), Aya AI Hackathon (AI agents + DeFi + MCP tools, $20K+), ElevenLabs Buildathon (conversational voice AI), HackBLR (AI agents + Voice AI + LLM), After YC AI Community Mixer, AI Tinkerers Bengaluru (live AI demos), and AWS Summit (Agentic AI + Amazon Bedrock).
+### Golang Bangalore Meetup
+- ID: 15
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: ZopDev, HSR Layout
+- Time: 10:00 AM IST
+- Cost: Free
+- Category: meetup
+- Tags: Golang, Performance
+- Status: Past
+- Description: Monthly Go language meetup featuring talks on 
+- Register: https://www.meetup.com/golang-bangalore/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/golang-bangalore-meetup
 
-Q: Are there Web3 or crypto events in Bengaluru in April 2026?
-A: Yes. W3Summit 2026 is India's biggest Web3, gaming, NFT, and digital-assets festival (2,000+ attendees, 50+ speakers, Apr 16-17). Aya AI Hackathon covers DeFi + AI with $20K+ prizes. Tech & Innovation Summit includes a blockchain/Web3 track.
+### The Other Room
+- ID: 16
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: Bengaluru
+- Time: Evening
+- Cost: Free
+- Category: meetup
+- Tags: Builders, Networking
+- Status: Past
+- Description: Curated builder community meetup during YC Startup School week.
+- Register: https://luma.com/0xae5wnq
+- Detail page: https://bengaluru-events.sagarjethi.com/events/the-other-room
 
-Q: Where can I find developer conferences in India in April 2026?
-A: Bengaluru hosts GIDS 2026 (Asia-Pacific's largest polyglot dev conference, 4 days at IISc Campus), Rust India Conference (2 days at NIMHANS Convention Centre), AWS Summit Bengaluru (free, 2 days at KTPO Whitefield), and ISMG Cybersecurity Week (Ritz-Carlton).
+### 11th Founders & Freelancers Meetup
+- ID: 17
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: Koramangala, Bengaluru
+- Time: Evening
+- Cost: Free
+- Category: meetup
+- Tags: Founders, Freelancers, Networking
+- Status: Past
+- Description: Networking for independent builders, freelancers, solopreneurs, and early-stage founders.
+- Register: https://luma.com/7tsxboct
+- Detail page: https://bengaluru-events.sagarjethi.com/events/11th-founders-freelancers-meetup
 
-Q: What startup events are in Bengaluru in April 2026?
-A: Y Combinator Startup School India (first-ever in India, 2,000 seats, free), VibeCon India (top 300 builders, direct YC interview chance), YC BLR Pre-Event Mixer, YC Secret (AI)fter Party (2,336+ going), After YC AI Community Mixer, and 11th Founders & Freelancers Meetup.
+### YC Secret (AI)fter Party
+- ID: 18
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: Bengaluru (revealed last minute)
+- Time: 8:00 PM – 10:00 PM
+- Cost: Free
+- Category: startup
+- Tags: YC, After Party, AI
+- Status: Past
+- Description: The unofficial after-party following YC Startup School India. 2,336+ attendees going.
+- Register: https://luma.com/f09xvrf2
+- Detail page: https://bengaluru-events.sagarjethi.com/events/yc-secret-ai-fter-party
 
-Q: Is Y Combinator coming to India in 2026?
-A: Yes. YC Startup School India is on April 18, 2026 in Bengaluru. It's YC's first-ever Startup School in India with 2,000 seats and speakers from Razorpay, Meesho, Groww, and Emergent. Registration: https://events.ycombinator.com/yc-sus-india
+### Altimate Hackday
+- ID: 44
+- Date: Apr 18
+- Start: 2026-04-18
+- Venue: Bengaluru (exact venue on registration approval)
+- Time: 10:00 AM – 8:30 PM
+- Cost: Free (application-based)
+- Category: hackathon
+- Tags: Altimate, Data Engineering, Claude API, AI Workflows, Open Source
+- Status: Past
+- Description: Full-day in-person hackathon for experienced data engineers (5–15 years) building real workflows with the open-source Altimate Code harness and on-site Claude API access. 8 hours of hacking, team demos, judging by industry veterans. Prizes: Mac Mini (1st), audiophile headphones (2nd), Mokobara backpack (3rd), plus swag for all.
+- Register: https://luma.com/zr4z3g8f
+- Detail page: https://bengaluru-events.sagarjethi.com/events/altimate-hackday
 
-Q: What is OpenAI Codex Hackathon Bengaluru?
-A: OpenAI's first official Codex Hackathon in India on April 16, 2026 in Bengaluru. Co-hosted with GrowthX. 100+ builders competing for $100,000 in prizes using OpenAI Codex. Free entry. Register: https://luma.com/x495vdw1
+### After YC: AI Community Mixer
+- ID: 19
+- Date: Apr 19
+- Start: 2026-04-19
+- Venue: Lavelle Road, Bengaluru
+- Time: 3:00 PM – 7:00 PM
+- Cost: Free
+- Category: startup
+- Tags: AI, Builders, Curated
+- Status: Past
+- Description: Curated, intimate mixer for 50 serious AI builders. Deep conversations and genuine connections.
+- Register: https://luma.com/6smwquri
+- Detail page: https://bengaluru-events.sagarjethi.com/events/after-yc-ai-community-mixer
 
-Q: What is Meta PyTorch Hackathon in Bengaluru?
-A: India's first OpenEnv AI Hackathon organized by Meta, Hugging Face, and PyTorch Foundation on April 25-26, 2026 at Scaler School of Technology, Bengaluru. $30,000 prize pool + interview opportunities. Free entry. Register: https://www.scaler.com/school-of-technology/meta-pytorch-hackathon
+### ContextCon — YC x Crustdata Hackathon
+- ID: 37
+- Date: Apr 19
+- Start: 2026-04-19
+- Venue: Bengaluru, Karnataka
+- Time: 10:00 AM – 4:00 PM
+- Cost: Free
+- Category: hackathon
+- Tags: YC, Crustdata, AI Agents, Sales Intelligence, $12K Prizes
+- Prize: $12,000
+- Status: Past
+- Description: YC
+- Register: https://luma.com/6ftay6mq
+- Website: https://crustdata.com/contextcon
+- Detail page: https://bengaluru-events.sagarjethi.com/events/contextcon-yc-x-crustdata-hackathon
 
-Q: What is AWS Summit Bengaluru 2026?
-A: AWS's flagship cloud event in India on April 22-23, 2026 at KTPO Exhibition Center, Whitefield. Covers Agentic AI, serverless, Amazon Bedrock, and Kiro IDE. Completely free. Register: https://aws.amazon.com/events/summits/bengaluru/
+### HEM Founder
+- ID: 39
+- Date: Apr 19
+- Start: 2026-04-19
+- Venue: Bengaluru, Karnataka
+- Time: 12:00 PM – 3:00 PM
+- Cost: Free (Invite-only)
+- Category: startup
+- Tags: AI, Web3, Founders, Agentic Payments, Hashed Emergent
+- Status: Past
+- Description: Exclusive brunch for 25-30 AI founders by Hashed Emergent & Tether. Focus on agentic payments, P2P agent communication, and tokenized data marketplaces.
+- Register: https://luma.com/rngja8px
+- Detail page: https://bengaluru-events.sagarjethi.com/events/hem-founder
 
-Q: What is VibeCon India 2026?
-A: A top 300 builder competition organized by Emergent (valued at $300M) on April 16-17, 2026 in Bengaluru. Winners get direct Y Combinator interviews. Features backing from AWS, Razorpay, and Lightspeed. Free to apply. Register: https://vibecon.com/register
+### WHY C? — Only for Top 1% YC Rejected
+- ID: 41
+- Date: Apr 19
+- Start: 2026-04-19
+- Venue: Bengaluru, Karnataka
+- Time: Evening
+- Cost: Free for presenters · Early-bird tickets for audience
+- Category: startup
+- Tags: YC Rejected, Pitch, Roast, Agentic Summer, Inner Circle, AI & Weekends
+- Status: Past
+- Description: Pitch event for founders rejected by Y Combinator. Show your YC rejection email to pitch. Roast format with real VCs in the audience. Part of the Agentic Summer lineup by AI & Weekends and Inner Circle.
+- Register: https://agenticsummer.innercircle.so/
+- Website: https://agenticsummer.innercircle.so/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/why-c-only-for-top-1-yc-rejected
 
-Q: What is GIDS 2026?
-A: Great International Developer Summit — Asia-Pacific's largest polyglot software developer conference, now in its 18th edition. April 21-24, 2026 at J N Tata Auditorium, IISc Campus, Bengaluru. Covers Software Dev, Architecture, AI/ML, DevOps, and Cloud. Register: https://developersummit.com/
+### Side Quest: Builders Brunch
+- ID: 42
+- Date: Apr 19
+- Start: 2026-04-19
+- Venue: Bengaluru, Karnataka
+- Time: 11:00 AM – 3:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: Builders, Engineers, Brunch, Networking
+- Status: Past
+- Description: Laid-back brunch for builders, engineers, and anyone passionate about shipping cool stuff. No agenda, no talks — just good food, coffee, and meaningful conversations.
+- Register: https://luma.com/ojffizit
+- Detail page: https://bengaluru-events.sagarjethi.com/events/side-quest-builders-brunch
 
-Q: Are there Rust programming events in India in 2026?
-A: Yes. Rust India Conference 2026 is on April 17-18, 2026 at NIMHANS Convention Centre, Bengaluru. India's premier Rust programming language conference with talks, workshops, and networking. Register: https://hasgeek.com/rustbangalore/rust-india-conference-2026/
+### India
+- ID: 43
+- Date: Apr 19
+- Start: 2026-04-19
+- Venue: Bengaluru (revealed on registration)
+- Time: 10:00 AM – 6:00 PM (8 hours)
+- Cost: Free (application-based)
+- Category: hackathon
+- Tags: OpenCode, GrowthX, AI, Buildathon, $100K Prizes
+- Prize: $100,000 (cash & credits)
+- Status: Past
+- Description: India
+- Register: https://growthx.club/events/indias-first-opencode-buildathon-jtuus
+- Detail page: https://bengaluru-events.sagarjethi.com/events/india
 
-Q: What is ElevenLabs Buildathon Bengaluru?
-A: A 2-day hackathon on April 18-19, 2026 to build Conversational AI Agents using ElevenLabs' voice AI platform. Part of a global hackathon across 30+ cities. Free entry. Register: https://luma.com/dxcah0t8
+### AI Tinkerers Bengaluru
+- ID: 32
+- Date: TBA (April)
+- Start: 2026-04-20
+- Venue: Bengaluru (rotating venues)
+- Time: ~3 hours
+- Cost: Free
+- Category: meetup
+- Tags: AI, Live Demos, Builders
+- Status: Past
+- Description: World
+- Register: https://bengaluru.aitinkerers.org/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/ai-tinkerers-bengaluru
 
-Q: Is TCS 10K happening in Bengaluru in 2026?
-A: Yes. TCS World 10K Bengaluru race is on April 26, 2026. The Get Active Expo runs April 23-25 at RSI Cricket Ground with bib collection and fitness activities. 18th edition of Asia's most prestigious road running event. Register: https://tcsworld10k.procam.in/
+### GIDS 2026 — Developer Summit
+- ID: 20
+- Date: Apr 21–24
+- Start: 2026-04-21  End: 2026-04-24
+- Venue: J N Tata Auditorium, IISc Campus
+- Time: 4 full days
+- Cost: Paid
+- Category: conference
+- Tags: Software Dev, Architecture, AI/ML, DevOps, Cloud
+- Status: Past
+- Description: Asia-Pacific
+- Register: https://developersummit.com/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/gids-2026-developer-summit
 
-Q: What cybersecurity events are in Bengaluru in April 2026?
-A: ISMG Cybersecurity Week on April 21, 2026 at The Ritz-Carlton, Bengaluru. Premier cybersecurity summit featuring CISOs, regulators, and technology visionaries covering DPDP Act, ransomware, and AI security. Invite-only.
+### ISMG Cybersecurity Week
+- ID: 21
+- Date: Apr 21
+- Start: 2026-04-21
+- Venue: The Ritz-Carlton, Bengaluru
+- Time: Full day
+- Cost: Invite
+- Category: cybersecurity
+- Tags: Cybersecurity, CISO, AI Security
+- Status: Past
+- Description: Premier cybersecurity summit. CISOs, regulators, and technology visionaries. DPDP Act, ransomware, AI security.
+- Register: https://ismg-events.com/cybersecurity-week-2026
+- Detail page: https://bengaluru-events.sagarjethi.com/events/ismg-cybersecurity-week
 
-Q: Should I visit Bengaluru in April 2026 for tech events?
-A: Absolutely. April 15-26, 2026 is an unprecedented concentration of tech events in Bengaluru with OpenAI, Y Combinator, AWS, Meta, Google, and ElevenLabs all hosting events. 20 events are free. $145K+ in hackathon prizes. This density of top-tier events in one city in 12 days is rare.
+### AWS Summit Bengaluru 2026
+- ID: 23
+- Date: Apr 22–23
+- Start: 2026-04-22  End: 2026-04-23
+- Venue: KTPO Trade Centre, Whitefield, Bengaluru
+- Time: 2 full days
+- Cost: Free
+- Category: conference
+- Tags: Cloud, AWS, AI, Serverless
+- Status: Past
+- Description: AWS
+- Register: https://aws.amazon.com/events/summits/bengaluru/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/aws-summit-bengaluru-2026
 
-## Individual Event Pages
+### ICRCET 2026
+- ID: 24
+- Date: Apr 22–23
+- Start: 2026-04-22  End: 2026-04-23
+- Venue: Bangalore
+- Time: 2 days
+- Cost: Paid
+- Category: conference
+- Tags: Engineering, Research, Academic
+- Status: Past
+- Description: 15th Intl. Conference on Recent Challenges in Engineering & Technology.
+- Register: https://www.icrcet.org/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/icrcet-2026
 
-Every event has a dedicated detail page at https://bengaluru-events.sagarjethi.com/events/{event-slug}
-Example URLs:
-- https://bengaluru-events.sagarjethi.com/events/openai-codex-hackathon
-- https://bengaluru-events.sagarjethi.com/events/y-combinator-startup-school-india
-- https://bengaluru-events.sagarjethi.com/events/aws-summit-bengaluru-2026
-- https://bengaluru-events.sagarjethi.com/events/meta-pytorch-hackathon
-- https://bengaluru-events.sagarjethi.com/events/vibecon-india-2026
-- https://bengaluru-events.sagarjethi.com/events/gids-2026-developer-summit
+### TCS 10K Get Active Expo
+- ID: 25
+- Date: Apr 23–25
+- Start: 2026-04-23  End: 2026-04-25
+- Venue: RSI Cricket Ground
+- Time: 3 days
+- Cost: Free
+- Category: sports
+- Tags: Running, Fitness, Expo
+- Status: Past
+- Description: TCS World 10K expo featuring bib collection, running gear, and fitness activities.
+- Register: https://tcsworld10k.procam.in/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/tcs-10k-get-active-expo
 
----
+### AI-Native Development: Building with AI, Cloud & Blockchain
+- ID: 45
+- Date: Apr 23
+- Start: 2026-04-23
+- Venue: Polaris School of Technology, DivyaSree Technopark, EPIP Zone, Brookefield
+- Time: 5:00 PM – 8:00 PM
+- Cost: Free (approval required)
+- Category: meetup
+- Tags: AI, Chainlink, Blockchain, MLOps, AI Agents, Web3, Observability
+- Status: Past
+- Description: Developer meetup on AI-native architectures, agentic workflows, MLOps, and observability across Web2 and Web3. Speakers: Subham Londhe (300K+ YouTube, AI/MLOps), Sagar Jethi (Chainlink Community Advocate, CRE & real-world use cases), Neel Shah (DevRel StackGen, observability), Harsh Shah (DevRel Transak, Web3 infra), Neeraj Penumaka (Backend Lead Nasiko, Data Science). Hosted by Tanisha Singhal. Powered by Chainlink Global Events.
+- Register: https://luma.com/cl_ai_blrmeetup
+- Detail page: https://bengaluru-events.sagarjethi.com/events/ai-native-development-building-with-ai-cloud-blockchain
 
+### HackBricks 2026
+- ID: 26
+- Date: Apr 24
+- Start: 2026-04-24
+- Venue: Bengaluru (in-person)
+- Time: 24 hours
+- Cost: Free
+- Category: hackathon
+- Tags: Data Science, Databricks, ACM
+- Status: Past
+- Description: 24-hour in-person hackathon by ACM x Databricks x CodeBasics. Real-world data challenges.
+- Register: https://mitb.acm.org/hackbricks/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/hackbricks-2026
 
----
+### Bengaluru Pitch Circuit 6
+- ID: 34
+- Date: Apr 24
+- Start: 2026-04-24
+- Venue: Bengaluru (revealed on registration)
+- Time: 6:15 PM – 9:00 PM
+- Cost: Free (invite-only, 30 founders + investors)
+- Category: startup
+- Tags: Pitch, Founders, Investors, Networking
+- Status: Past
+- Description: Curated pitch event for 30 handpicked founders and investors. Panel discussion, startup pitches, and networking.
+- Register: https://luma.com/kt6hzh2n
+- Detail page: https://bengaluru-events.sagarjethi.com/events/bengaluru-pitch-circuit-6
 
-## APRIL 27 – 30, 2026 (extension)
+### Meta PyTorch Hackathon
+- ID: 27
+- Date: Apr 25–26
+- Start: 2026-04-25  End: 2026-04-26
+- Venue: Scaler School of Technology
+- Time: 48-hour finale
+- Cost: Free
+- Category: hackathon
+- Tags: Meta, PyTorch, RL
+- Prize: $30,000
+- Status: Past
+- Description: India
+- Register: https://www.scaler.com/school-of-technology/meta-pytorch-hackathon
+- Detail page: https://bengaluru-events.sagarjethi.com/events/meta-pytorch-hackathon
 
-### AI of the Week: What's actually worth using?
-- **Date:** Apr 27
-- **Venue:** Bengaluru
-- **Time:** 8:30 PM – 9:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** **A space for builders to talk about how we're actually using AI in creating products: tools, prompts, workflows, and hacks.** * Real workflows, prompts,
-- **Source:** meetup
-- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/314162349/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/ai-of-the-week-whats-actually-worth-using
+### GDG Build For Bengaluru
+- ID: 28
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: REVA University, Yelahanka
+- Time: 30-hour hackathon
+- Cost: Free
+- Category: hackathon
+- Tags: AI, Google, Social Impact
+- Status: Past
+- Description: GDG Bangalore 30-hour hackathon for AI-driven solutions in healthcare, education, sustainability.
+- Register: https://gdg.community.dev/gdg-bangalore/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/gdg-build-for-bengaluru
 
-### Citizen developers in the enterprise: What platform teams should know
-- **Date:** Apr 27
-- **Venue:** Bengaluru
-- **Time:** 10:30 PM – 11:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Security
-- **Description:** Business analysts and domain experts are building applications with AI and they expect the same infrastructure, security, and governance that professional
-- **Source:** meetup
-- **Register:** https://www.meetup.com/platform-engineers-bangalore/events/314180906/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/citizen-developers-in-the-enterprise-what-platform-teams-should-know
+### Lyzr Agentathon: 2 Lakh Vibe-Coding Challenge
+- ID: 35
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: Polaris School of Technology, Bengaluru
+- Time: 9:00 AM – 5:30 PM
+- Cost: Free (selection-based)
+- Category: hackathon
+- Tags: AI Agents, Vibe Coding, Lyzr Architect, LLM
+- Prize: ₹2,00,000
+- Status: Past
+- Description: Curated offline hackathon — 500 capacity, solo or team of 2. Build AI agents with Lyzr Architect. ₹2 Lakh prize pool.
+- Register: https://luma.com/zm0u860h
+- Detail page: https://bengaluru-events.sagarjethi.com/events/lyzr-agentathon-2-lakh-vibe-coding-challenge
 
-### Founders Networking: Connect & Help Each Other
-- **Date:** Apr 28
-- **Venue:** Bengaluru
-- **Time:** 8:30 PM – 9:30 PM
-- **Cost:** See event page
-- **Category:** startup
-- **Tags:** Startup
-- **Description:** **Founders helping founders – not a slogan, a weekly session.** Stuck on the same problem for weeks, need some help or advice? **Join a live builders' netw
-- **Source:** meetup
-- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/314181425/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/founders-networking-connect-help-each-other
+### Reddit-a-thon: 3-hour sprint to kickstart your Reddit growth
+- ID: 82
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: PWD Quarters, Bengaluru
+- Time: 11:30 AM – 4:30 PM
+- Cost: Free
+- Category: meetup
+- Tags: Reddit, Marketing, Growth, Builders
+- Status: Past
+- Description: 3-hour hands-on sprint by Harkirat (Rocket) Singh to help builders kickstart their user acquisition journey on Reddit.
+- Register: https://luma.com/nbxc6diz
+- Detail page: https://bengaluru-events.sagarjethi.com/events/reddit-a-thon-3-hour-sprint-to-kickstart-your-reddit-growth
+
+### Warm Weekends with Kuchen — April 25 & 26
+- ID: 83
+- Date: Apr 25–26
+- Start: 2026-04-25  End: 2026-04-26
+- Venue: The Apartment Cafe, Bengaluru
+- Time: 12:00 PM – 9:00 PM
+- Cost: See event page
+- Category: music
+- Tags: Cafe, Community, Weekend, Food
+- Status: Past
+- Description: Round 3 of The Apartment Cafe
+- Register: https://luma.com/v1pk9doq
+- Detail page: https://bengaluru-events.sagarjethi.com/events/warm-weekends-with-kuchen-april-25-26
+
+### FRW 2026: Print . Play. Piece it together
+- ID: 84
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: Tharangini Studio Pvt Ltd, Sadashivnagar, Malleshwaram
+- Time: 2:00 PM – 5:00 PM
+- Cost: Paid
+- Category: meetup
+- Tags: Block Printing, Workshop, Craft, Wardrobe
+- Status: Past
+- Description: A hands-on afternoon of block printing a treasured piece from your wardrobe with Tharangini Studio.
+- Register: https://luma.com/ggvm9aro
+- Detail page: https://bengaluru-events.sagarjethi.com/events/frw-2026-print-play-piece-it-together
+
+### Zero to Agent: Bengaluru (w/ Headstart Karnataka x Docket)
+- ID: 85
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: Bengaluru (Headstart Karnataka × Docket × Vercel)
+- Time: 3:00 PM – 6:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: AI Agents, Vercel, Build Week, Workshop
+- Status: Past
+- Description: Headstart Karnataka, Docket and Vercel bring Zero to Agent to Bengaluru — part of a global build sprint across 100+ cities.
+- Register: https://luma.com/79z7yphq
+- Detail page: https://bengaluru-events.sagarjethi.com/events/zero-to-agent-bengaluru-w-headstart-karnataka-x-docket
+
+### The Vent Sesh — Cranberry.Fit Round 3
+- ID: 86
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: Koramangala 1st Block, Bengaluru
+- Time: 4:30 PM – 6:30 PM
+- Cost: Free
+- Category: meetup
+- Tags: Women, , , , 
+- Status: Past
+- Description: Cranberry.Fit
+- Register: https://luma.com/jsxbj9j2
+- Detail page: https://bengaluru-events.sagarjethi.com/events/the-vent-sesh-cranberry-fit-round-3
+
+### Songwriter Sessions Ft. MIKU & Dindūn
+- ID: 87
+- Date: Apr 25
+- Start: 2026-04-25
+- Venue: PizzaExpress Indiranagar, 12th Main Rd, Domlur
+- Time: 8:00 PM – 10:00 PM
+- Cost: Paid
+- Category: music
+- Tags: Live Music, Songwriters, Indiranagar
+- Status: Past
+- Description: Songwriter Sessions Indiranagar with MIKU and Dindūn — two artists who treat music as a space to feel and process.
+- Register: https://luma.com/udt700qd
+- Detail page: https://bengaluru-events.sagarjethi.com/events/songwriter-sessions-ft-miku-dind-n
+
+### TCS World 10K Race
+- ID: 29
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Bengaluru
+- Time: Morning
+- Cost: Registered
+- Category: sports
+- Tags: Running, 10K Race
+- Status: Past
+- Description: 18th edition of Asia
+- Register: https://tcsworld10k.procam.in/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/tcs-world-10k-race
+
+### HackBLR by Geekroom
+- ID: 30
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Bengaluru
+- Time: 8-hour finale
+- Cost: Free
+- Category: hackathon
+- Tags: AI Agents, Voice AI, LLM
+- Prize: ₹25,000+
+- Status: Past
+- Description: National-level AI hackathon focused on AI Agents, Voice AI, and LLM applications. 500-2,000 developers.
+- Register: https://luma.com/ia0ik7c6
+- Detail page: https://bengaluru-events.sagarjethi.com/events/hackblr-by-geekroom
+
+### Zero to Agent: Bengaluru (w/ The AI Collective)
+- ID: 36
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Bengaluru, Karnataka
+- Time: 2:00 PM – 6:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: AI Agents, Vercel, Build Session, The AI Collective
+- Status: Past
+- Description: Global Build Week event by The AI Collective. Go from zero to building your first AI agent in a hands-on session powered by Vercel.
+- Register: https://luma.com/aic-be-4-26
+- Detail page: https://bengaluru-events.sagarjethi.com/events/zero-to-agent-bengaluru-w-the-ai-collective
+
+### Run with Builders by Quivly AI
+- ID: 88
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Cubbon Park Metro Entrance D, Bengaluru
+- Time: 8:00 AM – 9:30 AM
+- Cost: Free
+- Category: sports
+- Tags: Run, Builders, Networking, Cubbon Park
+- Status: Past
+- Description: A Sunday morning run + builder networking edition by Quivly AI at Cubbon Park.
+- Register: https://luma.com/a5okqikl
+- Detail page: https://bengaluru-events.sagarjethi.com/events/run-with-builders-by-quivly-ai
+
+### AI x Coffee and Conversations
+- ID: 91
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Bengaluru
+- Time: 4:00 PM – 7:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: AI, Coffee, Networking
+- Status: Past
+- Description: Casual Sunday meetup for AI builders, founders and curious folks — coffee and conversations on what
+- Register: https://luma.com/mpmqxng8
+- Detail page: https://bengaluru-events.sagarjethi.com/events/ai-x-coffee-and-conversations
+
+### Serendipity Sundays #3
+- ID: 92
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Queen Victoria Statue, Cubbon Park area
+- Time: 5:30 PM – 6:30 PM
+- Cost: Free
+- Category: meetup
+- Tags: Walk, Builders, Creatives, Networking
+- Status: Past
+- Description: A relaxed Sunday evening walk for explorers, builders and creatives to meet — no agenda, no pitches. Starts 5:30 sharp.
+- Register: https://luma.com/tb4rrq8u
+- Detail page: https://bengaluru-events.sagarjethi.com/events/serendipity-sundays-3
+
+### Hands On: Build Your Second Brain with Claude Code & Cowork
+- ID: 93
+- Date: Apr 26
+- Start: 2026-04-26
+- Venue: Vaswani Pinnacle, Whitefield Main Rd, Whitefield
+- Time: 6:00 PM – 8:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: Claude Code, Cowork, Workshop, Productivity
+- Status: Past
+- Description: Avi Agarwal (staff designer at Postman) leads a hands-on workshop for non-technical folks getting started with Claude Code and Claude Cowork.
+- Register: https://luma.com/1fsniw4a
+- Detail page: https://bengaluru-events.sagarjethi.com/events/hands-on-build-your-second-brain-with-claude-code-cowork
 
 ### GCU AWS Cloud Club  – Inaugural Event
-- **Date:** Apr 28
-- **Venue:** Garden City University OMR
-- **Time:** 10:00 AM – 11:30 AM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** Cloud
-- **Description:** Welcome to the **official launch of the AWS Cloud Club at Garden City University!** 🎉 We’re excited to bring together students who are passionate about **
-- **Source:** meetup
-- **Register:** https://www.meetup.com/aws-cloud-club-at-gardencity-univ/events/314453313/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
-
-### F*ckUp Night: Startup Failure Stories (Open Mic)
-- **Date:** Apr 29
-- **Venue:** Bengaluru
-- **Time:** 9:30 PM – 10:30 PM
-- **Cost:** See event page
-- **Category:** startup
-- **Tags:** Startup
-- **Description:** **Open mic for honest startup failures.** Founders revisit their biggest mistakes — and what they'd do differently if they started from scratch. ​✅ **[Regi
-- **Source:** meetup
-- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/313918993/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/f-ckup-night-startup-failure-stories-open-mic
-
-### Elastic Agentic Talks: Building with AI Agents
-- **Date:** Apr 29
-- **Venue:** Bengaluru
-- **Time:** 8:00 PM – 9:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Agents
-- **Description:** **NOTE:** Access to this meetup is restricted. Please ensure [you register on Luma.](https://luma.com/cleexkag?utm_campaign=meetup&utm_medium=announcement&
-- **Source:** meetup
-- **Register:** https://www.meetup.com/elastic-apj-virtual-user-group/events/314334279/?recId=f7d62e62-bf10-4a79-bc68-d4b1d55eb74c&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/elastic-agentic-talks-building-with-ai-agents
-
-### Feedback Jam: Get Honest Takes On Your Build
-- **Date:** Apr 30
-- **Venue:** Bengaluru
-- **Time:** 8:30 PM – 9:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** **Bring your idea, MVP, landing page, or anything you want to put to the challenge:** 5 min demo → 10 min of honest feedback from other builders. * Presen
-- **Source:** meetup
-- **Register:** https://www.meetup.com/solopreneurs-lab-bangalore/events/314215672/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/feedback-jam-get-honest-takes-on-your-build
-
-
----
-
-## MAY 2026 — FULL LISTING (28 events)
-
-Month index: https://bengaluru-events.sagarjethi.com/events/may-2026
-
-### Build Autonomous AI Agents: 2-Hour Masterclass
-- **Date:** May 1
-- **Venue:** Bengaluru
-- **Time:** 3:30 PM – 5:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** **Unlock the Future of AI — Build Autonomous AI Agents in a Hands-On Masterclass** Step into the next frontier of artificial intelligence with our 2-hour
-- **Source:** meetup
-- **Register:** https://www.meetup.com/giofai-bengaluru-chapter/events/314033252/?recId=f7d62e62-bf10-4a79-bc68-d4b1d55eb74c&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/build-autonomous-ai-agents-2-hour-masterclass
+- ID: 71
+- Date: Apr 28
+- Start: 2026-04-28
+- Venue: Garden City University OMR
+- Time: 10:00 AM – 11:30 AM
+- Cost: See event page
+- Category: meetup
+- Tags: Cloud
+- Status: Upcoming
+- Description: Welcome to the **official launch of the AWS Cloud Club at Garden City University!** 🎉 We’re excited to bring together students who are passionate about **
+- Register: https://www.meetup.com/aws-cloud-club-at-gardencity-univ/events/314453313/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
 
 ### Data & AI Forum #2 | Women in Tech Special
-- **Date:** May 2
-- **Venue:** 43 Workspace and Events
-- **Time:** 11:00 AM – 3:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Data
-- **Description:** Join us for the second edition of the Data and AI Forum. This time, we are hosting a Women in Tech Special focused entirely on the practical side of data e
-- **Source:** meetup
-- **Register:** https://www.meetup.com/data-ai-forum/events/314376671/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special
+- ID: 54
+- Date: May 2
+- Start: 2026-05-02
+- Venue: 43 Workspace and Events
+- Time: 11:00 AM – 3:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI, Data
+- Status: Upcoming
+- Description: Join us for the second edition of the Data and AI Forum. This time, we are hosting a Women in Tech Special focused entirely on the practical side of data e
+- Register: https://www.meetup.com/data-ai-forum/events/314376671/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special
 
 ### (External RSVP) GitHub Copilot Dev Days
-- **Date:** May 2
-- **Venue:** Microsoft Prestige Ferns Galaxy
-- **Time:** 10:00 AM – 1:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Security
-- **Description:** \*\* Important RSVP [here](https://www.aicamp.ai/event/eventdetails/W2026050222) (Due to room capacity and venue security, it's required to pre-register at
-- **Source:** meetup
-- **Register:** https://www.meetup.com/bangalore-ai-tech-talks/events/314252929/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days
+- ID: 55
+- Date: May 2
+- Start: 2026-05-02
+- Venue: Microsoft Prestige Ferns Galaxy
+- Time: 10:00 AM – 1:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI, Security
+- Status: Upcoming
+- Description: \\*\\* Important RSVP [here](https://www.aicamp.ai/event/eventdetails/W2026050222) (Due to room capacity and venue security, it
+- Register: https://www.meetup.com/bangalore-ai-tech-talks/events/314252929/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days
 
 ### Intent-Driven Dev - May 2026
-- **Date:** May 2
-- **Venue:** Church Street
-- **Time:** 11:00 AM – 1:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** **RSVP** - [https://forms.gle/DJaEqnbu18uUhrPX8](https://forms.gle/DJaEqnbu18uUhrPX8) **Venue** \- BHIVE Platinum\, 48\, Church St\, Haridevpur\, Shanthala
-- **Source:** meetup
-- **Register:** https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026
+- ID: 56
+- Date: May 2
+- Start: 2026-05-02
+- Venue: Church Street
+- Time: 11:00 AM – 1:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: —
+- Status: Upcoming
+- Description: **RSVP** - [https://forms.gle/DJaEqnbu18uUhrPX8](https://forms.gle/DJaEqnbu18uUhrPX8) **Venue** \\- BHIVE Platinum\\, 48\\, Church St\\, Haridevpur\\, Shanthala
+- Register: https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026
 
-### Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore
-- **Date:** May 2
-- **Venue:** Bengaluru
-- **Time:** 11:00 AM – 1:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Design
-- **Description:** Building AI Agents with Kiro, MCP, and Amazon Bedrock AgentCore This session focuses on how to design and build intelligent AI agents using Kiro, MCP (Mode
-- **Source:** meetup
-- **Register:** https://www.meetup.com/aws-cloud-club-at-ssm-inst-of-eng-tech/events/314367997/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/building-ai-agents-with-kiro-mcp-and-amazon-bedrock-agentcore
-
-### The State of Distributed Ledger Technology Report 2026
-- **Date:** May 6
-- **Venue:** Bengaluru
-- **Time:** 7:30 PM – 8:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** Join a discussion with Szymon Poczwardowski, the lead author of the State of DLT Report 2026 ([https://espeo.eu/content/the-state-of-dlt-report-2026/](http
-- **Source:** meetup
-- **Register:** https://www.meetup.com/lfdt-bengaluru/events/314390059/?recId=aa252b46-f66f-4dc7-9121-8e7666b66b43&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/the-state-of-distributed-ledger-technology-report-2026
-
-### GitHub Agentic Workflows: Automation That Actually Reads the Room
-- **Date:** May 7
-- **Venue:** Bengaluru
-- **Time:** 9:30 PM – 10:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Agents
-- **Description:** GitHub Agentic Workflows let your repo improve itself. With a simple markdown file and one command, GitHub Actions launches an AI agent to triage issues, f
-- **Source:** meetup
-- **Register:** https://www.meetup.com/microsoft-reactor-bengaluru/events/314043681/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/github-agentic-workflows-automation-that-actually-reads-the-room
+### Build with AI: Vibe Coding with Google Antigravity
+- ID: 99
+- Date: May 2
+- Start: 2026-05-02
+- Venue: Bengaluru (AI Collective)
+- Time: 2:00 PM – 6:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: AI Collective, Antigravity, Vibe Coding, Workshop
+- Status: Upcoming
+- Description: Ship your first AI app with Google Antigravity — no boilerplate, no setup hell, no prior coding experience required.
+- Register: https://luma.com/aic-be-5-2
+- Detail page: https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity
 
 ### Platform Engineering Meetup Bengaluru Edition - May 2026
-- **Date:** May 9
-- **Venue:** Urban Vault
-- **Time:** 10:30 AM – 2:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** The Platform Engineering Meetup group is back and excited to announced its fifth meetup and the 2nd one for 2026! ⭐️ We’re here to explore how internal pla
-- **Source:** meetup
-- **Register:** https://www.meetup.com/platform-resilience-engineering-meetup-group/events/314415491/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/platform-engineering-meetup-bengaluru-edition-may-2026
+- ID: 47
+- Date: May 9
+- Start: 2026-05-09
+- Venue: Urban Vault
+- Time: 10:30 AM – 2:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: —
+- Status: Upcoming
+- Description: The Platform Engineering Meetup group is back and excited to announced its fifth meetup and the 2nd one for 2026! ⭐️ We’re here to explore how internal pla
+- Register: https://www.meetup.com/platform-resilience-engineering-meetup-group/events/314415491/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/platform-engineering-meetup-bengaluru-edition-may-2026
 
 ### Scrum Meet-up: Next-Gen Scrum: AI for Agile leaders: In Person
-- **Date:** May 9
-- **Venue:** DevOn Software
-- **Time:** 10:00 AM – 3:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** We are thrilled to announce the 40th edition of the Scrum Bangalore Meetup In Person Event! Join likeminded Agile practitioners, product leaders, technolog
-- **Source:** meetup
-- **Register:** https://www.meetup.com/scrumblr/events/313956450/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/scrum-meet-up-next-gen-scrum-ai-for-agile-leaders-in-person
+- ID: 52
+- Date: May 9
+- Start: 2026-05-09
+- Venue: DevOn Software
+- Time: 10:00 AM – 3:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI
+- Status: Upcoming
+- Description: We are thrilled to announce the 40th edition of the Scrum Bangalore Meetup In Person Event! Join likeminded Agile practitioners, product leaders, technolog
+- Register: https://www.meetup.com/scrumblr/events/313956450/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/scrum-meet-up-next-gen-scrum-ai-for-agile-leaders-in-person
 
 ### React Meetup #103
-- **Date:** May 9
-- **Venue:** MiQ Digital
-- **Time:** 2:00 PM – 6:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Agents, Frontend, Design
-- **Description:** **Agenda** \* **From UI to AI Agents: Building Agentic React Apps using MCP** by [Haritha Maduraiveeran](https://www.linkedin.com/in/haritha-maduraiveeran)
-- **Source:** meetup
-- **Register:** https://www.meetup.com/reactjs-bangalore/events/314309244/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/react-meetup-103
+- ID: 58
+- Date: May 9
+- Start: 2026-05-09
+- Venue: MiQ Digital
+- Time: 2:00 PM – 6:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI, Agents, Frontend, Design
+- Status: Upcoming
+- Description: **Agenda** \\* **From UI to AI Agents: Building Agentic React Apps using MCP** by [Haritha Maduraiveeran](https://www.linkedin.com/in/haritha-maduraiveeran)
+- Register: https://www.meetup.com/reactjs-bangalore/events/314309244/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/react-meetup-103
 
 ### Building a distributed transactional database
-- **Date:** May 9
-- **Venue:** Bengaluru
-- **Time:** 9:45 AM – 5:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** Data, Design
-- **Description:** Design MVCC databases with real-world consistency guarantees
-- **Source:** hasgeek
-- **Register:** https://hasgeek.com/rootconf/building-distributed-transactional-database-online/
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/building-a-distributed-transactional-database
+- ID: 76
+- Date: May 9
+- Start: 2026-05-09
+- Venue: Bengaluru
+- Time: 9:45 AM – 5:30 PM
+- Cost: See event page
+- Category: meetup
+- Tags: Data, Design
+- Status: Upcoming
+- Description: Design MVCC databases with real-world consistency guarantees
+- Register: https://hasgeek.com/rootconf/building-distributed-transactional-database-online/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/building-a-distributed-transactional-database
 
 ### Platform Engineering meet-up - May 9
-- **Date:** May 9
-- **Venue:** Bengaluru
-- **Time:** 3:00 PM – 5:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** Real systems. Real engineers. Real lessons.
-- **Source:** hasgeek
-- **Register:** https://hasgeek.com/rootconf/platform-engineering-meet-up-may-9/
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/platform-engineering-meet-up-may-9
+- ID: 77
+- Date: May 9
+- Start: 2026-05-09
+- Venue: Bengaluru
+- Time: 3:00 PM – 5:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: —
+- Status: Upcoming
+- Description: Real systems. Real engineers. Real lessons.
+- Register: https://hasgeek.com/rootconf/platform-engineering-meet-up-may-9/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/platform-engineering-meet-up-may-9
 
 ### Opensource Stories :A Networking Day for Contributors
-- **Date:** May 10
-- **Venue:** Bangalore
-- **Time:** 10:00 AM – 12:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** ## **Opensource Stories: A Networking Evening for Contributors** https://luma.com/xt0fuk1c (RSVP are only accepted via luma not in meetup.com) Open source
-- **Source:** meetup
-- **Register:** https://www.meetup.com/soulcloudehq/events/314421120/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors
-
-### Applied AI Ethics MonthlyMixer - Where Innovation Meets Responsibility
-- **Date:** May 13
-- **Venue:** Bengaluru
-- **Time:** 5:00 PM – 7:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** Join a global, open-format gathering for those building and questioning AI — from real-world use cases to critical conversations around ethics, bias, and t
-- **Source:** meetup
-- **Register:** https://www.meetup.com/puducherry-tech/events/314435928/?recId=925f7258-6dd7-4a27-ad0e-660883132620&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/applied-ai-ethics-monthlymixer-where-innovation-meets-responsibility
-
-### Agent Orchestration: Directing Your AI Dream Team
-- **Date:** May 14
-- **Venue:** Bengaluru
-- **Time:** 9:30 PM – 10:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Agents
-- **Description:** What is Agent Orchestration? Assigning one primary agent the job of a project manager (orchestrator) whose sole purpose is delegating tasks to specialized
-- **Source:** meetup
-- **Register:** https://www.meetup.com/microsoft-reactor-bengaluru/events/314044036/?recId=989fdabf-8fc1-437c-876b-0ee66f589978&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/agent-orchestration-directing-your-ai-dream-team
+- ID: 57
+- Date: May 10
+- Start: 2026-05-10
+- Venue: Bangalore
+- Time: 10:00 AM – 12:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: —
+- Status: Upcoming
+- Description: ## **Opensource Stories: A Networking Evening for Contributors** https://luma.com/xt0fuk1c (RSVP are only accepted via luma not in meetup.com) Open source
+- Register: https://www.meetup.com/soulcloudehq/events/314421120/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors
 
 ### Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.
-- **Date:** May 16
-- **Venue:** Harness.io R&D labs
-- **Time:** 10:00 AM – 2:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** Cloud, Data
-- **Description:** 🚀 Join us for an exciting in-person community meetup where **MongoDB User Group Bangalore** and **Harness** come together to explore how **Data + DevOps p
-- **Source:** meetup
-- **Register:** https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/data-devops-powering-modern-applications-build-fast-deploy-safer
+- ID: 46
+- Date: May 16
+- Start: 2026-05-16
+- Venue: Harness.io R&D labs
+- Time: 10:00 AM – 2:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: Cloud, Data
+- Status: Upcoming
+- Description: 🚀 Join us for an exciting in-person community meetup where **MongoDB User Group Bangalore** and **Harness** come together to explore how **Data + DevOps p
+- Register: https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/data-devops-powering-modern-applications-build-fast-deploy-safer
 
 ### Agentic AI for developers
-- **Date:** May 16
-- **Venue:** Embassy Tech Village
-- **Time:** 10:00 AM – 12:30 PM
-- **Cost:** See event page
-- **Category:** cybersecurity
-- **Tags:** AI, Agents
-- **Description:** This is a FREE community event is in collaboration with IBM India. Talk 1: OWASP Top 10 for LLM Applications - Live Breaking and Fixing by Jeevan D C (bas
-- **Source:** meetup
-- **Register:** https://www.meetup.com/javascriptmeetup/events/314313996/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/agentic-ai-for-developers
+- ID: 48
+- Date: May 16
+- Start: 2026-05-16
+- Venue: Embassy Tech Village
+- Time: 10:00 AM – 12:30 PM
+- Cost: See event page
+- Category: cybersecurity
+- Tags: AI, Agents
+- Status: Upcoming
+- Description: This is a FREE community event is in collaboration with IBM India. Talk 1: OWASP Top 10 for LLM Applications - Live Breaking and Fixing by Jeevan D C (bas
+- Register: https://www.meetup.com/javascriptmeetup/events/314313996/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/agentic-ai-for-developers
 
 ### IN PERSON! Apache Kafka® Meetup Bangalore- May 2026
-- **Date:** May 16
-- **Venue:** New Relic
-- **Time:** 11:00 AM – 2:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** Data
-- **Description:** Hello everyone! Join us for an IN PERSON Apache Kafka® meetup on May 16 from 11:00AM, hosted by New Relic in Bangalore! **📍 Venue:** New Relic One India
-- **Source:** meetup
-- **Register:** https://www.meetup.com/bangalore-kafka-data-streams/events/314292701/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/in-person-apache-kafka-meetup-bangalore-may-2026
-
-### Google Map Software Architecture
-- **Date:** May 16
-- **Venue:** Bengaluru
-- **Time:** 4:00 PM – 6:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** —
-- **Description:** Learn How Google Map Scales to Millions of users across the globe, how is Google Map reliable. How does Google Map able to tell you the distance and time b
-- **Source:** meetup
-- **Register:** https://www.meetup.com/software-architecture-and-system-design-or-core-design/events/314346143/?recId=925f7258-6dd7-4a27-ad0e-660883132620&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/google-map-software-architecture
+- ID: 50
+- Date: May 16
+- Start: 2026-05-16
+- Venue: New Relic
+- Time: 11:00 AM – 2:30 PM
+- Cost: See event page
+- Category: meetup
+- Tags: Data
+- Status: Upcoming
+- Description: Hello everyone! Join us for an IN PERSON Apache Kafka® meetup on May 16 from 11:00AM, hosted by New Relic in Bangalore! **📍 Venue:** New Relic One India
+- Register: https://www.meetup.com/bangalore-kafka-data-streams/events/314292701/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/in-person-apache-kafka-meetup-bangalore-may-2026
 
 ### Agentic AI Unplugged: Bengaluru Edition
-- **Date:** May 16
-- **Venue:** Samarthanam Auditorium- Managed by Theatrenama
-- **Time:** 9:30 AM – 3:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Agents
-- **Description:** **Note: Meetup RSVPs are closed. Please register [here](https://luma.com/AgenticAI-BLR2026). Entry by invitation only.** **Agentic AI Unplugged: Bengaluru
-- **Source:** meetup
-- **Register:** https://www.meetup.com/clickhouse-bangalore-user-group/events/314381010/?recId=989fdabf-8fc1-437c-876b-0ee66f589978&recSource=event-search&searchId=cf84bd30-2f5b-4841-879b-ce84f7772f46&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/agentic-ai-unplugged-bengaluru-edition
+- ID: 74
+- Date: May 16
+- Start: 2026-05-16
+- Venue: Samarthanam Auditorium- Managed by Theatrenama
+- Time: 9:30 AM – 3:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI, Agents
+- Status: Upcoming
+- Description: **Note: Meetup RSVPs are closed. Please register [here](https://luma.com/AgenticAI-BLR2026). Entry by invitation only.** **Agentic AI Unplugged: Bengaluru
+- Register: https://www.meetup.com/clickhouse-bangalore-user-group/events/314381010/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/agentic-ai-unplugged-bengaluru-edition
 
 ### Crafting multi-Agent systems that think and act
-- **Date:** May 16
-- **Venue:** Nutanix Technologies India Pvt Ltd
-- **Time:** 10:00 AM – 4:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** Agents
-- **Description:** Hands-on workshop
-- **Source:** hasgeek
-- **Register:** https://hasgeek.com/fifthelephant/crafting-multi-agent-systems-pune-edition/
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/crafting-multi-agent-systems-that-think-and-act
+- ID: 78
+- Date: May 16
+- Start: 2026-05-16
+- Venue: Nutanix Technologies India Pvt Ltd
+- Time: 10:00 AM – 4:30 PM
+- Cost: See event page
+- Category: meetup
+- Tags: Agents
+- Status: Upcoming
+- Description: Hands-on workshop
+- Register: https://hasgeek.com/fifthelephant/crafting-multi-agent-systems-pune-edition/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/crafting-multi-agent-systems-that-think-and-act
 
 ### Integrating APIs and Services with AgentCore Gateway
-- **Date:** May 18
-- **Venue:** Bangalore
-- **Time:** 9:00 PM – 10:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** Cloud
-- **Description:** **Description:** Explore how the AgentCore Gateway securely connects your agents to AWS services, APIs, and third-party tools. You’ll learn to convert APIs
-- **Source:** meetup
-- **Register:** https://www.meetup.com/dataopslabs/events/310516159/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/integrating-apis-and-services-with-agentcore-gateway
+- ID: 49
+- Date: May 18
+- Start: 2026-05-18
+- Venue: Bangalore
+- Time: 9:00 PM – 10:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: Cloud
+- Status: Upcoming
+- Description: **Description:** Explore how the AgentCore Gateway securely connects your agents to AWS services, APIs, and third-party tools. You’ll learn to convert APIs
+- Register: https://www.meetup.com/dataopslabs/events/310516159/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/integrating-apis-and-services-with-agentcore-gateway
 
 ### Enterprise AI in Production
-- **Date:** May 22
-- **Venue:** Bengaluru
-- **Time:** 12:00 PM – 6:00 PM
-- **Cost:** See event page
-- **Category:** conference
-- **Tags:** AI
-- **Description:** The Fifth Elephant Mini Conf
-- **Source:** hasgeek
-- **Register:** https://hasgeek.com/fifthelephant/enterprise-ai-in-production-cfp/
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/enterprise-ai-in-production
+- ID: 79
+- Date: May 22
+- Start: 2026-05-22
+- Venue: Bengaluru
+- Time: 12:00 PM – 6:00 PM
+- Cost: See event page
+- Category: conference
+- Tags: AI
+- Status: Upcoming
+- Description: The Fifth Elephant Mini Conf
+- Register: https://hasgeek.com/fifthelephant/enterprise-ai-in-production-cfp/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/enterprise-ai-in-production
 
 ### From Chat to Agents: Five AI Engineering Paradigms
-- **Date:** May 23
-- **Venue:** Equal Experts India Pvt Ltd
-- **Time:** 10:30 AM – 12:30 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** # Description Software development with AI is no longer just prompting. It spans everything from quick chat prompts to autonomous agents and AI-infused fe
-- **Source:** meetup
-- **Register:** https://www.meetup.com/experttalks-bengaluru/events/314210418/?recId=dbd227cd-465b-41c8-b76e-77324581a3f4&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms
-
-### From Vibe to Validation: AI Productivity for QA Engineers
-- **Date:** May 23
-- **Venue:** Manyata Embassay  Business Park
-- **Time:** 11:00 AM – 1:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** Quality isn’t just about catching defects—it’s about accelerating excellence. In this event, discover how AI can become your trusted co-pilot in the QA jou
-- **Source:** meetup
-- **Register:** https://www.meetup.com/lead-with-tech-meetup-group/events/314411017/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/from-vibe-to-validation-ai-productivity-for-qa-engineers
-
-### Vibe Delivery: AI Productivity for PMs & Scrum Masters
-- **Date:** May 23
-- **Venue:** Whitefield
-- **Time:** 4:00 PM – 6:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** Step into the future of leadership and delivery. This event will show you how AI can become your trusted co-pilot—helping you make smarter decisions, strea
-- **Source:** meetup
-- **Register:** https://www.meetup.com/lead-with-tech-meetup-group/events/314411069/?recId=10160b7c-87c5-4da8-af9c-360e016b738a&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/vibe-delivery-ai-productivity-for-pms-scrum-masters
-
-### Role of a Architect in coming Age of AI
-- **Date:** May 24
-- **Venue:** Jayanagar
-- **Time:** 11:00 AM – 1:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI
-- **Description:** Artificial Intelligence is reshaping industries at lightning speed, and nowhere is the impact felt more profoundly than in IT. This raises bold questions:
-- **Source:** meetup
-- **Register:** https://www.meetup.com/lead-with-tech-meetup-group/events/314411097/?recId=aa252b46-f66f-4dc7-9121-8e7666b66b43&recSource=event-search&searchId=1efacbe1-803f-425b-ae6e-a9795381684f&eventOrigin=find_page%24all
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/role-of-a-architect-in-coming-age-of-ai
+- ID: 53
+- Date: May 23
+- Start: 2026-05-23
+- Venue: Equal Experts India Pvt Ltd
+- Time: 10:30 AM – 12:30 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI
+- Status: Upcoming
+- Description: # Description Software development with AI is no longer just prompting. It spans everything from quick chat prompts to autonomous agents and AI-infused fe
+- Register: https://www.meetup.com/experttalks-bengaluru/events/314210418/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms
 
 ### Tech4Food: AI in Food — Efficiency, Insights & Beyond
-- **Date:** May 30
-- **Venue:** Food Safety Works
-- **Time:** 9:30 AM – 1:00 PM
-- **Cost:** See event page
-- **Category:** meetup
-- **Tags:** AI, Data
-- **Description:** Data, decisions, and the future of food
-- **Source:** hasgeek
-- **Register:** https://hasgeek.com/tech4food/ai-in-food-efficiency-insights-beyond/
-- **Detail page:** https://bengaluru-events.sagarjethi.com/events/tech4food-ai-in-food-efficiency-insights-beyond
+- ID: 80
+- Date: May 30
+- Start: 2026-05-30
+- Venue: Food Safety Works
+- Time: 9:30 AM – 1:00 PM
+- Cost: See event page
+- Category: meetup
+- Tags: AI, Data
+- Status: Upcoming
+- Description: Data, decisions, and the future of food
+- Register: https://hasgeek.com/tech4food/ai-in-food-efficiency-insights-beyond/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/tech4food-ai-in-food-efficiency-insights-beyond
 
 
 ---
 
-# COMPANION DIRECTORIES
+## ABOUT
 
-Beyond the events calendar, this site also publishes:
+Built and maintained by Sagar Jethi (@sagarbjethi).
+- Twitter/X: https://x.com/sagarbjethi
+- LinkedIn: https://www.linkedin.com/in/sagarjethi
+- GitHub: https://github.com/sagarjethi
+- Topmate (1:1 consult): https://topmate.io/sagarjethi
+- Source code: https://github.com/sagarjethi/bengaluru-events-apr-2026
 
-## /hackathons/resources — Builder Resources Hub
-Free-tier tools, ship-fast skills (incl. security best practices), curated
-guides, and past hackathon-winning projects — verified link-by-link.
-URL: https://bengaluru-events.sagarjethi.com/hackathons/resources
-
-## /accelerators — Bangalore Accelerators (13 verified programs)
-Curated directory with sector focus, stage, equity terms, ticket sizes,
-public contact emails (gated behind subscribe), and direct apply links.
-Each accelerator has a dedicated page at /accelerators/<slug>.
-
-URL: https://bengaluru-events.sagarjethi.com/accelerators
-
-Detail pages:
-- https://bengaluru-events.sagarjethi.com/accelerators/axilor-ventures
-- https://bengaluru-events.sagarjethi.com/accelerators/nsrcel-iimb
-- https://bengaluru-events.sagarjethi.com/accelerators/peakxv-surge
-- https://bengaluru-events.sagarjethi.com/accelerators/accel-atoms
-- https://bengaluru-events.sagarjethi.com/accelerators/turbostart
-- https://bengaluru-events.sagarjethi.com/accelerators/anthill-ventures
-- https://bengaluru-events.sagarjethi.com/accelerators/rainmatter
-- https://bengaluru-events.sagarjethi.com/accelerators/netapp-excellerator
-- https://bengaluru-events.sagarjethi.com/accelerators/flipkart-leap
-- https://bengaluru-events.sagarjethi.com/accelerators/google-for-startups-india
-- https://bengaluru-events.sagarjethi.com/accelerators/microsoft-for-startups
-- https://bengaluru-events.sagarjethi.com/accelerators/ccamp-bangalore
-- https://bengaluru-events.sagarjethi.com/accelerators/ginserv
-
----
-
-Built by Sagar Jethi (@sagarbjethi)
-Website: https://bengaluru-events.sagarjethi.com
-LinkedIn: https://www.linkedin.com/in/sagarjethi
-Twitter/X: https://x.com/sagarbjethi
-GitHub: https://github.com/sagarjethi/bengaluru-events-apr-2026
-Talk to Sagar (1:1): https://topmate.io/sagarjethi
+This file regenerates from the live event database whenever it changes.

@@ -355,18 +355,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/f-ckup-night-startup-failure-stories-open-mic</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/elastic-agentic-talks-building-with-ai-agents</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/reddit-a-thon-3-hour-sprint-to-kickstart-your-reddit-growth</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -427,12 +415,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/build-autonomous-ai-agents-2-hour-masterclass</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -447,24 +429,6 @@
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026</loc>
     <lastmod>2026-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/building-ai-agents-with-kiro-mcp-and-amazon-bedrock-agentcore</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/the-state-of-distributed-ledger-technology-report-2026</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/github-agentic-workflows-automation-that-actually-reads-the-room</loc>
-    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -505,18 +469,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/applied-ai-ethics-monthlymixer-where-innovation-meets-responsibility</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/agent-orchestration-directing-your-ai-dream-team</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/data-devops-powering-modern-applications-build-fast-deploy-safer</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -530,12 +482,6 @@
   </url>
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/in-person-apache-kafka-meetup-bangalore-may-2026</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/google-map-software-architecture</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
@@ -567,24 +513,6 @@
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms</loc>
     <lastmod>2026-05-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/from-vibe-to-validation-ai-productivity-for-qa-engineers</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/vibe-delivery-ai-productivity-for-pms-scrum-masters</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bengaluru-events.sagarjethi.com/events/role-of-a-architect-in-coming-age-of-ai</loc>
-    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
