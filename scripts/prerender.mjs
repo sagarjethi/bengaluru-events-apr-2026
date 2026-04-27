@@ -16,11 +16,27 @@
 //
 // Run: node scripts/prerender.mjs   (or chained after vite build)
 
-import { spawn } from 'node:child_process';
-import { chromium } from 'playwright';
+import { spawn, spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import net from 'node:net';
+
+// Soft-fail mode: if anything in this script throws (Chromium not installed,
+// vite preview won't start, route render times out), we log a warning and
+// exit 0 so the deploy still ships the SPA fallback. Indexing improvement
+// from prerender is "nice to have", not "must have".
+function softFail(msg) {
+  console.warn(`[prerender] ⚠️  ${msg} — skipping prerender, build will still ship SPA fallback.`);
+  process.exit(0);
+}
+
+// Lazy-load playwright so a missing dep falls into the soft-fail path.
+let chromium;
+try {
+  ({ chromium } = await import('playwright'));
+} catch (e) {
+  softFail(`playwright not importable: ${e.message}`);
+}
 
 // ---------- routes ----------
 function loadEventSlugs() {
@@ -83,22 +99,60 @@ function freePort() {
     });
   });
 }
+// TCP probe — robust across stdout/stderr quirks on different CI envs
+async function waitForPort(port, host = '127.0.0.1', timeoutMs = 30000) {
+  const start = Date.now();
+  while (Date.now() - start < timeoutMs) {
+    const ok = await new Promise((resolve) => {
+      const sock = net.createConnection({ port, host });
+      sock.once('connect', () => { sock.end(); resolve(true); });
+      sock.once('error', () => resolve(false));
+      setTimeout(() => { sock.destroy(); resolve(false); }, 1000);
+    });
+    if (ok) return true;
+    await new Promise((r) => setTimeout(r, 250));
+  }
+  return false;
+}
+
+// ---------- ensure Chromium browser binary is available ----------
+function tryLaunchProbe() {
+  return chromium.launch({ headless: true })
+    .then((b) => b.close().then(() => true))
+    .catch(() => false);
+}
+let canLaunch = await tryLaunchProbe();
+if (!canLaunch) {
+  console.log('[prerender] Chromium binary missing — running `npx playwright install chromium`…');
+  const install = spawnSync('npx', ['playwright', 'install', 'chromium'], { stdio: 'inherit' });
+  if (install.status !== 0) softFail('playwright install chromium failed');
+  canLaunch = await tryLaunchProbe();
+  if (!canLaunch) softFail('Chromium still not launchable after install attempt');
+}
 
 // ---------- start vite preview ----------
 const PORT = await freePort();
+console.log(`[prerender] starting vite preview on port ${PORT}…`);
 const previewProc = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], {
-  stdio: ['ignore', 'pipe', 'inherit'],
+  stdio: ['ignore', 'pipe', 'pipe'],
 });
-await new Promise((resolve, reject) => {
-  const onData = (chunk) => {
-    if (String(chunk).includes(`localhost:${PORT}`)) {
-      previewProc.stdout.off('data', onData);
-      resolve();
-    }
-  };
-  previewProc.stdout.on('data', onData);
-  setTimeout(() => reject(new Error('vite preview did not start')), 15000);
-});
+let earlyExit = null;
+previewProc.on('exit', (code) => { earlyExit = code; });
+previewProc.on('error', (e) => { earlyExit = `error:${e.message}`; });
+let firstStdout = '';
+previewProc.stdout?.on('data', (d) => { if (firstStdout.length < 500) firstStdout += String(d); });
+let firstStderr = '';
+previewProc.stderr?.on('data', (d) => { if (firstStderr.length < 500) firstStderr += String(d); });
+// Race the port probe against early exit
+const ready = await Promise.race([
+  waitForPort(PORT, '127.0.0.1', 30000),
+  new Promise((resolve) => setTimeout(() => resolve(earlyExit !== null ? false : 'still-waiting'), 30000)),
+]);
+if (!ready || ready === 'still-waiting' && earlyExit !== null) {
+  console.warn(`[prerender] preview status: exited=${earlyExit}\n  stdout: ${firstStdout.trim().slice(0,200)}\n  stderr: ${firstStderr.trim().slice(0,200)}`);
+  try { previewProc.kill(); } catch { /* */ }
+  softFail(`vite preview did not bind to port ${PORT} within 30s`);
+}
 console.log(`✓ vite preview ready on http://localhost:${PORT}`);
 
 // ---------- launch chromium ----------
