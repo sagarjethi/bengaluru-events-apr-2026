@@ -415,6 +415,36 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/bengaluru-startups-meetup-by-cedat</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/operator-circle-scale-ecom-on-whatsapp</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/panel-discussion-on-building-for-space-from-india</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/hsrfc-afterparty-vol-3-build-it-anyway</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/the-inference-table-cto-dinner-by-google-ai</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -525,6 +555,24 @@
   <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity</loc>
     <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/gemma-4-sovereign-ai-mixer</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/okta-x-fof-bangalore-the-ux-of-trust-security</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/events/1-to-razorpay-with-harshil-mathur-south-park-commons-blr</loc>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>

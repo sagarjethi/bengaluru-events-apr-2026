@@ -72,13 +72,21 @@ async function deepCheck(url) {
     });
     if (!r.ok && r.status !== 206) return { status: r.status, ok: false };
     const html = await r.text();
-    const sample = html.slice(0, 250000);
+    // 1) Highest-confidence signal: schema.org eventStatus in JSON-LD (handles
+    //    Luma + Eventbrite). Trust this above all body-text matching.
+    const ldMatch = html.match(/"eventStatus"\s*:\s*"https?:\/\/schema\.org\/Event(Cancelled|Postponed|MovedOnline)"/i);
+    if (ldMatch) return { status: r.status, ok: false, deadHint: `eventStatus=${ldMatch[1]}`, reason: ldMatch[1].toLowerCase() === 'movedonline' ? 'online' : 'cancelled' };
+    // 2) Strip <script> blocks BEFORE pattern matching — Luma + Meetup pages
+    //    embed the entire i18n translation bundle (including "Event cancelled",
+    //    "This event has been cancelled.") in those scripts. Treating those as
+    //    real cancellations was a false-positive bug.
+    const noScript = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ').slice(0, 250000);
     for (const rx of DEAD_PATTERNS) {
-      const m = sample.match(rx);
+      const m = noScript.match(rx);
       if (m) return { status: r.status, ok: false, deadHint: m[0].slice(0, 80), reason: 'cancelled' };
     }
     for (const rx of ONLINE_PATTERNS) {
-      const m = sample.match(rx);
+      const m = noScript.match(rx);
       if (m) return { status: r.status, ok: false, deadHint: m[0].slice(0, 80), reason: 'online' };
     }
     return { status: r.status, ok: true };

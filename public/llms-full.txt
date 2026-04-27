@@ -7,9 +7,9 @@
 
 ## Summary
 
-72 tracked tech events. 20 upcoming as of 2026-04-27.
-12 hackathons · 7 conferences · 33 meetups · 8 startup events.
-40+ free to attend. Combined hackathon prize pool ≈ $242K+.
+80 tracked tech events. 28 upcoming as of 2026-04-27.
+12 hackathons · 8 conferences · 35 meetups · 13 startup events.
+44+ free to attend. Combined hackathon prize pool ≈ $242K+.
 
 Companies running events: OpenAI, Y Combinator, Amazon Web Services, Meta, Google,
 ElevenLabs, Hugging Face, Databricks, PyTorch Foundation, GitHub, Microsoft,
@@ -773,6 +773,76 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Register: https://www.meetup.com/aws-cloud-club-at-gardencity-univ/events/314453313/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
 
+### Bengaluru Startups Meetup by CEDAT
+- ID: 94
+- Date: Apr 28
+- Start: 2026-04-28
+- Venue: Global Incubation Services, HAL 3rd Stage Extn, Kodihalli
+- Time: 6:00 PM – 8:00 PM
+- Cost: Free
+- Category: startup
+- Tags: Startups, Founders, CEDAT, Networking
+- Status: Upcoming
+- Description: Monthly Bengaluru Startups Meetup by CEDAT — founder talks, demos and open networking at GIS, Kodihalli.
+- Register: https://luma.com/bqkqrpff
+- Detail page: https://bengaluru-events.sagarjethi.com/events/bengaluru-startups-meetup-by-cedat
+
+### Operator Circle: Scale Ecom on WhatsApp
+- ID: 95
+- Date: Apr 29
+- Start: 2026-04-29
+- Venue: Meta Bengaluru Office, Embassy Golf Links, Domlur
+- Time: 10:00 AM – 2:00 PM
+- Cost: Invite-only
+- Category: startup
+- Tags: Ecommerce, WhatsApp, Meta, Operators
+- Status: Upcoming
+- Description: Private, invite-only session for ecommerce operators on turning WhatsApp into a real revenue channel.
+- Register: https://luma.com/operator-circle
+- Detail page: https://bengaluru-events.sagarjethi.com/events/operator-circle-scale-ecom-on-whatsapp
+
+### Panel Discussion on Building for Space From India
+- ID: 96
+- Date: Apr 29
+- Start: 2026-04-29
+- Venue: Bengaluru
+- Time: 10:30 AM – 11:30 AM
+- Cost: Free
+- Category: conference
+- Tags: Space, Deeptech, Panel
+- Status: Upcoming
+- Description: Panel on the changing global and Indian space economy — democratisation of space and how to build a space business.
+- Register: https://luma.com/siaufzsa
+- Detail page: https://bengaluru-events.sagarjethi.com/events/panel-discussion-on-building-for-space-from-india
+
+### HSRFC Afterparty — Vol. 3: Build It Anyway
+- ID: 97
+- Date: Apr 30
+- Start: 2026-04-30
+- Venue: HSR Layout, Bengaluru (HSR Founders Club)
+- Time: 6:30 PM – 11:30 PM
+- Cost: HSRFC Membership
+- Category: startup
+- Tags: Founders, HSR Founders Club, Afterparty, Networking
+- Status: Upcoming
+- Description: Quarter-end afterparty for HSR Founders Club — music, founders and 
+- Register: https://luma.com/y5mcsn3i
+- Detail page: https://bengaluru-events.sagarjethi.com/events/hsrfc-afterparty-vol-3-build-it-anyway
+
+### The Inference Table — CTO Dinner by Google AI
+- ID: 98
+- Date: Apr 30
+- Start: 2026-04-30
+- Venue: Go Native HSR, Sector 4, HSR Layout
+- Time: 6:30 PM – 10:00 PM
+- Cost: Invite-only
+- Category: startup
+- Tags: CTO, Google AI, BoldCap, AI in Production
+- Status: Upcoming
+- Description: Private CTO dinner hosted by BoldCap and Google AI for senior AI leaders building AI in production.
+- Register: https://luma.com/xrkksvhz
+- Detail page: https://bengaluru-events.sagarjethi.com/events/the-inference-table-cto-dinner-by-google-ai
+
 ### Data & AI Forum #2 | Women in Tech Special
 - ID: 54
 - Date: May 2
@@ -828,6 +898,34 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: Ship your first AI app with Google Antigravity — no boilerplate, no setup hell, no prior coding experience required.
 - Register: https://luma.com/aic-be-5-2
 - Detail page: https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity
+
+### Gemma 4 Sovereign AI Mixer
+- ID: 100
+- Date: May 8
+- Start: 2026-05-08
+- Venue: Google Ananta, Mahadevapura, Bengaluru
+- Time: 9:30 AM – 1:30 PM
+- Cost: Free
+- Category: meetup
+- Tags: Gemma, Sovereign AI, Google, Open Models
+- Status: Upcoming
+- Description: Exclusive mixer at Google Ananta on the future of Sovereign AI and the latest in the Gemma model family.
+- Register: https://luma.com/1mz2tagq
+- Detail page: https://bengaluru-events.sagarjethi.com/events/gemma-4-sovereign-ai-mixer
+
+### Okta x FoF, Bangalore: The UX of Trust & Security
+- ID: 101
+- Date: May 8
+- Start: 2026-05-08
+- Venue: Okta R&D, Bellandur, Bengaluru
+- Time: 3:00 PM – 8:00 PM
+- Cost: Free RSVP
+- Category: meetup
+- Tags: Design, UX, Security, Friends of Figma
+- Status: Upcoming
+- Description: Friends of Figma Bangalore at Okta R&D — an evening on designing UX for trust and security.
+- Register: https://luma.com/p6bsfnqi
+- Detail page: https://bengaluru-events.sagarjethi.com/events/okta-x-fof-bangalore-the-ux-of-trust-security
 
 ### Platform Engineering Meetup Bengaluru Edition - May 2026
 - ID: 47
@@ -912,6 +1010,20 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: ## **Opensource Stories: A Networking Evening for Contributors** https://luma.com/xt0fuk1c (RSVP are only accepted via luma not in meetup.com) Open source
 - Register: https://www.meetup.com/soulcloudehq/events/314421120/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors
+
+### -1 to Razorpay with Harshil Mathur | South Park Commons (BLR)
+- ID: 102
+- Date: May 14
+- Start: 2026-05-14
+- Venue: South Park Commons India, Bengaluru
+- Time: 5:00 PM – 7:00 PM
+- Cost: Apply to attend
+- Category: startup
+- Tags: Founders, Razorpay, South Park Commons, Fireside
+- Status: Upcoming
+- Description: South Park Commons India hosts Razorpay CEO & co-founder Harshil Mathur for the 
+- Register: https://luma.com/pzluukqg
+- Detail page: https://bengaluru-events.sagarjethi.com/events/1-to-razorpay-with-harshil-mathur-south-park-commons-blr
 
 ### Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.
 - ID: 46

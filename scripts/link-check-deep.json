@@ -9,11 +9,47 @@
     "ok": true
   },
   {
-    "id": 56,
-    "name": "Intent-Driven Dev - May 2026",
-    "startDate": "2026-05-02",
-    "endDate": "2026-05-02",
-    "link": "https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/",
+    "id": 94,
+    "name": "Bengaluru Startups Meetup by CEDAT",
+    "startDate": "2026-04-28",
+    "endDate": "2026-04-28",
+    "link": "https://luma.com/bqkqrpff",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 96,
+    "name": "Panel Discussion on Building for Space From India",
+    "startDate": "2026-04-29",
+    "endDate": "2026-04-29",
+    "link": "https://luma.com/siaufzsa",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 95,
+    "name": "Operator Circle: Scale Ecom on WhatsApp",
+    "startDate": "2026-04-29",
+    "endDate": "2026-04-29",
+    "link": "https://luma.com/operator-circle",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 97,
+    "name": "HSRFC Afterparty — Vol. 3: Build It Anyway",
+    "startDate": "2026-04-30",
+    "endDate": "2026-04-30",
+    "link": "https://luma.com/y5mcsn3i",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 98,
+    "name": "The Inference Table — CTO Dinner by Google AI",
+    "startDate": "2026-04-30",
+    "endDate": "2026-04-30",
+    "link": "https://luma.com/xrkksvhz",
     "status": 200,
     "ok": true
   },
@@ -36,11 +72,38 @@
     "ok": true
   },
   {
+    "id": 56,
+    "name": "Intent-Driven Dev - May 2026",
+    "startDate": "2026-05-02",
+    "endDate": "2026-05-02",
+    "link": "https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/",
+    "status": 200,
+    "ok": true
+  },
+  {
     "id": 99,
     "name": "Build with AI: Vibe Coding with Google Antigravity",
     "startDate": "2026-05-02",
     "endDate": "2026-05-02",
     "link": "https://luma.com/aic-be-5-2",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 100,
+    "name": "Gemma 4 Sovereign AI Mixer",
+    "startDate": "2026-05-08",
+    "endDate": "2026-05-08",
+    "link": "https://luma.com/1mz2tagq",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 101,
+    "name": "Okta x FoF, Bangalore: The UX of Trust & Security",
+    "startDate": "2026-05-08",
+    "endDate": "2026-05-08",
+    "link": "https://luma.com/p6bsfnqi",
     "status": 200,
     "ok": true
   },
@@ -72,20 +135,20 @@
     "ok": true
   },
   {
-    "id": 77,
-    "name": "Platform Engineering meet-up - May 9",
-    "startDate": "2026-05-09",
-    "endDate": "2026-05-09",
-    "link": "https://hasgeek.com/rootconf/platform-engineering-meet-up-may-9/",
-    "status": 200,
-    "ok": true
-  },
-  {
     "id": 76,
     "name": "Building a distributed transactional database",
     "startDate": "2026-05-09",
     "endDate": "2026-05-09",
     "link": "https://hasgeek.com/rootconf/building-distributed-transactional-database-online/",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 77,
+    "name": "Platform Engineering meet-up - May 9",
+    "startDate": "2026-05-09",
+    "endDate": "2026-05-09",
+    "link": "https://hasgeek.com/rootconf/platform-engineering-meet-up-may-9/",
     "status": 200,
     "ok": true
   },
@@ -99,11 +162,11 @@
     "ok": true
   },
   {
-    "id": 46,
-    "name": "Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.",
-    "startDate": "2026-05-16",
-    "endDate": "2026-05-16",
-    "link": "https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/",
+    "id": 102,
+    "name": "-1 to Razorpay with Harshil Mathur | South Park Commons (BLR)",
+    "startDate": "2026-05-14",
+    "endDate": "2026-05-14",
+    "link": "https://luma.com/pzluukqg",
     "status": 200,
     "ok": true
   },
@@ -140,6 +203,15 @@
     "startDate": "2026-05-16",
     "endDate": "2026-05-16",
     "link": "https://hasgeek.com/fifthelephant/crafting-multi-agent-systems-pune-edition/",
+    "status": 200,
+    "ok": true
+  },
+  {
+    "id": 46,
+    "name": "Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer.",
+    "startDate": "2026-05-16",
+    "endDate": "2026-05-16",
+    "link": "https://www.meetup.com/mongodb-usergroup-bengaluru/events/314441569/",
     "status": 200,
     "ok": true
   },
