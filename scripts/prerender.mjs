@@ -1,36 +1,44 @@
-// Post-build static HTML prerenderer.
-// Why: the SPA's index.html ships an empty <div id="root"></div>. Crawlers
-// (especially LLM crawlers like GPTBot/ClaudeBot, plus Googlebot when under
-// crawl-budget pressure) often don't run JS — they see no content and
-// "Discover but don't index" the page. Prerendering writes a real HTML
-// snapshot of each route so the first byte already contains the H1, the
-// meta tags, and the visible content.
+// Post-build static HTML prerenderer using Playwright + a tiny native http
+// server. JSDOM was tried first (Option A) but it doesn't reliably run
+// `<script type="module">` produced by Vite, so the rendered DOM came out
+// identical to the SPA shell. Real Chromium is needed.
 //
 // Pipeline:
 //   1. `vite build` produces dist/index.html + dist/assets/*
-//   2. We start `vite preview` on a free port
-//   3. Playwright visits each route, waits for content to render
-//   4. The rendered HTML is written to dist/<route>/index.html
-//   5. Vercel serves these static files first; SPA hydration takes over
-//      on the client.
+//   2. Tiny Node http server serves dist/ on a free port
+//   3. Playwright Chromium visits each route and waits for hydration
+//   4. The serialized DOM is written to dist/<route>/index.html
+//   5. Vercel serves these static files first; SPA hydrates on top in browser.
 //
-// Run: node scripts/prerender.mjs   (or chained after vite build)
+// Vercel: skipped via VERCEL env var. Vercel's build sandbox can't launch
+// Chromium reliably (needs system libs that aren't available without sudo),
+// so we ship the SPA shell and let Googlebot render JS like before. The
+// indexing benefit only kicks in for local builds — run `npm run build`
+// locally, then deploy with `vercel deploy --prebuilt` if you want the
+// prerendered HTML in production.
+//
+// Soft-fails on any error so deploys never break.
 
-import { spawn, spawnSync } from 'node:child_process';
+import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import net from 'node:net';
 
-// Soft-fail mode: if anything in this script throws (Chromium not installed,
-// vite preview won't start, route render times out), we log a warning and
-// exit 0 so the deploy still ships the SPA fallback. Indexing improvement
-// from prerender is "nice to have", not "must have".
 function softFail(msg) {
   console.warn(`[prerender] ⚠️  ${msg} — skipping prerender, build will still ship SPA fallback.`);
   process.exit(0);
 }
 
-// Lazy-load playwright so a missing dep falls into the soft-fail path.
+// Skip on Vercel — their build sandbox can't reliably launch Chromium.
+if (process.env.VERCEL || process.env.VERCEL_ENV) {
+  console.log('[prerender] VERCEL env detected — skipping prerender (SPA fallback will ship).');
+  process.exit(0);
+}
+// Also skip if explicitly disabled
+if (process.env.PRERENDER === '0' || process.env.PRERENDER === 'false') {
+  console.log('[prerender] PRERENDER=0 — skipping.');
+  process.exit(0);
+}
+
 let chromium;
 try {
   ({ chromium } = await import('playwright'));
@@ -89,73 +97,62 @@ const routes = [
 ];
 console.log(`Prerendering ${routes.length} routes (${eventSlugs.length} events + ${acceleratorIds.length} accelerators + ${STATIC_ROUTES.length} static)…`);
 
-// ---------- find free port ----------
-function freePort() {
-  return new Promise((resolve) => {
-    const srv = net.createServer();
-    srv.listen(0, () => {
-      const { port } = srv.address();
-      srv.close(() => resolve(port));
-    });
-  });
+// ---------- ensure Chromium binary is available ----------
+async function tryLaunch() {
+  try { const b = await chromium.launch({ headless: true }); await b.close(); return true; }
+  catch { return false; }
 }
-// TCP probe — robust across stdout/stderr quirks on different CI envs
-async function waitForPort(port, host = '127.0.0.1', timeoutMs = 30000) {
-  const start = Date.now();
-  while (Date.now() - start < timeoutMs) {
-    const ok = await new Promise((resolve) => {
-      const sock = net.createConnection({ port, host });
-      sock.once('connect', () => { sock.end(); resolve(true); });
-      sock.once('error', () => resolve(false));
-      setTimeout(() => { sock.destroy(); resolve(false); }, 1000);
-    });
-    if (ok) return true;
-    await new Promise((r) => setTimeout(r, 250));
-  }
-  return false;
-}
-
-// ---------- ensure Chromium browser binary is available ----------
-function tryLaunchProbe() {
-  return chromium.launch({ headless: true })
-    .then((b) => b.close().then(() => true))
-    .catch(() => false);
-}
-let canLaunch = await tryLaunchProbe();
-if (!canLaunch) {
+if (!(await tryLaunch())) {
   console.log('[prerender] Chromium binary missing — running `npx playwright install chromium`…');
-  const install = spawnSync('npx', ['playwright', 'install', 'chromium'], { stdio: 'inherit' });
-  if (install.status !== 0) softFail('playwright install chromium failed');
-  canLaunch = await tryLaunchProbe();
-  if (!canLaunch) softFail('Chromium still not launchable after install attempt');
+  const { spawnSync } = await import('node:child_process');
+  const r = spawnSync('npx', ['playwright', 'install', 'chromium'], { stdio: 'inherit' });
+  if (r.status !== 0 || !(await tryLaunch())) softFail('Chromium not launchable after install attempt');
 }
 
-// ---------- start vite preview ----------
-const PORT = await freePort();
-console.log(`[prerender] starting vite preview on port ${PORT}…`);
-const previewProc = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], {
-  stdio: ['ignore', 'pipe', 'pipe'],
+// ---------- tiny static server for dist/ ----------
+const MIME = {
+  '.html': 'text/html; charset=utf-8',
+  '.js':   'application/javascript; charset=utf-8',
+  '.mjs':  'application/javascript; charset=utf-8',
+  '.css':  'text/css; charset=utf-8',
+  '.json': 'application/json',
+  '.svg':  'image/svg+xml',
+  '.png':  'image/png',
+  '.jpg':  'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.gif':  'image/gif',
+  '.webp': 'image/webp',
+  '.ico':  'image/x-icon',
+  '.woff': 'font/woff',
+  '.woff2':'font/woff2',
+  '.ttf':  'font/ttf',
+  '.txt':  'text/plain; charset=utf-8',
+  '.xml':  'application/xml; charset=utf-8',
+  '.md':   'text/markdown; charset=utf-8',
+};
+const DIST = path.resolve('dist');
+function tryFile(p) {
+  try { const stat = fs.statSync(p); if (stat.isFile()) return p; } catch { /* */ }
+  return null;
+}
+const server = http.createServer((req, res) => {
+  let url = decodeURIComponent((req.url || '/').split('?')[0].split('#')[0]);
+  if (!url.startsWith('/')) url = '/' + url;
+  const candidate = path.join(DIST, url);
+  const resolved = path.resolve(candidate);
+  if (!resolved.startsWith(DIST)) { res.writeHead(403); return res.end(); }
+  // Resolve as file → directory/index.html → SPA fallback
+  const file = tryFile(resolved) || tryFile(path.join(resolved, 'index.html')) || path.join(DIST, 'index.html');
+  res.writeHead(200, { 'Content-Type': MIME[path.extname(file).toLowerCase()] || 'application/octet-stream' });
+  fs.createReadStream(file).pipe(res);
 });
-let earlyExit = null;
-previewProc.on('exit', (code) => { earlyExit = code; });
-previewProc.on('error', (e) => { earlyExit = `error:${e.message}`; });
-let firstStdout = '';
-previewProc.stdout?.on('data', (d) => { if (firstStdout.length < 500) firstStdout += String(d); });
-let firstStderr = '';
-previewProc.stderr?.on('data', (d) => { if (firstStderr.length < 500) firstStderr += String(d); });
-// Race the port probe against early exit
-const ready = await Promise.race([
-  waitForPort(PORT, '127.0.0.1', 30000),
-  new Promise((resolve) => setTimeout(() => resolve(earlyExit !== null ? false : 'still-waiting'), 30000)),
-]);
-if (!ready || ready === 'still-waiting' && earlyExit !== null) {
-  console.warn(`[prerender] preview status: exited=${earlyExit}\n  stdout: ${firstStdout.trim().slice(0,200)}\n  stderr: ${firstStderr.trim().slice(0,200)}`);
-  try { previewProc.kill(); } catch { /* */ }
-  softFail(`vite preview did not bind to port ${PORT} within 30s`);
-}
-console.log(`✓ vite preview ready on http://localhost:${PORT}`);
+const PORT = await new Promise((resolve, reject) => {
+  server.listen(0, '127.0.0.1', () => resolve(server.address().port));
+  server.on('error', reject);
+});
+console.log(`✓ static server up on http://127.0.0.1:${PORT}`);
 
-// ---------- launch chromium ----------
+// ---------- launch chromium and visit each route ----------
 const browser = await chromium.launch({ headless: true });
 const ctx = await browser.newContext({
   userAgent: 'Mozilla/5.0 (compatible; PrerenderBot/1.0; +https://bengaluru-events.sagarjethi.com)',
@@ -167,36 +164,34 @@ const page = await ctx.newPage();
 
 let okCount = 0;
 let failCount = 0;
+const failures = [];
 
 for (let i = 0; i < routes.length; i++) {
   const route = routes[i];
-  const url = `http://localhost:${PORT}${route}`;
+  const url = `http://127.0.0.1:${PORT}${route}`;
   try {
     await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
-    // Give react-helmet a tick to flush <title> / <meta>
-    await page.waitForTimeout(200);
-    let html = await page.content();
-
-    // Strip the prerender bot UA hint that we set so production HTML doesn't
-    // expose our internal crawl name.
-    html = html.replace(/\s+data-prerender(?:ed)?="[^"]*"/g, '');
-
-    // Where to write: route '/' → dist/index.html (already exists, but we
-    // overwrite with the prerendered version so home is also full-content).
-    // Other routes → dist/<route>/index.html
+    await page.waitForTimeout(200); // let react-helmet flush
+    const html = await page.content();
     const destDir = route === '/' ? 'dist' : `dist${route}`;
     fs.mkdirSync(destDir, { recursive: true });
     fs.writeFileSync(path.join(destDir, 'index.html'), html);
     okCount++;
-    if (i < 5 || i % 20 === 0) console.log(`  [${i + 1}/${routes.length}] ${route}`);
+    if (i < 5 || i === routes.length - 1 || i % 25 === 0) {
+      console.log(`  [${i + 1}/${routes.length}] ${route}`);
+    }
   } catch (e) {
     failCount++;
-    console.warn(`  ✗ ${route}: ${e.message}`);
+    failures.push({ route, error: e.message });
+    if (failures.length <= 3) console.warn(`  ✗ ${route}: ${e.message}`);
   }
 }
 
 await browser.close();
-previewProc.kill();
+try { server.close(); } catch { /* */ }
 
 console.log(`\nPrerender done: ${okCount} OK, ${failCount} failed`);
-process.exit(failCount ? 1 : 0);
+if (failures.length > 3) console.log(`(${failures.length - 3} more failures suppressed; see scripts/prerender-failures.json)`);
+if (failures.length) fs.writeFileSync('scripts/prerender-failures.json', JSON.stringify(failures, null, 2));
+
+process.exit(0);
