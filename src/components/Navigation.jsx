@@ -37,6 +37,13 @@ const DISCOVER_GROUPS = [
       { to: '/college-fests-bangalore-2026', label: 'College fests', icon: GraduationCap, desc: 'IISc · RVCE · PES · Christ' },
     ],
   },
+  {
+    label: 'About',
+    items: [
+      { to: '/about', label: 'About the curator', icon: BookOpen, desc: 'Who runs this & why' },
+      { to: '/editorial', label: 'Editorial standards', icon: BookOpen, desc: 'Sourcing, verification, corrections' },
+    ],
+  },
 ];
 
 const ALL_DISCOVER_ROUTES = DISCOVER_GROUPS.flatMap((g) => g.items.map((i) => i.to));

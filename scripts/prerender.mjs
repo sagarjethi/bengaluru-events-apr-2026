@@ -89,6 +89,8 @@ const STATIC_ROUTES = [
   '/web3-events-bangalore-2026',
   '/tech-events-this-weekend-bangalore',
   '/college-fests-bangalore-2026',
+  '/about',
+  '/editorial',
 ];
 const eventSlugs = loadEventSlugs();
 const acceleratorIds = loadAcceleratorIds();

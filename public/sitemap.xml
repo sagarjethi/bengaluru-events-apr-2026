@@ -97,6 +97,18 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://bengaluru-events.sagarjethi.com/about</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bengaluru-events.sagarjethi.com/editorial</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bengaluru-events.sagarjethi.com/events/tech-innovation-summit-2026</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>

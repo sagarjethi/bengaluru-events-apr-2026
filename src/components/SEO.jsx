@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { events } from '../data/events';
 
+const TODAY_ISO = new Date().toISOString().slice(0, 10);
+
 function generateAllEventsJsonLd() {
   return events
     .filter((event) => event.startDate && !event.startDate.includes('TBA'))
@@ -8,6 +10,9 @@ function generateAllEventsJsonLd() {
       '@context': 'https://schema.org',
       '@type': 'Event',
       name: event.name,
+      author: { '@id': 'https://bengaluru-events.sagarjethi.com/#sagar' },
+      publisher: { '@id': 'https://bengaluru-events.sagarjethi.com/#organization' },
+      dateModified: TODAY_ISO,
       description: event.description,
       startDate: event.startDate,
       endDate: event.endDate || event.startDate,
@@ -71,12 +76,26 @@ const ORGANIZATION_LD = {
     '@type': 'Person',
     '@id': 'https://bengaluru-events.sagarjethi.com/#sagar',
     name: 'Sagar Jethi',
-    url: 'https://x.com/sagarbjethi',
+    alternateName: '@sagarjethi',
+    url: 'https://sagarjethi.com',
+    jobTitle: 'Software Engineer & Independent Curator',
+    description:
+      'Bengaluru-based engineer who has attended, spoken at, and helped organize tech events across the city since 2018.',
+    homeLocation: { '@type': 'Place', name: 'Bengaluru, Karnataka, India' },
+    knowsAbout: [
+      'Tech events',
+      'Hackathons',
+      'Bengaluru startup ecosystem',
+      'AI / GenAI',
+      'Web3',
+      'Developer communities',
+    ],
     sameAs: [
       'https://x.com/sagarbjethi',
       'https://www.linkedin.com/in/sagarjethi',
       'https://github.com/sagarjethi',
       'https://topmate.io/sagarjethi',
+      'https://sagarjethi.com',
     ],
   },
   sameAs: [

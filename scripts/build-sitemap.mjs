@@ -55,6 +55,10 @@ add('/web3-events-bangalore-2026', { changefreq: 'weekly', priority: 0.8 });
 add('/tech-events-this-weekend-bangalore', { changefreq: 'daily', priority: 0.85 });
 add('/college-fests-bangalore-2026', { changefreq: 'weekly', priority: 0.85 });
 
+// Trust / E-E-A-T pages
+add('/about', { changefreq: 'monthly', priority: 0.7 });
+add('/editorial', { changefreq: 'monthly', priority: 0.6 });
+
 // Per-event
 const seen = new Set();
 eventNames.forEach((n, i) => {

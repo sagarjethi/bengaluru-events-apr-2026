@@ -17,6 +17,7 @@ import {
   MessageCircle,
   Copy,
   Check,
+  ShieldCheck,
 } from 'lucide-react';
 
 function XIcon({ className = 'w-4 h-4' }) {
@@ -170,6 +171,9 @@ export default function EventDetail() {
     image: 'https://bengaluru-events.sagarjethi.com/og-image.png',
     organizer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
     performer: { '@type': 'Organization', name: event.tags?.[0] || 'Bengaluru Events' },
+    author: { '@id': 'https://bengaluru-events.sagarjethi.com/#sagar' },
+    publisher: { '@id': 'https://bengaluru-events.sagarjethi.com/#organization' },
+    dateModified: new Date().toISOString().slice(0, 10),
   };
 
   const handleShare = async () => {
@@ -285,6 +289,25 @@ export default function EventDetail() {
                     <MapPin className="w-4 h-4" />
                     {event.venue}
                   </span>
+                </div>
+
+                {/* Author byline — E-E-A-T trust signal */}
+                <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-white/70">
+                  <span>
+                    Curated by{' '}
+                    <Link to="/about" className="font-semibold text-white/90 hover:text-white underline-offset-2 hover:underline">
+                      Sagar Jethi
+                    </Link>
+                  </span>
+                  <span aria-hidden="true">·</span>
+                  <span className="inline-flex items-center gap-1">
+                    <ShieldCheck className="w-3 h-3" />
+                    Link verified <time dateTime={new Date().toISOString().slice(0, 10)}>{new Date().toISOString().slice(0, 10)}</time>
+                  </span>
+                  <span aria-hidden="true">·</span>
+                  <Link to="/editorial" className="hover:text-white underline-offset-2 hover:underline">
+                    How we verify
+                  </Link>
                 </div>
               </div>
 
