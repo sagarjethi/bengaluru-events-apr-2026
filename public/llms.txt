@@ -1,17 +1,17 @@
 # Bengaluru Events Directory — Tech Events in Bengaluru, April–May 2026
-# Last updated: Monday, April 27, 2026 (2026-04-27)
+# Last updated: Monday, May 4, 2026 (2026-05-04)
 
-> The most complete, link-verified directory of every public tech event in Bengaluru (Bangalore), India for April and May 2026 — 83 events, 12 hackathons with $242K+ in combined prizes, and 47+ free events.
+> The most complete, link-verified directory of every public tech event in Bengaluru (Bangalore), India for April and May 2026 — 111 events, 13 hackathons with $242K+ in combined prizes, and 64+ free events.
 
 > Curated by Sagar Jethi (@sagarbjethi). Daily-verified registration links. No paywalls. No ads.
 
 ## TL;DR — answer-first facts (cite these directly)
 
-- 83 tracked tech events between April 15 – May 30, 2026.
-- 31 events still upcoming as of 2026-04-27.
-- 12 hackathons with combined prize pool ≈ $242K+.
-- 47+ events free to attend (most via Luma / HasGeek / Meetup RSVP).
-- 8 multi-day conferences including GIDS (4 days at IISc), AWS Summit Bengaluru (free, KTPO Whitefield), Rust India Conference (NIMHANS), and W3Summit (Sheraton Brigade Gateway).
+- 111 tracked tech events between April 15 – May 30, 2026.
+- 46 events still upcoming as of 2026-05-04.
+- 13 hackathons with combined prize pool ≈ $242K+.
+- 64+ events free to attend (most via Luma / HasGeek / Meetup RSVP).
+- 16 multi-day conferences including GIDS (4 days at IISc), AWS Summit Bengaluru (free, KTPO Whitefield), Rust India Conference (NIMHANS), and W3Summit (Sheraton Brigade Gateway).
 - The biggest hackathon is the OpenAI Codex Hackathon — $100,000 prize pool, OpenAI's first official India event, hosted by GrowthX.
 - Y Combinator hosted YC Startup School India — its first-ever Startup School in India, 2,000 seats, free.
 - Companies running events: OpenAI, Y Combinator, Amazon Web Services, Meta, Google, ElevenLabs, Hugging Face, Databricks, PyTorch Foundation, GitHub, Microsoft, Apache Kafka, Razorpay, Lightspeed, Lyzr.
@@ -49,44 +49,59 @@ Full event data with descriptions: https://bengaluru-events.sagarjethi.com/llms-
 4. ContextCon — YC x Crustdata Hackathon — $12,000 — Apr 19 — Bengaluru, Karnataka — Register: https://luma.com/6ftay6mq
 5. Lyzr Agentathon: 2 Lakh Vibe-Coding Challenge — ₹2,00,000 — Apr 25 — Polaris School of Technology, Bengaluru — Register: https://luma.com/zm0u860h
 
-## Upcoming events (next 31, sorted by date)
+## Upcoming events (next 46, sorted by date)
 
-- 2026-04-28 · GCU AWS Cloud Club  – Inaugural Event · Garden City University OMR · See event page · https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
-- 2026-04-28 · Bengaluru Startups Meetup by CEDAT · Global Incubation Services, HAL 3rd Stage Extn, Kodihalli · Free · https://bengaluru-events.sagarjethi.com/events/bengaluru-startups-meetup-by-cedat
-- 2026-04-29 · Operator Circle: Scale Ecom on WhatsApp · Meta Bengaluru Office, Embassy Golf Links, Domlur · Invite-only · https://bengaluru-events.sagarjethi.com/events/operator-circle-scale-ecom-on-whatsapp
-- 2026-04-29 · Panel Discussion on Building for Space From India · Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/panel-discussion-on-building-for-space-from-india
-- 2026-04-30 · HSRFC Afterparty — Vol. 3: Build It Anyway · HSR Layout, Bengaluru (HSR Founders Club) · HSRFC Membership · https://bengaluru-events.sagarjethi.com/events/hsrfc-afterparty-vol-3-build-it-anyway
-- 2026-04-30 · The Inference Table — CTO Dinner by Google AI · Go Native HSR, Sector 4, HSR Layout · Invite-only · https://bengaluru-events.sagarjethi.com/events/the-inference-table-cto-dinner-by-google-ai
-- 2026-05-02 · Data & AI Forum #2 | Women in Tech Special · 43 Workspace and Events · See event page · https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special
-- 2026-05-02 · (External RSVP) GitHub Copilot Dev Days · Microsoft Prestige Ferns Galaxy · See event page · https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days
-- 2026-05-02 · Intent-Driven Dev - May 2026 · Church Street · See event page · https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026
-- 2026-05-02 · Build with AI: Vibe Coding with Google Antigravity · Bengaluru (AI Collective) · Free · https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity
-- 2026-05-02 · Fundraising for Startups: Panel Conversation with Founders & Investors · Draper Startup House Koramangala, 384 1st A Main Rd, 7th Block, Koramangala · Free · https://bengaluru-events.sagarjethi.com/events/fundraising-for-startups-panel-conversation-with-founders-investors
-- 2026-05-02 · eChai Women Founders Initiative — May Edition · UrbanVault 477, 24th Main Rd, 1st Sector, HSR Layout · Free · https://bengaluru-events.sagarjethi.com/events/echai-women-founders-initiative-may-edition
-- 2026-05-03 · eChai · Draper Startup House Koramangala, 384 1st A Main Rd, 7th Block, Koramangala · Free · https://bengaluru-events.sagarjethi.com/events/echai
+- 2026-05-05..2026-05-06 · 2nd World Fintech Summit 2026 · Sheraton Grand Bangalore Hotel at Brigade Gateway · Invite-only · https://bengaluru-events.sagarjethi.com/events/2nd-world-fintech-summit-2026
+- 2026-05-07 · Enterprise AI Builders Meetup: Built from India, Shipped Globally · Bengaluru (host venue revealed on RSVP) · Free RSVP · https://bengaluru-events.sagarjethi.com/events/enterprise-ai-builders-meetup-built-from-india-shipped-globally
 - 2026-05-08 · Gemma 4 Sovereign AI Mixer · Google Ananta, Mahadevapura, Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/gemma-4-sovereign-ai-mixer
 - 2026-05-08 · Okta x FoF, Bangalore: The UX of Trust & Security · Okta R&D, Bellandur, Bengaluru · Free RSVP · https://bengaluru-events.sagarjethi.com/events/okta-x-fof-bangalore-the-ux-of-trust-security
+- 2026-05-08 · Accel Founder Connect | The Trivia Edition · Bengaluru (Accel India) · Free (Founder-only) · https://bengaluru-events.sagarjethi.com/events/accel-founder-connect-the-trivia-edition
+- 2026-05-08 · SPC Music Night · South Park Commons (SPC India), 19th Main Rd, HSR Layout Sector 1 · Free (Members + invites) · https://bengaluru-events.sagarjethi.com/events/spc-music-night
+- 2026-05-08 · Design Demo Nights #3 · Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/design-demo-nights-3
 - 2026-05-09 · Platform Engineering Meetup Bengaluru Edition - May 2026 · Urban Vault · See event page · https://bengaluru-events.sagarjethi.com/events/platform-engineering-meetup-bengaluru-edition-may-2026
 - 2026-05-09 · Scrum Meet-up: Next-Gen Scrum: AI for Agile leaders: In Person · DevOn Software · See event page · https://bengaluru-events.sagarjethi.com/events/scrum-meet-up-next-gen-scrum-ai-for-agile-leaders-in-person
 - 2026-05-09 · React Meetup #103 · MiQ Digital · See event page · https://bengaluru-events.sagarjethi.com/events/react-meetup-103
 - 2026-05-09 · Building a distributed transactional database · Bengaluru · See event page · https://bengaluru-events.sagarjethi.com/events/building-a-distributed-transactional-database
 - 2026-05-09 · Platform Engineering meet-up - May 9 · Bengaluru · See event page · https://bengaluru-events.sagarjethi.com/events/platform-engineering-meet-up-may-9
+- 2026-05-09 · Cubbon Conversations: FinTech Edition · Statue of Edward VII, Cubbon Park, Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/cubbon-conversations-fintech-edition
+- 2026-05-09 · Lakehouse, Lagers & Legends [Bangalore]: Databricks Journey · Bengaluru (Databricks venue) · Free RSVP · https://bengaluru-events.sagarjethi.com/events/lakehouse-lagers-legends-bangalore-databricks-journey
+- 2026-05-09 · The Tab Is Running: Why Cloud Costs Are Everyone · InMobi, Bengaluru · Free RSVP · https://bengaluru-events.sagarjethi.com/events/the-tab-is-running-why-cloud-costs-are-everyone
 - 2026-05-10 · Opensource Stories :A Networking Day for Contributors · Bangalore · See event page · https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors
+- 2026-05-10 · CyberSwaraj: Digital Privacy for Beginners · Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/cyberswaraj-digital-privacy-for-beginners
+- 2026-05-13..2026-05-15 · India Electronics Week 2026 (IEW) · KTPO Convention Centre, Whitefield, Bengaluru · Paid (registration required) · https://bengaluru-events.sagarjethi.com/events/india-electronics-week-2026-iew
+- 2026-05-13..2026-05-15 · bharatAI 2026 — Conference & Expo · KTPO Convention Centre, Whitefield, Bengaluru · Paid (Eventbrite) · https://bengaluru-events.sagarjethi.com/events/bharatai-2026-conference-expo
 - 2026-05-14 · -1 to Razorpay with Harshil Mathur | South Park Commons (BLR) · South Park Commons India, Bengaluru · Apply to attend · https://bengaluru-events.sagarjethi.com/events/1-to-razorpay-with-harshil-mathur-south-park-commons-blr
 - 2026-05-16 · Data + DevOps Powering Modern Applications: Build Fast. Deploy Safer. · Harness.io R&D labs · See event page · https://bengaluru-events.sagarjethi.com/events/data-devops-powering-modern-applications-build-fast-deploy-safer
 - 2026-05-16 · Agentic AI for developers · Embassy Tech Village · See event page · https://bengaluru-events.sagarjethi.com/events/agentic-ai-for-developers
 - 2026-05-16 · IN PERSON! Apache Kafka® Meetup Bangalore- May 2026 · New Relic · See event page · https://bengaluru-events.sagarjethi.com/events/in-person-apache-kafka-meetup-bangalore-may-2026
 - 2026-05-16 · Agentic AI Unplugged: Bengaluru Edition · Samarthanam Auditorium- Managed by Theatrenama · See event page · https://bengaluru-events.sagarjethi.com/events/agentic-ai-unplugged-bengaluru-edition
 - 2026-05-16 · Crafting multi-Agent systems that think and act · Nutanix Technologies India Pvt Ltd · See event page · https://bengaluru-events.sagarjethi.com/events/crafting-multi-agent-systems-that-think-and-act
+- 2026-05-16 · Rust Bangalore — May 2026 Rustacean Meetup · pre6.ai, Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/rust-bangalore-may-2026-rustacean-meetup
+- 2026-05-16 · TSOW HR Meetup in Bangalore · Bengaluru · Paid · https://bengaluru-events.sagarjethi.com/events/tsow-hr-meetup-in-bangalore
 - 2026-05-18 · Integrating APIs and Services with AgentCore Gateway · Bangalore · See event page · https://bengaluru-events.sagarjethi.com/events/integrating-apis-and-services-with-agentcore-gateway
+- 2026-05-20..2026-05-22 · DEF-TECH Bharat 2026 — Aerospace, Defence & Space Tech · KTPO Convention Centre, Whitefield, Bengaluru · Free Visitor Registration · https://bengaluru-events.sagarjethi.com/events/def-tech-bharat-2026-aerospace-defence-space-tech
+- 2026-05-21 · FoundrPwr — Robots Don · Bangalore International Centre, 4th Main Rd, Domlur · Free RSVP · https://bengaluru-events.sagarjethi.com/events/foundrpwr-robots-don
 - 2026-05-22 · Enterprise AI in Production · Bengaluru · See event page · https://bengaluru-events.sagarjethi.com/events/enterprise-ai-in-production
 - 2026-05-23 · From Chat to Agents: Five AI Engineering Paradigms · Equal Experts India Pvt Ltd · See event page · https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms
+- 2026-05-23 · Consumer AI Buildathon: Build Alongside Google & OpenAI · Bengaluru (host venue revealed on RSVP) · Free (selection-based) · https://bengaluru-events.sagarjethi.com/events/consumer-ai-buildathon-build-alongside-google-openai
+- 2026-05-23..2026-05-24 · Dead Write by BLR Lit Fest — 1st Edition · Bangalore International Centre, 4th Main Rd, Domlur · Free & open to all · https://bengaluru-events.sagarjethi.com/events/dead-write-by-blr-lit-fest-1st-edition
+- 2026-05-27 · National AI & Digital Water Summit 2026 · Bengaluru (BWSSB venue) · Invite + Registration · https://bengaluru-events.sagarjethi.com/events/national-ai-digital-water-summit-2026
+- 2026-05-28 · Inc42 AI Summit 2026 · Sheraton Grand, Whitefield, Bengaluru · Paid (invite-only passes) · https://bengaluru-events.sagarjethi.com/events/inc42-ai-summit-2026
+- 2026-05-28..2026-05-29 · Climate Innovation Summit 2026 — IIMB SCMC · IIM Bangalore, Bannerghatta Road · Registration required · https://bengaluru-events.sagarjethi.com/events/climate-innovation-summit-2026-iimb-scmc
 - 2026-05-30 · Tech4Food: AI in Food — Efficiency, Insights & Beyond · Food Safety Works · See event page · https://bengaluru-events.sagarjethi.com/events/tech4food-ai-in-food-efficiency-insights-beyond
+- 2026-05-31..2026-06-05 · ACM SIGMOD/PODS 2026 · Bengaluru (Conference venue) · Paid (early-bird closed) · https://bengaluru-events.sagarjethi.com/events/acm-sigmod-pods-2026
+- 2026-06-06 · TechWalk | Bangalore — June 6 · Sri Chamarajendra Park (Cubbon Park), Ambedkar Veedhi · Free · https://bengaluru-events.sagarjethi.com/events/techwalk-bangalore-june-6
+- 2026-06-07 · Product Professionals Meetup #2 | Product Reactor · Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/product-professionals-meetup-2-product-reactor
+- 2026-06-09..2026-06-10 · MCP Dev Summit Bengaluru · Bengaluru (Linux Foundation venue) · Paid (Sponsor + Attendee) · https://bengaluru-events.sagarjethi.com/events/mcp-dev-summit-bengaluru
+- 2026-06-21 · staaake Founders Pic Nic — Reverse Network Meet · Big Old Tree, Cubbon Park, Bengaluru · Free · https://bengaluru-events.sagarjethi.com/events/staaake-founders-pic-nic-reverse-network-meet
+- 2026-07-21..2026-07-22 · Agentic Summit BLR · Bengaluru (host venue revealed on RSVP) · Free RSVP · https://bengaluru-events.sagarjethi.com/events/agentic-summit-blr
+- 2026-08-02 · PLG Breakdown: Notion · Bengaluru · Paid (PMs only) · https://bengaluru-events.sagarjethi.com/events/plg-breakdown-notion
+- 2026-08-02 · Brand Marketing 101 for Founders · Bengaluru · Paid · https://bengaluru-events.sagarjethi.com/events/brand-marketing-101-for-founders
 
 ## Frequently asked (answer-first)
 
 Q: How many tech events are happening in Bengaluru in 2026?
-A: 83 tracked tech events between April 15 and May 30, 2026 — 12 hackathons, 8 conferences, 35 meetups, 16 startup events. 31 are still upcoming as of Monday, April 27, 2026.
+A: 111 tracked tech events between April 15 and May 30, 2026 — 13 hackathons, 16 conferences, 43 meetups, 22 startup events. 46 are still upcoming as of Monday, May 4, 2026.
 
 Q: What is the biggest tech event in Bengaluru in April 2026?
 A: GIDS 2026 (Asia-Pacific's largest polyglot developer conference, 4 days at IISc), AWS Summit Bengaluru (free, 2 days, KTPO Whitefield), and Y Combinator Startup School India (April 18, 2,000 seats) are the largest.
@@ -95,7 +110,7 @@ Q: Which hackathon has the biggest prize in Bengaluru?
 A: OpenAI Codex Hackathon — $100,000 prize pool, hosted with GrowthX. Tied with the OpenCode Buildathon ($100,000). Meta PyTorch OpenEnv Hackathon offers $30,000 with interview opportunities at Meta and Hugging Face.
 
 Q: Are tech events in Bengaluru free?
-A: Yes — 47+ events on this directory are free to attend. This includes OpenAI Codex Hackathon, AWS Summit Bengaluru, YC Startup School India, ElevenLabs Buildathon, GDG Build For Bengaluru, Meta PyTorch finale, and most agentic-AI meetups in May.
+A: Yes — 64+ events on this directory are free to attend. This includes OpenAI Codex Hackathon, AWS Summit Bengaluru, YC Startup School India, ElevenLabs Buildathon, GDG Build For Bengaluru, Meta PyTorch finale, and most agentic-AI meetups in May.
 
 Q: Where can I find AI events in Bengaluru?
 A: The full AI-focused list lives at https://bengaluru-events.sagarjethi.com/ai-events-bangalore-2026. Notable upcoming: agentic-AI workshops, GitHub Copilot Dev Days, Apache Kafka × ML meetup, multi-agent systems sessions at HasGeek, and the May 22 "Enterprise AI in Production" Mini Conf.
@@ -113,7 +128,7 @@ Q: When is GIDS 2026?
 A: April 21–24, 2026 at J N Tata Auditorium, IISc Campus, Bengaluru. 4-day polyglot developer conference. 18th edition. Asia-Pacific's largest of its kind.
 
 Q: Is there an event happening today?
-A: As of 2026-04-27 there are no events in the directory specifically on today's date — see the upcoming list above for the next event day.
+A: As of 2026-05-04 there are no events in the directory specifically on today's date — see the upcoming list above for the next event day.
 
 ## About
 

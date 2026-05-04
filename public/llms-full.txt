@@ -3,13 +3,13 @@
 # in Bengaluru (Bangalore), India · April–May 2026
 # Website: https://bengaluru-events.sagarjethi.com
 # Author: Sagar Jethi (@sagarbjethi)
-# Last updated: Monday, April 27, 2026 (2026-04-27)
+# Last updated: Monday, May 4, 2026 (2026-05-04)
 
 ## Summary
 
-83 tracked tech events. 31 upcoming as of 2026-04-27.
-12 hackathons · 8 conferences · 35 meetups · 16 startup events.
-47+ free to attend. Combined hackathon prize pool ≈ $242K+.
+111 tracked tech events. 46 upcoming as of 2026-05-04.
+13 hackathons · 16 conferences · 43 meetups · 22 startup events.
+64+ free to attend. Combined hackathon prize pool ≈ $242K+.
 
 Companies running events: OpenAI, Y Combinator, Amazon Web Services, Meta, Google,
 ElevenLabs, Hugging Face, Databricks, PyTorch Foundation, GitHub, Microsoft,
@@ -768,7 +768,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: See event page
 - Category: meetup
 - Tags: Cloud
-- Status: Upcoming
+- Status: Past
 - Description: Welcome to the **official launch of the AWS Cloud Club at Garden City University!** 🎉 We’re excited to bring together students who are passionate about **
 - Register: https://www.meetup.com/aws-cloud-club-at-gardencity-univ/events/314453313/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/gcu-aws-cloud-club-inaugural-event
@@ -782,7 +782,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Free
 - Category: startup
 - Tags: Startups, Founders, CEDAT, Networking
-- Status: Upcoming
+- Status: Past
 - Description: Monthly Bengaluru Startups Meetup by CEDAT — founder talks, demos and open networking at GIS, Kodihalli.
 - Register: https://luma.com/bqkqrpff
 - Detail page: https://bengaluru-events.sagarjethi.com/events/bengaluru-startups-meetup-by-cedat
@@ -796,7 +796,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Invite-only
 - Category: startup
 - Tags: Ecommerce, WhatsApp, Meta, Operators
-- Status: Upcoming
+- Status: Past
 - Description: Private, invite-only session for ecommerce operators on turning WhatsApp into a real revenue channel.
 - Register: https://luma.com/operator-circle
 - Detail page: https://bengaluru-events.sagarjethi.com/events/operator-circle-scale-ecom-on-whatsapp
@@ -810,7 +810,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Free
 - Category: conference
 - Tags: Space, Deeptech, Panel
-- Status: Upcoming
+- Status: Past
 - Description: Panel on the changing global and Indian space economy — democratisation of space and how to build a space business.
 - Register: https://luma.com/siaufzsa
 - Detail page: https://bengaluru-events.sagarjethi.com/events/panel-discussion-on-building-for-space-from-india
@@ -824,7 +824,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: HSRFC Membership
 - Category: startup
 - Tags: Founders, HSR Founders Club, Afterparty, Networking
-- Status: Upcoming
+- Status: Past
 - Description: Quarter-end afterparty for HSR Founders Club — music, founders and 
 - Register: https://luma.com/y5mcsn3i
 - Detail page: https://bengaluru-events.sagarjethi.com/events/hsrfc-afterparty-vol-3-build-it-anyway
@@ -838,7 +838,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Invite-only
 - Category: startup
 - Tags: CTO, Google AI, BoldCap, AI in Production
-- Status: Upcoming
+- Status: Past
 - Description: Private CTO dinner hosted by BoldCap and Google AI for senior AI leaders building AI in production.
 - Register: https://luma.com/xrkksvhz
 - Detail page: https://bengaluru-events.sagarjethi.com/events/the-inference-table-cto-dinner-by-google-ai
@@ -852,7 +852,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: See event page
 - Category: meetup
 - Tags: AI, Data
-- Status: Upcoming
+- Status: Past
 - Description: Join us for the second edition of the Data and AI Forum. This time, we are hosting a Women in Tech Special focused entirely on the practical side of data e
 - Register: https://www.meetup.com/data-ai-forum/events/314376671/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/data-ai-forum-2-women-in-tech-special
@@ -866,7 +866,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: See event page
 - Category: meetup
 - Tags: AI, Security
-- Status: Upcoming
+- Status: Past
 - Description: \\*\\* Important RSVP [here](https://www.aicamp.ai/event/eventdetails/W2026050222) (Due to room capacity and venue security, it
 - Register: https://www.meetup.com/bangalore-ai-tech-talks/events/314252929/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/external-rsvp-github-copilot-dev-days
@@ -880,7 +880,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: See event page
 - Category: meetup
 - Tags: —
-- Status: Upcoming
+- Status: Past
 - Description: **RSVP** - [https://forms.gle/DJaEqnbu18uUhrPX8](https://forms.gle/DJaEqnbu18uUhrPX8) **Venue** \\- BHIVE Platinum\\, 48\\, Church St\\, Haridevpur\\, Shanthala
 - Register: https://www.meetup.com/bangalore-intent-driven-developers-group/events/313893312/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/intent-driven-dev-may-2026
@@ -894,7 +894,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Free
 - Category: meetup
 - Tags: AI Collective, Antigravity, Vibe Coding, Workshop
-- Status: Upcoming
+- Status: Past
 - Description: Ship your first AI app with Google Antigravity — no boilerplate, no setup hell, no prior coding experience required.
 - Register: https://luma.com/aic-be-5-2
 - Detail page: https://bengaluru-events.sagarjethi.com/events/build-with-ai-vibe-coding-with-google-antigravity
@@ -908,7 +908,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Free
 - Category: startup
 - Tags: Fundraising, Investors, VC, Founders, Term Sheets
-- Status: Upcoming
+- Status: Past
 - Description: Panel conversation with early-stage founders and active investors. Investor criteria beyond pitch decks, navigating rejections and term sheets, evolving funding landscape across sectors. Hosted by eChai Ventures at Draper Startup House Koramangala.
 - Register: https://echai.ventures/events/fundraising-for-startups-panel-conversation-with-founders-investors-bengaluru-edition-may-02-2026
 - Detail page: https://bengaluru-events.sagarjethi.com/events/fundraising-for-startups-panel-conversation-with-founders-investors
@@ -922,7 +922,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Free
 - Category: startup
 - Tags: Women Founders, Networking, Entrepreneurship, WIT
-- Status: Upcoming
+- Status: Past
 - Description: Conversation with leaders of women-led businesses — real stories, hard-earned lessons, and key insights on building and growing successful ventures. Hosted by eChai Ventures at UrbanVault HSR Layout.
 - Register: https://echai.ventures/events/echai-women-founders-initiative-in-bengaluru-may-edition-may-02-2026
 - Detail page: https://bengaluru-events.sagarjethi.com/events/echai-women-founders-initiative-may-edition
@@ -936,10 +936,38 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Cost: Free
 - Category: startup
 - Tags: Startup, Networking, Open House, Founders
-- Status: Upcoming
+- Status: Past
 - Description: Informal Sunday-morning meetup. Connect with fab startups and like-minded entrepreneurs, discover opportunities, share ideas, build relationships. Hosted by eChai Ventures at Draper Startup House Koramangala.
 - Register: https://echai.ventures/events/echai-s-startup-open-house-in-bengaluru-may-03-2026
 - Detail page: https://bengaluru-events.sagarjethi.com/events/echai
+
+### 2nd World Fintech Summit 2026
+- ID: 106
+- Date: May 5–6
+- Start: 2026-05-05  End: 2026-05-06
+- Venue: Sheraton Grand Bangalore Hotel at Brigade Gateway
+- Time: 2 full days
+- Cost: Invite-only
+- Category: conference
+- Tags: Fintech, BFSI, Banking, Policy, Sinch
+- Status: Upcoming
+- Description: Two-day, invite-only summit for BFSI & fintech leaders — fintech dialogue, innovation, and policy collaboration shaping resilient, inclusive financial ecosystems. Presented by Sinch.
+- Register: https://worldfintechsummit.com/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/2nd-world-fintech-summit-2026
+
+### Enterprise AI Builders Meetup: Built from India, Shipped Globally
+- ID: 107
+- Date: May 7
+- Start: 2026-05-07
+- Venue: Bengaluru (host venue revealed on RSVP)
+- Time: 5:00 PM – 8:00 PM
+- Cost: Free RSVP
+- Category: meetup
+- Tags: Enterprise AI, Builders, Founders, Portkey, Palo Alto
+- Status: Upcoming
+- Description: Deeply technical products built from India, shipped globally. Conversation sparked by Palo Alto Networks
+- Register: https://luma.com/EnterpriseAIMeetup
+- Detail page: https://bengaluru-events.sagarjethi.com/events/enterprise-ai-builders-meetup-built-from-india-shipped-globally
 
 ### Gemma 4 Sovereign AI Mixer
 - ID: 100
@@ -968,6 +996,48 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: Friends of Figma Bangalore at Okta R&D — an evening on designing UX for trust and security.
 - Register: https://luma.com/p6bsfnqi
 - Detail page: https://bengaluru-events.sagarjethi.com/events/okta-x-fof-bangalore-the-ux-of-trust-security
+
+### Accel Founder Connect | The Trivia Edition
+- ID: 108
+- Date: May 8
+- Start: 2026-05-08
+- Venue: Bengaluru (Accel India)
+- Time: 2:00 PM – 5:00 PM
+- Cost: Free (Founder-only)
+- Category: startup
+- Tags: Accel, Founders, Networking, Deeptech
+- Status: Upcoming
+- Description: Afternoon of trivia built around the lore of Indian deeptech — pivots, breakthroughs, and founder origin stories that have shaped the ecosystem. Hosted by Accel India.
+- Register: https://luma.com/AccelTriviaEdition
+- Detail page: https://bengaluru-events.sagarjethi.com/events/accel-founder-connect-the-trivia-edition
+
+### SPC Music Night
+- ID: 109
+- Date: May 8
+- Start: 2026-05-08
+- Venue: South Park Commons (SPC India), 19th Main Rd, HSR Layout Sector 1
+- Time: 5:30 PM – 9:00 PM
+- Cost: Free (Members + invites)
+- Category: music
+- Tags: South Park Commons, Music, Founders, HSR Layout
+- Status: Upcoming
+- Description: An intimate evening of music and community with SPC India — bring your instrument, your voice, or just your vibe.
+- Register: https://luma.com/musicnight
+- Detail page: https://bengaluru-events.sagarjethi.com/events/spc-music-night
+
+### Design Demo Nights #3
+- ID: 110
+- Date: May 8
+- Start: 2026-05-08
+- Venue: Bengaluru
+- Time: 6:00 PM – 8:00 PM
+- Cost: Free
+- Category: meetup
+- Tags: Design, AI Tools, Demo, UX
+- Status: Upcoming
+- Description: AI tools are changing how designers work, think, and create — Design Demo Nights is a small space to actually talk about it IRL.
+- Register: https://luma.com/qmw08yjw
+- Detail page: https://bengaluru-events.sagarjethi.com/events/design-demo-nights-3
 
 ### Platform Engineering Meetup Bengaluru Edition - May 2026
 - ID: 47
@@ -1039,6 +1109,48 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Register: https://hasgeek.com/rootconf/platform-engineering-meet-up-may-9/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/platform-engineering-meet-up-may-9
 
+### Cubbon Conversations: FinTech Edition
+- ID: 111
+- Date: May 9
+- Start: 2026-05-09
+- Venue: Statue of Edward VII, Cubbon Park, Bengaluru
+- Time: 7:30 AM – 10:00 AM
+- Cost: Free
+- Category: startup
+- Tags: FinTech, Founders, Walk, Networking, Cubbon Park
+- Status: Upcoming
+- Description: Walking conversation in Cubbon Park focused on FinTech — many category-defining companies in fintech were built by founders who spent time in the financial-services ecosystem.
+- Register: https://luma.com/FinTechWalk
+- Detail page: https://bengaluru-events.sagarjethi.com/events/cubbon-conversations-fintech-edition
+
+### Lakehouse, Lagers & Legends [Bangalore]: Databricks Journey
+- ID: 112
+- Date: May 9
+- Start: 2026-05-09
+- Venue: Bengaluru (Databricks venue)
+- Time: 12:00 PM – 3:00 PM
+- Cost: Free RSVP
+- Category: meetup
+- Tags: Databricks, Data Engineering, Lakehouse, Certification
+- Status: Upcoming
+- Description: Special Bangalore edition of Lakehouse, Lagers & Legends. Unlocking the Databricks journey: learn, certify, succeed.
+- Register: https://luma.com/yme5dc09
+- Detail page: https://bengaluru-events.sagarjethi.com/events/lakehouse-lagers-legends-bangalore-databricks-journey
+
+### The Tab Is Running: Why Cloud Costs Are Everyone
+- ID: 113
+- Date: May 9
+- Start: 2026-05-09
+- Venue: InMobi, Bengaluru
+- Time: 2:30 PM – 5:00 PM
+- Cost: Free RSVP
+- Category: meetup
+- Tags: FinOps, Cloud, Observability, Rootconf, InMobi
+- Status: Upcoming
+- Description: Rootconf round table on FinOps as an engineering discipline — moving from cost visibility to cost accountability and decision-making.
+- Register: https://hasgeek.com/rootconf/observability-in-finops/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/the-tab-is-running-why-cloud-costs-are-everyone
+
 ### Opensource Stories :A Networking Day for Contributors
 - ID: 57
 - Date: May 10
@@ -1052,6 +1164,48 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: ## **Opensource Stories: A Networking Evening for Contributors** https://luma.com/xt0fuk1c (RSVP are only accepted via luma not in meetup.com) Open source
 - Register: https://www.meetup.com/soulcloudehq/events/314421120/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/opensource-stories-a-networking-day-for-contributors
+
+### CyberSwaraj: Digital Privacy for Beginners
+- ID: 114
+- Date: May 10
+- Start: 2026-05-10
+- Venue: Bengaluru
+- Time: 12:00 PM – 3:00 PM
+- Cost: Free
+- Category: cybersecurity
+- Tags: Privacy, Security, Beginners, Workshop
+- Status: Upcoming
+- Description: Beginner-friendly session on digital privacy — what your phone, browser, and apps know about you, and what to do about it.
+- Register: https://luma.com/t5vv28rj
+- Detail page: https://bengaluru-events.sagarjethi.com/events/cyberswaraj-digital-privacy-for-beginners
+
+### India Electronics Week 2026 (IEW)
+- ID: 115
+- Date: May 13–15
+- Start: 2026-05-13  End: 2026-05-15
+- Venue: KTPO Convention Centre, Whitefield, Bengaluru
+- Time: 10:00 AM – 6:00 PM
+- Cost: Paid (registration required)
+- Category: expo
+- Tags: Electronics, Embedded, IoT, R&D, Hardware
+- Status: Upcoming
+- Description: 11th edition of IEW — India
+- Register: https://www.indiaelectronicsweek.com/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/india-electronics-week-2026-iew
+
+### bharatAI 2026 — Conference & Expo
+- ID: 128
+- Date: May 13–15
+- Start: 2026-05-13  End: 2026-05-15
+- Venue: KTPO Convention Centre, Whitefield, Bengaluru
+- Time: 10:00 AM – 6:00 PM
+- Cost: Paid (Eventbrite)
+- Category: conference
+- Tags: AI, Bharat, Expo, Conference, EFY
+- Status: Upcoming
+- Description: 3-day conference + B2B expo + investor meet to accelerate AI use across Bharat — connects creators of AI with customers, system integrators, and investors. Co-located with India Electronics Week at KTPO.
+- Register: https://www.eventbrite.com/e/bharatai-13-15-may-2026-tickets-1985738424081
+- Detail page: https://bengaluru-events.sagarjethi.com/events/bharatai-2026-conference-expo
 
 ### -1 to Razorpay with Harshil Mathur | South Park Commons (BLR)
 - ID: 102
@@ -1137,6 +1291,34 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Register: https://hasgeek.com/fifthelephant/crafting-multi-agent-systems-pune-edition/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/crafting-multi-agent-systems-that-think-and-act
 
+### Rust Bangalore — May 2026 Rustacean Meetup
+- ID: 116
+- Date: May 16
+- Start: 2026-05-16
+- Venue: pre6.ai, Bengaluru
+- Time: 11:00 AM – 1:30 PM
+- Cost: Free
+- Category: meetup
+- Tags: Rust, Systems Programming, pre6.ai, Open Source
+- Status: Upcoming
+- Description: Monthly in-person Rustacean meetup — talks, project shares, and Q&A on Rust, WASM, and systems programming.
+- Register: https://hasgeek.com/rustbangalore/may-2026-rustacean-meetup/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/rust-bangalore-may-2026-rustacean-meetup
+
+### TSOW HR Meetup in Bangalore
+- ID: 117
+- Date: May 16
+- Start: 2026-05-16
+- Venue: Bengaluru
+- Time: 4:00 PM – 7:00 PM
+- Cost: Paid
+- Category: meetup
+- Tags: HR, Talent, People Ops, Networking
+- Status: Upcoming
+- Description: TSOW
+- Register: https://luma.com/qru2of9m
+- Detail page: https://bengaluru-events.sagarjethi.com/events/tsow-hr-meetup-in-bangalore
+
 ### Integrating APIs and Services with AgentCore Gateway
 - ID: 49
 - Date: May 18
@@ -1150,6 +1332,34 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: **Description:** Explore how the AgentCore Gateway securely connects your agents to AWS services, APIs, and third-party tools. You’ll learn to convert APIs
 - Register: https://www.meetup.com/dataopslabs/events/310516159/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/integrating-apis-and-services-with-agentcore-gateway
+
+### DEF-TECH Bharat 2026 — Aerospace, Defence & Space Tech
+- ID: 129
+- Date: May 20–22
+- Start: 2026-05-20  End: 2026-05-22
+- Venue: KTPO Convention Centre, Whitefield, Bengaluru
+- Time: 10:00 AM – 6:00 PM (5:00 PM Day 3)
+- Cost: Free Visitor Registration
+- Category: expo
+- Tags: Defence, Aerospace, Space Tech, Hardware
+- Status: Upcoming
+- Description: Aerospace, Defence & Space Technology Show. Free shuttle from Kundalahalli Metro every 15 mins. May 20–21 reserved for business visitors; May 22 1:30 PM onwards open to students with college ID.
+- Register: https://www.deftechbharat.com/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/def-tech-bharat-2026-aerospace-defence-space-tech
+
+### FoundrPwr — Robots Don
+- ID: 118
+- Date: May 21
+- Start: 2026-05-21
+- Venue: Bangalore International Centre, 4th Main Rd, Domlur
+- Time: 6:00 PM – 7:30 PM
+- Cost: Free RSVP
+- Category: startup
+- Tags: Hardware, Robotics, Founders, Deeptech
+- Status: Upcoming
+- Description: Most startup advice is written for software. Hardware doesn
+- Register: https://luma.com/shyixpuc
+- Detail page: https://bengaluru-events.sagarjethi.com/events/foundrpwr-robots-don
 
 ### Enterprise AI in Production
 - ID: 79
@@ -1179,6 +1389,76 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Register: https://www.meetup.com/experttalks-bengaluru/events/314210418/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/from-chat-to-agents-five-ai-engineering-paradigms
 
+### Consumer AI Buildathon: Build Alongside Google & OpenAI
+- ID: 119
+- Date: May 23
+- Start: 2026-05-23
+- Venue: Bengaluru (host venue revealed on RSVP)
+- Time: 9:30 AM – 6:30 PM
+- Cost: Free (selection-based)
+- Category: hackathon
+- Tags: Consumer AI, Google, OpenAI, Builders
+- Status: Upcoming
+- Description: One day, ~30 consumer-AI teams. Senior engineers from Google and OpenAI in the room — bring a real product problem and ship a fix.
+- Register: https://luma.com/ConsumerAIBuildathon
+- Detail page: https://bengaluru-events.sagarjethi.com/events/consumer-ai-buildathon-build-alongside-google-openai
+
+### Dead Write by BLR Lit Fest — 1st Edition
+- ID: 120
+- Date: May 23–24
+- Start: 2026-05-23  End: 2026-05-24
+- Venue: Bangalore International Centre, 4th Main Rd, Domlur
+- Time: 10:00 AM – 8:00 PM
+- Cost: Free & open to all
+- Category: music
+- Tags: Literature, Crime Fiction, Festival, Bangalore Lit Fest
+- Status: Upcoming
+- Description: Bangalore Literature Festival
+- Register: https://luma.com/3n4pc9oe
+- Detail page: https://bengaluru-events.sagarjethi.com/events/dead-write-by-blr-lit-fest-1st-edition
+
+### National AI & Digital Water Summit 2026
+- ID: 130
+- Date: May 27
+- Start: 2026-05-27
+- Venue: Bengaluru (BWSSB venue)
+- Time: Full day
+- Cost: Invite + Registration
+- Category: conference
+- Tags: AI, Water, Public Sector, BWSSB, IoT
+- Status: Upcoming
+- Description: Reimagining Bengaluru
+- Register: https://events.eletsonline.com/ai-water-summit/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/national-ai-digital-water-summit-2026
+
+### Inc42 AI Summit 2026
+- ID: 131
+- Date: May 28
+- Start: 2026-05-28
+- Venue: Sheraton Grand, Whitefield, Bengaluru
+- Time: Full day
+- Cost: Paid (invite-only passes)
+- Category: conference
+- Tags: AI, Inc42, Founders, Invite-only
+- Status: Upcoming
+- Description: India
+- Register: https://events.inc42.com/ai-summit/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/inc42-ai-summit-2026
+
+### Climate Innovation Summit 2026 — IIMB SCMC
+- ID: 132
+- Date: May 28–29
+- Start: 2026-05-28  End: 2026-05-29
+- Venue: IIM Bangalore, Bannerghatta Road
+- Time: 2 full days
+- Cost: Registration required
+- Category: conference
+- Tags: Climate, Sustainability, Net Zero, IIMB, Supply Chain
+- Status: Upcoming
+- Description: Two-day summit hosted by IIMB
+- Register: https://www.iimb.ac.in/scmc-host-climate-innovation-summit-2026
+- Detail page: https://bengaluru-events.sagarjethi.com/events/climate-innovation-summit-2026-iimb-scmc
+
 ### Tech4Food: AI in Food — Efficiency, Insights & Beyond
 - ID: 80
 - Date: May 30
@@ -1192,6 +1472,118 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 - Description: Data, decisions, and the future of food
 - Register: https://hasgeek.com/tech4food/ai-in-food-efficiency-insights-beyond/
 - Detail page: https://bengaluru-events.sagarjethi.com/events/tech4food-ai-in-food-efficiency-insights-beyond
+
+### ACM SIGMOD/PODS 2026
+- ID: 121
+- Date: May 31 – Jun 5
+- Start: 2026-05-31  End: 2026-06-05
+- Venue: Bengaluru (Conference venue)
+- Time: 6 full days
+- Cost: Paid (early-bird closed)
+- Category: conference
+- Tags: Database, Research, ACM, PODS, SIGMOD
+- Status: Upcoming
+- Description: ACM SIGMOD/PODS 2026 — the premier international database systems conference. Keynotes, accepted papers, tutorials, demos, and an industry track.
+- Register: https://2026.sigmod.org/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/acm-sigmod-pods-2026
+
+### TechWalk | Bangalore — June 6
+- ID: 122
+- Date: Jun 6
+- Start: 2026-06-06
+- Venue: Sri Chamarajendra Park (Cubbon Park), Ambedkar Veedhi
+- Time: 11:30 AM – 12:30 PM
+- Cost: Free
+- Category: meetup
+- Tags: Tech, SaaS, Walk, Networking, Cubbon Park
+- Status: Upcoming
+- Description: Different kind of networking event for the Tech and SaaS communities — get outside, meet new people, and walk the park.
+- Register: https://luma.com/m4xlgcry
+- Detail page: https://bengaluru-events.sagarjethi.com/events/techwalk-bangalore-june-6
+
+### Product Professionals Meetup #2 | Product Reactor
+- ID: 123
+- Date: Jun 7
+- Start: 2026-06-07
+- Venue: Bengaluru
+- Time: 9:30 AM – 10:30 AM
+- Cost: Free
+- Category: meetup
+- Tags: Product Management, PM, Networking, Product Reactor
+- Status: Upcoming
+- Description: Relaxed, high-value networking meetup created exclusively for product managers. Connect, exchange, and share product playbooks.
+- Register: https://luma.com/tqsrpddt
+- Detail page: https://bengaluru-events.sagarjethi.com/events/product-professionals-meetup-2-product-reactor
+
+### MCP Dev Summit Bengaluru
+- ID: 133
+- Date: Jun 9–10
+- Start: 2026-06-09  End: 2026-06-10
+- Venue: Bengaluru (Linux Foundation venue)
+- Time: 2 full days
+- Cost: Paid (Sponsor + Attendee)
+- Category: conference
+- Tags: MCP, AI Agents, Linux Foundation, Model Context Protocol, Developers
+- Status: Upcoming
+- Description: Global Linux Foundation series for developers building the next generation of AI agents with the Model Context Protocol. MCP maintainers, contributors, and engineers explore protocol development, production AI systems, and security/operational challenges.
+- Register: https://events.linuxfoundation.org/mcp-dev-summit-bengaluru/
+- Detail page: https://bengaluru-events.sagarjethi.com/events/mcp-dev-summit-bengaluru
+
+### staaake Founders Pic Nic — Reverse Network Meet
+- ID: 124
+- Date: Jun 21
+- Start: 2026-06-21
+- Venue: Big Old Tree, Cubbon Park, Bengaluru
+- Time: 4:00 PM – 5:00 PM
+- Cost: Free
+- Category: startup
+- Tags: Founders, Reverse Networking, Cubbon Park, staaake
+- Status: Upcoming
+- Description: Reverse-networking picnic by staaake — invite the people you
+- Register: https://luma.com/lujs3yc7
+- Detail page: https://bengaluru-events.sagarjethi.com/events/staaake-founders-pic-nic-reverse-network-meet
+
+### Agentic Summit BLR
+- ID: 125
+- Date: Jul 21–22
+- Start: 2026-07-21  End: 2026-07-22
+- Venue: Bengaluru (host venue revealed on RSVP)
+- Time: Multi-session
+- Cost: Free RSVP
+- Category: conference
+- Tags: AI Agents, Builders, Agentic AI, Summit
+- Status: Upcoming
+- Description: A showcase of what people are actually building with AI agents — focused on real systems, real use-cases, and conversations grounded in production.
+- Register: https://luma.com/agenticsummit
+- Detail page: https://bengaluru-events.sagarjethi.com/events/agentic-summit-blr
+
+### PLG Breakdown: Notion
+- ID: 126
+- Date: Aug 2
+- Start: 2026-08-02
+- Venue: Bengaluru
+- Time: 11:00 AM – 12:30 PM
+- Cost: Paid (PMs only)
+- Category: startup
+- Tags: Product-Led Growth, Notion, PM, Growth
+- Status: Upcoming
+- Description: Product-manager-only session decoding Notion
+- Register: https://luma.com/b309mhdi
+- Detail page: https://bengaluru-events.sagarjethi.com/events/plg-breakdown-notion
+
+### Brand Marketing 101 for Founders
+- ID: 127
+- Date: Aug 2
+- Start: 2026-08-02
+- Venue: Bengaluru
+- Time: 5:30 PM – 6:30 PM
+- Cost: Paid
+- Category: startup
+- Tags: Brand, Marketing, Founders, Early Stage
+- Status: Upcoming
+- Description: Build the right things, in the right order — without wasting time or money. Marketing fundamentals for founders, not waiting until you
+- Register: https://luma.com/irhvdvdh
+- Detail page: https://bengaluru-events.sagarjethi.com/events/brand-marketing-101-for-founders
 
 
 ---

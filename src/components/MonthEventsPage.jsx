@@ -41,7 +41,31 @@ const MONTHS = {
     year: 2026,
     monthNum: 5,
     blurb:
-      "After April's mega conferences, May 2026 keeps the momentum — agentic AI workshops, platform engineering meetups, React #103, Apache Kafka, GitHub Copilot Dev Days and more.",
+      "World Fintech Summit, India Electronics Week (KTPO), Consumer AI Buildathon with Google + OpenAI, ACM SIGMOD/PODS, Rust Bangalore, Dead Write Lit Fest, FoundrPwr — May has the densest signature lineup of the year.",
+  },
+  'june-2026': {
+    label: 'June 2026',
+    short: 'June',
+    year: 2026,
+    monthNum: 6,
+    blurb:
+      "After May's signature conferences, June settles into community mode — TechWalk in Cubbon Park, Product Professionals Meetup, staaake Founders Pic Nic and the back end of SIGMOD/PODS.",
+  },
+  'july-2026': {
+    label: 'July 2026',
+    short: 'July',
+    year: 2026,
+    monthNum: 7,
+    blurb:
+      "Agentic Summit BLR headlines July — a focused showcase of what people are actually shipping with AI agents in production.",
+  },
+  'august-2026': {
+    label: 'August 2026',
+    short: 'August',
+    year: 2026,
+    monthNum: 8,
+    blurb:
+      "August is for craft — PLG Breakdown sessions, founder-marketing workshops, and the start of the post-monsoon meetup wave.",
   },
 };
 const MONTH_ORDER = Object.keys(MONTHS);
