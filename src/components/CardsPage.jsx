@@ -43,6 +43,7 @@ import {
 } from './cards/periods';
 import { buildSlides, SIZES, FORMATS } from './cards/buildSlides';
 import { THEMES, THEME_KEYS, getTheme } from './cards/themes';
+import { STYLES, STYLE_KEYS } from './cards/styles';
 import CardSlider from './cards/CardSlider';
 import { twitterIntent, linkedinIntent, whatsappIntent, copyLink } from '../utils/share';
 import Footer from './Footer';
@@ -86,6 +87,7 @@ export default function CardsPage() {
   const [format, setFormat] = useState(searchParams.get('f') === 'single' ? 'single' : 'carousel');
   const [size, setSize] = useState(SIZES[searchParams.get('s')] ? searchParams.get('s') : 'portrait');
   const [themeKey, setThemeKey] = useState(THEMES[searchParams.get('t')] ? searchParams.get('t') : 'primary');
+  const [styleKey, setStyleKey] = useState(STYLES[searchParams.get('d')] ? searchParams.get('d') : 'editorial');
   const [search, setSearch] = useState('');
   const [copied, setCopied] = useState(false);
   const [busy, setBusy] = useState(null); // 'one' | 'all' | null
@@ -97,8 +99,9 @@ export default function CardsPage() {
     next.set('f', format);
     next.set('s', size);
     next.set('t', themeKey);
+    next.set('d', styleKey);
     setSearchParams(next, { replace: true });
-  }, [period, format, size, themeKey, setSearchParams]);
+  }, [period, format, size, themeKey, styleKey, setSearchParams]);
 
   const theme = getTheme(themeKey);
   const sizeDef = SIZES[size];
@@ -329,6 +332,35 @@ export default function CardsPage() {
                 )}
               </div>
 
+              {/* Design style */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-5">
+                <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Design style</div>
+                <div className="grid grid-cols-3 gap-2">
+                  {STYLE_KEYS.map((k) => {
+                    const s = STYLES[k];
+                    const on = styleKey === k;
+                    return (
+                      <button
+                        key={k}
+                        type="button"
+                        onClick={() => setStyleKey(k)}
+                        aria-pressed={on}
+                        className={[
+                          'rounded-xl px-3 py-3 text-left border transition',
+                          on ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300',
+                        ].join(' ')}
+                      >
+                        <div className="text-sm font-semibold">{s.label}</div>
+                        <div className={[
+                          'text-[11px] leading-snug mt-1',
+                          on ? 'text-white/80' : 'text-slate-500',
+                        ].join(' ')}>{s.blurb}</div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* Format & Size */}
               <div className="rounded-2xl border border-slate-200 bg-white p-5 space-y-4">
                 <div>
@@ -475,7 +507,7 @@ export default function CardsPage() {
                   </div>
                 </div>
 
-                <CardSlider slides={slides} theme={theme} size={sizeDef} slideRefs={slideRefs} />
+                <CardSlider slides={slides} theme={theme} size={sizeDef} slideRefs={slideRefs} styleKey={styleKey} />
 
                 {/* Per-slide download row */}
                 {slides.length > 0 && filteredEvents.length > 0 && (

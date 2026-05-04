@@ -10,7 +10,7 @@ import CardSlide from './CardSlide';
 // Max width on screen for any preview slide
 const PREVIEW_MAX_WIDTH = 360;
 
-export default function CardSlider({ slides, theme, size, slideRefs }) {
+export default function CardSlider({ slides, theme, size, slideRefs, styleKey }) {
   const [active, setActive] = useState(0);
   const scrollerRef = useRef(null);
   const trackRef = useRef(null);
@@ -73,6 +73,7 @@ export default function CardSlider({ slides, theme, size, slideRefs }) {
                   slide={slide}
                   theme={theme}
                   size={size}
+                  styleKey={styleKey}
                 />
               </div>
             </div>

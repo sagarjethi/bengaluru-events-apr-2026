@@ -4,6 +4,10 @@
 
 const EVENTS_PER_SLIDE = 4;
 
+// How many events to surface on the cover slide as a "what's coming" tease
+// — keeps the card feeling like an actual digest, not just a title page.
+const COVER_PREVIEW = 3;
+
 export const SIZES = {
   square:   { id: 'square',   label: 'Square 1:1',   width: 1080, height: 1080 },
   portrait: { id: 'portrait', label: 'Portrait 4:5', width: 1080, height: 1350 },
@@ -43,10 +47,15 @@ export function buildSlides({ period, events, format, qrSvg, deepLink }) {
     ];
   }
 
-  // carousel — at most 6 slides total: cover + up to 4 event slides + cta
+  // carousel — cover (with event preview) + up to 4 event slides + cta
   const groups = chunk(events, EVENTS_PER_SLIDE).slice(0, 4);
   const slides = [
-    { kind: 'cover', period, totalCount: events.length },
+    {
+      kind: 'cover',
+      period,
+      totalCount: events.length,
+      preview: events.slice(0, COVER_PREVIEW),
+    },
     ...groups.map((g, i) => ({
       kind: 'events',
       period,
