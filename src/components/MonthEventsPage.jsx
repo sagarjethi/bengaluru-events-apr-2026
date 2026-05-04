@@ -22,6 +22,7 @@ import { toSlug } from '../utils/slug';
 import EventCard from './EventCard';
 import EmailCapture from './EmailCapture';
 import MonthCalendar from './MonthCalendar';
+import EventDateStrip from './EventDateStrip';
 import Footer from './Footer';
 
 const SITE = 'https://bengaluru-events.sagarjethi.com';
@@ -508,6 +509,21 @@ export default function MonthEventsPage({ month: propMonth }) {
             <h2 id="calendar-heading" className="text-xl font-semibold text-slate-900">Pick a date</h2>
             <span className="text-xs text-slate-500 hidden sm:inline">Click any highlighted day to filter</span>
           </div>
+
+          {/* Compact horizontal strip — same affordance as the homepage */}
+          <div className="mb-4">
+            <EventDateStrip
+              events={monthEvents}
+              months={[{ year: meta.year, monthNum: meta.monthNum, short: meta.short }]}
+              selectedDate={selectedDate}
+              onDateSelect={setSelectedDate}
+              onAfterSelect={() => {
+                if (eventsRef.current) eventsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+              accent="slate"
+            />
+          </div>
+
           <MonthCalendar
             year={meta.year}
             monthNum={meta.monthNum}

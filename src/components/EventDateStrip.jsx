@@ -1,5 +1,5 @@
-// Reusable horizontal scrollable date strip — single row across April + May.
-// Used by HomeCalendar (all events) and HackathonsPage (filtered to hackathons).
+// Reusable horizontal scrollable date strip.
+// Used by HomeCalendar (April + May) and month detail pages (single month).
 //
 // Props:
 //   events       — array to derive day-counts from (caller decides scope)
@@ -7,14 +7,15 @@
 //   onDateSelect — receives ISO or null on click
 //   accent       — 'slate' | 'violet' | etc — selected-cell color (defaults to slate)
 //   onAfterSelect — optional, called after a date is chosen (e.g. to scroll)
+//   months       — optional [{ year, monthNum, short }, ...]; defaults to Apr+May 2026
 
 import { useEffect, useMemo, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { CATEGORIES } from '../data';
 
-const MONTHS = [
-  { key: 'apr', year: 2026, monthNum: 4, short: 'April' },
-  { key: 'may', year: 2026, monthNum: 5, short: 'May' },
+const DEFAULT_MONTHS = [
+  { year: 2026, monthNum: 4, short: 'April' },
+  { year: 2026, monthNum: 5, short: 'May' },
 ];
 
 function pad(n) { return n < 10 ? `0${n}` : `${n}`; }
@@ -23,9 +24,10 @@ function todayIso() {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 }
 
-function buildDays() {
+function buildDays(months) {
   const out = [];
-  for (const m of MONTHS) {
+  for (let i = 0; i < months.length; i++) {
+    const m = months[i];
     const daysInMonth = new Date(Date.UTC(m.year, m.monthNum, 0)).getUTCDate();
     for (let d = 1; d <= daysInMonth; d++) {
       const iso = `${m.year}-${pad(m.monthNum)}-${pad(d)}`;
@@ -33,8 +35,10 @@ function buildDays() {
       out.push({
         iso,
         day: d,
-        monthKey: m.key,
-        firstOfMonth: d === 1,
+        monthKey: `${m.year}-${m.monthNum}`,
+        monthShort: m.short,
+        // Insert a divider before any month after the first one
+        firstOfMonth: d === 1 && i > 0,
         dow: date.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' }).toUpperCase(),
       });
     }
@@ -48,10 +52,11 @@ const ACCENT = {
   primary:{ sel: 'bg-primary-700 border-primary-700 text-white', dot: 'bg-white/70' },
 };
 
-export default function EventDateStrip({ events: pool, selectedDate, onDateSelect, accent = 'slate', onAfterSelect }) {
+export default function EventDateStrip({ events: pool, selectedDate, onDateSelect, accent = 'slate', onAfterSelect, months }) {
   const today = todayIso();
   const scrollerRef = useRef(null);
-  const days = useMemo(buildDays, []);
+  const monthsList = months && months.length ? months : DEFAULT_MONTHS;
+  const days = useMemo(() => buildDays(monthsList), [monthsList]);
   const accentStyles = ACCENT[accent] || ACCENT.slate;
 
   // Pre-compute per-day event lists once
@@ -72,20 +77,39 @@ export default function EventDateStrip({ events: pool, selectedDate, onDateSelec
     return map;
   }, [days, pool]);
 
-  // Auto-center scroll on selectedDate / today / first event-day on mount + change
+  // Auto-scroll on mount + change.
+  // Priority: an explicit selectedDate (centered) > today (anchored near the
+  // left edge so the user sees "now + what's next" first, with past dates
+  // still scrollable backwards) > first day with events.
   useEffect(() => {
-    const target = (() => {
-      if (selectedDate && dayMap.has(selectedDate)) return selectedDate;
-      if (dayMap.has(today) && dayMap.get(today).length > 0) return today;
-      // First day with events
-      for (const d of days) {
-        if (dayMap.get(d.iso).length > 0) return d.iso;
+    if (selectedDate && dayMap.has(selectedDate)) {
+      const el = scrollerRef.current?.querySelector(`[data-iso="${selectedDate}"]`);
+      if (el && scrollerRef.current) {
+        const offset = el.offsetLeft - scrollerRef.current.clientWidth / 2 + el.clientWidth / 2;
+        scrollerRef.current.scrollTo({ left: Math.max(0, offset), behavior: 'smooth' });
       }
-      return null;
-    })();
-    if (!target) return;
-    const el = scrollerRef.current?.querySelector(`[data-iso="${target}"]`);
-    if (el && scrollerRef.current) {
+      return;
+    }
+    // No explicit selection — anchor on today (if it's in range) or fall back
+    // to the first day with events.
+    let anchor = null;
+    let anchorMode = 'left'; // 'left' = put at start; 'center' = center it
+    if (dayMap.has(today)) {
+      anchor = today;
+    } else {
+      for (const d of days) {
+        if (dayMap.get(d.iso).length > 0) { anchor = d.iso; anchorMode = 'center'; break; }
+      }
+    }
+    if (!anchor) return;
+    const el = scrollerRef.current?.querySelector(`[data-iso="${anchor}"]`);
+    if (!el || !scrollerRef.current) return;
+    if (anchorMode === 'left') {
+      // Put today ~one cell-width from the left edge so a small prior buffer
+      // is still visible, hinting that past dates can be scrolled back to.
+      const offset = el.offsetLeft - el.clientWidth - 6;
+      scrollerRef.current.scrollTo({ left: Math.max(0, offset), behavior: 'smooth' });
+    } else {
       const offset = el.offsetLeft - scrollerRef.current.clientWidth / 2 + el.clientWidth / 2;
       scrollerRef.current.scrollTo({ left: Math.max(0, offset), behavior: 'smooth' });
     }
@@ -139,10 +163,10 @@ export default function EventDateStrip({ events: pool, selectedDate, onDateSelec
 
             return (
               <div key={d.iso} className="flex items-stretch gap-1.5">
-                {d.firstOfMonth && d.monthKey === 'may' && (
+                {d.firstOfMonth && (
                   <div className="self-stretch flex flex-col items-center justify-center px-2">
                     <div className="w-px flex-1 bg-slate-200" />
-                    <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-slate-400 my-1.5 whitespace-nowrap">May</div>
+                    <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-slate-400 my-1.5 whitespace-nowrap">{d.monthShort}</div>
                     <div className="w-px flex-1 bg-slate-200" />
                   </div>
                 )}
