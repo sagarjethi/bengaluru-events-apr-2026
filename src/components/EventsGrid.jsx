@@ -77,15 +77,22 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
     return { upcomingList: upcoming, pastList: past };
   }, [baseFiltered, today]);
 
-  // What the active time-filter actually wants to show
+  // When a specific date is picked from the calendar, that date IS the filter —
+  // showing only "Upcoming" events on that date silently drops past dates the
+  // user clearly clicked on (e.g. April days when today is in May), producing
+  // an empty list while the calendar dot promised events. Override the time
+  // bucket in that case and render every event matching the date.
   const filteredEvents = useMemo(() => {
+    if (selectedDate) {
+      return [...upcomingList, ...pastList].sort((a, b) => a.startDate.localeCompare(b.startDate));
+    }
     if (timeFilter === 'upcoming') return upcomingList;
     if (timeFilter === 'past') return pastList;
     if (timeFilter === 'this-week') {
       return upcomingList.filter((e) => e.startDate <= weekEnd && e.endDate >= today);
     }
     return [...upcomingList, ...pastList]; // 'all' — but rendered as two sections below
-  }, [timeFilter, upcomingList, pastList, today, weekEnd]);
+  }, [selectedDate, timeFilter, upcomingList, pastList, today, weekEnd]);
 
   const clearAll = () => {
     setSearch('');
@@ -256,6 +263,7 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
       {/* Results — rendered as Upcoming + collapsible Past in 'all' mode */}
       <ResultsView
         timeFilter={timeFilter}
+        dateLocked={!!selectedDate}
         upcoming={upcomingList}
         past={pastList}
         all={filteredEvents}
@@ -268,10 +276,19 @@ export default function EventsGrid({ selectedDate, onClearDate }) {
 
 // ----------------------------------------------------------------------------
 
-function ResultsView({ timeFilter, upcoming, past, all, onClearAll, today }) {
+function ResultsView({ timeFilter, dateLocked, upcoming, past, all, onClearAll, today }) {
   const [showPast, setShowPast] = useState(false);
 
   const empty = all.length === 0;
+  // When a calendar date is the active filter, the date IS the scope —
+  // render everything matching, ignoring the upcoming/past time bucket.
+  if (dateLocked && !empty) {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {all.map((event) => <EventCard key={event.id} event={event} />)}
+      </div>
+    );
+  }
   if (empty) {
     return (
       <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/40 p-10 text-center">

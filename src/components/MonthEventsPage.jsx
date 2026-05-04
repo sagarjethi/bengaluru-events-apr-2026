@@ -77,11 +77,18 @@ function todayIso() {
 }
 
 function eventsForMonth(monthNum, year) {
+  // Include any event whose date range overlaps the target month, not just
+  // events that start in it — otherwise multi-month events (e.g. SIGMOD/PODS
+  // 2026-05-31 → 2026-06-05) appear on the calendar's June days but get
+  // filtered out by the month-scoped event list, producing empty results
+  // when those days are clicked.
+  const monthStart = `${year}-${pad(monthNum)}-01`;
+  const lastDay = new Date(Date.UTC(year, monthNum, 0)).getUTCDate();
+  const monthEnd = `${year}-${pad(monthNum)}-${pad(lastDay)}`;
   return events
     .filter((e) => {
-      if (!e.startDate) return false;
-      const [y, m] = e.startDate.split('-').map(Number);
-      return y === year && m === monthNum;
+      if (!e.startDate || !e.endDate) return false;
+      return e.startDate <= monthEnd && e.endDate >= monthStart;
     })
     .sort((a, b) => a.startDate.localeCompare(b.startDate));
 }
