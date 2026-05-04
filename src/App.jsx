@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import SEO from './components/SEO';
 import ErrorBoundary from './components/ErrorBoundary';
 import SubscribeBar from './components/SubscribeBar';
+import CardsCallout from './components/CardsCallout';
 
 // Below-the-fold on home: lazy so the homepage TTI is faster.
 const SocialBuzz = lazy(() => import('./components/SocialBuzz'));
@@ -31,6 +32,7 @@ const AcceleratorsPage = lazy(() => import('./components/AcceleratorsPage'));
 const AcceleratorDetail = lazy(() => import('./components/AcceleratorDetail'));
 const AboutPage = lazy(() => import('./components/AboutPage'));
 const EditorialPage = lazy(() => import('./components/EditorialPage'));
+const CardsPage = lazy(() => import('./components/CardsPage'));
 
 // Minimal route-level loading fallback. Keeps CLS low — same height as a hero.
 function RouteFallback() {
@@ -49,6 +51,7 @@ function HomePage() {
       <SEO />
       <Header />
       <Stats />
+      <CardsCallout />
       <HomeCalendar selectedDate={selectedDate} onDateSelect={setSelectedDate} />
       <EventsGrid selectedDate={selectedDate} onClearDate={() => setSelectedDate(null)} />
       <Suspense fallback={null}>
@@ -92,6 +95,7 @@ export default function App() {
           <Route path="/map" element={<MapPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/editorial" element={<EditorialPage />} />
+          <Route path="/cards" element={<CardsPage />} />
         </Routes>
       </Suspense>
     </ErrorBoundary>

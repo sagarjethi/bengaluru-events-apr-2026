@@ -4,6 +4,7 @@ import {
   CalendarRange, Code, Rocket, Menu, X, ChevronDown,
   MapPin, MessageCircle, GraduationCap, Wrench, Tag, Bot,
   Trophy, Coins, CalendarClock, BookOpen, ArrowUpRight,
+  Image as ImageIcon,
 } from 'lucide-react';
 
 const TOPMATE = 'https://topmate.io/sagarjethi';
@@ -24,6 +25,7 @@ const DISCOVER_GROUPS = [
       { to: '/map', label: 'Event map', icon: MapPin, desc: 'All venues on a Leaflet map' },
       { to: '/social', label: 'Social buzz', icon: MessageCircle, desc: 'X / LinkedIn posts and creators' },
       { to: '/hackathons/resources', label: 'Builder resources', icon: Wrench, desc: 'Free tools, skills, past winners' },
+      { to: '/cards', label: 'Shareable cards', icon: ImageIcon, desc: 'Weekly + monthly cards for X / LinkedIn / IG' },
     ],
   },
   {

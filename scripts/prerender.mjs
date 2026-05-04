@@ -91,6 +91,7 @@ const STATIC_ROUTES = [
   '/college-fests-bangalore-2026',
   '/about',
   '/editorial',
+  '/cards',
 ];
 const eventSlugs = loadEventSlugs();
 const acceleratorIds = loadAcceleratorIds();
