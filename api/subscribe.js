@@ -7,6 +7,22 @@
 // If env vars are not set, it logs the email and returns success
 // (prevents UX from breaking during initial setup).
 
+import { PostHog } from 'posthog-node';
+
+async function capturePostHog(email, source, tag, ok) {
+  const key = process.env.VITE_PUBLIC_POSTHOG_KEY || process.env.POSTHOG_KEY;
+  if (!key) return;
+  const ph = new PostHog(key, {
+    host: process.env.VITE_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+  });
+  ph.capture({
+    distinctId: email,
+    event: 'email_subscribed',
+    properties: { source, tag, ok },
+  });
+  await ph.shutdown();
+}
+
 // Origins allowed to call this endpoint. Same-origin (empty Origin header)
 // is always allowed — locks cross-site abuse while keeping the site working.
 const ALLOWED_ORIGINS = new Set([
@@ -68,6 +84,7 @@ export default async function handler(req, res) {
   // flag in the response — clients only need to know it succeeded.
   if (!apiKey || !pubId) {
     console.log('[subscribe] Beehiiv not configured; captured source=%s', source);
+    await capturePostHog(email, source, tag, true);
     return res.status(200).json({ ok: true });
   }
 
@@ -101,6 +118,7 @@ export default async function handler(req, res) {
       });
     }
 
+    await capturePostHog(email, source, tag, true);
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error('[subscribe] Unexpected error:', err.message);

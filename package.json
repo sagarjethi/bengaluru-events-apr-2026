@@ -13,12 +13,12 @@
     "verify:resources": "node scripts/verify-resources.mjs"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0",
     "html-to-image": "^1.11.13",
     "jszip": "^3.10.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.8.0",
+    "posthog-js": "^1.372.10",
+    "posthog-node": "^5.33.4",
     "qrcode": "^1.5.4",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
