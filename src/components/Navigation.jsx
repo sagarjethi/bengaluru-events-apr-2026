@@ -112,8 +112,14 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
-          <Link to="/" className="font-bold text-slate-800 text-lg hover:text-primary-600 transition-colors">
-            BLR Events
+          <Link to="/" aria-label="BLR Events home" className="flex items-center hover:opacity-80 transition-opacity">
+            <img
+              src="/blrevents.png"
+              alt="BLR Events"
+              width="160"
+              height="40"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}
