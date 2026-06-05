@@ -739,7 +739,7 @@ export const otherEvents = [
   {
     id: 172,
     name: "Google I/O Connect India 2026",
-    date: "Jul 2026 · TBC",
+    date: "Jul 14",
     startDate: "2026-07-14",
     endDate: "2026-07-14",
     venue: "Bangalore International Exhibition Centre (BIEC), Bengaluru",
@@ -747,7 +747,7 @@ export const otherEvents = [
     cost: "Free (RSVP / application-based)",
     category: "conference",
     tags: ["Google", "Android", "AI", "Gemini", "Web", "Cloud"],
-    description: "Google's flagship India developer event — the latest I/O announcements and hands-on sessions across Android, AI/Gemini, Web and Cloud. Free but RSVP/application-based; confirm the exact date on the official registration page.",
+    description: "Google's flagship India developer event — July 14 at the Bangalore International Exhibition Centre (BIEC), 8:30 AM–5:30 PM IST. The latest I/O announcements and hands-on sessions across Android, AI/Gemini, Web and Cloud. Free but RSVP/application-based via the official Google registration page.",
     link: "https://rsvp.withgoogle.com/events/ioconnect-india-2026",
     lat: 13.068,
     lng: 77.475,

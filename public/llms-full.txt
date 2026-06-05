@@ -2049,7 +2049,7 @@ Apache Kafka, Razorpay, Lightspeed, Lyzr.
 
 ### Google I/O Connect India 2026
 - ID: 172
-- Date: Jul 2026 · TBC
+- Date: Jul 14
 - Start: 2026-07-14
 - Venue: Bangalore International Exhibition Centre (BIEC), Bengaluru
 - Time: 8:30 AM – 5:30 PM
